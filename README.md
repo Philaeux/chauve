@@ -1,2 +1,2 @@
-# chauve
-Dota cauching tools.
+# Chauve
+Dota coaching tools.
