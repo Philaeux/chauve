@@ -1,14 +1,55 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include <QtGui>
+#include <QAction>
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+#include "finddialog.h"
+#include "gotocelldialog.h"
+#include "mainwindow.h"
+#include "sortdialog.h"
+
+
+MainWindow::MainWindow()
 {
-    ui->setupUi(this);
+    createActions();
+    createMenus();
+    createToolBars();
+    createStatusBar();
+
+    readSettings();
+
+    setWindowIcon(QIcon(":/images/icon.png"));
 }
 
-MainWindow::~MainWindow()
+void MainWindow::closeEvent(QCloseEvent *event) {
+
+}
+
+
+void MainWindow::createActions()
 {
-    delete ui;
+
+}
+
+void MainWindow::createMenus()
+{
+
+}
+
+void MainWindow::createToolBars()
+{
+
+}
+
+void MainWindow::createStatusBar()
+{
+
+}
+
+void MainWindow::readSettings()
+{
+
+}
+
+void MainWindow::writeSettings()
+{
+
 }

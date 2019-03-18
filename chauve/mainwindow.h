@@ -3,20 +3,23 @@
 
 #include <QMainWindow>
 
-namespace Ui {
-class MainWindow;
-}
-
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    MainWindow();
+
+protected:
+    void closeEvent(QCloseEvent *event);
 
 private:
-    Ui::MainWindow *ui;
+    void createActions();
+    void createMenus();
+    void createToolBars();
+    void createStatusBar();
+    void readSettings();
+    void writeSettings();
 };
 
 #endif // MAINWINDOW_H

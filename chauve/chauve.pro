@@ -24,18 +24,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
+RESOURCES += \
+    spreadsheet.qrc
+
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
-    finddialog.cpp
+    main.cpp \
+    mainwindow.cpp \
+    finddialog.cpp \
+    gotocelldialog.cpp \
+    sortdialog.cpp
 
 HEADERS += \
-        mainwindow.h \
-    finddialog.h
+    mainwindow.h \
+    finddialog.h \
+    gotocelldialog.h \
+    sortdialog.h
 
 FORMS += \
-        mainwindow.ui \
-    gotocelldialog.ui
+    mainwindow.ui \
+    gotocelldialog.ui \
+    sortdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
