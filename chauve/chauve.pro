@@ -22,28 +22,32 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-CONFIG += c++11
+CONFIG += c++17
 
 RESOURCES += \
-    spreadsheet.qrc
+    application.qrc
 
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    finddialog.cpp \
-    gotocelldialog.cpp \
-    sortdialog.cpp
+    replaywidget.cpp \
+    settingsdialog.cpp \
+    settingsmanager.cpp \
+    replaymanager.cpp \
+    replay.cpp
 
 HEADERS += \
     mainwindow.h \
-    finddialog.h \
-    gotocelldialog.h \
-    sortdialog.h
+    replaywidget.h \
+    settingsdialog.h \
+    settingsmanager.h \
+    replaymanager.h \
+    replay.h
 
 FORMS += \
     mainwindow.ui \
-    gotocelldialog.ui \
-    sortdialog.ui
+    replaywidget.ui \
+    settingsdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
