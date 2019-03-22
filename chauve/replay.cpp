@@ -76,6 +76,10 @@ void Replay::Parse() {
         if (tick == 4294967295) tick = 0;
 
         bool compressed = false;
+        //if ( command & DEM_COMPRESSED) {
+        //  compressed = true
+        //  command = command & ^DEM_COMPRESSED
+        //}
 
 
         qDebug() << "command = '" << command << "'";
