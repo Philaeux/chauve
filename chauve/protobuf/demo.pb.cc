@@ -6,142 +6,114 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_demo_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDemoClassInfo_class_t;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDemoPacket;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDemoStringTables_items_t;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_demo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CDemoStringTables;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_demo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CDemoStringTables_table_t;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_demo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CGameInfo;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_demo_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_CGameInfo_CDotaGameInfo;
-}  // namespace protobuf_demo_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDemoClassInfo_class_t_demo_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDemoPacket_demo_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDemoStringTables_items_t_demo_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent_demo_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_demo_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo_demo_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_demo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CDemoStringTables_demo_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_demo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CDemoStringTables_table_t_demo_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_demo_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CGameInfo_demo_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_demo_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_CGameInfo_CDotaGameInfo_demo_2eproto;
 class CDemoFileHeaderDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoFileHeader>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoFileHeader> _instance;
 } _CDemoFileHeader_default_instance_;
 class CGameInfo_CDotaGameInfo_CPlayerInfoDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CGameInfo_CDotaGameInfo_CPlayerInfo>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CGameInfo_CDotaGameInfo_CPlayerInfo> _instance;
 } _CGameInfo_CDotaGameInfo_CPlayerInfo_default_instance_;
 class CGameInfo_CDotaGameInfo_CHeroSelectEventDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CGameInfo_CDotaGameInfo_CHeroSelectEvent>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CGameInfo_CDotaGameInfo_CHeroSelectEvent> _instance;
 } _CGameInfo_CDotaGameInfo_CHeroSelectEvent_default_instance_;
 class CGameInfo_CDotaGameInfoDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CGameInfo_CDotaGameInfo>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CGameInfo_CDotaGameInfo> _instance;
 } _CGameInfo_CDotaGameInfo_default_instance_;
 class CGameInfoDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CGameInfo>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CGameInfo> _instance;
 } _CGameInfo_default_instance_;
 class CDemoFileInfoDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoFileInfo>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoFileInfo> _instance;
 } _CDemoFileInfo_default_instance_;
 class CDemoPacketDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoPacket>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoPacket> _instance;
 } _CDemoPacket_default_instance_;
 class CDemoFullPacketDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoFullPacket>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoFullPacket> _instance;
 } _CDemoFullPacket_default_instance_;
 class CDemoSaveGameDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoSaveGame>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoSaveGame> _instance;
 } _CDemoSaveGame_default_instance_;
 class CDemoSyncTickDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoSyncTick>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoSyncTick> _instance;
 } _CDemoSyncTick_default_instance_;
 class CDemoConsoleCmdDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoConsoleCmd>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoConsoleCmd> _instance;
 } _CDemoConsoleCmd_default_instance_;
 class CDemoSendTablesDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoSendTables>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoSendTables> _instance;
 } _CDemoSendTables_default_instance_;
 class CDemoClassInfo_class_tDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoClassInfo_class_t>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoClassInfo_class_t> _instance;
 } _CDemoClassInfo_class_t_default_instance_;
 class CDemoClassInfoDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoClassInfo>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoClassInfo> _instance;
 } _CDemoClassInfo_default_instance_;
 class CDemoCustomDataDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoCustomData>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoCustomData> _instance;
 } _CDemoCustomData_default_instance_;
 class CDemoCustomDataCallbacksDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoCustomDataCallbacks>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoCustomDataCallbacks> _instance;
 } _CDemoCustomDataCallbacks_default_instance_;
 class CDemoStringTables_items_tDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoStringTables_items_t>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoStringTables_items_t> _instance;
 } _CDemoStringTables_items_t_default_instance_;
 class CDemoStringTables_table_tDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoStringTables_table_t>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoStringTables_table_t> _instance;
 } _CDemoStringTables_table_t_default_instance_;
 class CDemoStringTablesDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoStringTables>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoStringTables> _instance;
 } _CDemoStringTables_default_instance_;
 class CDemoStopDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoStop>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoStop> _instance;
 } _CDemoStop_default_instance_;
 class CDemoUserCmdDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoUserCmd>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoUserCmd> _instance;
 } _CDemoUserCmd_default_instance_;
 class CDemoSpawnGroupsDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDemoSpawnGroups>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDemoSpawnGroups> _instance;
 } _CDemoSpawnGroups_default_instance_;
-namespace protobuf_demo_2eproto {
-static void InitDefaultsCDemoFileHeader() {
+static void InitDefaultsCDemoFileHeader_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -152,10 +124,10 @@ static void InitDefaultsCDemoFileHeader() {
   ::CDemoFileHeader::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoFileHeader =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoFileHeader}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoFileHeader_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoFileHeader_demo_2eproto}, {}};
 
-static void InitDefaultsCGameInfo_CDotaGameInfo_CPlayerInfo() {
+static void InitDefaultsCGameInfo_CDotaGameInfo_CPlayerInfo_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -166,10 +138,10 @@ static void InitDefaultsCGameInfo_CDotaGameInfo_CPlayerInfo() {
   ::CGameInfo_CDotaGameInfo_CPlayerInfo::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCGameInfo_CDotaGameInfo_CPlayerInfo}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCGameInfo_CDotaGameInfo_CPlayerInfo_demo_2eproto}, {}};
 
-static void InitDefaultsCGameInfo_CDotaGameInfo_CHeroSelectEvent() {
+static void InitDefaultsCGameInfo_CDotaGameInfo_CHeroSelectEvent_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -180,10 +152,10 @@ static void InitDefaultsCGameInfo_CDotaGameInfo_CHeroSelectEvent() {
   ::CGameInfo_CDotaGameInfo_CHeroSelectEvent::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCGameInfo_CDotaGameInfo_CHeroSelectEvent}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCGameInfo_CDotaGameInfo_CHeroSelectEvent_demo_2eproto}, {}};
 
-static void InitDefaultsCGameInfo_CDotaGameInfo() {
+static void InitDefaultsCGameInfo_CDotaGameInfo_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -194,12 +166,12 @@ static void InitDefaultsCGameInfo_CDotaGameInfo() {
   ::CGameInfo_CDotaGameInfo::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_CGameInfo_CDotaGameInfo =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCGameInfo_CDotaGameInfo}, {
-      &protobuf_demo_2eproto::scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo.base,
-      &protobuf_demo_2eproto::scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_CGameInfo_CDotaGameInfo_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCGameInfo_CDotaGameInfo_demo_2eproto}, {
+      &scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo_demo_2eproto.base,
+      &scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent_demo_2eproto.base,}};
 
-static void InitDefaultsCGameInfo() {
+static void InitDefaultsCGameInfo_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -210,11 +182,11 @@ static void InitDefaultsCGameInfo() {
   ::CGameInfo::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CGameInfo =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCGameInfo}, {
-      &protobuf_demo_2eproto::scc_info_CGameInfo_CDotaGameInfo.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CGameInfo_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCGameInfo_demo_2eproto}, {
+      &scc_info_CGameInfo_CDotaGameInfo_demo_2eproto.base,}};
 
-static void InitDefaultsCDemoFileInfo() {
+static void InitDefaultsCDemoFileInfo_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -225,11 +197,11 @@ static void InitDefaultsCDemoFileInfo() {
   ::CDemoFileInfo::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CDemoFileInfo =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDemoFileInfo}, {
-      &protobuf_demo_2eproto::scc_info_CGameInfo.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CDemoFileInfo_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDemoFileInfo_demo_2eproto}, {
+      &scc_info_CGameInfo_demo_2eproto.base,}};
 
-static void InitDefaultsCDemoPacket() {
+static void InitDefaultsCDemoPacket_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -240,10 +212,10 @@ static void InitDefaultsCDemoPacket() {
   ::CDemoPacket::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoPacket =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoPacket}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoPacket_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoPacket_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoFullPacket() {
+static void InitDefaultsCDemoFullPacket_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -254,12 +226,12 @@ static void InitDefaultsCDemoFullPacket() {
   ::CDemoFullPacket::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_CDemoFullPacket =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCDemoFullPacket}, {
-      &protobuf_demo_2eproto::scc_info_CDemoStringTables.base,
-      &protobuf_demo_2eproto::scc_info_CDemoPacket.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_CDemoFullPacket_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCDemoFullPacket_demo_2eproto}, {
+      &scc_info_CDemoStringTables_demo_2eproto.base,
+      &scc_info_CDemoPacket_demo_2eproto.base,}};
 
-static void InitDefaultsCDemoSaveGame() {
+static void InitDefaultsCDemoSaveGame_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -270,10 +242,10 @@ static void InitDefaultsCDemoSaveGame() {
   ::CDemoSaveGame::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoSaveGame =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoSaveGame}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoSaveGame_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoSaveGame_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoSyncTick() {
+static void InitDefaultsCDemoSyncTick_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -284,10 +256,10 @@ static void InitDefaultsCDemoSyncTick() {
   ::CDemoSyncTick::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoSyncTick =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoSyncTick}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoSyncTick_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoSyncTick_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoConsoleCmd() {
+static void InitDefaultsCDemoConsoleCmd_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -298,10 +270,10 @@ static void InitDefaultsCDemoConsoleCmd() {
   ::CDemoConsoleCmd::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoConsoleCmd =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoConsoleCmd}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoConsoleCmd_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoConsoleCmd_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoSendTables() {
+static void InitDefaultsCDemoSendTables_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -312,10 +284,10 @@ static void InitDefaultsCDemoSendTables() {
   ::CDemoSendTables::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoSendTables =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoSendTables}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoSendTables_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoSendTables_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoClassInfo_class_t() {
+static void InitDefaultsCDemoClassInfo_class_t_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -326,10 +298,10 @@ static void InitDefaultsCDemoClassInfo_class_t() {
   ::CDemoClassInfo_class_t::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoClassInfo_class_t =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoClassInfo_class_t}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoClassInfo_class_t_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoClassInfo_class_t_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoClassInfo() {
+static void InitDefaultsCDemoClassInfo_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -340,11 +312,11 @@ static void InitDefaultsCDemoClassInfo() {
   ::CDemoClassInfo::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CDemoClassInfo =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDemoClassInfo}, {
-      &protobuf_demo_2eproto::scc_info_CDemoClassInfo_class_t.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CDemoClassInfo_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDemoClassInfo_demo_2eproto}, {
+      &scc_info_CDemoClassInfo_class_t_demo_2eproto.base,}};
 
-static void InitDefaultsCDemoCustomData() {
+static void InitDefaultsCDemoCustomData_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -355,10 +327,10 @@ static void InitDefaultsCDemoCustomData() {
   ::CDemoCustomData::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoCustomData =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoCustomData}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoCustomData_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoCustomData_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoCustomDataCallbacks() {
+static void InitDefaultsCDemoCustomDataCallbacks_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -369,10 +341,10 @@ static void InitDefaultsCDemoCustomDataCallbacks() {
   ::CDemoCustomDataCallbacks::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoCustomDataCallbacks =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoCustomDataCallbacks}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoCustomDataCallbacks_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoCustomDataCallbacks_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoStringTables_items_t() {
+static void InitDefaultsCDemoStringTables_items_t_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -383,10 +355,10 @@ static void InitDefaultsCDemoStringTables_items_t() {
   ::CDemoStringTables_items_t::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoStringTables_items_t =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoStringTables_items_t}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoStringTables_items_t_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoStringTables_items_t_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoStringTables_table_t() {
+static void InitDefaultsCDemoStringTables_table_t_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -397,11 +369,11 @@ static void InitDefaultsCDemoStringTables_table_t() {
   ::CDemoStringTables_table_t::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CDemoStringTables_table_t =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDemoStringTables_table_t}, {
-      &protobuf_demo_2eproto::scc_info_CDemoStringTables_items_t.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CDemoStringTables_table_t_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDemoStringTables_table_t_demo_2eproto}, {
+      &scc_info_CDemoStringTables_items_t_demo_2eproto.base,}};
 
-static void InitDefaultsCDemoStringTables() {
+static void InitDefaultsCDemoStringTables_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -412,11 +384,11 @@ static void InitDefaultsCDemoStringTables() {
   ::CDemoStringTables::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CDemoStringTables =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDemoStringTables}, {
-      &protobuf_demo_2eproto::scc_info_CDemoStringTables_table_t.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CDemoStringTables_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDemoStringTables_demo_2eproto}, {
+      &scc_info_CDemoStringTables_table_t_demo_2eproto.base,}};
 
-static void InitDefaultsCDemoStop() {
+static void InitDefaultsCDemoStop_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -427,10 +399,10 @@ static void InitDefaultsCDemoStop() {
   ::CDemoStop::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoStop =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoStop}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoStop_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoStop_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoUserCmd() {
+static void InitDefaultsCDemoUserCmd_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -441,10 +413,10 @@ static void InitDefaultsCDemoUserCmd() {
   ::CDemoUserCmd::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoUserCmd =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoUserCmd}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoUserCmd_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoUserCmd_demo_2eproto}, {}};
 
-static void InitDefaultsCDemoSpawnGroups() {
+static void InitDefaultsCDemoSpawnGroups_demo_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -455,53 +427,54 @@ static void InitDefaultsCDemoSpawnGroups() {
   ::CDemoSpawnGroups::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDemoSpawnGroups =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoSpawnGroups}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDemoSpawnGroups_demo_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDemoSpawnGroups_demo_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoFileHeader.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CGameInfo_CDotaGameInfo.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CGameInfo.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoFileInfo.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoPacket.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoFullPacket.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoSaveGame.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoSyncTick.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoConsoleCmd.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoSendTables.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoClassInfo_class_t.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoClassInfo.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoCustomData.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoCustomDataCallbacks.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoStringTables_items_t.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoStringTables_table_t.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoStringTables.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoStop.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoUserCmd.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDemoSpawnGroups.base);
+void InitDefaults_demo_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoFileHeader_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CGameInfo_CDotaGameInfo_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CGameInfo_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoFileInfo_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoPacket_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoFullPacket_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoSaveGame_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoSyncTick_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoConsoleCmd_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoSendTables_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoClassInfo_class_t_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoClassInfo_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoCustomData_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoCustomDataCallbacks_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoStringTables_items_t_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoStringTables_table_t_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoStringTables_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoStop_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoUserCmd_demo_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDemoSpawnGroups_demo_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[22];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+::google::protobuf::Metadata file_level_metadata_demo_2eproto[22];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_demo_2eproto[1];
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_demo_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_demo_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, demo_file_stamp_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, network_protocol_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, server_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, client_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, map_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, game_directory_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, fullpackets_version_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, allow_clientside_entities_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, allow_clientside_particles_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileHeader, addons_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, demo_file_stamp_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, network_protocol_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, server_name_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, client_name_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, map_name_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, game_directory_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, fullpackets_version_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, allow_clientside_entities_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, allow_clientside_particles_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileHeader, addons_),
   0,
   6,
   1,
@@ -512,48 +485,48 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   8,
   9,
   5,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, hero_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, player_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, is_fake_client_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, steamid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, game_team_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, hero_name_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, player_name_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, is_fake_client_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, steamid_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CPlayerInfo, game_team_),
   0,
   1,
   3,
   2,
   4,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, is_pick_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, team_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, hero_id_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, is_pick_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, team_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo_CHeroSelectEvent, hero_id_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, match_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, game_mode_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, game_winner_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, player_info_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, leagueid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, picks_bans_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, radiant_team_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, dire_team_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, radiant_team_tag_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, dire_team_tag_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, end_time_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, match_id_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, game_mode_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, game_winner_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, player_info_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, leagueid_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, picks_bans_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, radiant_team_id_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, dire_team_id_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, radiant_team_tag_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, dire_team_tag_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo_CDotaGameInfo, end_time_),
   2,
   3,
   4,
@@ -565,160 +538,160 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   0,
   1,
   8,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CGameInfo, dota_),
+  PROTOBUF_FIELD_OFFSET(::CGameInfo, dota_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileInfo, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileInfo, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileInfo, playback_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileInfo, playback_ticks_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileInfo, playback_frames_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFileInfo, game_info_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileInfo, playback_time_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileInfo, playback_ticks_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileInfo, playback_frames_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFileInfo, game_info_),
   1,
   2,
   3,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoPacket, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoPacket, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoPacket, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoPacket, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoPacket, data_),
+  PROTOBUF_FIELD_OFFSET(::CDemoPacket, data_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFullPacket, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFullPacket, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFullPacket, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFullPacket, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFullPacket, string_table_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoFullPacket, packet_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFullPacket, string_table_),
+  PROTOBUF_FIELD_OFFSET(::CDemoFullPacket, packet_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSaveGame, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSaveGame, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSaveGame, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSaveGame, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSaveGame, data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSaveGame, steam_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSaveGame, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSaveGame, version_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSaveGame, data_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSaveGame, steam_id_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSaveGame, signature_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSaveGame, version_),
   0,
   1,
   2,
   3,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSyncTick, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSyncTick, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSyncTick, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSyncTick, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoConsoleCmd, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoConsoleCmd, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoConsoleCmd, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoConsoleCmd, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoConsoleCmd, cmdstring_),
+  PROTOBUF_FIELD_OFFSET(::CDemoConsoleCmd, cmdstring_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSendTables, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSendTables, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSendTables, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSendTables, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSendTables, data_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSendTables, data_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoClassInfo_class_t, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoClassInfo_class_t, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoClassInfo_class_t, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoClassInfo_class_t, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoClassInfo_class_t, class_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoClassInfo_class_t, network_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoClassInfo_class_t, table_name_),
+  PROTOBUF_FIELD_OFFSET(::CDemoClassInfo_class_t, class_id_),
+  PROTOBUF_FIELD_OFFSET(::CDemoClassInfo_class_t, network_name_),
+  PROTOBUF_FIELD_OFFSET(::CDemoClassInfo_class_t, table_name_),
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoClassInfo, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoClassInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoClassInfo, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoClassInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoClassInfo, classes_),
+  PROTOBUF_FIELD_OFFSET(::CDemoClassInfo, classes_),
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoCustomData, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoCustomData, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoCustomData, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoCustomData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoCustomData, callback_index_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoCustomData, data_),
+  PROTOBUF_FIELD_OFFSET(::CDemoCustomData, callback_index_),
+  PROTOBUF_FIELD_OFFSET(::CDemoCustomData, data_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoCustomDataCallbacks, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoCustomDataCallbacks, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoCustomDataCallbacks, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoCustomDataCallbacks, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoCustomDataCallbacks, save_id_),
+  PROTOBUF_FIELD_OFFSET(::CDemoCustomDataCallbacks, save_id_),
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_items_t, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_items_t, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_items_t, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_items_t, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_items_t, str_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_items_t, data_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_items_t, str_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_items_t, data_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_table_t, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_table_t, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_table_t, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_table_t, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_table_t, table_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_table_t, items_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_table_t, items_clientside_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables_table_t, table_flags_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_table_t, table_name_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_table_t, items_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_table_t, items_clientside_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables_table_t, table_flags_),
   0,
   ~0u,
   ~0u,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStringTables, tables_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStringTables, tables_),
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStop, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoStop, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStop, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoStop, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoUserCmd, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoUserCmd, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoUserCmd, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoUserCmd, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoUserCmd, cmd_number_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoUserCmd, data_),
+  PROTOBUF_FIELD_OFFSET(::CDemoUserCmd, cmd_number_),
+  PROTOBUF_FIELD_OFFSET(::CDemoUserCmd, data_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSpawnGroups, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSpawnGroups, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSpawnGroups, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSpawnGroups, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDemoSpawnGroups, msgs_),
+  PROTOBUF_FIELD_OFFSET(::CDemoSpawnGroups, msgs_),
   ~0u,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 15, sizeof(::CDemoFileHeader)},
   { 25, 35, sizeof(::CGameInfo_CDotaGameInfo_CPlayerInfo)},
   { 40, 48, sizeof(::CGameInfo_CDotaGameInfo_CHeroSelectEvent)},
@@ -768,105 +741,89 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::_CDemoSpawnGroups_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "demo.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_demo_2eproto = {
+  {}, AddDescriptors_demo_2eproto, "demo.proto", schemas,
+  file_default_instances, TableStruct_demo_2eproto::offsets,
+  file_level_metadata_demo_2eproto, 22, file_level_enum_descriptors_demo_2eproto, file_level_service_descriptors_demo_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_demo_2eproto[] =
+  "\n\ndemo.proto\"\214\002\n\017CDemoFileHeader\022\027\n\017demo"
+  "_file_stamp\030\001 \002(\t\022\030\n\020network_protocol\030\002 "
+  "\001(\005\022\023\n\013server_name\030\003 \001(\t\022\023\n\013client_name\030"
+  "\004 \001(\t\022\020\n\010map_name\030\005 \001(\t\022\026\n\016game_director"
+  "y\030\006 \001(\t\022\033\n\023fullpackets_version\030\007 \001(\005\022!\n\031"
+  "allow_clientside_entities\030\010 \001(\010\022\"\n\032allow"
+  "_clientside_particles\030\t \001(\010\022\016\n\006addons\030\n "
+  "\001(\t\"\264\004\n\tCGameInfo\022&\n\004dota\030\004 \001(\0132\030.CGameI"
+  "nfo.CDotaGameInfo\032\376\003\n\rCDotaGameInfo\022\020\n\010m"
+  "atch_id\030\001 \001(\004\022\021\n\tgame_mode\030\002 \001(\005\022\023\n\013game"
+  "_winner\030\003 \001(\005\0229\n\013player_info\030\004 \003(\0132$.CGa"
+  "meInfo.CDotaGameInfo.CPlayerInfo\022\020\n\010leag"
+  "ueid\030\005 \001(\r\022=\n\npicks_bans\030\006 \003(\0132).CGameIn"
+  "fo.CDotaGameInfo.CHeroSelectEvent\022\027\n\017rad"
+  "iant_team_id\030\007 \001(\r\022\024\n\014dire_team_id\030\010 \001(\r"
+  "\022\030\n\020radiant_team_tag\030\t \001(\t\022\025\n\rdire_team_"
+  "tag\030\n \001(\t\022\020\n\010end_time\030\013 \001(\r\032q\n\013CPlayerIn"
+  "fo\022\021\n\thero_name\030\001 \001(\t\022\023\n\013player_name\030\002 \001"
+  "(\t\022\026\n\016is_fake_client\030\003 \001(\010\022\017\n\007steamid\030\004 "
+  "\001(\004\022\021\n\tgame_team\030\005 \001(\005\032B\n\020CHeroSelectEve"
+  "nt\022\017\n\007is_pick\030\001 \001(\010\022\014\n\004team\030\002 \001(\r\022\017\n\007her"
+  "o_id\030\003 \001(\r\"v\n\rCDemoFileInfo\022\025\n\rplayback_"
+  "time\030\001 \001(\002\022\026\n\016playback_ticks\030\002 \001(\005\022\027\n\017pl"
+  "ayback_frames\030\003 \001(\005\022\035\n\tgame_info\030\004 \001(\0132\n"
+  ".CGameInfo\"\033\n\013CDemoPacket\022\014\n\004data\030\003 \001(\014\""
+  "Y\n\017CDemoFullPacket\022(\n\014string_table\030\001 \001(\013"
+  "2\022.CDemoStringTables\022\034\n\006packet\030\002 \001(\0132\014.C"
+  "DemoPacket\"S\n\rCDemoSaveGame\022\014\n\004data\030\001 \001("
+  "\014\022\020\n\010steam_id\030\002 \001(\006\022\021\n\tsignature\030\003 \001(\006\022\017"
+  "\n\007version\030\004 \001(\005\"\017\n\rCDemoSyncTick\"$\n\017CDem"
+  "oConsoleCmd\022\021\n\tcmdstring\030\001 \001(\t\"\037\n\017CDemoS"
+  "endTables\022\014\n\004data\030\001 \001(\014\"\201\001\n\016CDemoClassIn"
+  "fo\022(\n\007classes\030\001 \003(\0132\027.CDemoClassInfo.cla"
+  "ss_t\032E\n\007class_t\022\020\n\010class_id\030\001 \001(\005\022\024\n\014net"
+  "work_name\030\002 \001(\t\022\022\n\ntable_name\030\003 \001(\t\"7\n\017C"
+  "DemoCustomData\022\026\n\016callback_index\030\001 \001(\005\022\014"
+  "\n\004data\030\002 \001(\014\"+\n\030CDemoCustomDataCallbacks"
+  "\022\017\n\007save_id\030\001 \003(\t\"\373\001\n\021CDemoStringTables\022"
+  "*\n\006tables\030\001 \003(\0132\032.CDemoStringTables.tabl"
+  "e_t\032$\n\007items_t\022\013\n\003str\030\001 \001(\t\022\014\n\004data\030\002 \001("
+  "\014\032\223\001\n\007table_t\022\022\n\ntable_name\030\001 \001(\t\022)\n\005ite"
+  "ms\030\002 \003(\0132\032.CDemoStringTables.items_t\0224\n\020"
+  "items_clientside\030\003 \003(\0132\032.CDemoStringTabl"
+  "es.items_t\022\023\n\013table_flags\030\004 \001(\005\"\013\n\tCDemo"
+  "Stop\"0\n\014CDemoUserCmd\022\022\n\ncmd_number\030\001 \001(\005"
+  "\022\014\n\004data\030\002 \001(\014\" \n\020CDemoSpawnGroups\022\014\n\004ms"
+  "gs\030\003 \003(\014*\204\003\n\rEDemoCommands\022\026\n\tDEM_Error\020"
+  "\377\377\377\377\377\377\377\377\377\001\022\014\n\010DEM_Stop\020\000\022\022\n\016DEM_FileHead"
+  "er\020\001\022\020\n\014DEM_FileInfo\020\002\022\020\n\014DEM_SyncTick\020\003"
+  "\022\022\n\016DEM_SendTables\020\004\022\021\n\rDEM_ClassInfo\020\005\022"
+  "\024\n\020DEM_StringTables\020\006\022\016\n\nDEM_Packet\020\007\022\024\n"
+  "\020DEM_SignonPacket\020\010\022\022\n\016DEM_ConsoleCmd\020\t\022"
+  "\022\n\016DEM_CustomData\020\n\022\033\n\027DEM_CustomDataCal"
+  "lbacks\020\013\022\017\n\013DEM_UserCmd\020\014\022\022\n\016DEM_FullPac"
+  "ket\020\r\022\020\n\014DEM_SaveGame\020\016\022\023\n\017DEM_SpawnGrou"
+  "ps\020\017\022\013\n\007DEM_Max\020\020\022\024\n\020DEM_IsCompressed\020@B"
+  "\003\200\001\000"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_demo_2eproto = {
+  false, InitDefaults_demo_2eproto, 
+  descriptor_table_protodef_demo_2eproto,
+  "demo.proto", &assign_descriptors_table_demo_2eproto, 2244,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 22);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\ndemo.proto\"\214\002\n\017CDemoFileHeader\022\027\n\017demo"
-      "_file_stamp\030\001 \002(\t\022\030\n\020network_protocol\030\002 "
-      "\001(\005\022\023\n\013server_name\030\003 \001(\t\022\023\n\013client_name\030"
-      "\004 \001(\t\022\020\n\010map_name\030\005 \001(\t\022\026\n\016game_director"
-      "y\030\006 \001(\t\022\033\n\023fullpackets_version\030\007 \001(\005\022!\n\031"
-      "allow_clientside_entities\030\010 \001(\010\022\"\n\032allow"
-      "_clientside_particles\030\t \001(\010\022\016\n\006addons\030\n "
-      "\001(\t\"\264\004\n\tCGameInfo\022&\n\004dota\030\004 \001(\0132\030.CGameI"
-      "nfo.CDotaGameInfo\032\376\003\n\rCDotaGameInfo\022\020\n\010m"
-      "atch_id\030\001 \001(\004\022\021\n\tgame_mode\030\002 \001(\005\022\023\n\013game"
-      "_winner\030\003 \001(\005\0229\n\013player_info\030\004 \003(\0132$.CGa"
-      "meInfo.CDotaGameInfo.CPlayerInfo\022\020\n\010leag"
-      "ueid\030\005 \001(\r\022=\n\npicks_bans\030\006 \003(\0132).CGameIn"
-      "fo.CDotaGameInfo.CHeroSelectEvent\022\027\n\017rad"
-      "iant_team_id\030\007 \001(\r\022\024\n\014dire_team_id\030\010 \001(\r"
-      "\022\030\n\020radiant_team_tag\030\t \001(\t\022\025\n\rdire_team_"
-      "tag\030\n \001(\t\022\020\n\010end_time\030\013 \001(\r\032q\n\013CPlayerIn"
-      "fo\022\021\n\thero_name\030\001 \001(\t\022\023\n\013player_name\030\002 \001"
-      "(\t\022\026\n\016is_fake_client\030\003 \001(\010\022\017\n\007steamid\030\004 "
-      "\001(\004\022\021\n\tgame_team\030\005 \001(\005\032B\n\020CHeroSelectEve"
-      "nt\022\017\n\007is_pick\030\001 \001(\010\022\014\n\004team\030\002 \001(\r\022\017\n\007her"
-      "o_id\030\003 \001(\r\"v\n\rCDemoFileInfo\022\025\n\rplayback_"
-      "time\030\001 \001(\002\022\026\n\016playback_ticks\030\002 \001(\005\022\027\n\017pl"
-      "ayback_frames\030\003 \001(\005\022\035\n\tgame_info\030\004 \001(\0132\n"
-      ".CGameInfo\"\033\n\013CDemoPacket\022\014\n\004data\030\003 \001(\014\""
-      "Y\n\017CDemoFullPacket\022(\n\014string_table\030\001 \001(\013"
-      "2\022.CDemoStringTables\022\034\n\006packet\030\002 \001(\0132\014.C"
-      "DemoPacket\"S\n\rCDemoSaveGame\022\014\n\004data\030\001 \001("
-      "\014\022\020\n\010steam_id\030\002 \001(\006\022\021\n\tsignature\030\003 \001(\006\022\017"
-      "\n\007version\030\004 \001(\005\"\017\n\rCDemoSyncTick\"$\n\017CDem"
-      "oConsoleCmd\022\021\n\tcmdstring\030\001 \001(\t\"\037\n\017CDemoS"
-      "endTables\022\014\n\004data\030\001 \001(\014\"\201\001\n\016CDemoClassIn"
-      "fo\022(\n\007classes\030\001 \003(\0132\027.CDemoClassInfo.cla"
-      "ss_t\032E\n\007class_t\022\020\n\010class_id\030\001 \001(\005\022\024\n\014net"
-      "work_name\030\002 \001(\t\022\022\n\ntable_name\030\003 \001(\t\"7\n\017C"
-      "DemoCustomData\022\026\n\016callback_index\030\001 \001(\005\022\014"
-      "\n\004data\030\002 \001(\014\"+\n\030CDemoCustomDataCallbacks"
-      "\022\017\n\007save_id\030\001 \003(\t\"\373\001\n\021CDemoStringTables\022"
-      "*\n\006tables\030\001 \003(\0132\032.CDemoStringTables.tabl"
-      "e_t\032$\n\007items_t\022\013\n\003str\030\001 \001(\t\022\014\n\004data\030\002 \001("
-      "\014\032\223\001\n\007table_t\022\022\n\ntable_name\030\001 \001(\t\022)\n\005ite"
-      "ms\030\002 \003(\0132\032.CDemoStringTables.items_t\0224\n\020"
-      "items_clientside\030\003 \003(\0132\032.CDemoStringTabl"
-      "es.items_t\022\023\n\013table_flags\030\004 \001(\005\"\013\n\tCDemo"
-      "Stop\"0\n\014CDemoUserCmd\022\022\n\ncmd_number\030\001 \001(\005"
-      "\022\014\n\004data\030\002 \001(\014\" \n\020CDemoSpawnGroups\022\014\n\004ms"
-      "gs\030\003 \003(\014*\204\003\n\rEDemoCommands\022\026\n\tDEM_Error\020"
-      "\377\377\377\377\377\377\377\377\377\001\022\014\n\010DEM_Stop\020\000\022\022\n\016DEM_FileHead"
-      "er\020\001\022\020\n\014DEM_FileInfo\020\002\022\020\n\014DEM_SyncTick\020\003"
-      "\022\022\n\016DEM_SendTables\020\004\022\021\n\rDEM_ClassInfo\020\005\022"
-      "\024\n\020DEM_StringTables\020\006\022\016\n\nDEM_Packet\020\007\022\024\n"
-      "\020DEM_SignonPacket\020\010\022\022\n\016DEM_ConsoleCmd\020\t\022"
-      "\022\n\016DEM_CustomData\020\n\022\033\n\027DEM_CustomDataCal"
-      "lbacks\020\013\022\017\n\013DEM_UserCmd\020\014\022\022\n\016DEM_FullPac"
-      "ket\020\r\022\020\n\014DEM_SaveGame\020\016\022\023\n\017DEM_SpawnGrou"
-      "ps\020\017\022\013\n\007DEM_Max\020\020\022\024\n\020DEM_IsCompressed\020@B"
-      "\003\200\001\000"
+void AddDescriptors_demo_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2244);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "demo.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_demo_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_demo_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_demo_2eproto = []() { AddDescriptors_demo_2eproto(); return true; }();
 const ::google::protobuf::EnumDescriptor* EDemoCommands_descriptor() {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_demo_2eproto::file_level_enum_descriptors[0];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_demo_2eproto);
+  return file_level_enum_descriptors_demo_2eproto[0];
 }
 bool EDemoCommands_IsValid(int value) {
   switch (value) {
@@ -900,6 +857,40 @@ bool EDemoCommands_IsValid(int value) {
 
 void CDemoFileHeader::InitAsDefaultInstance() {
 }
+class CDemoFileHeader::HasBitSetters {
+ public:
+  static void set_has_demo_file_stamp(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_network_protocol(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_server_name(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_client_name(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_map_name(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_game_directory(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_fullpackets_version(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_allow_clientside_entities(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_allow_clientside_particles(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static void set_has_addons(CDemoFileHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoFileHeader::kDemoFileStampFieldNumber;
 const int CDemoFileHeader::kNetworkProtocolFieldNumber;
@@ -914,15 +905,13 @@ const int CDemoFileHeader::kAddonsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoFileHeader::CDemoFileHeader()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoFileHeader.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoFileHeader)
 }
 CDemoFileHeader::CDemoFileHeader(const CDemoFileHeader& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   demo_file_stamp_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -956,6 +945,8 @@ CDemoFileHeader::CDemoFileHeader(const CDemoFileHeader& from)
 }
 
 void CDemoFileHeader::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoFileHeader_demo_2eproto.base);
   demo_file_stamp_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   server_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   client_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -984,13 +975,8 @@ void CDemoFileHeader::SharedDtor() {
 void CDemoFileHeader::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoFileHeader::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoFileHeader& CDemoFileHeader::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoFileHeader.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoFileHeader_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1002,7 +988,7 @@ void CDemoFileHeader::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
       demo_file_stamp_.ClearNonDefaultToEmptyNoArena();
     }
@@ -1022,12 +1008,12 @@ void CDemoFileHeader::Clear() {
       addons_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 192u) {
+  if (cached_has_bits & 0x000000c0u) {
     ::memset(&network_protocol_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&fullpackets_version_) -
         reinterpret_cast<char*>(&network_protocol_)) + sizeof(fullpackets_version_));
   }
-  if (cached_has_bits & 768u) {
+  if (cached_has_bits & 0x00000300u) {
     ::memset(&allow_clientside_entities_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&allow_clientside_particles_) -
         reinterpret_cast<char*>(&allow_clientside_entities_)) + sizeof(allow_clientside_particles_));
@@ -1036,9 +1022,170 @@ void CDemoFileHeader::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoFileHeader::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoFileHeader*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required string demo_file_stamp = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoFileHeader.demo_file_stamp");
+        object = msg->mutable_demo_file_stamp();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional int32 network_protocol = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_network_protocol(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string server_name = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoFileHeader.server_name");
+        object = msg->mutable_server_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string client_name = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoFileHeader.client_name");
+        object = msg->mutable_client_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string map_name = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoFileHeader.map_name");
+        object = msg->mutable_map_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string game_directory = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoFileHeader.game_directory");
+        object = msg->mutable_game_directory();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional int32 fullpackets_version = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_fullpackets_version(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool allow_clientside_entities = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_allow_clientside_entities(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool allow_clientside_particles = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_allow_clientside_particles(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string addons = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoFileHeader.addons");
+        object = msg->mutable_addons();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoFileHeader::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoFileHeader)
   for (;;) {
@@ -1048,8 +1195,7 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required string demo_file_stamp = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_demo_file_stamp()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1064,9 +1210,8 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
 
       // optional int32 network_protocol = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_network_protocol();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_network_protocol(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &network_protocol_)));
@@ -1078,8 +1223,7 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
 
       // optional string server_name = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_server_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1094,8 +1238,7 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
 
       // optional string client_name = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_client_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1110,8 +1253,7 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
 
       // optional string map_name = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_map_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1126,8 +1268,7 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
 
       // optional string game_directory = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_game_directory()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1142,9 +1283,8 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
 
       // optional int32 fullpackets_version = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_fullpackets_version();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_fullpackets_version(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &fullpackets_version_)));
@@ -1156,9 +1296,8 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
 
       // optional bool allow_clientside_entities = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_allow_clientside_entities();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_allow_clientside_entities(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &allow_clientside_entities_)));
@@ -1170,9 +1309,8 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
 
       // optional bool allow_clientside_particles = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_allow_clientside_particles();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_allow_clientside_particles(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &allow_clientside_particles_)));
@@ -1184,8 +1322,7 @@ bool CDemoFileHeader::MergePartialFromCodedStream(
 
       // optional string addons = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_addons()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1217,6 +1354,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoFileHeader::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1313,8 +1451,7 @@ void CDemoFileHeader::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoFileHeader::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoFileHeader)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1429,65 +1566,70 @@ size_t CDemoFileHeader::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->demo_file_stamp());
   }
-  if (_has_bits_[0 / 32] & 254u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000feu) {
     // optional string server_name = 3;
-    if (has_server_name()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->server_name());
     }
 
     // optional string client_name = 4;
-    if (has_client_name()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->client_name());
     }
 
     // optional string map_name = 5;
-    if (has_map_name()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->map_name());
     }
 
     // optional string game_directory = 6;
-    if (has_game_directory()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->game_directory());
     }
 
     // optional string addons = 10;
-    if (has_addons()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->addons());
     }
 
     // optional int32 network_protocol = 2;
-    if (has_network_protocol()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->network_protocol());
     }
 
     // optional int32 fullpackets_version = 7;
-    if (has_fullpackets_version()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->fullpackets_version());
     }
 
   }
-  if (_has_bits_[8 / 32] & 768u) {
+  if (cached_has_bits & 0x00000300u) {
     // optional bool allow_clientside_entities = 8;
-    if (has_allow_clientside_entities()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 + 1;
     }
 
     // optional bool allow_clientside_particles = 9;
-    if (has_allow_clientside_particles()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 + 1;
     }
 
@@ -1501,9 +1643,9 @@ void CDemoFileHeader::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoFileHeader)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoFileHeader* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoFileHeader>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoFileHeader>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoFileHeader)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1520,29 +1662,29 @@ void CDemoFileHeader::MergeFrom(const CDemoFileHeader& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_demo_file_stamp();
+      _has_bits_[0] |= 0x00000001u;
       demo_file_stamp_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.demo_file_stamp_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_server_name();
+      _has_bits_[0] |= 0x00000002u;
       server_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.server_name_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_client_name();
+      _has_bits_[0] |= 0x00000004u;
       client_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.client_name_);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_map_name();
+      _has_bits_[0] |= 0x00000008u;
       map_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.map_name_);
     }
     if (cached_has_bits & 0x00000010u) {
-      set_has_game_directory();
+      _has_bits_[0] |= 0x00000010u;
       game_directory_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.game_directory_);
     }
     if (cached_has_bits & 0x00000020u) {
-      set_has_addons();
+      _has_bits_[0] |= 0x00000020u;
       addons_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.addons_);
     }
     if (cached_has_bits & 0x00000040u) {
@@ -1553,7 +1695,7 @@ void CDemoFileHeader::MergeFrom(const CDemoFileHeader& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 768u) {
+  if (cached_has_bits & 0x00000300u) {
     if (cached_has_bits & 0x00000100u) {
       allow_clientside_entities_ = from.allow_clientside_entities_;
     }
@@ -1589,6 +1731,8 @@ void CDemoFileHeader::Swap(CDemoFileHeader* other) {
 }
 void CDemoFileHeader::InternalSwap(CDemoFileHeader* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   demo_file_stamp_.Swap(&other->demo_file_stamp_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   server_name_.Swap(&other->server_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -1605,13 +1749,11 @@ void CDemoFileHeader::InternalSwap(CDemoFileHeader* other) {
   swap(fullpackets_version_, other->fullpackets_version_);
   swap(allow_clientside_entities_, other->allow_clientside_entities_);
   swap(allow_clientside_particles_, other->allow_clientside_particles_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoFileHeader::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1619,6 +1761,25 @@ void CDemoFileHeader::InternalSwap(CDemoFileHeader* other) {
 
 void CGameInfo_CDotaGameInfo_CPlayerInfo::InitAsDefaultInstance() {
 }
+class CGameInfo_CDotaGameInfo_CPlayerInfo::HasBitSetters {
+ public:
+  static void set_has_hero_name(CGameInfo_CDotaGameInfo_CPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_player_name(CGameInfo_CDotaGameInfo_CPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_is_fake_client(CGameInfo_CDotaGameInfo_CPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_steamid(CGameInfo_CDotaGameInfo_CPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_game_team(CGameInfo_CDotaGameInfo_CPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CGameInfo_CDotaGameInfo_CPlayerInfo::kHeroNameFieldNumber;
 const int CGameInfo_CDotaGameInfo_CPlayerInfo::kPlayerNameFieldNumber;
@@ -1628,15 +1789,13 @@ const int CGameInfo_CDotaGameInfo_CPlayerInfo::kGameTeamFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CGameInfo_CDotaGameInfo_CPlayerInfo::CGameInfo_CDotaGameInfo_CPlayerInfo()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CGameInfo.CDotaGameInfo.CPlayerInfo)
 }
 CGameInfo_CDotaGameInfo_CPlayerInfo::CGameInfo_CDotaGameInfo_CPlayerInfo(const CGameInfo_CDotaGameInfo_CPlayerInfo& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   hero_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1654,6 +1813,8 @@ CGameInfo_CDotaGameInfo_CPlayerInfo::CGameInfo_CDotaGameInfo_CPlayerInfo(const C
 }
 
 void CGameInfo_CDotaGameInfo_CPlayerInfo::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo_demo_2eproto.base);
   hero_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   player_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&steamid_, 0, static_cast<size_t>(
@@ -1674,13 +1835,8 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::SharedDtor() {
 void CGameInfo_CDotaGameInfo_CPlayerInfo::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CGameInfo_CDotaGameInfo_CPlayerInfo::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CGameInfo_CDotaGameInfo_CPlayerInfo& CGameInfo_CDotaGameInfo_CPlayerInfo::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CGameInfo_CDotaGameInfo_CPlayerInfo_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1692,7 +1848,7 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       hero_name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -1700,7 +1856,7 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::Clear() {
       player_name_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 28u) {
+  if (cached_has_bits & 0x0000001cu) {
     ::memset(&steamid_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&game_team_) -
         reinterpret_cast<char*>(&steamid_)) + sizeof(game_team_));
@@ -1709,9 +1865,99 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CGameInfo_CDotaGameInfo_CPlayerInfo::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CGameInfo_CDotaGameInfo_CPlayerInfo*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string hero_name = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CGameInfo.CDotaGameInfo.CPlayerInfo.hero_name");
+        object = msg->mutable_hero_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string player_name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CGameInfo.CDotaGameInfo.CPlayerInfo.player_name");
+        object = msg->mutable_player_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bool is_fake_client = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_is_fake_client(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 steamid = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_steamid(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 game_team = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_game_team(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CGameInfo_CDotaGameInfo_CPlayerInfo::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CGameInfo.CDotaGameInfo.CPlayerInfo)
   for (;;) {
@@ -1721,8 +1967,7 @@ bool CGameInfo_CDotaGameInfo_CPlayerInfo::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string hero_name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_hero_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1737,8 +1982,7 @@ bool CGameInfo_CDotaGameInfo_CPlayerInfo::MergePartialFromCodedStream(
 
       // optional string player_name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_player_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1753,9 +1997,8 @@ bool CGameInfo_CDotaGameInfo_CPlayerInfo::MergePartialFromCodedStream(
 
       // optional bool is_fake_client = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_is_fake_client();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_is_fake_client(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_fake_client_)));
@@ -1767,9 +2010,8 @@ bool CGameInfo_CDotaGameInfo_CPlayerInfo::MergePartialFromCodedStream(
 
       // optional uint64 steamid = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_steamid();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_steamid(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &steamid_)));
@@ -1781,9 +2023,8 @@ bool CGameInfo_CDotaGameInfo_CPlayerInfo::MergePartialFromCodedStream(
 
       // optional int32 game_team = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_game_team();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_game_team(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &game_team_)));
@@ -1812,6 +2053,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CGameInfo_CDotaGameInfo_CPlayerInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1863,8 +2105,7 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CGameInfo_CDotaGameInfo_CPlayerInfo::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CGameInfo.CDotaGameInfo.CPlayerInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1924,35 +2165,40 @@ size_t CGameInfo_CDotaGameInfo_CPlayerInfo::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 31u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000001fu) {
     // optional string hero_name = 1;
-    if (has_hero_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->hero_name());
     }
 
     // optional string player_name = 2;
-    if (has_player_name()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->player_name());
     }
 
     // optional uint64 steamid = 4;
-    if (has_steamid()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->steamid());
     }
 
     // optional bool is_fake_client = 3;
-    if (has_is_fake_client()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 1;
     }
 
     // optional int32 game_team = 5;
-    if (has_game_team()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->game_team());
@@ -1968,9 +2214,9 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::MergeFrom(const ::google::protobuf::Me
 // @@protoc_insertion_point(generalized_merge_from_start:CGameInfo.CDotaGameInfo.CPlayerInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const CGameInfo_CDotaGameInfo_CPlayerInfo* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CGameInfo_CDotaGameInfo_CPlayerInfo>(
+      ::google::protobuf::DynamicCastToGenerated<CGameInfo_CDotaGameInfo_CPlayerInfo>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CGameInfo.CDotaGameInfo.CPlayerInfo)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1987,13 +2233,13 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::MergeFrom(const CGameInfo_CDotaGameInf
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_hero_name();
+      _has_bits_[0] |= 0x00000001u;
       hero_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hero_name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_player_name();
+      _has_bits_[0] |= 0x00000002u;
       player_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.player_name_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -2033,6 +2279,8 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::Swap(CGameInfo_CDotaGameInfo_CPlayerIn
 }
 void CGameInfo_CDotaGameInfo_CPlayerInfo::InternalSwap(CGameInfo_CDotaGameInfo_CPlayerInfo* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   hero_name_.Swap(&other->hero_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   player_name_.Swap(&other->player_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -2040,13 +2288,11 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::InternalSwap(CGameInfo_CDotaGameInfo_C
   swap(steamid_, other->steamid_);
   swap(is_fake_client_, other->is_fake_client_);
   swap(game_team_, other->game_team_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CGameInfo_CDotaGameInfo_CPlayerInfo::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2054,6 +2300,19 @@ void CGameInfo_CDotaGameInfo_CPlayerInfo::InternalSwap(CGameInfo_CDotaGameInfo_C
 
 void CGameInfo_CDotaGameInfo_CHeroSelectEvent::InitAsDefaultInstance() {
 }
+class CGameInfo_CDotaGameInfo_CHeroSelectEvent::HasBitSetters {
+ public:
+  static void set_has_is_pick(CGameInfo_CDotaGameInfo_CHeroSelectEvent* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_team(CGameInfo_CDotaGameInfo_CHeroSelectEvent* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_hero_id(CGameInfo_CDotaGameInfo_CHeroSelectEvent* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CGameInfo_CDotaGameInfo_CHeroSelectEvent::kIsPickFieldNumber;
 const int CGameInfo_CDotaGameInfo_CHeroSelectEvent::kTeamFieldNumber;
@@ -2061,15 +2320,13 @@ const int CGameInfo_CDotaGameInfo_CHeroSelectEvent::kHeroIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CGameInfo_CDotaGameInfo_CHeroSelectEvent::CGameInfo_CDotaGameInfo_CHeroSelectEvent()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CGameInfo.CDotaGameInfo.CHeroSelectEvent)
 }
 CGameInfo_CDotaGameInfo_CHeroSelectEvent::CGameInfo_CDotaGameInfo_CHeroSelectEvent(const CGameInfo_CDotaGameInfo_CHeroSelectEvent& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&is_pick_, &from.is_pick_,
@@ -2095,13 +2352,8 @@ void CGameInfo_CDotaGameInfo_CHeroSelectEvent::SharedDtor() {
 void CGameInfo_CDotaGameInfo_CHeroSelectEvent::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CGameInfo_CDotaGameInfo_CHeroSelectEvent::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CGameInfo_CDotaGameInfo_CHeroSelectEvent& CGameInfo_CDotaGameInfo_CHeroSelectEvent::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CGameInfo_CDotaGameInfo_CHeroSelectEvent_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2113,7 +2365,7 @@ void CGameInfo_CDotaGameInfo_CHeroSelectEvent::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&is_pick_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&hero_id_) -
         reinterpret_cast<char*>(&is_pick_)) + sizeof(hero_id_));
@@ -2122,9 +2374,60 @@ void CGameInfo_CDotaGameInfo_CHeroSelectEvent::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CGameInfo_CDotaGameInfo_CHeroSelectEvent::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CGameInfo_CDotaGameInfo_CHeroSelectEvent*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bool is_pick = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_is_pick(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 team = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_team(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 hero_id = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_hero_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CGameInfo_CDotaGameInfo_CHeroSelectEvent::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CGameInfo.CDotaGameInfo.CHeroSelectEvent)
   for (;;) {
@@ -2134,9 +2437,8 @@ bool CGameInfo_CDotaGameInfo_CHeroSelectEvent::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bool is_pick = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_is_pick();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_is_pick(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_pick_)));
@@ -2148,9 +2450,8 @@ bool CGameInfo_CDotaGameInfo_CHeroSelectEvent::MergePartialFromCodedStream(
 
       // optional uint32 team = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_team();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_team(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &team_)));
@@ -2162,9 +2463,8 @@ bool CGameInfo_CDotaGameInfo_CHeroSelectEvent::MergePartialFromCodedStream(
 
       // optional uint32 hero_id = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_hero_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_hero_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &hero_id_)));
@@ -2193,6 +2493,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CGameInfo_CDotaGameInfo_CHeroSelectEvent::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2224,8 +2525,7 @@ void CGameInfo_CDotaGameInfo_CHeroSelectEvent::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CGameInfo_CDotaGameInfo_CHeroSelectEvent::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CGameInfo.CDotaGameInfo.CHeroSelectEvent)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2263,21 +2563,26 @@ size_t CGameInfo_CDotaGameInfo_CHeroSelectEvent::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bool is_pick = 1;
-    if (has_is_pick()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 1;
     }
 
     // optional uint32 team = 2;
-    if (has_team()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->team());
     }
 
     // optional uint32 hero_id = 3;
-    if (has_hero_id()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->hero_id());
@@ -2293,9 +2598,9 @@ void CGameInfo_CDotaGameInfo_CHeroSelectEvent::MergeFrom(const ::google::protobu
 // @@protoc_insertion_point(generalized_merge_from_start:CGameInfo.CDotaGameInfo.CHeroSelectEvent)
   GOOGLE_DCHECK_NE(&from, this);
   const CGameInfo_CDotaGameInfo_CHeroSelectEvent* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CGameInfo_CDotaGameInfo_CHeroSelectEvent>(
+      ::google::protobuf::DynamicCastToGenerated<CGameInfo_CDotaGameInfo_CHeroSelectEvent>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CGameInfo.CDotaGameInfo.CHeroSelectEvent)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2312,7 +2617,7 @@ void CGameInfo_CDotaGameInfo_CHeroSelectEvent::MergeFrom(const CGameInfo_CDotaGa
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       is_pick_ = from.is_pick_;
     }
@@ -2350,16 +2655,16 @@ void CGameInfo_CDotaGameInfo_CHeroSelectEvent::Swap(CGameInfo_CDotaGameInfo_CHer
 }
 void CGameInfo_CDotaGameInfo_CHeroSelectEvent::InternalSwap(CGameInfo_CDotaGameInfo_CHeroSelectEvent* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(is_pick_, other->is_pick_);
   swap(team_, other->team_);
   swap(hero_id_, other->hero_id_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CGameInfo_CDotaGameInfo_CHeroSelectEvent::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2367,6 +2672,37 @@ void CGameInfo_CDotaGameInfo_CHeroSelectEvent::InternalSwap(CGameInfo_CDotaGameI
 
 void CGameInfo_CDotaGameInfo::InitAsDefaultInstance() {
 }
+class CGameInfo_CDotaGameInfo::HasBitSetters {
+ public:
+  static void set_has_match_id(CGameInfo_CDotaGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_game_mode(CGameInfo_CDotaGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_game_winner(CGameInfo_CDotaGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_leagueid(CGameInfo_CDotaGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_radiant_team_id(CGameInfo_CDotaGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_dire_team_id(CGameInfo_CDotaGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_radiant_team_tag(CGameInfo_CDotaGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_dire_team_tag(CGameInfo_CDotaGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_end_time(CGameInfo_CDotaGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CGameInfo_CDotaGameInfo::kMatchIdFieldNumber;
 const int CGameInfo_CDotaGameInfo::kGameModeFieldNumber;
@@ -2382,15 +2718,13 @@ const int CGameInfo_CDotaGameInfo::kEndTimeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CGameInfo_CDotaGameInfo::CGameInfo_CDotaGameInfo()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CGameInfo_CDotaGameInfo.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CGameInfo.CDotaGameInfo)
 }
 CGameInfo_CDotaGameInfo::CGameInfo_CDotaGameInfo(const CGameInfo_CDotaGameInfo& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       player_info_(from.player_info_),
       picks_bans_(from.picks_bans_) {
@@ -2410,6 +2744,8 @@ CGameInfo_CDotaGameInfo::CGameInfo_CDotaGameInfo(const CGameInfo_CDotaGameInfo& 
 }
 
 void CGameInfo_CDotaGameInfo::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CGameInfo_CDotaGameInfo_demo_2eproto.base);
   radiant_team_tag_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   dire_team_tag_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&match_id_, 0, static_cast<size_t>(
@@ -2430,13 +2766,8 @@ void CGameInfo_CDotaGameInfo::SharedDtor() {
 void CGameInfo_CDotaGameInfo::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CGameInfo_CDotaGameInfo::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CGameInfo_CDotaGameInfo& CGameInfo_CDotaGameInfo::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CGameInfo_CDotaGameInfo.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CGameInfo_CDotaGameInfo_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2450,7 +2781,7 @@ void CGameInfo_CDotaGameInfo::Clear() {
   player_info_.Clear();
   picks_bans_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       radiant_team_tag_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2458,7 +2789,7 @@ void CGameInfo_CDotaGameInfo::Clear() {
       dire_team_tag_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 252u) {
+  if (cached_has_bits & 0x000000fcu) {
     ::memset(&match_id_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&dire_team_id_) -
         reinterpret_cast<char*>(&match_id_)) + sizeof(dire_team_id_));
@@ -2468,9 +2799,159 @@ void CGameInfo_CDotaGameInfo::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CGameInfo_CDotaGameInfo::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CGameInfo_CDotaGameInfo*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 match_id = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_match_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 game_mode = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_game_mode(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 game_winner = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_game_winner(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .CGameInfo.CDotaGameInfo.CPlayerInfo player_info = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CGameInfo_CDotaGameInfo_CPlayerInfo::_InternalParse;
+          object = msg->add_player_info();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 34 && (ptr += 1));
+        break;
+      }
+      // optional uint32 leagueid = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_leagueid(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .CGameInfo.CDotaGameInfo.CHeroSelectEvent picks_bans = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CGameInfo_CDotaGameInfo_CHeroSelectEvent::_InternalParse;
+          object = msg->add_picks_bans();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 50 && (ptr += 1));
+        break;
+      }
+      // optional uint32 radiant_team_id = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_radiant_team_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 dire_team_id = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_dire_team_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string radiant_team_tag = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 74) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CGameInfo.CDotaGameInfo.radiant_team_tag");
+        object = msg->mutable_radiant_team_tag();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string dire_team_tag = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CGameInfo.CDotaGameInfo.dire_team_tag");
+        object = msg->mutable_dire_team_tag();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 end_time = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 88) goto handle_unusual;
+        msg->set_end_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CGameInfo.CDotaGameInfo)
   for (;;) {
@@ -2480,9 +2961,8 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 match_id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_match_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_match_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &match_id_)));
@@ -2494,9 +2974,8 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // optional int32 game_mode = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_game_mode();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_game_mode(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &game_mode_)));
@@ -2508,9 +2987,8 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // optional int32 game_winner = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_game_winner();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_game_winner(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &game_winner_)));
@@ -2522,8 +3000,7 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // repeated .CGameInfo.CDotaGameInfo.CPlayerInfo player_info = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_player_info()));
         } else {
@@ -2534,9 +3011,8 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // optional uint32 leagueid = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_leagueid();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_leagueid(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &leagueid_)));
@@ -2548,8 +3024,7 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // repeated .CGameInfo.CDotaGameInfo.CHeroSelectEvent picks_bans = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_picks_bans()));
         } else {
@@ -2560,9 +3035,8 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // optional uint32 radiant_team_id = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_radiant_team_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_radiant_team_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &radiant_team_id_)));
@@ -2574,9 +3048,8 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // optional uint32 dire_team_id = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_dire_team_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_dire_team_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &dire_team_id_)));
@@ -2588,8 +3061,7 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // optional string radiant_team_tag = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (74 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_radiant_team_tag()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2604,8 +3076,7 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // optional string dire_team_tag = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_dire_team_tag()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2620,9 +3091,8 @@ bool CGameInfo_CDotaGameInfo::MergePartialFromCodedStream(
 
       // optional uint32 end_time = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
-          set_has_end_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (88 & 0xFF)) {
+          HasBitSetters::set_has_end_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &end_time_)));
@@ -2651,6 +3121,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CGameInfo_CDotaGameInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2740,8 +3211,7 @@ void CGameInfo_CDotaGameInfo::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CGameInfo_CDotaGameInfo::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CGameInfo.CDotaGameInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2767,7 +3237,7 @@ void CGameInfo_CDotaGameInfo::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->player_info_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->player_info(static_cast<int>(i)), deterministic, target);
+        4, this->player_info(static_cast<int>(i)), target);
   }
 
   // optional uint32 leagueid = 5;
@@ -2780,7 +3250,7 @@ void CGameInfo_CDotaGameInfo::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->picks_bans_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->picks_bans(static_cast<int>(i)), deterministic, target);
+        6, this->picks_bans(static_cast<int>(i)), target);
   }
 
   // optional uint32 radiant_team_id = 7;
@@ -2837,6 +3307,10 @@ size_t CGameInfo_CDotaGameInfo::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CGameInfo.CDotaGameInfo.CPlayerInfo player_info = 4;
   {
     unsigned int count = static_cast<unsigned int>(this->player_info_size());
@@ -2859,58 +3333,59 @@ size_t CGameInfo_CDotaGameInfo::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 255u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional string radiant_team_tag = 9;
-    if (has_radiant_team_tag()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->radiant_team_tag());
     }
 
     // optional string dire_team_tag = 10;
-    if (has_dire_team_tag()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->dire_team_tag());
     }
 
     // optional uint64 match_id = 1;
-    if (has_match_id()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->match_id());
     }
 
     // optional int32 game_mode = 2;
-    if (has_game_mode()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->game_mode());
     }
 
     // optional int32 game_winner = 3;
-    if (has_game_winner()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->game_winner());
     }
 
     // optional uint32 leagueid = 5;
-    if (has_leagueid()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->leagueid());
     }
 
     // optional uint32 radiant_team_id = 7;
-    if (has_radiant_team_id()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->radiant_team_id());
     }
 
     // optional uint32 dire_team_id = 8;
-    if (has_dire_team_id()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->dire_team_id());
@@ -2918,7 +3393,7 @@ size_t CGameInfo_CDotaGameInfo::ByteSizeLong() const {
 
   }
   // optional uint32 end_time = 11;
-  if (has_end_time()) {
+  if (cached_has_bits & 0x00000100u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->end_time());
@@ -2933,9 +3408,9 @@ void CGameInfo_CDotaGameInfo::MergeFrom(const ::google::protobuf::Message& from)
 // @@protoc_insertion_point(generalized_merge_from_start:CGameInfo.CDotaGameInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const CGameInfo_CDotaGameInfo* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CGameInfo_CDotaGameInfo>(
+      ::google::protobuf::DynamicCastToGenerated<CGameInfo_CDotaGameInfo>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CGameInfo.CDotaGameInfo)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2954,13 +3429,13 @@ void CGameInfo_CDotaGameInfo::MergeFrom(const CGameInfo_CDotaGameInfo& from) {
   player_info_.MergeFrom(from.player_info_);
   picks_bans_.MergeFrom(from.picks_bans_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_radiant_team_tag();
+      _has_bits_[0] |= 0x00000001u;
       radiant_team_tag_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.radiant_team_tag_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_dire_team_tag();
+      _has_bits_[0] |= 0x00000002u;
       dire_team_tag_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.dire_team_tag_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -3012,6 +3487,8 @@ void CGameInfo_CDotaGameInfo::Swap(CGameInfo_CDotaGameInfo* other) {
 }
 void CGameInfo_CDotaGameInfo::InternalSwap(CGameInfo_CDotaGameInfo* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&player_info_)->InternalSwap(CastToBase(&other->player_info_));
   CastToBase(&picks_bans_)->InternalSwap(CastToBase(&other->picks_bans_));
   radiant_team_tag_.Swap(&other->radiant_team_tag_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -3025,13 +3502,11 @@ void CGameInfo_CDotaGameInfo::InternalSwap(CGameInfo_CDotaGameInfo* other) {
   swap(radiant_team_id_, other->radiant_team_id_);
   swap(dire_team_id_, other->dire_team_id_);
   swap(end_time_, other->end_time_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CGameInfo_CDotaGameInfo::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3041,32 +3516,44 @@ void CGameInfo::InitAsDefaultInstance() {
   ::_CGameInfo_default_instance_._instance.get_mutable()->dota_ = const_cast< ::CGameInfo_CDotaGameInfo*>(
       ::CGameInfo_CDotaGameInfo::internal_default_instance());
 }
+class CGameInfo::HasBitSetters {
+ public:
+  static const ::CGameInfo_CDotaGameInfo& dota(const CGameInfo* msg);
+  static void set_has_dota(CGameInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::CGameInfo_CDotaGameInfo&
+CGameInfo::HasBitSetters::dota(const CGameInfo* msg) {
+  return *msg->dota_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CGameInfo::kDotaFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CGameInfo::CGameInfo()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CGameInfo.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CGameInfo)
 }
 CGameInfo::CGameInfo(const CGameInfo& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_dota()) {
     dota_ = new ::CGameInfo_CDotaGameInfo(*from.dota_);
   } else {
-    dota_ = NULL;
+    dota_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:CGameInfo)
 }
 
 void CGameInfo::SharedCtor() {
-  dota_ = NULL;
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CGameInfo_demo_2eproto.base);
+  dota_ = nullptr;
 }
 
 CGameInfo::~CGameInfo() {
@@ -3081,13 +3568,8 @@ void CGameInfo::SharedDtor() {
 void CGameInfo::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CGameInfo::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CGameInfo& CGameInfo::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CGameInfo.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CGameInfo_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3100,16 +3582,62 @@ void CGameInfo::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(dota_ != NULL);
+    GOOGLE_DCHECK(dota_ != nullptr);
     dota_->Clear();
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CGameInfo::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CGameInfo*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .CGameInfo.CDotaGameInfo dota = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::CGameInfo_CDotaGameInfo::_InternalParse;
+        object = msg->mutable_dota();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CGameInfo::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CGameInfo)
   for (;;) {
@@ -3119,8 +3647,7 @@ bool CGameInfo::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .CGameInfo.CDotaGameInfo dota = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_dota()));
         } else {
@@ -3148,6 +3675,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CGameInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3159,7 +3687,7 @@ void CGameInfo::SerializeWithCachedSizes(
   // optional .CGameInfo.CDotaGameInfo dota = 4;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_dota(), output);
+      4, HasBitSetters::dota(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3170,8 +3698,7 @@ void CGameInfo::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CGameInfo::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CGameInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3181,7 +3708,7 @@ void CGameInfo::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_dota(), deterministic, target);
+        4, HasBitSetters::dota(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3201,8 +3728,13 @@ size_t CGameInfo::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional .CGameInfo.CDotaGameInfo dota = 4;
-  if (has_dota()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *dota_);
@@ -3217,9 +3749,9 @@ void CGameInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CGameInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const CGameInfo* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CGameInfo>(
+      ::google::protobuf::DynamicCastToGenerated<CGameInfo>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CGameInfo)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3264,14 +3796,14 @@ void CGameInfo::Swap(CGameInfo* other) {
 }
 void CGameInfo::InternalSwap(CGameInfo* other) {
   using std::swap;
-  swap(dota_, other->dota_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(dota_, other->dota_);
 }
 
 ::google::protobuf::Metadata CGameInfo::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3281,6 +3813,27 @@ void CDemoFileInfo::InitAsDefaultInstance() {
   ::_CDemoFileInfo_default_instance_._instance.get_mutable()->game_info_ = const_cast< ::CGameInfo*>(
       ::CGameInfo::internal_default_instance());
 }
+class CDemoFileInfo::HasBitSetters {
+ public:
+  static void set_has_playback_time(CDemoFileInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_playback_ticks(CDemoFileInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_playback_frames(CDemoFileInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::CGameInfo& game_info(const CDemoFileInfo* msg);
+  static void set_has_game_info(CDemoFileInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::CGameInfo&
+CDemoFileInfo::HasBitSetters::game_info(const CDemoFileInfo* msg) {
+  return *msg->game_info_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoFileInfo::kPlaybackTimeFieldNumber;
 const int CDemoFileInfo::kPlaybackTicksFieldNumber;
@@ -3289,21 +3842,19 @@ const int CDemoFileInfo::kGameInfoFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoFileInfo::CDemoFileInfo()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoFileInfo.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoFileInfo)
 }
 CDemoFileInfo::CDemoFileInfo(const CDemoFileInfo& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_game_info()) {
     game_info_ = new ::CGameInfo(*from.game_info_);
   } else {
-    game_info_ = NULL;
+    game_info_ = nullptr;
   }
   ::memcpy(&playback_time_, &from.playback_time_,
     static_cast<size_t>(reinterpret_cast<char*>(&playback_frames_) -
@@ -3312,6 +3863,8 @@ CDemoFileInfo::CDemoFileInfo(const CDemoFileInfo& from)
 }
 
 void CDemoFileInfo::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoFileInfo_demo_2eproto.base);
   ::memset(&game_info_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&playback_frames_) -
       reinterpret_cast<char*>(&game_info_)) + sizeof(playback_frames_));
@@ -3329,13 +3882,8 @@ void CDemoFileInfo::SharedDtor() {
 void CDemoFileInfo::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoFileInfo::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoFileInfo& CDemoFileInfo::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoFileInfo.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoFileInfo_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3348,10 +3896,10 @@ void CDemoFileInfo::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(game_info_ != NULL);
+    GOOGLE_DCHECK(game_info_ != nullptr);
     game_info_->Clear();
   }
-  if (cached_has_bits & 14u) {
+  if (cached_has_bits & 0x0000000eu) {
     ::memset(&playback_time_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&playback_frames_) -
         reinterpret_cast<char*>(&playback_time_)) + sizeof(playback_frames_));
@@ -3360,9 +3908,76 @@ void CDemoFileInfo::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoFileInfo::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoFileInfo*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional float playback_time = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 13) goto handle_unusual;
+        msg->set_playback_time(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional int32 playback_ticks = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_playback_ticks(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 playback_frames = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_playback_frames(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .CGameInfo game_info = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::CGameInfo::_InternalParse;
+        object = msg->mutable_game_info();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoFileInfo::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoFileInfo)
   for (;;) {
@@ -3372,9 +3987,8 @@ bool CDemoFileInfo::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float playback_time = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
-          set_has_playback_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (13 & 0xFF)) {
+          HasBitSetters::set_has_playback_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &playback_time_)));
@@ -3386,9 +4000,8 @@ bool CDemoFileInfo::MergePartialFromCodedStream(
 
       // optional int32 playback_ticks = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_playback_ticks();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_playback_ticks(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &playback_ticks_)));
@@ -3400,9 +4013,8 @@ bool CDemoFileInfo::MergePartialFromCodedStream(
 
       // optional int32 playback_frames = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_playback_frames();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_playback_frames(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &playback_frames_)));
@@ -3414,8 +4026,7 @@ bool CDemoFileInfo::MergePartialFromCodedStream(
 
       // optional .CGameInfo game_info = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_game_info()));
         } else {
@@ -3443,6 +4054,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoFileInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3469,7 +4081,7 @@ void CDemoFileInfo::SerializeWithCachedSizes(
   // optional .CGameInfo game_info = 4;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_game_info(), output);
+      4, HasBitSetters::game_info(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3480,8 +4092,7 @@ void CDemoFileInfo::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoFileInfo::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoFileInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3506,7 +4117,7 @@ void CDemoFileInfo::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_game_info(), deterministic, target);
+        4, HasBitSetters::game_info(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3526,28 +4137,33 @@ size_t CDemoFileInfo::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional .CGameInfo game_info = 4;
-    if (has_game_info()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *game_info_);
     }
 
     // optional float playback_time = 1;
-    if (has_playback_time()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 4;
     }
 
     // optional int32 playback_ticks = 2;
-    if (has_playback_ticks()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->playback_ticks());
     }
 
     // optional int32 playback_frames = 3;
-    if (has_playback_frames()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->playback_frames());
@@ -3563,9 +4179,9 @@ void CDemoFileInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoFileInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoFileInfo* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoFileInfo>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoFileInfo>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoFileInfo)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3582,7 +4198,7 @@ void CDemoFileInfo::MergeFrom(const CDemoFileInfo& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       mutable_game_info()->::CGameInfo::MergeFrom(from.game_info());
     }
@@ -3623,17 +4239,17 @@ void CDemoFileInfo::Swap(CDemoFileInfo* other) {
 }
 void CDemoFileInfo::InternalSwap(CDemoFileInfo* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(game_info_, other->game_info_);
   swap(playback_time_, other->playback_time_);
   swap(playback_ticks_, other->playback_ticks_);
   swap(playback_frames_, other->playback_frames_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoFileInfo::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3641,20 +4257,25 @@ void CDemoFileInfo::InternalSwap(CDemoFileInfo* other) {
 
 void CDemoPacket::InitAsDefaultInstance() {
 }
+class CDemoPacket::HasBitSetters {
+ public:
+  static void set_has_data(CDemoPacket* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoPacket::kDataFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoPacket::CDemoPacket()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoPacket.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoPacket)
 }
 CDemoPacket::CDemoPacket(const CDemoPacket& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3665,6 +4286,8 @@ CDemoPacket::CDemoPacket(const CDemoPacket& from)
 }
 
 void CDemoPacket::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoPacket_demo_2eproto.base);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -3680,13 +4303,8 @@ void CDemoPacket::SharedDtor() {
 void CDemoPacket::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoPacket::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoPacket& CDemoPacket::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoPacket.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoPacket_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3705,9 +4323,61 @@ void CDemoPacket::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoPacket::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoPacket*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes data = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoPacket::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoPacket)
   for (;;) {
@@ -3717,8 +4387,7 @@ bool CDemoPacket::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes data = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
@@ -3746,6 +4415,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoPacket::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3768,8 +4438,7 @@ void CDemoPacket::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoPacket::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoPacket)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3799,8 +4468,13 @@ size_t CDemoPacket::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes data = 3;
-  if (has_data()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->data());
@@ -3815,9 +4489,9 @@ void CDemoPacket::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoPacket)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoPacket* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoPacket>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoPacket>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoPacket)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3834,7 +4508,7 @@ void CDemoPacket::MergeFrom(const CDemoPacket& from) {
   (void) cached_has_bits;
 
   if (from.has_data()) {
-    set_has_data();
+    _has_bits_[0] |= 0x00000001u;
     data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
   }
 }
@@ -3863,15 +4537,15 @@ void CDemoPacket::Swap(CDemoPacket* other) {
 }
 void CDemoPacket::InternalSwap(CDemoPacket* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoPacket::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3883,37 +4557,57 @@ void CDemoFullPacket::InitAsDefaultInstance() {
   ::_CDemoFullPacket_default_instance_._instance.get_mutable()->packet_ = const_cast< ::CDemoPacket*>(
       ::CDemoPacket::internal_default_instance());
 }
+class CDemoFullPacket::HasBitSetters {
+ public:
+  static const ::CDemoStringTables& string_table(const CDemoFullPacket* msg);
+  static void set_has_string_table(CDemoFullPacket* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::CDemoPacket& packet(const CDemoFullPacket* msg);
+  static void set_has_packet(CDemoFullPacket* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::CDemoStringTables&
+CDemoFullPacket::HasBitSetters::string_table(const CDemoFullPacket* msg) {
+  return *msg->string_table_;
+}
+const ::CDemoPacket&
+CDemoFullPacket::HasBitSetters::packet(const CDemoFullPacket* msg) {
+  return *msg->packet_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoFullPacket::kStringTableFieldNumber;
 const int CDemoFullPacket::kPacketFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoFullPacket::CDemoFullPacket()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoFullPacket.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoFullPacket)
 }
 CDemoFullPacket::CDemoFullPacket(const CDemoFullPacket& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_string_table()) {
     string_table_ = new ::CDemoStringTables(*from.string_table_);
   } else {
-    string_table_ = NULL;
+    string_table_ = nullptr;
   }
   if (from.has_packet()) {
     packet_ = new ::CDemoPacket(*from.packet_);
   } else {
-    packet_ = NULL;
+    packet_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:CDemoFullPacket)
 }
 
 void CDemoFullPacket::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoFullPacket_demo_2eproto.base);
   ::memset(&string_table_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&packet_) -
       reinterpret_cast<char*>(&string_table_)) + sizeof(packet_));
@@ -3932,13 +4626,8 @@ void CDemoFullPacket::SharedDtor() {
 void CDemoFullPacket::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoFullPacket::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoFullPacket& CDemoFullPacket::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoFullPacket.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoFullPacket_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3950,13 +4639,13 @@ void CDemoFullPacket::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(string_table_ != NULL);
+      GOOGLE_DCHECK(string_table_ != nullptr);
       string_table_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(packet_ != NULL);
+      GOOGLE_DCHECK(packet_ != nullptr);
       packet_->Clear();
     }
   }
@@ -3964,9 +4653,68 @@ void CDemoFullPacket::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoFullPacket::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoFullPacket*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .CDemoStringTables string_table = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::CDemoStringTables::_InternalParse;
+        object = msg->mutable_string_table();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .CDemoPacket packet = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::CDemoPacket::_InternalParse;
+        object = msg->mutable_packet();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoFullPacket::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoFullPacket)
   for (;;) {
@@ -3976,8 +4724,7 @@ bool CDemoFullPacket::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .CDemoStringTables string_table = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_string_table()));
         } else {
@@ -3988,8 +4735,7 @@ bool CDemoFullPacket::MergePartialFromCodedStream(
 
       // optional .CDemoPacket packet = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_packet()));
         } else {
@@ -4017,6 +4763,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoFullPacket::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4028,13 +4775,13 @@ void CDemoFullPacket::SerializeWithCachedSizes(
   // optional .CDemoStringTables string_table = 1;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_string_table(), output);
+      1, HasBitSetters::string_table(this), output);
   }
 
   // optional .CDemoPacket packet = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_packet(), output);
+      2, HasBitSetters::packet(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4045,8 +4792,7 @@ void CDemoFullPacket::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoFullPacket::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoFullPacket)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4056,14 +4802,14 @@ void CDemoFullPacket::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_string_table(), deterministic, target);
+        1, HasBitSetters::string_table(this), target);
   }
 
   // optional .CDemoPacket packet = 2;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_packet(), deterministic, target);
+        2, HasBitSetters::packet(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4083,16 +4829,21 @@ size_t CDemoFullPacket::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional .CDemoStringTables string_table = 1;
-    if (has_string_table()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *string_table_);
     }
 
     // optional .CDemoPacket packet = 2;
-    if (has_packet()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *packet_);
@@ -4108,9 +4859,9 @@ void CDemoFullPacket::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoFullPacket)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoFullPacket* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoFullPacket>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoFullPacket>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoFullPacket)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4127,7 +4878,7 @@ void CDemoFullPacket::MergeFrom(const CDemoFullPacket& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_string_table()->::CDemoStringTables::MergeFrom(from.string_table());
     }
@@ -4161,15 +4912,15 @@ void CDemoFullPacket::Swap(CDemoFullPacket* other) {
 }
 void CDemoFullPacket::InternalSwap(CDemoFullPacket* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(string_table_, other->string_table_);
   swap(packet_, other->packet_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoFullPacket::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4177,6 +4928,22 @@ void CDemoFullPacket::InternalSwap(CDemoFullPacket* other) {
 
 void CDemoSaveGame::InitAsDefaultInstance() {
 }
+class CDemoSaveGame::HasBitSetters {
+ public:
+  static void set_has_data(CDemoSaveGame* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_steam_id(CDemoSaveGame* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_signature(CDemoSaveGame* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_version(CDemoSaveGame* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoSaveGame::kDataFieldNumber;
 const int CDemoSaveGame::kSteamIdFieldNumber;
@@ -4185,15 +4952,13 @@ const int CDemoSaveGame::kVersionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoSaveGame::CDemoSaveGame()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoSaveGame.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoSaveGame)
 }
 CDemoSaveGame::CDemoSaveGame(const CDemoSaveGame& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4207,6 +4972,8 @@ CDemoSaveGame::CDemoSaveGame(const CDemoSaveGame& from)
 }
 
 void CDemoSaveGame::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoSaveGame_demo_2eproto.base);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&steam_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&version_) -
@@ -4225,13 +4992,8 @@ void CDemoSaveGame::SharedDtor() {
 void CDemoSaveGame::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoSaveGame::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoSaveGame& CDemoSaveGame::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoSaveGame.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoSaveGame_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4246,7 +5008,7 @@ void CDemoSaveGame::Clear() {
   if (cached_has_bits & 0x00000001u) {
     data_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 14u) {
+  if (cached_has_bits & 0x0000000eu) {
     ::memset(&steam_id_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&version_) -
         reinterpret_cast<char*>(&steam_id_)) + sizeof(version_));
@@ -4255,9 +5017,82 @@ void CDemoSaveGame::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoSaveGame::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoSaveGame*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes data = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional fixed64 steam_id = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 17) goto handle_unusual;
+        msg->set_steam_id(::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr));
+        ptr += sizeof(::google::protobuf::uint64);
+        break;
+      }
+      // optional fixed64 signature = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 25) goto handle_unusual;
+        msg->set_signature(::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr));
+        ptr += sizeof(::google::protobuf::uint64);
+        break;
+      }
+      // optional int32 version = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_version(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoSaveGame::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoSaveGame)
   for (;;) {
@@ -4267,8 +5102,7 @@ bool CDemoSaveGame::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes data = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
@@ -4279,9 +5113,8 @@ bool CDemoSaveGame::MergePartialFromCodedStream(
 
       // optional fixed64 steam_id = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-          set_has_steam_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (17 & 0xFF)) {
+          HasBitSetters::set_has_steam_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &steam_id_)));
@@ -4293,9 +5126,8 @@ bool CDemoSaveGame::MergePartialFromCodedStream(
 
       // optional fixed64 signature = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
-          set_has_signature();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (25 & 0xFF)) {
+          HasBitSetters::set_has_signature(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &signature_)));
@@ -4307,9 +5139,8 @@ bool CDemoSaveGame::MergePartialFromCodedStream(
 
       // optional int32 version = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_version();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_version(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &version_)));
@@ -4338,6 +5169,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoSaveGame::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4375,8 +5207,7 @@ void CDemoSaveGame::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoSaveGame::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoSaveGame)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4421,26 +5252,31 @@ size_t CDemoSaveGame::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional bytes data = 1;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->data());
     }
 
     // optional fixed64 steam_id = 2;
-    if (has_steam_id()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 8;
     }
 
     // optional fixed64 signature = 3;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 8;
     }
 
     // optional int32 version = 4;
-    if (has_version()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->version());
@@ -4456,9 +5292,9 @@ void CDemoSaveGame::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoSaveGame)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoSaveGame* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoSaveGame>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoSaveGame>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoSaveGame)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4475,9 +5311,9 @@ void CDemoSaveGame::MergeFrom(const CDemoSaveGame& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000001u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -4517,18 +5353,18 @@ void CDemoSaveGame::Swap(CDemoSaveGame* other) {
 }
 void CDemoSaveGame::InternalSwap(CDemoSaveGame* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(steam_id_, other->steam_id_);
   swap(signature_, other->signature_);
   swap(version_, other->version_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoSaveGame::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4536,19 +5372,21 @@ void CDemoSaveGame::InternalSwap(CDemoSaveGame* other) {
 
 void CDemoSyncTick::InitAsDefaultInstance() {
 }
+class CDemoSyncTick::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoSyncTick::CDemoSyncTick()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoSyncTick.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoSyncTick)
 }
 CDemoSyncTick::CDemoSyncTick(const CDemoSyncTick& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:CDemoSyncTick)
@@ -4568,13 +5406,8 @@ void CDemoSyncTick::SharedDtor() {
 void CDemoSyncTick::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoSyncTick::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoSyncTick& CDemoSyncTick::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoSyncTick.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoSyncTick_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4589,9 +5422,38 @@ void CDemoSyncTick::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoSyncTick::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoSyncTick*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoSyncTick::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoSyncTick)
   for (;;) {
@@ -4613,6 +5475,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoSyncTick::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4628,8 +5491,7 @@ void CDemoSyncTick::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoSyncTick::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoSyncTick)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4651,6 +5513,10 @@ size_t CDemoSyncTick::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -4660,9 +5526,9 @@ void CDemoSyncTick::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoSyncTick)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoSyncTick* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoSyncTick>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoSyncTick>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoSyncTick)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4704,13 +5570,13 @@ void CDemoSyncTick::Swap(CDemoSyncTick* other) {
 }
 void CDemoSyncTick::InternalSwap(CDemoSyncTick* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata CDemoSyncTick::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4718,20 +5584,25 @@ void CDemoSyncTick::InternalSwap(CDemoSyncTick* other) {
 
 void CDemoConsoleCmd::InitAsDefaultInstance() {
 }
+class CDemoConsoleCmd::HasBitSetters {
+ public:
+  static void set_has_cmdstring(CDemoConsoleCmd* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoConsoleCmd::kCmdstringFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoConsoleCmd::CDemoConsoleCmd()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoConsoleCmd.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoConsoleCmd)
 }
 CDemoConsoleCmd::CDemoConsoleCmd(const CDemoConsoleCmd& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   cmdstring_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4742,6 +5613,8 @@ CDemoConsoleCmd::CDemoConsoleCmd(const CDemoConsoleCmd& from)
 }
 
 void CDemoConsoleCmd::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoConsoleCmd_demo_2eproto.base);
   cmdstring_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -4757,13 +5630,8 @@ void CDemoConsoleCmd::SharedDtor() {
 void CDemoConsoleCmd::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoConsoleCmd::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoConsoleCmd& CDemoConsoleCmd::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoConsoleCmd.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoConsoleCmd_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4782,9 +5650,62 @@ void CDemoConsoleCmd::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoConsoleCmd::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoConsoleCmd*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string cmdstring = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoConsoleCmd.cmdstring");
+        object = msg->mutable_cmdstring();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoConsoleCmd::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoConsoleCmd)
   for (;;) {
@@ -4794,8 +5715,7 @@ bool CDemoConsoleCmd::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string cmdstring = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_cmdstring()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4827,6 +5747,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoConsoleCmd::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4853,8 +5774,7 @@ void CDemoConsoleCmd::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoConsoleCmd::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoConsoleCmd)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4888,8 +5808,13 @@ size_t CDemoConsoleCmd::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string cmdstring = 1;
-  if (has_cmdstring()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->cmdstring());
@@ -4904,9 +5829,9 @@ void CDemoConsoleCmd::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoConsoleCmd)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoConsoleCmd* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoConsoleCmd>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoConsoleCmd>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoConsoleCmd)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4923,7 +5848,7 @@ void CDemoConsoleCmd::MergeFrom(const CDemoConsoleCmd& from) {
   (void) cached_has_bits;
 
   if (from.has_cmdstring()) {
-    set_has_cmdstring();
+    _has_bits_[0] |= 0x00000001u;
     cmdstring_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cmdstring_);
   }
 }
@@ -4952,15 +5877,15 @@ void CDemoConsoleCmd::Swap(CDemoConsoleCmd* other) {
 }
 void CDemoConsoleCmd::InternalSwap(CDemoConsoleCmd* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   cmdstring_.Swap(&other->cmdstring_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoConsoleCmd::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4968,20 +5893,25 @@ void CDemoConsoleCmd::InternalSwap(CDemoConsoleCmd* other) {
 
 void CDemoSendTables::InitAsDefaultInstance() {
 }
+class CDemoSendTables::HasBitSetters {
+ public:
+  static void set_has_data(CDemoSendTables* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoSendTables::kDataFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoSendTables::CDemoSendTables()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoSendTables.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoSendTables)
 }
 CDemoSendTables::CDemoSendTables(const CDemoSendTables& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4992,6 +5922,8 @@ CDemoSendTables::CDemoSendTables(const CDemoSendTables& from)
 }
 
 void CDemoSendTables::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoSendTables_demo_2eproto.base);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -5007,13 +5939,8 @@ void CDemoSendTables::SharedDtor() {
 void CDemoSendTables::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoSendTables::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoSendTables& CDemoSendTables::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoSendTables.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoSendTables_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5032,9 +5959,61 @@ void CDemoSendTables::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoSendTables::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoSendTables*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes data = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoSendTables::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoSendTables)
   for (;;) {
@@ -5044,8 +6023,7 @@ bool CDemoSendTables::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes data = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
@@ -5073,6 +6051,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoSendTables::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5095,8 +6074,7 @@ void CDemoSendTables::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoSendTables::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoSendTables)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5126,8 +6104,13 @@ size_t CDemoSendTables::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes data = 1;
-  if (has_data()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->data());
@@ -5142,9 +6125,9 @@ void CDemoSendTables::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoSendTables)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoSendTables* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoSendTables>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoSendTables>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoSendTables)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5161,7 +6144,7 @@ void CDemoSendTables::MergeFrom(const CDemoSendTables& from) {
   (void) cached_has_bits;
 
   if (from.has_data()) {
-    set_has_data();
+    _has_bits_[0] |= 0x00000001u;
     data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
   }
 }
@@ -5190,15 +6173,15 @@ void CDemoSendTables::Swap(CDemoSendTables* other) {
 }
 void CDemoSendTables::InternalSwap(CDemoSendTables* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoSendTables::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5206,6 +6189,19 @@ void CDemoSendTables::InternalSwap(CDemoSendTables* other) {
 
 void CDemoClassInfo_class_t::InitAsDefaultInstance() {
 }
+class CDemoClassInfo_class_t::HasBitSetters {
+ public:
+  static void set_has_class_id(CDemoClassInfo_class_t* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_network_name(CDemoClassInfo_class_t* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_table_name(CDemoClassInfo_class_t* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoClassInfo_class_t::kClassIdFieldNumber;
 const int CDemoClassInfo_class_t::kNetworkNameFieldNumber;
@@ -5213,15 +6209,13 @@ const int CDemoClassInfo_class_t::kTableNameFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoClassInfo_class_t::CDemoClassInfo_class_t()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoClassInfo_class_t.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoClassInfo.class_t)
 }
 CDemoClassInfo_class_t::CDemoClassInfo_class_t(const CDemoClassInfo_class_t& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   network_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5237,6 +6231,8 @@ CDemoClassInfo_class_t::CDemoClassInfo_class_t(const CDemoClassInfo_class_t& fro
 }
 
 void CDemoClassInfo_class_t::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoClassInfo_class_t_demo_2eproto.base);
   network_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   table_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   class_id_ = 0;
@@ -5255,13 +6251,8 @@ void CDemoClassInfo_class_t::SharedDtor() {
 void CDemoClassInfo_class_t::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoClassInfo_class_t::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoClassInfo_class_t& CDemoClassInfo_class_t::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoClassInfo_class_t.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoClassInfo_class_t_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5273,7 +6264,7 @@ void CDemoClassInfo_class_t::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       network_name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -5286,9 +6277,85 @@ void CDemoClassInfo_class_t::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoClassInfo_class_t::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoClassInfo_class_t*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional int32 class_id = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_class_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string network_name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoClassInfo.class_t.network_name");
+        object = msg->mutable_network_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string table_name = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoClassInfo.class_t.table_name");
+        object = msg->mutable_table_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoClassInfo_class_t::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoClassInfo.class_t)
   for (;;) {
@@ -5298,9 +6365,8 @@ bool CDemoClassInfo_class_t::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 class_id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_class_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_class_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &class_id_)));
@@ -5312,8 +6378,7 @@ bool CDemoClassInfo_class_t::MergePartialFromCodedStream(
 
       // optional string network_name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_network_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5328,8 +6393,7 @@ bool CDemoClassInfo_class_t::MergePartialFromCodedStream(
 
       // optional string table_name = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_table_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5361,6 +6425,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoClassInfo_class_t::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5402,8 +6467,7 @@ void CDemoClassInfo_class_t::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoClassInfo_class_t::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoClassInfo.class_t)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5453,23 +6517,28 @@ size_t CDemoClassInfo_class_t::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string network_name = 2;
-    if (has_network_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->network_name());
     }
 
     // optional string table_name = 3;
-    if (has_table_name()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->table_name());
     }
 
     // optional int32 class_id = 1;
-    if (has_class_id()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->class_id());
@@ -5485,9 +6554,9 @@ void CDemoClassInfo_class_t::MergeFrom(const ::google::protobuf::Message& from) 
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoClassInfo.class_t)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoClassInfo_class_t* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoClassInfo_class_t>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoClassInfo_class_t>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoClassInfo.class_t)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5504,13 +6573,13 @@ void CDemoClassInfo_class_t::MergeFrom(const CDemoClassInfo_class_t& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_network_name();
+      _has_bits_[0] |= 0x00000001u;
       network_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.network_name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_table_name();
+      _has_bits_[0] |= 0x00000002u;
       table_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.table_name_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -5544,18 +6613,18 @@ void CDemoClassInfo_class_t::Swap(CDemoClassInfo_class_t* other) {
 }
 void CDemoClassInfo_class_t::InternalSwap(CDemoClassInfo_class_t* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   network_name_.Swap(&other->network_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   table_name_.Swap(&other->table_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(class_id_, other->class_id_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoClassInfo_class_t::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5563,20 +6632,22 @@ void CDemoClassInfo_class_t::InternalSwap(CDemoClassInfo_class_t* other) {
 
 void CDemoClassInfo::InitAsDefaultInstance() {
 }
+class CDemoClassInfo::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoClassInfo::kClassesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoClassInfo::CDemoClassInfo()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoClassInfo.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoClassInfo)
 }
 CDemoClassInfo::CDemoClassInfo(const CDemoClassInfo& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       classes_(from.classes_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -5584,6 +6655,8 @@ CDemoClassInfo::CDemoClassInfo(const CDemoClassInfo& from)
 }
 
 void CDemoClassInfo::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoClassInfo_demo_2eproto.base);
 }
 
 CDemoClassInfo::~CDemoClassInfo() {
@@ -5597,13 +6670,8 @@ void CDemoClassInfo::SharedDtor() {
 void CDemoClassInfo::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoClassInfo::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoClassInfo& CDemoClassInfo::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoClassInfo.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoClassInfo_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5619,9 +6687,58 @@ void CDemoClassInfo::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoClassInfo::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoClassInfo*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .CDemoClassInfo.class_t classes = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CDemoClassInfo_class_t::_InternalParse;
+          object = msg->add_classes();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoClassInfo::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoClassInfo)
   for (;;) {
@@ -5631,8 +6748,7 @@ bool CDemoClassInfo::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .CDemoClassInfo.class_t classes = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_classes()));
         } else {
@@ -5660,6 +6776,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoClassInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5684,8 +6801,7 @@ void CDemoClassInfo::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoClassInfo::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoClassInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5695,7 +6811,7 @@ void CDemoClassInfo::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->classes_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->classes(static_cast<int>(i)), deterministic, target);
+        1, this->classes(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5715,6 +6831,10 @@ size_t CDemoClassInfo::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CDemoClassInfo.class_t classes = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->classes_size());
@@ -5735,9 +6855,9 @@ void CDemoClassInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoClassInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoClassInfo* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoClassInfo>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoClassInfo>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoClassInfo)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5780,14 +6900,14 @@ void CDemoClassInfo::Swap(CDemoClassInfo* other) {
 }
 void CDemoClassInfo::InternalSwap(CDemoClassInfo* other) {
   using std::swap;
-  CastToBase(&classes_)->InternalSwap(CastToBase(&other->classes_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  CastToBase(&classes_)->InternalSwap(CastToBase(&other->classes_));
 }
 
 ::google::protobuf::Metadata CDemoClassInfo::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5795,21 +6915,29 @@ void CDemoClassInfo::InternalSwap(CDemoClassInfo* other) {
 
 void CDemoCustomData::InitAsDefaultInstance() {
 }
+class CDemoCustomData::HasBitSetters {
+ public:
+  static void set_has_callback_index(CDemoCustomData* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_data(CDemoCustomData* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoCustomData::kCallbackIndexFieldNumber;
 const int CDemoCustomData::kDataFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoCustomData::CDemoCustomData()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoCustomData.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoCustomData)
 }
 CDemoCustomData::CDemoCustomData(const CDemoCustomData& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5821,6 +6949,8 @@ CDemoCustomData::CDemoCustomData(const CDemoCustomData& from)
 }
 
 void CDemoCustomData::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoCustomData_demo_2eproto.base);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   callback_index_ = 0;
 }
@@ -5837,13 +6967,8 @@ void CDemoCustomData::SharedDtor() {
 void CDemoCustomData::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoCustomData::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoCustomData& CDemoCustomData::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoCustomData.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoCustomData_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5863,9 +6988,68 @@ void CDemoCustomData::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoCustomData::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoCustomData*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional int32 callback_index = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_callback_index(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes data = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoCustomData::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoCustomData)
   for (;;) {
@@ -5875,9 +7059,8 @@ bool CDemoCustomData::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 callback_index = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_callback_index();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_callback_index(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &callback_index_)));
@@ -5889,8 +7072,7 @@ bool CDemoCustomData::MergePartialFromCodedStream(
 
       // optional bytes data = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
@@ -5918,6 +7100,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoCustomData::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5945,8 +7128,7 @@ void CDemoCustomData::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoCustomData::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoCustomData)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5981,16 +7163,21 @@ size_t CDemoCustomData::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes data = 2;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->data());
     }
 
     // optional int32 callback_index = 1;
-    if (has_callback_index()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->callback_index());
@@ -6006,9 +7193,9 @@ void CDemoCustomData::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoCustomData)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoCustomData* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoCustomData>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoCustomData>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoCustomData)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6025,9 +7212,9 @@ void CDemoCustomData::MergeFrom(const CDemoCustomData& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000001u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -6061,16 +7248,16 @@ void CDemoCustomData::Swap(CDemoCustomData* other) {
 }
 void CDemoCustomData::InternalSwap(CDemoCustomData* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(callback_index_, other->callback_index_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoCustomData::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6078,20 +7265,22 @@ void CDemoCustomData::InternalSwap(CDemoCustomData* other) {
 
 void CDemoCustomDataCallbacks::InitAsDefaultInstance() {
 }
+class CDemoCustomDataCallbacks::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoCustomDataCallbacks::kSaveIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoCustomDataCallbacks::CDemoCustomDataCallbacks()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoCustomDataCallbacks.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoCustomDataCallbacks)
 }
 CDemoCustomDataCallbacks::CDemoCustomDataCallbacks(const CDemoCustomDataCallbacks& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       save_id_(from.save_id_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -6099,6 +7288,8 @@ CDemoCustomDataCallbacks::CDemoCustomDataCallbacks(const CDemoCustomDataCallback
 }
 
 void CDemoCustomDataCallbacks::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoCustomDataCallbacks_demo_2eproto.base);
 }
 
 CDemoCustomDataCallbacks::~CDemoCustomDataCallbacks() {
@@ -6112,13 +7303,8 @@ void CDemoCustomDataCallbacks::SharedDtor() {
 void CDemoCustomDataCallbacks::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoCustomDataCallbacks::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoCustomDataCallbacks& CDemoCustomDataCallbacks::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoCustomDataCallbacks.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoCustomDataCallbacks_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6134,9 +7320,65 @@ void CDemoCustomDataCallbacks::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoCustomDataCallbacks::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoCustomDataCallbacks*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated string save_id = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          ctx->extra_parse_data().SetFieldName("CDemoCustomDataCallbacks.save_id");
+          object = msg->add_save_id();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+            goto string_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoCustomDataCallbacks::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoCustomDataCallbacks)
   for (;;) {
@@ -6146,8 +7388,7 @@ bool CDemoCustomDataCallbacks::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated string save_id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_save_id()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6180,6 +7421,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoCustomDataCallbacks::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6205,8 +7447,7 @@ void CDemoCustomDataCallbacks::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoCustomDataCallbacks::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoCustomDataCallbacks)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6238,6 +7479,10 @@ size_t CDemoCustomDataCallbacks::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated string save_id = 1;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->save_id_size());
@@ -6255,9 +7500,9 @@ void CDemoCustomDataCallbacks::MergeFrom(const ::google::protobuf::Message& from
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoCustomDataCallbacks)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoCustomDataCallbacks* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoCustomDataCallbacks>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoCustomDataCallbacks>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoCustomDataCallbacks)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6300,14 +7545,14 @@ void CDemoCustomDataCallbacks::Swap(CDemoCustomDataCallbacks* other) {
 }
 void CDemoCustomDataCallbacks::InternalSwap(CDemoCustomDataCallbacks* other) {
   using std::swap;
-  save_id_.InternalSwap(CastToBase(&other->save_id_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  save_id_.InternalSwap(CastToBase(&other->save_id_));
 }
 
 ::google::protobuf::Metadata CDemoCustomDataCallbacks::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6315,21 +7560,29 @@ void CDemoCustomDataCallbacks::InternalSwap(CDemoCustomDataCallbacks* other) {
 
 void CDemoStringTables_items_t::InitAsDefaultInstance() {
 }
+class CDemoStringTables_items_t::HasBitSetters {
+ public:
+  static void set_has_str(CDemoStringTables_items_t* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_data(CDemoStringTables_items_t* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoStringTables_items_t::kStrFieldNumber;
 const int CDemoStringTables_items_t::kDataFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoStringTables_items_t::CDemoStringTables_items_t()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoStringTables_items_t.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoStringTables.items_t)
 }
 CDemoStringTables_items_t::CDemoStringTables_items_t(const CDemoStringTables_items_t& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   str_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6344,6 +7597,8 @@ CDemoStringTables_items_t::CDemoStringTables_items_t(const CDemoStringTables_ite
 }
 
 void CDemoStringTables_items_t::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoStringTables_items_t_demo_2eproto.base);
   str_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -6361,13 +7616,8 @@ void CDemoStringTables_items_t::SharedDtor() {
 void CDemoStringTables_items_t::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoStringTables_items_t::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoStringTables_items_t& CDemoStringTables_items_t::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoStringTables_items_t.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoStringTables_items_t_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6379,7 +7629,7 @@ void CDemoStringTables_items_t::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       str_.ClearNonDefaultToEmptyNoArena();
     }
@@ -6391,9 +7641,77 @@ void CDemoStringTables_items_t::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoStringTables_items_t::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoStringTables_items_t*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string str = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoStringTables.items_t.str");
+        object = msg->mutable_str();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes data = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoStringTables_items_t::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoStringTables.items_t)
   for (;;) {
@@ -6403,8 +7721,7 @@ bool CDemoStringTables_items_t::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string str = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_str()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6419,8 +7736,7 @@ bool CDemoStringTables_items_t::MergePartialFromCodedStream(
 
       // optional bytes data = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
@@ -6448,6 +7764,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoStringTables_items_t::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6480,8 +7797,7 @@ void CDemoStringTables_items_t::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoStringTables_items_t::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoStringTables.items_t)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6522,16 +7838,21 @@ size_t CDemoStringTables_items_t::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string str = 1;
-    if (has_str()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->str());
     }
 
     // optional bytes data = 2;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->data());
@@ -6547,9 +7868,9 @@ void CDemoStringTables_items_t::MergeFrom(const ::google::protobuf::Message& fro
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoStringTables.items_t)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoStringTables_items_t* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoStringTables_items_t>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoStringTables_items_t>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoStringTables.items_t)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6566,13 +7887,13 @@ void CDemoStringTables_items_t::MergeFrom(const CDemoStringTables_items_t& from)
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_str();
+      _has_bits_[0] |= 0x00000001u;
       str_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.str_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000002u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
   }
@@ -6602,17 +7923,17 @@ void CDemoStringTables_items_t::Swap(CDemoStringTables_items_t* other) {
 }
 void CDemoStringTables_items_t::InternalSwap(CDemoStringTables_items_t* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   str_.Swap(&other->str_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoStringTables_items_t::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6620,6 +7941,16 @@ void CDemoStringTables_items_t::InternalSwap(CDemoStringTables_items_t* other) {
 
 void CDemoStringTables_table_t::InitAsDefaultInstance() {
 }
+class CDemoStringTables_table_t::HasBitSetters {
+ public:
+  static void set_has_table_name(CDemoStringTables_table_t* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_table_flags(CDemoStringTables_table_t* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoStringTables_table_t::kTableNameFieldNumber;
 const int CDemoStringTables_table_t::kItemsFieldNumber;
@@ -6628,15 +7959,13 @@ const int CDemoStringTables_table_t::kTableFlagsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoStringTables_table_t::CDemoStringTables_table_t()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoStringTables_table_t.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoStringTables.table_t)
 }
 CDemoStringTables_table_t::CDemoStringTables_table_t(const CDemoStringTables_table_t& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       items_(from.items_),
       items_clientside_(from.items_clientside_) {
@@ -6650,6 +7979,8 @@ CDemoStringTables_table_t::CDemoStringTables_table_t(const CDemoStringTables_tab
 }
 
 void CDemoStringTables_table_t::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoStringTables_table_t_demo_2eproto.base);
   table_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   table_flags_ = 0;
 }
@@ -6666,13 +7997,8 @@ void CDemoStringTables_table_t::SharedDtor() {
 void CDemoStringTables_table_t::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoStringTables_table_t::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoStringTables_table_t& CDemoStringTables_table_t::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoStringTables_table_t.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoStringTables_table_t_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6694,9 +8020,101 @@ void CDemoStringTables_table_t::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoStringTables_table_t::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoStringTables_table_t*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string table_name = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDemoStringTables.table_t.table_name");
+        object = msg->mutable_table_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // repeated .CDemoStringTables.items_t items = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CDemoStringTables_items_t::_InternalParse;
+          object = msg->add_items();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 18 && (ptr += 1));
+        break;
+      }
+      // repeated .CDemoStringTables.items_t items_clientside = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CDemoStringTables_items_t::_InternalParse;
+          object = msg->add_items_clientside();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      // optional int32 table_flags = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_table_flags(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoStringTables_table_t::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoStringTables.table_t)
   for (;;) {
@@ -6706,8 +8124,7 @@ bool CDemoStringTables_table_t::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string table_name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_table_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6722,8 +8139,7 @@ bool CDemoStringTables_table_t::MergePartialFromCodedStream(
 
       // repeated .CDemoStringTables.items_t items = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_items()));
         } else {
@@ -6734,8 +8150,7 @@ bool CDemoStringTables_table_t::MergePartialFromCodedStream(
 
       // repeated .CDemoStringTables.items_t items_clientside = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_items_clientside()));
         } else {
@@ -6746,9 +8161,8 @@ bool CDemoStringTables_table_t::MergePartialFromCodedStream(
 
       // optional int32 table_flags = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_table_flags();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_table_flags(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &table_flags_)));
@@ -6777,6 +8191,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoStringTables_table_t::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6826,8 +8241,7 @@ void CDemoStringTables_table_t::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoStringTables_table_t::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoStringTables.table_t)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6849,7 +8263,7 @@ void CDemoStringTables_table_t::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->items_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->items(static_cast<int>(i)), deterministic, target);
+        2, this->items(static_cast<int>(i)), target);
   }
 
   // repeated .CDemoStringTables.items_t items_clientside = 3;
@@ -6857,7 +8271,7 @@ void CDemoStringTables_table_t::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->items_clientside_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->items_clientside(static_cast<int>(i)), deterministic, target);
+        3, this->items_clientside(static_cast<int>(i)), target);
   }
 
   // optional int32 table_flags = 4;
@@ -6882,6 +8296,10 @@ size_t CDemoStringTables_table_t::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CDemoStringTables.items_t items = 2;
   {
     unsigned int count = static_cast<unsigned int>(this->items_size());
@@ -6904,16 +8322,17 @@ size_t CDemoStringTables_table_t::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string table_name = 1;
-    if (has_table_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->table_name());
     }
 
     // optional int32 table_flags = 4;
-    if (has_table_flags()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->table_flags());
@@ -6929,9 +8348,9 @@ void CDemoStringTables_table_t::MergeFrom(const ::google::protobuf::Message& fro
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoStringTables.table_t)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoStringTables_table_t* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoStringTables_table_t>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoStringTables_table_t>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoStringTables.table_t)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6950,9 +8369,9 @@ void CDemoStringTables_table_t::MergeFrom(const CDemoStringTables_table_t& from)
   items_.MergeFrom(from.items_);
   items_clientside_.MergeFrom(from.items_clientside_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_table_name();
+      _has_bits_[0] |= 0x00000001u;
       table_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.table_name_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -6986,18 +8405,18 @@ void CDemoStringTables_table_t::Swap(CDemoStringTables_table_t* other) {
 }
 void CDemoStringTables_table_t::InternalSwap(CDemoStringTables_table_t* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&items_)->InternalSwap(CastToBase(&other->items_));
   CastToBase(&items_clientside_)->InternalSwap(CastToBase(&other->items_clientside_));
   table_name_.Swap(&other->table_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(table_flags_, other->table_flags_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoStringTables_table_t::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7005,20 +8424,22 @@ void CDemoStringTables_table_t::InternalSwap(CDemoStringTables_table_t* other) {
 
 void CDemoStringTables::InitAsDefaultInstance() {
 }
+class CDemoStringTables::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoStringTables::kTablesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoStringTables::CDemoStringTables()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoStringTables.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoStringTables)
 }
 CDemoStringTables::CDemoStringTables(const CDemoStringTables& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       tables_(from.tables_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -7026,6 +8447,8 @@ CDemoStringTables::CDemoStringTables(const CDemoStringTables& from)
 }
 
 void CDemoStringTables::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoStringTables_demo_2eproto.base);
 }
 
 CDemoStringTables::~CDemoStringTables() {
@@ -7039,13 +8462,8 @@ void CDemoStringTables::SharedDtor() {
 void CDemoStringTables::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoStringTables::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoStringTables& CDemoStringTables::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoStringTables.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoStringTables_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7061,9 +8479,58 @@ void CDemoStringTables::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoStringTables::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoStringTables*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .CDemoStringTables.table_t tables = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CDemoStringTables_table_t::_InternalParse;
+          object = msg->add_tables();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoStringTables::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoStringTables)
   for (;;) {
@@ -7073,8 +8540,7 @@ bool CDemoStringTables::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .CDemoStringTables.table_t tables = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_tables()));
         } else {
@@ -7102,6 +8568,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoStringTables::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7126,8 +8593,7 @@ void CDemoStringTables::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoStringTables::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoStringTables)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7137,7 +8603,7 @@ void CDemoStringTables::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->tables_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->tables(static_cast<int>(i)), deterministic, target);
+        1, this->tables(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -7157,6 +8623,10 @@ size_t CDemoStringTables::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CDemoStringTables.table_t tables = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->tables_size());
@@ -7177,9 +8647,9 @@ void CDemoStringTables::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoStringTables)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoStringTables* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoStringTables>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoStringTables>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoStringTables)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7222,14 +8692,14 @@ void CDemoStringTables::Swap(CDemoStringTables* other) {
 }
 void CDemoStringTables::InternalSwap(CDemoStringTables* other) {
   using std::swap;
-  CastToBase(&tables_)->InternalSwap(CastToBase(&other->tables_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  CastToBase(&tables_)->InternalSwap(CastToBase(&other->tables_));
 }
 
 ::google::protobuf::Metadata CDemoStringTables::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7237,19 +8707,21 @@ void CDemoStringTables::InternalSwap(CDemoStringTables* other) {
 
 void CDemoStop::InitAsDefaultInstance() {
 }
+class CDemoStop::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoStop::CDemoStop()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoStop.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoStop)
 }
 CDemoStop::CDemoStop(const CDemoStop& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:CDemoStop)
@@ -7269,13 +8741,8 @@ void CDemoStop::SharedDtor() {
 void CDemoStop::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoStop::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoStop& CDemoStop::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoStop.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoStop_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7290,9 +8757,38 @@ void CDemoStop::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoStop::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoStop*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoStop::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoStop)
   for (;;) {
@@ -7314,6 +8810,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoStop::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7329,8 +8826,7 @@ void CDemoStop::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoStop::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoStop)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7352,6 +8848,10 @@ size_t CDemoStop::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -7361,9 +8861,9 @@ void CDemoStop::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoStop)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoStop* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoStop>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoStop>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoStop)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7405,13 +8905,13 @@ void CDemoStop::Swap(CDemoStop* other) {
 }
 void CDemoStop::InternalSwap(CDemoStop* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata CDemoStop::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7419,21 +8919,29 @@ void CDemoStop::InternalSwap(CDemoStop* other) {
 
 void CDemoUserCmd::InitAsDefaultInstance() {
 }
+class CDemoUserCmd::HasBitSetters {
+ public:
+  static void set_has_cmd_number(CDemoUserCmd* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_data(CDemoUserCmd* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoUserCmd::kCmdNumberFieldNumber;
 const int CDemoUserCmd::kDataFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoUserCmd::CDemoUserCmd()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoUserCmd.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoUserCmd)
 }
 CDemoUserCmd::CDemoUserCmd(const CDemoUserCmd& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -7445,6 +8953,8 @@ CDemoUserCmd::CDemoUserCmd(const CDemoUserCmd& from)
 }
 
 void CDemoUserCmd::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoUserCmd_demo_2eproto.base);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cmd_number_ = 0;
 }
@@ -7461,13 +8971,8 @@ void CDemoUserCmd::SharedDtor() {
 void CDemoUserCmd::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoUserCmd::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoUserCmd& CDemoUserCmd::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoUserCmd.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoUserCmd_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7487,9 +8992,68 @@ void CDemoUserCmd::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoUserCmd::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoUserCmd*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional int32 cmd_number = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_cmd_number(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes data = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoUserCmd::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoUserCmd)
   for (;;) {
@@ -7499,9 +9063,8 @@ bool CDemoUserCmd::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 cmd_number = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_cmd_number();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_cmd_number(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &cmd_number_)));
@@ -7513,8 +9076,7 @@ bool CDemoUserCmd::MergePartialFromCodedStream(
 
       // optional bytes data = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
@@ -7542,6 +9104,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoUserCmd::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7569,8 +9132,7 @@ void CDemoUserCmd::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoUserCmd::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoUserCmd)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7605,16 +9167,21 @@ size_t CDemoUserCmd::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes data = 2;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->data());
     }
 
     // optional int32 cmd_number = 1;
-    if (has_cmd_number()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->cmd_number());
@@ -7630,9 +9197,9 @@ void CDemoUserCmd::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoUserCmd)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoUserCmd* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoUserCmd>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoUserCmd>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoUserCmd)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7649,9 +9216,9 @@ void CDemoUserCmd::MergeFrom(const CDemoUserCmd& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000001u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -7685,16 +9252,16 @@ void CDemoUserCmd::Swap(CDemoUserCmd* other) {
 }
 void CDemoUserCmd::InternalSwap(CDemoUserCmd* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(cmd_number_, other->cmd_number_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDemoUserCmd::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7702,20 +9269,22 @@ void CDemoUserCmd::InternalSwap(CDemoUserCmd* other) {
 
 void CDemoSpawnGroups::InitAsDefaultInstance() {
 }
+class CDemoSpawnGroups::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDemoSpawnGroups::kMsgsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDemoSpawnGroups::CDemoSpawnGroups()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_demo_2eproto::scc_info_CDemoSpawnGroups.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDemoSpawnGroups)
 }
 CDemoSpawnGroups::CDemoSpawnGroups(const CDemoSpawnGroups& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       msgs_(from.msgs_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -7723,6 +9292,8 @@ CDemoSpawnGroups::CDemoSpawnGroups(const CDemoSpawnGroups& from)
 }
 
 void CDemoSpawnGroups::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDemoSpawnGroups_demo_2eproto.base);
 }
 
 CDemoSpawnGroups::~CDemoSpawnGroups() {
@@ -7736,13 +9307,8 @@ void CDemoSpawnGroups::SharedDtor() {
 void CDemoSpawnGroups::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDemoSpawnGroups::descriptor() {
-  ::protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDemoSpawnGroups& CDemoSpawnGroups::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_demo_2eproto::scc_info_CDemoSpawnGroups.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDemoSpawnGroups_demo_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7758,9 +9324,64 @@ void CDemoSpawnGroups::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDemoSpawnGroups::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDemoSpawnGroups*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated bytes msgs = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          object = msg->add_msgs();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+            goto string_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDemoSpawnGroups::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDemoSpawnGroups)
   for (;;) {
@@ -7770,8 +9391,7 @@ bool CDemoSpawnGroups::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated bytes msgs = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->add_msgs()));
         } else {
@@ -7799,6 +9419,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDemoSpawnGroups::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7820,8 +9441,7 @@ void CDemoSpawnGroups::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDemoSpawnGroups::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDemoSpawnGroups)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7849,6 +9469,10 @@ size_t CDemoSpawnGroups::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated bytes msgs = 3;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->msgs_size());
@@ -7866,9 +9490,9 @@ void CDemoSpawnGroups::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDemoSpawnGroups)
   GOOGLE_DCHECK_NE(&from, this);
   const CDemoSpawnGroups* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDemoSpawnGroups>(
+      ::google::protobuf::DynamicCastToGenerated<CDemoSpawnGroups>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDemoSpawnGroups)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7911,87 +9535,88 @@ void CDemoSpawnGroups::Swap(CDemoSpawnGroups* other) {
 }
 void CDemoSpawnGroups::InternalSwap(CDemoSpawnGroups* other) {
   using std::swap;
-  msgs_.InternalSwap(CastToBase(&other->msgs_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  msgs_.InternalSwap(CastToBase(&other->msgs_));
 }
 
 ::google::protobuf::Metadata CDemoSpawnGroups::GetMetadata() const {
-  protobuf_demo_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_demo_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_demo_2eproto);
+  return ::file_level_metadata_demo_2eproto[kIndexInFileMessages];
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoFileHeader* Arena::CreateMaybeMessage< ::CDemoFileHeader >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoFileHeader* Arena::CreateMaybeMessage< ::CDemoFileHeader >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoFileHeader >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CGameInfo_CDotaGameInfo_CPlayerInfo* Arena::CreateMaybeMessage< ::CGameInfo_CDotaGameInfo_CPlayerInfo >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CGameInfo_CDotaGameInfo_CPlayerInfo* Arena::CreateMaybeMessage< ::CGameInfo_CDotaGameInfo_CPlayerInfo >(Arena* arena) {
   return Arena::CreateInternal< ::CGameInfo_CDotaGameInfo_CPlayerInfo >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CGameInfo_CDotaGameInfo_CHeroSelectEvent* Arena::CreateMaybeMessage< ::CGameInfo_CDotaGameInfo_CHeroSelectEvent >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CGameInfo_CDotaGameInfo_CHeroSelectEvent* Arena::CreateMaybeMessage< ::CGameInfo_CDotaGameInfo_CHeroSelectEvent >(Arena* arena) {
   return Arena::CreateInternal< ::CGameInfo_CDotaGameInfo_CHeroSelectEvent >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CGameInfo_CDotaGameInfo* Arena::CreateMaybeMessage< ::CGameInfo_CDotaGameInfo >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CGameInfo_CDotaGameInfo* Arena::CreateMaybeMessage< ::CGameInfo_CDotaGameInfo >(Arena* arena) {
   return Arena::CreateInternal< ::CGameInfo_CDotaGameInfo >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CGameInfo* Arena::CreateMaybeMessage< ::CGameInfo >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CGameInfo* Arena::CreateMaybeMessage< ::CGameInfo >(Arena* arena) {
   return Arena::CreateInternal< ::CGameInfo >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoFileInfo* Arena::CreateMaybeMessage< ::CDemoFileInfo >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoFileInfo* Arena::CreateMaybeMessage< ::CDemoFileInfo >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoFileInfo >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoPacket* Arena::CreateMaybeMessage< ::CDemoPacket >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoPacket* Arena::CreateMaybeMessage< ::CDemoPacket >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoPacket >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoFullPacket* Arena::CreateMaybeMessage< ::CDemoFullPacket >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoFullPacket* Arena::CreateMaybeMessage< ::CDemoFullPacket >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoFullPacket >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoSaveGame* Arena::CreateMaybeMessage< ::CDemoSaveGame >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoSaveGame* Arena::CreateMaybeMessage< ::CDemoSaveGame >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoSaveGame >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoSyncTick* Arena::CreateMaybeMessage< ::CDemoSyncTick >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoSyncTick* Arena::CreateMaybeMessage< ::CDemoSyncTick >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoSyncTick >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoConsoleCmd* Arena::CreateMaybeMessage< ::CDemoConsoleCmd >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoConsoleCmd* Arena::CreateMaybeMessage< ::CDemoConsoleCmd >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoConsoleCmd >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoSendTables* Arena::CreateMaybeMessage< ::CDemoSendTables >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoSendTables* Arena::CreateMaybeMessage< ::CDemoSendTables >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoSendTables >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoClassInfo_class_t* Arena::CreateMaybeMessage< ::CDemoClassInfo_class_t >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoClassInfo_class_t* Arena::CreateMaybeMessage< ::CDemoClassInfo_class_t >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoClassInfo_class_t >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoClassInfo* Arena::CreateMaybeMessage< ::CDemoClassInfo >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoClassInfo* Arena::CreateMaybeMessage< ::CDemoClassInfo >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoClassInfo >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoCustomData* Arena::CreateMaybeMessage< ::CDemoCustomData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoCustomData* Arena::CreateMaybeMessage< ::CDemoCustomData >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoCustomData >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoCustomDataCallbacks* Arena::CreateMaybeMessage< ::CDemoCustomDataCallbacks >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoCustomDataCallbacks* Arena::CreateMaybeMessage< ::CDemoCustomDataCallbacks >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoCustomDataCallbacks >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoStringTables_items_t* Arena::CreateMaybeMessage< ::CDemoStringTables_items_t >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoStringTables_items_t* Arena::CreateMaybeMessage< ::CDemoStringTables_items_t >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoStringTables_items_t >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoStringTables_table_t* Arena::CreateMaybeMessage< ::CDemoStringTables_table_t >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoStringTables_table_t* Arena::CreateMaybeMessage< ::CDemoStringTables_table_t >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoStringTables_table_t >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoStringTables* Arena::CreateMaybeMessage< ::CDemoStringTables >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoStringTables* Arena::CreateMaybeMessage< ::CDemoStringTables >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoStringTables >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoStop* Arena::CreateMaybeMessage< ::CDemoStop >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoStop* Arena::CreateMaybeMessage< ::CDemoStop >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoStop >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoUserCmd* Arena::CreateMaybeMessage< ::CDemoUserCmd >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoUserCmd* Arena::CreateMaybeMessage< ::CDemoUserCmd >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoUserCmd >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDemoSpawnGroups* Arena::CreateMaybeMessage< ::CDemoSpawnGroups >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDemoSpawnGroups* Arena::CreateMaybeMessage< ::CDemoSpawnGroups >(Arena* arena) {
   return Arena::CreateInternal< ::CDemoSpawnGroups >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

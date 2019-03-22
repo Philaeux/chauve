@@ -6,162 +6,130 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_networkbasetypes_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CMsgQAngle;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CMsgVector;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CMsg_CVars_CVar;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_GameEvent_key_t;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_UserMessage;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CMsg_CVars;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_GameEvents_event_t;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_UserMessages_usermsg_t;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsg_GameEvent;
-}  // namespace protobuf_networkbasetypes_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CMsgQAngle_networkbasetypes_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CMsgVector_networkbasetypes_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CMsg_CVars_CVar_networkbasetypes_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_GameEvent_key_t_networkbasetypes_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_UserMessage_networkbasetypes_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CMsg_CVars_networkbasetypes_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_GameEvents_event_t_networkbasetypes_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_UserMessages_usermsg_t_networkbasetypes_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_networkbasetypes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsg_GameEvent_networkbasetypes_2eproto;
 class CMsgVectorDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CMsgVector>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CMsgVector> _instance;
 } _CMsgVector_default_instance_;
 class CMsgVector2DDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CMsgVector2D>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CMsgVector2D> _instance;
 } _CMsgVector2D_default_instance_;
 class CMsgQAngleDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CMsgQAngle>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CMsgQAngle> _instance;
 } _CMsgQAngle_default_instance_;
 class CMsgPlayerInfoDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CMsgPlayerInfo>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CMsgPlayerInfo> _instance;
 } _CMsgPlayerInfo_default_instance_;
 class CMsg_CVars_CVarDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CMsg_CVars_CVar>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CMsg_CVars_CVar> _instance;
 } _CMsg_CVars_CVar_default_instance_;
 class CMsg_CVarsDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CMsg_CVars>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CMsg_CVars> _instance;
 } _CMsg_CVars_default_instance_;
 class CNETMsg_NOPDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_NOP>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_NOP> _instance;
 } _CNETMsg_NOP_default_instance_;
 class CNETMsg_SplitScreenUserDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SplitScreenUser>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SplitScreenUser> _instance;
 } _CNETMsg_SplitScreenUser_default_instance_;
 class CNETMsg_DisconnectDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_Disconnect>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_Disconnect> _instance;
 } _CNETMsg_Disconnect_default_instance_;
 class CNETMsg_TickDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_Tick>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_Tick> _instance;
 } _CNETMsg_Tick_default_instance_;
 class CNETMsg_StringCmdDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_StringCmd>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_StringCmd> _instance;
 } _CNETMsg_StringCmd_default_instance_;
 class CNETMsg_SetConVarDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SetConVar>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SetConVar> _instance;
 } _CNETMsg_SetConVar_default_instance_;
 class CNETMsg_SignonStateDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SignonState>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SignonState> _instance;
 } _CNETMsg_SignonState_default_instance_;
 class CSVCMsg_GameEvent_key_tDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsg_GameEvent_key_t>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsg_GameEvent_key_t> _instance;
 } _CSVCMsg_GameEvent_key_t_default_instance_;
 class CSVCMsg_GameEventDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsg_GameEvent>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsg_GameEvent> _instance;
 } _CSVCMsg_GameEvent_default_instance_;
 class CSVCMsgList_GameEvents_event_tDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsgList_GameEvents_event_t>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsgList_GameEvents_event_t> _instance;
 } _CSVCMsgList_GameEvents_event_t_default_instance_;
 class CSVCMsgList_GameEventsDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsgList_GameEvents>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsgList_GameEvents> _instance;
 } _CSVCMsgList_GameEvents_default_instance_;
 class CSVCMsg_UserMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsg_UserMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsg_UserMessage> _instance;
 } _CSVCMsg_UserMessage_default_instance_;
 class CSVCMsgList_UserMessages_usermsg_tDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsgList_UserMessages_usermsg_t>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsgList_UserMessages_usermsg_t> _instance;
 } _CSVCMsgList_UserMessages_usermsg_t_default_instance_;
 class CSVCMsgList_UserMessagesDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsgList_UserMessages>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsgList_UserMessages> _instance;
 } _CSVCMsgList_UserMessages_default_instance_;
 class CNETMsg_SpawnGroup_LoadDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_Load>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_Load> _instance;
 } _CNETMsg_SpawnGroup_Load_default_instance_;
 class CNETMsg_SpawnGroup_ManifestUpdateDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_ManifestUpdate>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_ManifestUpdate> _instance;
 } _CNETMsg_SpawnGroup_ManifestUpdate_default_instance_;
 class CNETMsg_SpawnGroup_SetCreationTickDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_SetCreationTick>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_SetCreationTick> _instance;
 } _CNETMsg_SpawnGroup_SetCreationTick_default_instance_;
 class CNETMsg_SpawnGroup_UnloadDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_Unload>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_Unload> _instance;
 } _CNETMsg_SpawnGroup_Unload_default_instance_;
 class CNETMsg_SpawnGroup_LoadCompletedDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_LoadCompleted>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CNETMsg_SpawnGroup_LoadCompleted> _instance;
 } _CNETMsg_SpawnGroup_LoadCompleted_default_instance_;
 class CSVCMsg_GameSessionConfigurationDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsg_GameSessionConfiguration>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CSVCMsg_GameSessionConfiguration> _instance;
 } _CSVCMsg_GameSessionConfiguration_default_instance_;
-namespace protobuf_networkbasetypes_2eproto {
-static void InitDefaultsCMsgVector() {
+static void InitDefaultsCMsgVector_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -172,10 +140,10 @@ static void InitDefaultsCMsgVector() {
   ::CMsgVector::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CMsgVector =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgVector}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CMsgVector_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgVector_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCMsgVector2D() {
+static void InitDefaultsCMsgVector2D_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -186,10 +154,10 @@ static void InitDefaultsCMsgVector2D() {
   ::CMsgVector2D::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CMsgVector2D =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgVector2D}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CMsgVector2D_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgVector2D_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCMsgQAngle() {
+static void InitDefaultsCMsgQAngle_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -200,10 +168,10 @@ static void InitDefaultsCMsgQAngle() {
   ::CMsgQAngle::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CMsgQAngle =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgQAngle}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CMsgQAngle_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgQAngle_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCMsgPlayerInfo() {
+static void InitDefaultsCMsgPlayerInfo_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -214,10 +182,10 @@ static void InitDefaultsCMsgPlayerInfo() {
   ::CMsgPlayerInfo::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CMsgPlayerInfo =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgPlayerInfo}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CMsgPlayerInfo_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgPlayerInfo_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCMsg_CVars_CVar() {
+static void InitDefaultsCMsg_CVars_CVar_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -228,10 +196,10 @@ static void InitDefaultsCMsg_CVars_CVar() {
   ::CMsg_CVars_CVar::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CMsg_CVars_CVar =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsg_CVars_CVar}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CMsg_CVars_CVar_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsg_CVars_CVar_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCMsg_CVars() {
+static void InitDefaultsCMsg_CVars_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -242,11 +210,11 @@ static void InitDefaultsCMsg_CVars() {
   ::CMsg_CVars::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CMsg_CVars =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCMsg_CVars}, {
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsg_CVars_CVar.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CMsg_CVars_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCMsg_CVars_networkbasetypes_2eproto}, {
+      &scc_info_CMsg_CVars_CVar_networkbasetypes_2eproto.base,}};
 
-static void InitDefaultsCNETMsg_NOP() {
+static void InitDefaultsCNETMsg_NOP_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -257,10 +225,10 @@ static void InitDefaultsCNETMsg_NOP() {
   ::CNETMsg_NOP::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_NOP =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_NOP}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_NOP_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_NOP_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCNETMsg_SplitScreenUser() {
+static void InitDefaultsCNETMsg_SplitScreenUser_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -271,10 +239,10 @@ static void InitDefaultsCNETMsg_SplitScreenUser() {
   ::CNETMsg_SplitScreenUser::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SplitScreenUser =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SplitScreenUser}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SplitScreenUser_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SplitScreenUser_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCNETMsg_Disconnect() {
+static void InitDefaultsCNETMsg_Disconnect_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -285,10 +253,10 @@ static void InitDefaultsCNETMsg_Disconnect() {
   ::CNETMsg_Disconnect::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_Disconnect =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_Disconnect}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_Disconnect_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_Disconnect_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCNETMsg_Tick() {
+static void InitDefaultsCNETMsg_Tick_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -299,10 +267,10 @@ static void InitDefaultsCNETMsg_Tick() {
   ::CNETMsg_Tick::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_Tick =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_Tick}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_Tick_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_Tick_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCNETMsg_StringCmd() {
+static void InitDefaultsCNETMsg_StringCmd_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -313,10 +281,10 @@ static void InitDefaultsCNETMsg_StringCmd() {
   ::CNETMsg_StringCmd::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_StringCmd =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_StringCmd}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_StringCmd_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_StringCmd_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCNETMsg_SetConVar() {
+static void InitDefaultsCNETMsg_SetConVar_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -327,11 +295,11 @@ static void InitDefaultsCNETMsg_SetConVar() {
   ::CNETMsg_SetConVar::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CNETMsg_SetConVar =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCNETMsg_SetConVar}, {
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsg_CVars.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CNETMsg_SetConVar_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCNETMsg_SetConVar_networkbasetypes_2eproto}, {
+      &scc_info_CMsg_CVars_networkbasetypes_2eproto.base,}};
 
-static void InitDefaultsCNETMsg_SignonState() {
+static void InitDefaultsCNETMsg_SignonState_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -342,10 +310,10 @@ static void InitDefaultsCNETMsg_SignonState() {
   ::CNETMsg_SignonState::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SignonState =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SignonState}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SignonState_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SignonState_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCSVCMsg_GameEvent_key_t() {
+static void InitDefaultsCSVCMsg_GameEvent_key_t_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -356,10 +324,10 @@ static void InitDefaultsCSVCMsg_GameEvent_key_t() {
   ::CSVCMsg_GameEvent_key_t::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_GameEvent_key_t =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCSVCMsg_GameEvent_key_t}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_GameEvent_key_t_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCSVCMsg_GameEvent_key_t_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCSVCMsg_GameEvent() {
+static void InitDefaultsCSVCMsg_GameEvent_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -370,11 +338,11 @@ static void InitDefaultsCSVCMsg_GameEvent() {
   ::CSVCMsg_GameEvent::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsg_GameEvent =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsg_GameEvent}, {
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_GameEvent_key_t.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsg_GameEvent_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsg_GameEvent_networkbasetypes_2eproto}, {
+      &scc_info_CSVCMsg_GameEvent_key_t_networkbasetypes_2eproto.base,}};
 
-static void InitDefaultsCSVCMsgList_GameEvents_event_t() {
+static void InitDefaultsCSVCMsgList_GameEvents_event_t_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -385,11 +353,11 @@ static void InitDefaultsCSVCMsgList_GameEvents_event_t() {
   ::CSVCMsgList_GameEvents_event_t::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_GameEvents_event_t =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsgList_GameEvents_event_t}, {
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_GameEvent.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_GameEvents_event_t_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsgList_GameEvents_event_t_networkbasetypes_2eproto}, {
+      &scc_info_CSVCMsg_GameEvent_networkbasetypes_2eproto.base,}};
 
-static void InitDefaultsCSVCMsgList_GameEvents() {
+static void InitDefaultsCSVCMsgList_GameEvents_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -400,11 +368,11 @@ static void InitDefaultsCSVCMsgList_GameEvents() {
   ::CSVCMsgList_GameEvents::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_GameEvents =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsgList_GameEvents}, {
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_GameEvents_event_t.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_GameEvents_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsgList_GameEvents_networkbasetypes_2eproto}, {
+      &scc_info_CSVCMsgList_GameEvents_event_t_networkbasetypes_2eproto.base,}};
 
-static void InitDefaultsCSVCMsg_UserMessage() {
+static void InitDefaultsCSVCMsg_UserMessage_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -415,10 +383,10 @@ static void InitDefaultsCSVCMsg_UserMessage() {
   ::CSVCMsg_UserMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_UserMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCSVCMsg_UserMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_UserMessage_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCSVCMsg_UserMessage_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCSVCMsgList_UserMessages_usermsg_t() {
+static void InitDefaultsCSVCMsgList_UserMessages_usermsg_t_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -429,11 +397,11 @@ static void InitDefaultsCSVCMsgList_UserMessages_usermsg_t() {
   ::CSVCMsgList_UserMessages_usermsg_t::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_UserMessages_usermsg_t =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsgList_UserMessages_usermsg_t}, {
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_UserMessage.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_UserMessages_usermsg_t_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsgList_UserMessages_usermsg_t_networkbasetypes_2eproto}, {
+      &scc_info_CSVCMsg_UserMessage_networkbasetypes_2eproto.base,}};
 
-static void InitDefaultsCSVCMsgList_UserMessages() {
+static void InitDefaultsCSVCMsgList_UserMessages_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -444,11 +412,11 @@ static void InitDefaultsCSVCMsgList_UserMessages() {
   ::CSVCMsgList_UserMessages::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_UserMessages =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsgList_UserMessages}, {
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_UserMessages_usermsg_t.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CSVCMsgList_UserMessages_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCSVCMsgList_UserMessages_networkbasetypes_2eproto}, {
+      &scc_info_CSVCMsgList_UserMessages_usermsg_t_networkbasetypes_2eproto.base,}};
 
-static void InitDefaultsCNETMsg_SpawnGroup_Load() {
+static void InitDefaultsCNETMsg_SpawnGroup_Load_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -459,12 +427,12 @@ static void InitDefaultsCNETMsg_SpawnGroup_Load() {
   ::CNETMsg_SpawnGroup_Load::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_CNETMsg_SpawnGroup_Load =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCNETMsg_SpawnGroup_Load}, {
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsgVector.base,
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsgQAngle.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_CNETMsg_SpawnGroup_Load_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCNETMsg_SpawnGroup_Load_networkbasetypes_2eproto}, {
+      &scc_info_CMsgVector_networkbasetypes_2eproto.base,
+      &scc_info_CMsgQAngle_networkbasetypes_2eproto.base,}};
 
-static void InitDefaultsCNETMsg_SpawnGroup_ManifestUpdate() {
+static void InitDefaultsCNETMsg_SpawnGroup_ManifestUpdate_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -475,10 +443,10 @@ static void InitDefaultsCNETMsg_SpawnGroup_ManifestUpdate() {
   ::CNETMsg_SpawnGroup_ManifestUpdate::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SpawnGroup_ManifestUpdate =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SpawnGroup_ManifestUpdate}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SpawnGroup_ManifestUpdate_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SpawnGroup_ManifestUpdate_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCNETMsg_SpawnGroup_SetCreationTick() {
+static void InitDefaultsCNETMsg_SpawnGroup_SetCreationTick_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -489,10 +457,10 @@ static void InitDefaultsCNETMsg_SpawnGroup_SetCreationTick() {
   ::CNETMsg_SpawnGroup_SetCreationTick::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SpawnGroup_SetCreationTick =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SpawnGroup_SetCreationTick}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SpawnGroup_SetCreationTick_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SpawnGroup_SetCreationTick_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCNETMsg_SpawnGroup_Unload() {
+static void InitDefaultsCNETMsg_SpawnGroup_Unload_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -503,10 +471,10 @@ static void InitDefaultsCNETMsg_SpawnGroup_Unload() {
   ::CNETMsg_SpawnGroup_Unload::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SpawnGroup_Unload =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SpawnGroup_Unload}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SpawnGroup_Unload_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SpawnGroup_Unload_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCNETMsg_SpawnGroup_LoadCompleted() {
+static void InitDefaultsCNETMsg_SpawnGroup_LoadCompleted_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -517,10 +485,10 @@ static void InitDefaultsCNETMsg_SpawnGroup_LoadCompleted() {
   ::CNETMsg_SpawnGroup_LoadCompleted::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SpawnGroup_LoadCompleted =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SpawnGroup_LoadCompleted}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CNETMsg_SpawnGroup_LoadCompleted_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCNETMsg_SpawnGroup_LoadCompleted_networkbasetypes_2eproto}, {}};
 
-static void InitDefaultsCSVCMsg_GameSessionConfiguration() {
+static void InitDefaultsCSVCMsg_GameSessionConfiguration_networkbasetypes_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -531,137 +499,138 @@ static void InitDefaultsCSVCMsg_GameSessionConfiguration() {
   ::CSVCMsg_GameSessionConfiguration::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_GameSessionConfiguration =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCSVCMsg_GameSessionConfiguration}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CSVCMsg_GameSessionConfiguration_networkbasetypes_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCSVCMsg_GameSessionConfiguration_networkbasetypes_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_CMsgVector.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CMsgVector2D.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CMsgQAngle.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CMsgPlayerInfo.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CMsg_CVars_CVar.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CMsg_CVars.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_NOP.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SplitScreenUser.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_Disconnect.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_Tick.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_StringCmd.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SetConVar.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SignonState.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsg_GameEvent_key_t.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsg_GameEvent.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsgList_GameEvents_event_t.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsgList_GameEvents.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsg_UserMessage.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsgList_UserMessages_usermsg_t.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsgList_UserMessages.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_Load.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_ManifestUpdate.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_SetCreationTick.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_Unload.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_LoadCompleted.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsg_GameSessionConfiguration.base);
+void InitDefaults_networkbasetypes_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_CMsgVector_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CMsgVector2D_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CMsgQAngle_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CMsgPlayerInfo_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CMsg_CVars_CVar_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CMsg_CVars_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_NOP_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SplitScreenUser_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_Disconnect_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_Tick_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_StringCmd_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SetConVar_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SignonState_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsg_GameEvent_key_t_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsg_GameEvent_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsgList_GameEvents_event_t_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsgList_GameEvents_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsg_UserMessage_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsgList_UserMessages_usermsg_t_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsgList_UserMessages_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_Load_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_ManifestUpdate_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_SetCreationTick_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_Unload_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CNETMsg_SpawnGroup_LoadCompleted_networkbasetypes_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CSVCMsg_GameSessionConfiguration_networkbasetypes_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[26];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
+::google::protobuf::Metadata file_level_metadata_networkbasetypes_2eproto[26];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_networkbasetypes_2eproto[2];
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_networkbasetypes_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgVector, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgVector, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_networkbasetypes_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::CMsgVector, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgVector, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgVector, x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgVector, y_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgVector, z_),
+  PROTOBUF_FIELD_OFFSET(::CMsgVector, x_),
+  PROTOBUF_FIELD_OFFSET(::CMsgVector, y_),
+  PROTOBUF_FIELD_OFFSET(::CMsgVector, z_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgVector2D, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgVector2D, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CMsgVector2D, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgVector2D, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgVector2D, x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgVector2D, y_),
+  PROTOBUF_FIELD_OFFSET(::CMsgVector2D, x_),
+  PROTOBUF_FIELD_OFFSET(::CMsgVector2D, y_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgQAngle, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgQAngle, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CMsgQAngle, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgQAngle, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgQAngle, x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgQAngle, y_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgQAngle, z_),
+  PROTOBUF_FIELD_OFFSET(::CMsgQAngle, x_),
+  PROTOBUF_FIELD_OFFSET(::CMsgQAngle, y_),
+  PROTOBUF_FIELD_OFFSET(::CMsgQAngle, z_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgPlayerInfo, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgPlayerInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CMsgPlayerInfo, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgPlayerInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgPlayerInfo, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgPlayerInfo, xuid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgPlayerInfo, userid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgPlayerInfo, steamid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgPlayerInfo, fakeplayer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgPlayerInfo, ishltv_),
+  PROTOBUF_FIELD_OFFSET(::CMsgPlayerInfo, name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgPlayerInfo, xuid_),
+  PROTOBUF_FIELD_OFFSET(::CMsgPlayerInfo, userid_),
+  PROTOBUF_FIELD_OFFSET(::CMsgPlayerInfo, steamid_),
+  PROTOBUF_FIELD_OFFSET(::CMsgPlayerInfo, fakeplayer_),
+  PROTOBUF_FIELD_OFFSET(::CMsgPlayerInfo, ishltv_),
   0,
   1,
   3,
   2,
   4,
   5,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsg_CVars_CVar, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsg_CVars_CVar, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CMsg_CVars_CVar, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsg_CVars_CVar, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsg_CVars_CVar, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsg_CVars_CVar, value_),
+  PROTOBUF_FIELD_OFFSET(::CMsg_CVars_CVar, name_),
+  PROTOBUF_FIELD_OFFSET(::CMsg_CVars_CVar, value_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsg_CVars, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsg_CVars, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CMsg_CVars, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsg_CVars, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsg_CVars, cvars_),
+  PROTOBUF_FIELD_OFFSET(::CMsg_CVars, cvars_),
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_NOP, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_NOP, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_NOP, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_NOP, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SplitScreenUser, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SplitScreenUser, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SplitScreenUser, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SplitScreenUser, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SplitScreenUser, slot_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SplitScreenUser, slot_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Disconnect, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Disconnect, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Disconnect, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Disconnect, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Disconnect, reason_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Disconnect, reason_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Tick, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Tick, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Tick, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Tick, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Tick, tick_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Tick, host_frametime_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Tick, host_frametime_std_deviation_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Tick, host_computationtime_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Tick, host_computationtime_std_deviation_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Tick, host_framestarttime_std_deviation_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_Tick, host_loss_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Tick, tick_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Tick, host_frametime_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Tick, host_frametime_std_deviation_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Tick, host_computationtime_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Tick, host_computationtime_std_deviation_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Tick, host_framestarttime_std_deviation_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_Tick, host_loss_),
   0,
   1,
   2,
@@ -669,50 +638,50 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   4,
   5,
   6,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_StringCmd, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_StringCmd, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_StringCmd, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_StringCmd, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_StringCmd, command_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_StringCmd, command_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SetConVar, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SetConVar, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SetConVar, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SetConVar, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SetConVar, convars_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SetConVar, convars_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SignonState, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SignonState, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SignonState, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SignonState, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SignonState, signon_state_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SignonState, spawn_count_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SignonState, num_server_players_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SignonState, players_networkids_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SignonState, map_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SignonState, addons_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SignonState, signon_state_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SignonState, spawn_count_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SignonState, num_server_players_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SignonState, players_networkids_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SignonState, map_name_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SignonState, addons_),
   2,
   3,
   4,
   ~0u,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_string_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_float_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_long_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_short_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_byte_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_bool_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_uint64_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, type_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_string_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_float_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_long_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_short_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_byte_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_bool_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent_key_t, val_uint64_),
   1,
   0,
   2,
@@ -721,81 +690,81 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   5,
   6,
   7,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent, event_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent, eventid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameEvent, keys_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent, event_name_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent, eventid_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameEvent, keys_),
   0,
   1,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_GameEvents_event_t, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_GameEvents_event_t, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_GameEvents_event_t, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_GameEvents_event_t, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_GameEvents_event_t, tick_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_GameEvents_event_t, event_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_GameEvents_event_t, tick_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_GameEvents_event_t, event_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_GameEvents, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_GameEvents, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_GameEvents, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_GameEvents, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_GameEvents, events_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_GameEvents, events_),
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_UserMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_UserMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_UserMessage, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_UserMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_UserMessage, msg_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_UserMessage, msg_data_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_UserMessage, msg_type_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_UserMessage, msg_data_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_UserMessages_usermsg_t, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_UserMessages_usermsg_t, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_UserMessages_usermsg_t, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_UserMessages_usermsg_t, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_UserMessages_usermsg_t, tick_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_UserMessages_usermsg_t, msg_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_UserMessages_usermsg_t, tick_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_UserMessages_usermsg_t, msg_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_UserMessages, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_UserMessages, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_UserMessages, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_UserMessages, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsgList_UserMessages, usermsgs_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsgList_UserMessages, usermsgs_),
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, worldname_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, entitylumpname_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, entityfiltername_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, spawngrouphandle_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, spawngroupownerhandle_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, world_offset_pos_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, world_offset_angle_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, spawngroupmanifest_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, flags_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, tickcount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, manifestincomplete_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, localnamefixup_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, parentnamefixup_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, manifestloadpriority_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, worldgroupid_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, creationsequence_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, savegamefilename_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, spawngroupparenthandle_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, worldname_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, entitylumpname_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, entityfiltername_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, spawngrouphandle_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, spawngroupownerhandle_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, world_offset_pos_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, world_offset_angle_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, spawngroupmanifest_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, flags_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, tickcount_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, manifestincomplete_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, localnamefixup_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, parentnamefixup_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, manifestloadpriority_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, worldgroupid_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, creationsequence_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, savegamefilename_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Load, spawngroupparenthandle_),
   0,
   1,
   2,
@@ -814,69 +783,69 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   16,
   6,
   17,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, spawngrouphandle_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, spawngroupmanifest_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, manifestincomplete_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, spawngrouphandle_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, spawngroupmanifest_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_ManifestUpdate, manifestincomplete_),
   1,
   0,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, spawngrouphandle_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, tickcount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, creationsequence_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, spawngrouphandle_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, tickcount_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_SetCreationTick, creationsequence_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, spawngrouphandle_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, flags_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, tickcount_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, spawngrouphandle_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, flags_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_Unload, tickcount_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_LoadCompleted, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_LoadCompleted, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_LoadCompleted, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_LoadCompleted, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CNETMsg_SpawnGroup_LoadCompleted, spawngrouphandle_),
+  PROTOBUF_FIELD_OFFSET(::CNETMsg_SpawnGroup_LoadCompleted, spawngrouphandle_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_multiplayer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_loadsavegame_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_background_map_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_headless_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, min_client_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, max_client_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, max_clients_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, tick_interval_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, hostname_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, savegamename_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, s1_mapname_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, gamemode_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, server_ip_address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_localonly_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_transition_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, previouslevel_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, landmarkname_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_multiplayer_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_loadsavegame_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_background_map_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_headless_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, min_client_limit_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, max_client_limit_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, max_clients_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, tick_interval_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, hostname_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, savegamename_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, s1_mapname_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, gamemode_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, server_ip_address_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, data_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_localonly_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, is_transition_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, previouslevel_),
+  PROTOBUF_FIELD_OFFSET(::CSVCMsg_GameSessionConfiguration, landmarkname_),
   8,
   9,
   10,
@@ -896,7 +865,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   6,
   7,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 8, sizeof(::CMsgVector)},
   { 11, 18, sizeof(::CMsgVector2D)},
   { 20, 28, sizeof(::CMsgQAngle)},
@@ -954,139 +923,123 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::_CSVCMsg_GameSessionConfiguration_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "networkbasetypes.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_networkbasetypes_2eproto = {
+  {}, AddDescriptors_networkbasetypes_2eproto, "networkbasetypes.proto", schemas,
+  file_default_instances, TableStruct_networkbasetypes_2eproto::offsets,
+  file_level_metadata_networkbasetypes_2eproto, 26, file_level_enum_descriptors_networkbasetypes_2eproto, file_level_service_descriptors_networkbasetypes_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_networkbasetypes_2eproto[] =
+  "\n\026networkbasetypes.proto\032\030network_connec"
+  "tion.proto\"-\n\nCMsgVector\022\t\n\001x\030\001 \001(\002\022\t\n\001y"
+  "\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"$\n\014CMsgVector2D\022\t\n\001x\030\001"
+  " \001(\002\022\t\n\001y\030\002 \001(\002\"-\n\nCMsgQAngle\022\t\n\001x\030\001 \001(\002"
+  "\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"q\n\016CMsgPlayerInfo"
+  "\022\014\n\004name\030\001 \001(\t\022\014\n\004xuid\030\002 \001(\006\022\016\n\006userid\030\003"
+  " \001(\005\022\017\n\007steamid\030\004 \001(\006\022\022\n\nfakeplayer\030\005 \001("
+  "\010\022\016\n\006ishltv\030\006 \001(\010\"R\n\nCMsg_CVars\022\037\n\005cvars"
+  "\030\001 \003(\0132\020.CMsg_CVars.CVar\032#\n\004CVar\022\014\n\004name"
+  "\030\001 \001(\t\022\r\n\005value\030\002 \001(\t\"\r\n\013CNETMsg_NOP\"\'\n\027"
+  "CNETMsg_SplitScreenUser\022\014\n\004slot\030\001 \001(\005\"^\n"
+  "\022CNETMsg_Disconnect\022H\n\006reason\030\002 \001(\0162\034.EN"
+  "etworkDisconnectionReason:\032NETWORK_DISCO"
+  "NNECT_INVALID\"\342\001\n\014CNETMsg_Tick\022\014\n\004tick\030\001"
+  " \001(\r\022\026\n\016host_frametime\030\002 \001(\r\022$\n\034host_fra"
+  "metime_std_deviation\030\003 \001(\r\022\034\n\024host_compu"
+  "tationtime\030\004 \001(\r\022*\n\"host_computationtime"
+  "_std_deviation\030\005 \001(\r\022)\n!host_framestartt"
+  "ime_std_deviation\030\006 \001(\r\022\021\n\thost_loss\030\007 \001"
+  "(\r\"$\n\021CNETMsg_StringCmd\022\017\n\007command\030\001 \001(\t"
+  "\"1\n\021CNETMsg_SetConVar\022\034\n\007convars\030\001 \001(\0132\013"
+  ".CMsg_CVars\"\232\001\n\023CNETMsg_SignonState\022\024\n\014s"
+  "ignon_state\030\001 \001(\r\022\023\n\013spawn_count\030\002 \001(\r\022\032"
+  "\n\022num_server_players\030\003 \001(\r\022\032\n\022players_ne"
+  "tworkids\030\004 \003(\t\022\020\n\010map_name\030\005 \001(\t\022\016\n\006addo"
+  "ns\030\006 \001(\t\"\374\001\n\021CSVCMsg_GameEvent\022\022\n\nevent_"
+  "name\030\001 \001(\t\022\017\n\007eventid\030\002 \001(\005\022&\n\004keys\030\003 \003("
+  "\0132\030.CSVCMsg_GameEvent.key_t\032\231\001\n\005key_t\022\014\n"
+  "\004type\030\001 \001(\005\022\022\n\nval_string\030\002 \001(\t\022\021\n\tval_f"
+  "loat\030\003 \001(\002\022\020\n\010val_long\030\004 \001(\005\022\021\n\tval_shor"
+  "t\030\005 \001(\005\022\020\n\010val_byte\030\006 \001(\005\022\020\n\010val_bool\030\007 "
+  "\001(\010\022\022\n\nval_uint64\030\010 \001(\004\"\205\001\n\026CSVCMsgList_"
+  "GameEvents\022/\n\006events\030\001 \003(\0132\037.CSVCMsgList"
+  "_GameEvents.event_t\032:\n\007event_t\022\014\n\004tick\030\001"
+  " \001(\005\022!\n\005event\030\002 \001(\0132\022.CSVCMsg_GameEvent\""
+  "9\n\023CSVCMsg_UserMessage\022\020\n\010msg_type\030\001 \001(\005"
+  "\022\020\n\010msg_data\030\002 \001(\014\"\217\001\n\030CSVCMsgList_UserM"
+  "essages\0225\n\010usermsgs\030\001 \003(\0132#.CSVCMsgList_"
+  "UserMessages.usermsg_t\032<\n\tusermsg_t\022\014\n\004t"
+  "ick\030\001 \001(\005\022!\n\003msg\030\002 \001(\0132\024.CSVCMsg_UserMes"
+  "sage\"\372\003\n\027CNETMsg_SpawnGroup_Load\022\021\n\tworl"
+  "dname\030\001 \001(\t\022\026\n\016entitylumpname\030\002 \001(\t\022\030\n\020e"
+  "ntityfiltername\030\003 \001(\t\022\030\n\020spawngrouphandl"
+  "e\030\004 \001(\r\022\035\n\025spawngroupownerhandle\030\005 \001(\r\022%"
+  "\n\020world_offset_pos\030\006 \001(\0132\013.CMsgVector\022\'\n"
+  "\022world_offset_angle\030\007 \001(\0132\013.CMsgQAngle\022\032"
+  "\n\022spawngroupmanifest\030\010 \001(\014\022\r\n\005flags\030\t \001("
+  "\r\022\021\n\ttickcount\030\n \001(\005\022\032\n\022manifestincomple"
+  "te\030\013 \001(\010\022\026\n\016localnamefixup\030\014 \001(\t\022\027\n\017pare"
+  "ntnamefixup\030\r \001(\t\022\034\n\024manifestloadpriorit"
+  "y\030\016 \001(\005\022\024\n\014worldgroupid\030\017 \001(\r\022\030\n\020creatio"
+  "nsequence\030\020 \001(\r\022\030\n\020savegamefilename\030\021 \001("
+  "\t\022\036\n\026spawngroupparenthandle\030\022 \001(\r\"u\n!CNE"
+  "TMsg_SpawnGroup_ManifestUpdate\022\030\n\020spawng"
+  "rouphandle\030\001 \001(\r\022\032\n\022spawngroupmanifest\030\002"
+  " \001(\014\022\032\n\022manifestincomplete\030\003 \001(\010\"k\n\"CNET"
+  "Msg_SpawnGroup_SetCreationTick\022\030\n\020spawng"
+  "rouphandle\030\001 \001(\r\022\021\n\ttickcount\030\002 \001(\005\022\030\n\020c"
+  "reationsequence\030\003 \001(\r\"W\n\031CNETMsg_SpawnGr"
+  "oup_Unload\022\030\n\020spawngrouphandle\030\001 \001(\r\022\r\n\005"
+  "flags\030\002 \001(\r\022\021\n\ttickcount\030\003 \001(\005\"<\n CNETMs"
+  "g_SpawnGroup_LoadCompleted\022\030\n\020spawngroup"
+  "handle\030\001 \001(\r\"\264\003\n CSVCMsg_GameSessionConf"
+  "iguration\022\026\n\016is_multiplayer\030\001 \001(\010\022\027\n\017is_"
+  "loadsavegame\030\002 \001(\010\022\031\n\021is_background_map\030"
+  "\003 \001(\010\022\023\n\013is_headless\030\004 \001(\010\022\030\n\020min_client"
+  "_limit\030\005 \001(\r\022\030\n\020max_client_limit\030\006 \001(\r\022\023"
+  "\n\013max_clients\030\007 \001(\r\022\025\n\rtick_interval\030\010 \001"
+  "(\007\022\020\n\010hostname\030\t \001(\t\022\024\n\014savegamename\030\n \001"
+  "(\t\022\022\n\ns1_mapname\030\013 \001(\t\022\020\n\010gamemode\030\014 \001(\t"
+  "\022\031\n\021server_ip_address\030\r \001(\t\022\014\n\004data\030\016 \001("
+  "\014\022\024\n\014is_localonly\030\017 \001(\010\022\025\n\ris_transition"
+  "\030\020 \001(\010\022\025\n\rpreviouslevel\030\021 \001(\t\022\024\n\014landmar"
+  "kname\030\022 \001(\t*\256\002\n\014NET_Messages\022\013\n\007net_NOP\020"
+  "\000\022\022\n\016net_Disconnect\020\001\022\027\n\023net_SplitScreen"
+  "User\020\003\022\014\n\010net_Tick\020\004\022\021\n\rnet_StringCmd\020\005\022"
+  "\021\n\rnet_SetConVar\020\006\022\023\n\017net_SignonState\020\007\022"
+  "\027\n\023net_SpawnGroup_Load\020\010\022!\n\035net_SpawnGro"
+  "up_ManifestUpdate\020\t\022\"\n\036net_SpawnGroup_Se"
+  "tCreationTick\020\013\022\031\n\025net_SpawnGroup_Unload"
+  "\020\014\022 \n\034net_SpawnGroup_LoadCompleted\020\r*\314\002\n"
+  "\021SpawnGroupFlags_t\022\'\n#SPAWN_GROUP_LOAD_E"
+  "NTITIES_FROM_SAVE\020\001\022#\n\037SPAWN_GROUP_DONT_"
+  "SPAWN_ENTITIES\020\002\022!\n\035SPAWN_GROUP_SYNCHRON"
+  "OUS_SPAWN\020\004\022&\n\"SPAWN_GROUP_IS_INITIAL_SP"
+  "AWN_GROUP\020\010\022+\n\'SPAWN_GROUP_CREATE_CLIENT"
+  "_ONLY_ENTITIES\020\020\022\"\n\036SPAWN_GROUP_BLOCK_UN"
+  "TIL_LOADED\020@\022$\n\037SPAWN_GROUP_LOAD_STREAMI"
+  "NG_DATA\020\200\001\022\'\n\"SPAWN_GROUP_CREATE_NEW_SCE"
+  "NE_WORLD\020\200\002B\003\200\001\000"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_networkbasetypes_2eproto = {
+  false, InitDefaults_networkbasetypes_2eproto, 
+  descriptor_table_protodef_networkbasetypes_2eproto,
+  "networkbasetypes.proto", &assign_descriptors_table_networkbasetypes_2eproto, 3576,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 26);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\026networkbasetypes.proto\032\030network_connec"
-      "tion.proto\"-\n\nCMsgVector\022\t\n\001x\030\001 \001(\002\022\t\n\001y"
-      "\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"$\n\014CMsgVector2D\022\t\n\001x\030\001"
-      " \001(\002\022\t\n\001y\030\002 \001(\002\"-\n\nCMsgQAngle\022\t\n\001x\030\001 \001(\002"
-      "\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"q\n\016CMsgPlayerInfo"
-      "\022\014\n\004name\030\001 \001(\t\022\014\n\004xuid\030\002 \001(\006\022\016\n\006userid\030\003"
-      " \001(\005\022\017\n\007steamid\030\004 \001(\006\022\022\n\nfakeplayer\030\005 \001("
-      "\010\022\016\n\006ishltv\030\006 \001(\010\"R\n\nCMsg_CVars\022\037\n\005cvars"
-      "\030\001 \003(\0132\020.CMsg_CVars.CVar\032#\n\004CVar\022\014\n\004name"
-      "\030\001 \001(\t\022\r\n\005value\030\002 \001(\t\"\r\n\013CNETMsg_NOP\"\'\n\027"
-      "CNETMsg_SplitScreenUser\022\014\n\004slot\030\001 \001(\005\"^\n"
-      "\022CNETMsg_Disconnect\022H\n\006reason\030\002 \001(\0162\034.EN"
-      "etworkDisconnectionReason:\032NETWORK_DISCO"
-      "NNECT_INVALID\"\342\001\n\014CNETMsg_Tick\022\014\n\004tick\030\001"
-      " \001(\r\022\026\n\016host_frametime\030\002 \001(\r\022$\n\034host_fra"
-      "metime_std_deviation\030\003 \001(\r\022\034\n\024host_compu"
-      "tationtime\030\004 \001(\r\022*\n\"host_computationtime"
-      "_std_deviation\030\005 \001(\r\022)\n!host_framestartt"
-      "ime_std_deviation\030\006 \001(\r\022\021\n\thost_loss\030\007 \001"
-      "(\r\"$\n\021CNETMsg_StringCmd\022\017\n\007command\030\001 \001(\t"
-      "\"1\n\021CNETMsg_SetConVar\022\034\n\007convars\030\001 \001(\0132\013"
-      ".CMsg_CVars\"\232\001\n\023CNETMsg_SignonState\022\024\n\014s"
-      "ignon_state\030\001 \001(\r\022\023\n\013spawn_count\030\002 \001(\r\022\032"
-      "\n\022num_server_players\030\003 \001(\r\022\032\n\022players_ne"
-      "tworkids\030\004 \003(\t\022\020\n\010map_name\030\005 \001(\t\022\016\n\006addo"
-      "ns\030\006 \001(\t\"\374\001\n\021CSVCMsg_GameEvent\022\022\n\nevent_"
-      "name\030\001 \001(\t\022\017\n\007eventid\030\002 \001(\005\022&\n\004keys\030\003 \003("
-      "\0132\030.CSVCMsg_GameEvent.key_t\032\231\001\n\005key_t\022\014\n"
-      "\004type\030\001 \001(\005\022\022\n\nval_string\030\002 \001(\t\022\021\n\tval_f"
-      "loat\030\003 \001(\002\022\020\n\010val_long\030\004 \001(\005\022\021\n\tval_shor"
-      "t\030\005 \001(\005\022\020\n\010val_byte\030\006 \001(\005\022\020\n\010val_bool\030\007 "
-      "\001(\010\022\022\n\nval_uint64\030\010 \001(\004\"\205\001\n\026CSVCMsgList_"
-      "GameEvents\022/\n\006events\030\001 \003(\0132\037.CSVCMsgList"
-      "_GameEvents.event_t\032:\n\007event_t\022\014\n\004tick\030\001"
-      " \001(\005\022!\n\005event\030\002 \001(\0132\022.CSVCMsg_GameEvent\""
-      "9\n\023CSVCMsg_UserMessage\022\020\n\010msg_type\030\001 \001(\005"
-      "\022\020\n\010msg_data\030\002 \001(\014\"\217\001\n\030CSVCMsgList_UserM"
-      "essages\0225\n\010usermsgs\030\001 \003(\0132#.CSVCMsgList_"
-      "UserMessages.usermsg_t\032<\n\tusermsg_t\022\014\n\004t"
-      "ick\030\001 \001(\005\022!\n\003msg\030\002 \001(\0132\024.CSVCMsg_UserMes"
-      "sage\"\372\003\n\027CNETMsg_SpawnGroup_Load\022\021\n\tworl"
-      "dname\030\001 \001(\t\022\026\n\016entitylumpname\030\002 \001(\t\022\030\n\020e"
-      "ntityfiltername\030\003 \001(\t\022\030\n\020spawngrouphandl"
-      "e\030\004 \001(\r\022\035\n\025spawngroupownerhandle\030\005 \001(\r\022%"
-      "\n\020world_offset_pos\030\006 \001(\0132\013.CMsgVector\022\'\n"
-      "\022world_offset_angle\030\007 \001(\0132\013.CMsgQAngle\022\032"
-      "\n\022spawngroupmanifest\030\010 \001(\014\022\r\n\005flags\030\t \001("
-      "\r\022\021\n\ttickcount\030\n \001(\005\022\032\n\022manifestincomple"
-      "te\030\013 \001(\010\022\026\n\016localnamefixup\030\014 \001(\t\022\027\n\017pare"
-      "ntnamefixup\030\r \001(\t\022\034\n\024manifestloadpriorit"
-      "y\030\016 \001(\005\022\024\n\014worldgroupid\030\017 \001(\r\022\030\n\020creatio"
-      "nsequence\030\020 \001(\r\022\030\n\020savegamefilename\030\021 \001("
-      "\t\022\036\n\026spawngroupparenthandle\030\022 \001(\r\"u\n!CNE"
-      "TMsg_SpawnGroup_ManifestUpdate\022\030\n\020spawng"
-      "rouphandle\030\001 \001(\r\022\032\n\022spawngroupmanifest\030\002"
-      " \001(\014\022\032\n\022manifestincomplete\030\003 \001(\010\"k\n\"CNET"
-      "Msg_SpawnGroup_SetCreationTick\022\030\n\020spawng"
-      "rouphandle\030\001 \001(\r\022\021\n\ttickcount\030\002 \001(\005\022\030\n\020c"
-      "reationsequence\030\003 \001(\r\"W\n\031CNETMsg_SpawnGr"
-      "oup_Unload\022\030\n\020spawngrouphandle\030\001 \001(\r\022\r\n\005"
-      "flags\030\002 \001(\r\022\021\n\ttickcount\030\003 \001(\005\"<\n CNETMs"
-      "g_SpawnGroup_LoadCompleted\022\030\n\020spawngroup"
-      "handle\030\001 \001(\r\"\264\003\n CSVCMsg_GameSessionConf"
-      "iguration\022\026\n\016is_multiplayer\030\001 \001(\010\022\027\n\017is_"
-      "loadsavegame\030\002 \001(\010\022\031\n\021is_background_map\030"
-      "\003 \001(\010\022\023\n\013is_headless\030\004 \001(\010\022\030\n\020min_client"
-      "_limit\030\005 \001(\r\022\030\n\020max_client_limit\030\006 \001(\r\022\023"
-      "\n\013max_clients\030\007 \001(\r\022\025\n\rtick_interval\030\010 \001"
-      "(\007\022\020\n\010hostname\030\t \001(\t\022\024\n\014savegamename\030\n \001"
-      "(\t\022\022\n\ns1_mapname\030\013 \001(\t\022\020\n\010gamemode\030\014 \001(\t"
-      "\022\031\n\021server_ip_address\030\r \001(\t\022\014\n\004data\030\016 \001("
-      "\014\022\024\n\014is_localonly\030\017 \001(\010\022\025\n\ris_transition"
-      "\030\020 \001(\010\022\025\n\rpreviouslevel\030\021 \001(\t\022\024\n\014landmar"
-      "kname\030\022 \001(\t*\256\002\n\014NET_Messages\022\013\n\007net_NOP\020"
-      "\000\022\022\n\016net_Disconnect\020\001\022\027\n\023net_SplitScreen"
-      "User\020\003\022\014\n\010net_Tick\020\004\022\021\n\rnet_StringCmd\020\005\022"
-      "\021\n\rnet_SetConVar\020\006\022\023\n\017net_SignonState\020\007\022"
-      "\027\n\023net_SpawnGroup_Load\020\010\022!\n\035net_SpawnGro"
-      "up_ManifestUpdate\020\t\022\"\n\036net_SpawnGroup_Se"
-      "tCreationTick\020\013\022\031\n\025net_SpawnGroup_Unload"
-      "\020\014\022 \n\034net_SpawnGroup_LoadCompleted\020\r*\314\002\n"
-      "\021SpawnGroupFlags_t\022\'\n#SPAWN_GROUP_LOAD_E"
-      "NTITIES_FROM_SAVE\020\001\022#\n\037SPAWN_GROUP_DONT_"
-      "SPAWN_ENTITIES\020\002\022!\n\035SPAWN_GROUP_SYNCHRON"
-      "OUS_SPAWN\020\004\022&\n\"SPAWN_GROUP_IS_INITIAL_SP"
-      "AWN_GROUP\020\010\022+\n\'SPAWN_GROUP_CREATE_CLIENT"
-      "_ONLY_ENTITIES\020\020\022\"\n\036SPAWN_GROUP_BLOCK_UN"
-      "TIL_LOADED\020@\022$\n\037SPAWN_GROUP_LOAD_STREAMI"
-      "NG_DATA\020\200\001\022\'\n\"SPAWN_GROUP_CREATE_NEW_SCE"
-      "NE_WORLD\020\200\002B\003\200\001\000"
+void AddDescriptors_networkbasetypes_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
+    ::AddDescriptors_network_5fconnection_2eproto,
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3576);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "networkbasetypes.proto", &protobuf_RegisterTypes);
-  ::protobuf_network_5fconnection_2eproto::AddDescriptors();
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_networkbasetypes_2eproto, deps, 1);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_networkbasetypes_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_networkbasetypes_2eproto = []() { AddDescriptors_networkbasetypes_2eproto(); return true; }();
 const ::google::protobuf::EnumDescriptor* NET_Messages_descriptor() {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_networkbasetypes_2eproto::file_level_enum_descriptors[0];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_networkbasetypes_2eproto);
+  return file_level_enum_descriptors_networkbasetypes_2eproto[0];
 }
 bool NET_Messages_IsValid(int value) {
   switch (value) {
@@ -1109,8 +1062,8 @@ bool NET_Messages_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* SpawnGroupFlags_t_descriptor() {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_networkbasetypes_2eproto::file_level_enum_descriptors[1];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_networkbasetypes_2eproto);
+  return file_level_enum_descriptors_networkbasetypes_2eproto[1];
 }
 bool SpawnGroupFlags_t_IsValid(int value) {
   switch (value) {
@@ -1133,6 +1086,19 @@ bool SpawnGroupFlags_t_IsValid(int value) {
 
 void CMsgVector::InitAsDefaultInstance() {
 }
+class CMsgVector::HasBitSetters {
+ public:
+  static void set_has_x(CMsgVector* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_y(CMsgVector* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_z(CMsgVector* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CMsgVector::kXFieldNumber;
 const int CMsgVector::kYFieldNumber;
@@ -1140,15 +1106,13 @@ const int CMsgVector::kZFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CMsgVector::CMsgVector()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsgVector.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CMsgVector)
 }
 CMsgVector::CMsgVector(const CMsgVector& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
@@ -1174,13 +1138,8 @@ void CMsgVector::SharedDtor() {
 void CMsgVector::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CMsgVector::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CMsgVector& CMsgVector::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CMsgVector.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CMsgVector_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1192,7 +1151,7 @@ void CMsgVector::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&x_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&z_) -
         reinterpret_cast<char*>(&x_)) + sizeof(z_));
@@ -1201,9 +1160,60 @@ void CMsgVector::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CMsgVector::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CMsgVector*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional float x = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 13) goto handle_unusual;
+        msg->set_x(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float y = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 21) goto handle_unusual;
+        msg->set_y(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float z = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 29) goto handle_unusual;
+        msg->set_z(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CMsgVector::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CMsgVector)
   for (;;) {
@@ -1213,9 +1223,8 @@ bool CMsgVector::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float x = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
-          set_has_x();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (13 & 0xFF)) {
+          HasBitSetters::set_has_x(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &x_)));
@@ -1227,9 +1236,8 @@ bool CMsgVector::MergePartialFromCodedStream(
 
       // optional float y = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(21u /* 21 & 0xFF */)) {
-          set_has_y();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (21 & 0xFF)) {
+          HasBitSetters::set_has_y(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &y_)));
@@ -1241,9 +1249,8 @@ bool CMsgVector::MergePartialFromCodedStream(
 
       // optional float z = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
-          set_has_z();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (29 & 0xFF)) {
+          HasBitSetters::set_has_z(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &z_)));
@@ -1272,6 +1279,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CMsgVector::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1303,8 +1311,7 @@ void CMsgVector::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CMsgVector::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CMsgVector)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1342,19 +1349,24 @@ size_t CMsgVector::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional float x = 1;
-    if (has_x()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 4;
     }
 
     // optional float y = 2;
-    if (has_y()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 4;
     }
 
     // optional float z = 3;
-    if (has_z()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 4;
     }
 
@@ -1368,9 +1380,9 @@ void CMsgVector::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CMsgVector)
   GOOGLE_DCHECK_NE(&from, this);
   const CMsgVector* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CMsgVector>(
+      ::google::protobuf::DynamicCastToGenerated<CMsgVector>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMsgVector)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1387,7 +1399,7 @@ void CMsgVector::MergeFrom(const CMsgVector& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       x_ = from.x_;
     }
@@ -1425,16 +1437,16 @@ void CMsgVector::Swap(CMsgVector* other) {
 }
 void CMsgVector::InternalSwap(CMsgVector* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(x_, other->x_);
   swap(y_, other->y_);
   swap(z_, other->z_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CMsgVector::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1442,21 +1454,29 @@ void CMsgVector::InternalSwap(CMsgVector* other) {
 
 void CMsgVector2D::InitAsDefaultInstance() {
 }
+class CMsgVector2D::HasBitSetters {
+ public:
+  static void set_has_x(CMsgVector2D* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_y(CMsgVector2D* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CMsgVector2D::kXFieldNumber;
 const int CMsgVector2D::kYFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CMsgVector2D::CMsgVector2D()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsgVector2D.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CMsgVector2D)
 }
 CMsgVector2D::CMsgVector2D(const CMsgVector2D& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
@@ -1482,13 +1502,8 @@ void CMsgVector2D::SharedDtor() {
 void CMsgVector2D::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CMsgVector2D::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CMsgVector2D& CMsgVector2D::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CMsgVector2D.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CMsgVector2D_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1500,7 +1515,7 @@ void CMsgVector2D::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&x_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&y_) -
         reinterpret_cast<char*>(&x_)) + sizeof(y_));
@@ -1509,9 +1524,53 @@ void CMsgVector2D::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CMsgVector2D::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CMsgVector2D*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional float x = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 13) goto handle_unusual;
+        msg->set_x(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float y = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 21) goto handle_unusual;
+        msg->set_y(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CMsgVector2D::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CMsgVector2D)
   for (;;) {
@@ -1521,9 +1580,8 @@ bool CMsgVector2D::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float x = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
-          set_has_x();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (13 & 0xFF)) {
+          HasBitSetters::set_has_x(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &x_)));
@@ -1535,9 +1593,8 @@ bool CMsgVector2D::MergePartialFromCodedStream(
 
       // optional float y = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(21u /* 21 & 0xFF */)) {
-          set_has_y();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (21 & 0xFF)) {
+          HasBitSetters::set_has_y(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &y_)));
@@ -1566,6 +1623,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CMsgVector2D::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1592,8 +1650,7 @@ void CMsgVector2D::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CMsgVector2D::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CMsgVector2D)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1626,14 +1683,19 @@ size_t CMsgVector2D::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional float x = 1;
-    if (has_x()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 4;
     }
 
     // optional float y = 2;
-    if (has_y()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 4;
     }
 
@@ -1647,9 +1709,9 @@ void CMsgVector2D::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CMsgVector2D)
   GOOGLE_DCHECK_NE(&from, this);
   const CMsgVector2D* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CMsgVector2D>(
+      ::google::protobuf::DynamicCastToGenerated<CMsgVector2D>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMsgVector2D)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1666,7 +1728,7 @@ void CMsgVector2D::MergeFrom(const CMsgVector2D& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       x_ = from.x_;
     }
@@ -1701,15 +1763,15 @@ void CMsgVector2D::Swap(CMsgVector2D* other) {
 }
 void CMsgVector2D::InternalSwap(CMsgVector2D* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(x_, other->x_);
   swap(y_, other->y_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CMsgVector2D::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1717,6 +1779,19 @@ void CMsgVector2D::InternalSwap(CMsgVector2D* other) {
 
 void CMsgQAngle::InitAsDefaultInstance() {
 }
+class CMsgQAngle::HasBitSetters {
+ public:
+  static void set_has_x(CMsgQAngle* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_y(CMsgQAngle* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_z(CMsgQAngle* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CMsgQAngle::kXFieldNumber;
 const int CMsgQAngle::kYFieldNumber;
@@ -1724,15 +1799,13 @@ const int CMsgQAngle::kZFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CMsgQAngle::CMsgQAngle()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsgQAngle.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CMsgQAngle)
 }
 CMsgQAngle::CMsgQAngle(const CMsgQAngle& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
@@ -1758,13 +1831,8 @@ void CMsgQAngle::SharedDtor() {
 void CMsgQAngle::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CMsgQAngle::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CMsgQAngle& CMsgQAngle::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CMsgQAngle.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CMsgQAngle_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1776,7 +1844,7 @@ void CMsgQAngle::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&x_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&z_) -
         reinterpret_cast<char*>(&x_)) + sizeof(z_));
@@ -1785,9 +1853,60 @@ void CMsgQAngle::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CMsgQAngle::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CMsgQAngle*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional float x = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 13) goto handle_unusual;
+        msg->set_x(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float y = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 21) goto handle_unusual;
+        msg->set_y(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float z = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 29) goto handle_unusual;
+        msg->set_z(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CMsgQAngle::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CMsgQAngle)
   for (;;) {
@@ -1797,9 +1916,8 @@ bool CMsgQAngle::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float x = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
-          set_has_x();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (13 & 0xFF)) {
+          HasBitSetters::set_has_x(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &x_)));
@@ -1811,9 +1929,8 @@ bool CMsgQAngle::MergePartialFromCodedStream(
 
       // optional float y = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(21u /* 21 & 0xFF */)) {
-          set_has_y();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (21 & 0xFF)) {
+          HasBitSetters::set_has_y(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &y_)));
@@ -1825,9 +1942,8 @@ bool CMsgQAngle::MergePartialFromCodedStream(
 
       // optional float z = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
-          set_has_z();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (29 & 0xFF)) {
+          HasBitSetters::set_has_z(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &z_)));
@@ -1856,6 +1972,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CMsgQAngle::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1887,8 +2004,7 @@ void CMsgQAngle::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CMsgQAngle::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CMsgQAngle)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1926,19 +2042,24 @@ size_t CMsgQAngle::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional float x = 1;
-    if (has_x()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 4;
     }
 
     // optional float y = 2;
-    if (has_y()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 4;
     }
 
     // optional float z = 3;
-    if (has_z()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 4;
     }
 
@@ -1952,9 +2073,9 @@ void CMsgQAngle::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CMsgQAngle)
   GOOGLE_DCHECK_NE(&from, this);
   const CMsgQAngle* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CMsgQAngle>(
+      ::google::protobuf::DynamicCastToGenerated<CMsgQAngle>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMsgQAngle)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1971,7 +2092,7 @@ void CMsgQAngle::MergeFrom(const CMsgQAngle& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       x_ = from.x_;
     }
@@ -2009,16 +2130,16 @@ void CMsgQAngle::Swap(CMsgQAngle* other) {
 }
 void CMsgQAngle::InternalSwap(CMsgQAngle* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(x_, other->x_);
   swap(y_, other->y_);
   swap(z_, other->z_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CMsgQAngle::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2026,6 +2147,28 @@ void CMsgQAngle::InternalSwap(CMsgQAngle* other) {
 
 void CMsgPlayerInfo::InitAsDefaultInstance() {
 }
+class CMsgPlayerInfo::HasBitSetters {
+ public:
+  static void set_has_name(CMsgPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_xuid(CMsgPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_userid(CMsgPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_steamid(CMsgPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_fakeplayer(CMsgPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_ishltv(CMsgPlayerInfo* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CMsgPlayerInfo::kNameFieldNumber;
 const int CMsgPlayerInfo::kXuidFieldNumber;
@@ -2036,15 +2179,13 @@ const int CMsgPlayerInfo::kIshltvFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CMsgPlayerInfo::CMsgPlayerInfo()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsgPlayerInfo.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CMsgPlayerInfo)
 }
 CMsgPlayerInfo::CMsgPlayerInfo(const CMsgPlayerInfo& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2058,6 +2199,8 @@ CMsgPlayerInfo::CMsgPlayerInfo(const CMsgPlayerInfo& from)
 }
 
 void CMsgPlayerInfo::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CMsgPlayerInfo_networkbasetypes_2eproto.base);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&xuid_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&ishltv_) -
@@ -2076,13 +2219,8 @@ void CMsgPlayerInfo::SharedDtor() {
 void CMsgPlayerInfo::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CMsgPlayerInfo::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CMsgPlayerInfo& CMsgPlayerInfo::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CMsgPlayerInfo.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CMsgPlayerInfo_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2097,7 +2235,7 @@ void CMsgPlayerInfo::Clear() {
   if (cached_has_bits & 0x00000001u) {
     name_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 62u) {
+  if (cached_has_bits & 0x0000003eu) {
     ::memset(&xuid_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&ishltv_) -
         reinterpret_cast<char*>(&xuid_)) + sizeof(ishltv_));
@@ -2106,9 +2244,97 @@ void CMsgPlayerInfo::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CMsgPlayerInfo::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CMsgPlayerInfo*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string name = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CMsgPlayerInfo.name");
+        object = msg->mutable_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional fixed64 xuid = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 17) goto handle_unusual;
+        msg->set_xuid(::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr));
+        ptr += sizeof(::google::protobuf::uint64);
+        break;
+      }
+      // optional int32 userid = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_userid(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional fixed64 steamid = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 33) goto handle_unusual;
+        msg->set_steamid(::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr));
+        ptr += sizeof(::google::protobuf::uint64);
+        break;
+      }
+      // optional bool fakeplayer = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_fakeplayer(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool ishltv = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_ishltv(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CMsgPlayerInfo::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CMsgPlayerInfo)
   for (;;) {
@@ -2118,8 +2344,7 @@ bool CMsgPlayerInfo::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2134,9 +2359,8 @@ bool CMsgPlayerInfo::MergePartialFromCodedStream(
 
       // optional fixed64 xuid = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-          set_has_xuid();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (17 & 0xFF)) {
+          HasBitSetters::set_has_xuid(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &xuid_)));
@@ -2148,9 +2372,8 @@ bool CMsgPlayerInfo::MergePartialFromCodedStream(
 
       // optional int32 userid = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_userid();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_userid(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &userid_)));
@@ -2162,9 +2385,8 @@ bool CMsgPlayerInfo::MergePartialFromCodedStream(
 
       // optional fixed64 steamid = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(33u /* 33 & 0xFF */)) {
-          set_has_steamid();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (33 & 0xFF)) {
+          HasBitSetters::set_has_steamid(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &steamid_)));
@@ -2176,9 +2398,8 @@ bool CMsgPlayerInfo::MergePartialFromCodedStream(
 
       // optional bool fakeplayer = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_fakeplayer();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_fakeplayer(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &fakeplayer_)));
@@ -2190,9 +2411,8 @@ bool CMsgPlayerInfo::MergePartialFromCodedStream(
 
       // optional bool ishltv = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_ishltv();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_ishltv(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &ishltv_)));
@@ -2221,6 +2441,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CMsgPlayerInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2272,8 +2493,7 @@ void CMsgPlayerInfo::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CMsgPlayerInfo::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CMsgPlayerInfo)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2332,38 +2552,43 @@ size_t CMsgPlayerInfo::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 63u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000003fu) {
     // optional string name = 1;
-    if (has_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->name());
     }
 
     // optional fixed64 xuid = 2;
-    if (has_xuid()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 8;
     }
 
     // optional fixed64 steamid = 4;
-    if (has_steamid()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 8;
     }
 
     // optional int32 userid = 3;
-    if (has_userid()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->userid());
     }
 
     // optional bool fakeplayer = 5;
-    if (has_fakeplayer()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 + 1;
     }
 
     // optional bool ishltv = 6;
-    if (has_ishltv()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 1;
     }
 
@@ -2377,9 +2602,9 @@ void CMsgPlayerInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CMsgPlayerInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const CMsgPlayerInfo* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CMsgPlayerInfo>(
+      ::google::protobuf::DynamicCastToGenerated<CMsgPlayerInfo>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMsgPlayerInfo)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2396,9 +2621,9 @@ void CMsgPlayerInfo::MergeFrom(const CMsgPlayerInfo& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_name();
+      _has_bits_[0] |= 0x00000001u;
       name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2444,6 +2669,8 @@ void CMsgPlayerInfo::Swap(CMsgPlayerInfo* other) {
 }
 void CMsgPlayerInfo::InternalSwap(CMsgPlayerInfo* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(xuid_, other->xuid_);
@@ -2451,13 +2678,11 @@ void CMsgPlayerInfo::InternalSwap(CMsgPlayerInfo* other) {
   swap(userid_, other->userid_);
   swap(fakeplayer_, other->fakeplayer_);
   swap(ishltv_, other->ishltv_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CMsgPlayerInfo::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2465,21 +2690,29 @@ void CMsgPlayerInfo::InternalSwap(CMsgPlayerInfo* other) {
 
 void CMsg_CVars_CVar::InitAsDefaultInstance() {
 }
+class CMsg_CVars_CVar::HasBitSetters {
+ public:
+  static void set_has_name(CMsg_CVars_CVar* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_value(CMsg_CVars_CVar* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CMsg_CVars_CVar::kNameFieldNumber;
 const int CMsg_CVars_CVar::kValueFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CMsg_CVars_CVar::CMsg_CVars_CVar()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsg_CVars_CVar.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CMsg_CVars.CVar)
 }
 CMsg_CVars_CVar::CMsg_CVars_CVar(const CMsg_CVars_CVar& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2494,6 +2727,8 @@ CMsg_CVars_CVar::CMsg_CVars_CVar(const CMsg_CVars_CVar& from)
 }
 
 void CMsg_CVars_CVar::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CMsg_CVars_CVar_networkbasetypes_2eproto.base);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2511,13 +2746,8 @@ void CMsg_CVars_CVar::SharedDtor() {
 void CMsg_CVars_CVar::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CMsg_CVars_CVar::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CMsg_CVars_CVar& CMsg_CVars_CVar::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CMsg_CVars_CVar.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CMsg_CVars_CVar_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2529,7 +2759,7 @@ void CMsg_CVars_CVar::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2541,9 +2771,78 @@ void CMsg_CVars_CVar::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CMsg_CVars_CVar::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CMsg_CVars_CVar*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string name = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CMsg_CVars.CVar.name");
+        object = msg->mutable_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string value = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CMsg_CVars.CVar.value");
+        object = msg->mutable_value();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CMsg_CVars_CVar::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CMsg_CVars.CVar)
   for (;;) {
@@ -2553,8 +2852,7 @@ bool CMsg_CVars_CVar::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2569,8 +2867,7 @@ bool CMsg_CVars_CVar::MergePartialFromCodedStream(
 
       // optional string value = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_value()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2602,6 +2899,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CMsg_CVars_CVar::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2638,8 +2936,7 @@ void CMsg_CVars_CVar::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CMsg_CVars_CVar::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CMsg_CVars.CVar)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2684,16 +2981,21 @@ size_t CMsg_CVars_CVar::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string name = 1;
-    if (has_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->name());
     }
 
     // optional string value = 2;
-    if (has_value()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->value());
@@ -2709,9 +3011,9 @@ void CMsg_CVars_CVar::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CMsg_CVars.CVar)
   GOOGLE_DCHECK_NE(&from, this);
   const CMsg_CVars_CVar* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CMsg_CVars_CVar>(
+      ::google::protobuf::DynamicCastToGenerated<CMsg_CVars_CVar>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMsg_CVars.CVar)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2728,13 +3030,13 @@ void CMsg_CVars_CVar::MergeFrom(const CMsg_CVars_CVar& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_name();
+      _has_bits_[0] |= 0x00000001u;
       name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_value();
+      _has_bits_[0] |= 0x00000002u;
       value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.value_);
     }
   }
@@ -2764,17 +3066,17 @@ void CMsg_CVars_CVar::Swap(CMsg_CVars_CVar* other) {
 }
 void CMsg_CVars_CVar::InternalSwap(CMsg_CVars_CVar* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   value_.Swap(&other->value_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CMsg_CVars_CVar::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2782,20 +3084,22 @@ void CMsg_CVars_CVar::InternalSwap(CMsg_CVars_CVar* other) {
 
 void CMsg_CVars::InitAsDefaultInstance() {
 }
+class CMsg_CVars::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CMsg_CVars::kCvarsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CMsg_CVars::CMsg_CVars()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CMsg_CVars.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CMsg_CVars)
 }
 CMsg_CVars::CMsg_CVars(const CMsg_CVars& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       cvars_(from.cvars_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2803,6 +3107,8 @@ CMsg_CVars::CMsg_CVars(const CMsg_CVars& from)
 }
 
 void CMsg_CVars::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CMsg_CVars_networkbasetypes_2eproto.base);
 }
 
 CMsg_CVars::~CMsg_CVars() {
@@ -2816,13 +3122,8 @@ void CMsg_CVars::SharedDtor() {
 void CMsg_CVars::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CMsg_CVars::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CMsg_CVars& CMsg_CVars::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CMsg_CVars.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CMsg_CVars_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2838,9 +3139,58 @@ void CMsg_CVars::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CMsg_CVars::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CMsg_CVars*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .CMsg_CVars.CVar cvars = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CMsg_CVars_CVar::_InternalParse;
+          object = msg->add_cvars();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CMsg_CVars::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CMsg_CVars)
   for (;;) {
@@ -2850,8 +3200,7 @@ bool CMsg_CVars::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .CMsg_CVars.CVar cvars = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_cvars()));
         } else {
@@ -2879,6 +3228,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CMsg_CVars::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2903,8 +3253,7 @@ void CMsg_CVars::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CMsg_CVars::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CMsg_CVars)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2914,7 +3263,7 @@ void CMsg_CVars::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->cvars_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->cvars(static_cast<int>(i)), deterministic, target);
+        1, this->cvars(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2934,6 +3283,10 @@ size_t CMsg_CVars::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CMsg_CVars.CVar cvars = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->cvars_size());
@@ -2954,9 +3307,9 @@ void CMsg_CVars::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CMsg_CVars)
   GOOGLE_DCHECK_NE(&from, this);
   const CMsg_CVars* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CMsg_CVars>(
+      ::google::protobuf::DynamicCastToGenerated<CMsg_CVars>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMsg_CVars)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2999,14 +3352,14 @@ void CMsg_CVars::Swap(CMsg_CVars* other) {
 }
 void CMsg_CVars::InternalSwap(CMsg_CVars* other) {
   using std::swap;
-  CastToBase(&cvars_)->InternalSwap(CastToBase(&other->cvars_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  CastToBase(&cvars_)->InternalSwap(CastToBase(&other->cvars_));
 }
 
 ::google::protobuf::Metadata CMsg_CVars::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3014,19 +3367,21 @@ void CMsg_CVars::InternalSwap(CMsg_CVars* other) {
 
 void CNETMsg_NOP::InitAsDefaultInstance() {
 }
+class CNETMsg_NOP::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_NOP::CNETMsg_NOP()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_NOP.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_NOP)
 }
 CNETMsg_NOP::CNETMsg_NOP(const CNETMsg_NOP& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:CNETMsg_NOP)
@@ -3046,13 +3401,8 @@ void CNETMsg_NOP::SharedDtor() {
 void CNETMsg_NOP::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_NOP::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_NOP& CNETMsg_NOP::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_NOP.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_NOP_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3067,9 +3417,38 @@ void CNETMsg_NOP::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_NOP::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_NOP*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_NOP::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_NOP)
   for (;;) {
@@ -3091,6 +3470,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_NOP::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3106,8 +3486,7 @@ void CNETMsg_NOP::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_NOP::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_NOP)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3129,6 +3508,10 @@ size_t CNETMsg_NOP::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -3138,9 +3521,9 @@ void CNETMsg_NOP::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_NOP)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_NOP* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_NOP>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_NOP>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_NOP)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3182,13 +3565,13 @@ void CNETMsg_NOP::Swap(CNETMsg_NOP* other) {
 }
 void CNETMsg_NOP::InternalSwap(CNETMsg_NOP* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata CNETMsg_NOP::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3196,20 +3579,25 @@ void CNETMsg_NOP::InternalSwap(CNETMsg_NOP* other) {
 
 void CNETMsg_SplitScreenUser::InitAsDefaultInstance() {
 }
+class CNETMsg_SplitScreenUser::HasBitSetters {
+ public:
+  static void set_has_slot(CNETMsg_SplitScreenUser* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_SplitScreenUser::kSlotFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_SplitScreenUser::CNETMsg_SplitScreenUser()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SplitScreenUser.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_SplitScreenUser)
 }
 CNETMsg_SplitScreenUser::CNETMsg_SplitScreenUser(const CNETMsg_SplitScreenUser& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   slot_ = from.slot_;
@@ -3231,13 +3619,8 @@ void CNETMsg_SplitScreenUser::SharedDtor() {
 void CNETMsg_SplitScreenUser::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_SplitScreenUser::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_SplitScreenUser& CNETMsg_SplitScreenUser::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SplitScreenUser.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_SplitScreenUser_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3253,9 +3636,46 @@ void CNETMsg_SplitScreenUser::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_SplitScreenUser::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_SplitScreenUser*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional int32 slot = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_slot(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_SplitScreenUser::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_SplitScreenUser)
   for (;;) {
@@ -3265,9 +3685,8 @@ bool CNETMsg_SplitScreenUser::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 slot = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_slot();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_slot(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &slot_)));
@@ -3296,6 +3715,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_SplitScreenUser::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3317,8 +3737,7 @@ void CNETMsg_SplitScreenUser::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_SplitScreenUser::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_SplitScreenUser)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3346,8 +3765,13 @@ size_t CNETMsg_SplitScreenUser::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional int32 slot = 1;
-  if (has_slot()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->slot());
@@ -3362,9 +3786,9 @@ void CNETMsg_SplitScreenUser::MergeFrom(const ::google::protobuf::Message& from)
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_SplitScreenUser)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_SplitScreenUser* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_SplitScreenUser>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_SplitScreenUser>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_SplitScreenUser)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3409,14 +3833,14 @@ void CNETMsg_SplitScreenUser::Swap(CNETMsg_SplitScreenUser* other) {
 }
 void CNETMsg_SplitScreenUser::InternalSwap(CNETMsg_SplitScreenUser* other) {
   using std::swap;
-  swap(slot_, other->slot_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(slot_, other->slot_);
 }
 
 ::google::protobuf::Metadata CNETMsg_SplitScreenUser::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3424,20 +3848,25 @@ void CNETMsg_SplitScreenUser::InternalSwap(CNETMsg_SplitScreenUser* other) {
 
 void CNETMsg_Disconnect::InitAsDefaultInstance() {
 }
+class CNETMsg_Disconnect::HasBitSetters {
+ public:
+  static void set_has_reason(CNETMsg_Disconnect* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_Disconnect::kReasonFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_Disconnect::CNETMsg_Disconnect()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_Disconnect.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_Disconnect)
 }
 CNETMsg_Disconnect::CNETMsg_Disconnect(const CNETMsg_Disconnect& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   reason_ = from.reason_;
@@ -3459,13 +3888,8 @@ void CNETMsg_Disconnect::SharedDtor() {
 void CNETMsg_Disconnect::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_Disconnect::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_Disconnect& CNETMsg_Disconnect::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_Disconnect.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_Disconnect_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3481,9 +3905,51 @@ void CNETMsg_Disconnect::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_Disconnect::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_Disconnect*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .ENetworkDisconnectionReason reason = 2 [default = NETWORK_DISCONNECT_INVALID];
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::ENetworkDisconnectionReason_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(2, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_reason(static_cast<::ENetworkDisconnectionReason>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_Disconnect::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_Disconnect)
   for (;;) {
@@ -3493,9 +3959,8 @@ bool CNETMsg_Disconnect::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .ENetworkDisconnectionReason reason = 2 [default = NETWORK_DISCONNECT_INVALID];
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -3503,7 +3968,7 @@ bool CNETMsg_Disconnect::MergePartialFromCodedStream(
             set_reason(static_cast< ::ENetworkDisconnectionReason >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                2, static_cast< ::google::protobuf::uint64>(value));
+                2, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -3530,6 +3995,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_Disconnect::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3552,8 +4018,7 @@ void CNETMsg_Disconnect::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_Disconnect::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_Disconnect)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3582,8 +4047,13 @@ size_t CNETMsg_Disconnect::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional .ENetworkDisconnectionReason reason = 2 [default = NETWORK_DISCONNECT_INVALID];
-  if (has_reason()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->reason());
   }
@@ -3597,9 +4067,9 @@ void CNETMsg_Disconnect::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_Disconnect)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_Disconnect* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_Disconnect>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_Disconnect>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_Disconnect)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3644,14 +4114,14 @@ void CNETMsg_Disconnect::Swap(CNETMsg_Disconnect* other) {
 }
 void CNETMsg_Disconnect::InternalSwap(CNETMsg_Disconnect* other) {
   using std::swap;
-  swap(reason_, other->reason_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(reason_, other->reason_);
 }
 
 ::google::protobuf::Metadata CNETMsg_Disconnect::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3659,6 +4129,31 @@ void CNETMsg_Disconnect::InternalSwap(CNETMsg_Disconnect* other) {
 
 void CNETMsg_Tick::InitAsDefaultInstance() {
 }
+class CNETMsg_Tick::HasBitSetters {
+ public:
+  static void set_has_tick(CNETMsg_Tick* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_host_frametime(CNETMsg_Tick* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_host_frametime_std_deviation(CNETMsg_Tick* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_host_computationtime(CNETMsg_Tick* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_host_computationtime_std_deviation(CNETMsg_Tick* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_host_framestarttime_std_deviation(CNETMsg_Tick* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_host_loss(CNETMsg_Tick* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_Tick::kTickFieldNumber;
 const int CNETMsg_Tick::kHostFrametimeFieldNumber;
@@ -3670,15 +4165,13 @@ const int CNETMsg_Tick::kHostLossFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_Tick::CNETMsg_Tick()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_Tick.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_Tick)
 }
 CNETMsg_Tick::CNETMsg_Tick(const CNETMsg_Tick& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&tick_, &from.tick_,
@@ -3704,13 +4197,8 @@ void CNETMsg_Tick::SharedDtor() {
 void CNETMsg_Tick::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_Tick::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_Tick& CNETMsg_Tick::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_Tick.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_Tick_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3722,7 +4210,7 @@ void CNETMsg_Tick::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 127u) {
+  if (cached_has_bits & 0x0000007fu) {
     ::memset(&tick_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&host_loss_) -
         reinterpret_cast<char*>(&tick_)) + sizeof(host_loss_));
@@ -3731,9 +4219,88 @@ void CNETMsg_Tick::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_Tick::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_Tick*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 tick = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_tick(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 host_frametime = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_host_frametime(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 host_frametime_std_deviation = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_host_frametime_std_deviation(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 host_computationtime = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_host_computationtime(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 host_computationtime_std_deviation = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_host_computationtime_std_deviation(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 host_framestarttime_std_deviation = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_host_framestarttime_std_deviation(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 host_loss = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_host_loss(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_Tick::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_Tick)
   for (;;) {
@@ -3743,9 +4310,8 @@ bool CNETMsg_Tick::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 tick = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_tick();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_tick(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &tick_)));
@@ -3757,9 +4323,8 @@ bool CNETMsg_Tick::MergePartialFromCodedStream(
 
       // optional uint32 host_frametime = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_host_frametime();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_host_frametime(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &host_frametime_)));
@@ -3771,9 +4336,8 @@ bool CNETMsg_Tick::MergePartialFromCodedStream(
 
       // optional uint32 host_frametime_std_deviation = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_host_frametime_std_deviation();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_host_frametime_std_deviation(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &host_frametime_std_deviation_)));
@@ -3785,9 +4349,8 @@ bool CNETMsg_Tick::MergePartialFromCodedStream(
 
       // optional uint32 host_computationtime = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_host_computationtime();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_host_computationtime(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &host_computationtime_)));
@@ -3799,9 +4362,8 @@ bool CNETMsg_Tick::MergePartialFromCodedStream(
 
       // optional uint32 host_computationtime_std_deviation = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_host_computationtime_std_deviation();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_host_computationtime_std_deviation(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &host_computationtime_std_deviation_)));
@@ -3813,9 +4375,8 @@ bool CNETMsg_Tick::MergePartialFromCodedStream(
 
       // optional uint32 host_framestarttime_std_deviation = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_host_framestarttime_std_deviation();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_host_framestarttime_std_deviation(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &host_framestarttime_std_deviation_)));
@@ -3827,9 +4388,8 @@ bool CNETMsg_Tick::MergePartialFromCodedStream(
 
       // optional uint32 host_loss = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_host_loss();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_host_loss(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &host_loss_)));
@@ -3858,6 +4418,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_Tick::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3909,8 +4470,7 @@ void CNETMsg_Tick::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_Tick::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_Tick)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3968,51 +4528,56 @@ size_t CNETMsg_Tick::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 127u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000007fu) {
     // optional uint32 tick = 1;
-    if (has_tick()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->tick());
     }
 
     // optional uint32 host_frametime = 2;
-    if (has_host_frametime()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->host_frametime());
     }
 
     // optional uint32 host_frametime_std_deviation = 3;
-    if (has_host_frametime_std_deviation()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->host_frametime_std_deviation());
     }
 
     // optional uint32 host_computationtime = 4;
-    if (has_host_computationtime()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->host_computationtime());
     }
 
     // optional uint32 host_computationtime_std_deviation = 5;
-    if (has_host_computationtime_std_deviation()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->host_computationtime_std_deviation());
     }
 
     // optional uint32 host_framestarttime_std_deviation = 6;
-    if (has_host_framestarttime_std_deviation()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->host_framestarttime_std_deviation());
     }
 
     // optional uint32 host_loss = 7;
-    if (has_host_loss()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->host_loss());
@@ -4028,9 +4593,9 @@ void CNETMsg_Tick::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_Tick)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_Tick* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_Tick>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_Tick>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_Tick)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4047,7 +4612,7 @@ void CNETMsg_Tick::MergeFrom(const CNETMsg_Tick& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 127u) {
+  if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
       tick_ = from.tick_;
     }
@@ -4097,6 +4662,8 @@ void CNETMsg_Tick::Swap(CNETMsg_Tick* other) {
 }
 void CNETMsg_Tick::InternalSwap(CNETMsg_Tick* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(tick_, other->tick_);
   swap(host_frametime_, other->host_frametime_);
   swap(host_frametime_std_deviation_, other->host_frametime_std_deviation_);
@@ -4104,13 +4671,11 @@ void CNETMsg_Tick::InternalSwap(CNETMsg_Tick* other) {
   swap(host_computationtime_std_deviation_, other->host_computationtime_std_deviation_);
   swap(host_framestarttime_std_deviation_, other->host_framestarttime_std_deviation_);
   swap(host_loss_, other->host_loss_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CNETMsg_Tick::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4118,20 +4683,25 @@ void CNETMsg_Tick::InternalSwap(CNETMsg_Tick* other) {
 
 void CNETMsg_StringCmd::InitAsDefaultInstance() {
 }
+class CNETMsg_StringCmd::HasBitSetters {
+ public:
+  static void set_has_command(CNETMsg_StringCmd* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_StringCmd::kCommandFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_StringCmd::CNETMsg_StringCmd()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_StringCmd.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_StringCmd)
 }
 CNETMsg_StringCmd::CNETMsg_StringCmd(const CNETMsg_StringCmd& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   command_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4142,6 +4712,8 @@ CNETMsg_StringCmd::CNETMsg_StringCmd(const CNETMsg_StringCmd& from)
 }
 
 void CNETMsg_StringCmd::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CNETMsg_StringCmd_networkbasetypes_2eproto.base);
   command_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -4157,13 +4729,8 @@ void CNETMsg_StringCmd::SharedDtor() {
 void CNETMsg_StringCmd::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_StringCmd::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_StringCmd& CNETMsg_StringCmd::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_StringCmd.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_StringCmd_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4182,9 +4749,62 @@ void CNETMsg_StringCmd::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_StringCmd::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_StringCmd*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string command = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CNETMsg_StringCmd.command");
+        object = msg->mutable_command();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_StringCmd::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_StringCmd)
   for (;;) {
@@ -4194,8 +4814,7 @@ bool CNETMsg_StringCmd::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string command = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_command()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4227,6 +4846,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_StringCmd::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4253,8 +4873,7 @@ void CNETMsg_StringCmd::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_StringCmd::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_StringCmd)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4288,8 +4907,13 @@ size_t CNETMsg_StringCmd::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string command = 1;
-  if (has_command()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->command());
@@ -4304,9 +4928,9 @@ void CNETMsg_StringCmd::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_StringCmd)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_StringCmd* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_StringCmd>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_StringCmd>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_StringCmd)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4323,7 +4947,7 @@ void CNETMsg_StringCmd::MergeFrom(const CNETMsg_StringCmd& from) {
   (void) cached_has_bits;
 
   if (from.has_command()) {
-    set_has_command();
+    _has_bits_[0] |= 0x00000001u;
     command_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.command_);
   }
 }
@@ -4352,15 +4976,15 @@ void CNETMsg_StringCmd::Swap(CNETMsg_StringCmd* other) {
 }
 void CNETMsg_StringCmd::InternalSwap(CNETMsg_StringCmd* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   command_.Swap(&other->command_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CNETMsg_StringCmd::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4370,32 +4994,44 @@ void CNETMsg_SetConVar::InitAsDefaultInstance() {
   ::_CNETMsg_SetConVar_default_instance_._instance.get_mutable()->convars_ = const_cast< ::CMsg_CVars*>(
       ::CMsg_CVars::internal_default_instance());
 }
+class CNETMsg_SetConVar::HasBitSetters {
+ public:
+  static const ::CMsg_CVars& convars(const CNETMsg_SetConVar* msg);
+  static void set_has_convars(CNETMsg_SetConVar* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::CMsg_CVars&
+CNETMsg_SetConVar::HasBitSetters::convars(const CNETMsg_SetConVar* msg) {
+  return *msg->convars_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_SetConVar::kConvarsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_SetConVar::CNETMsg_SetConVar()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SetConVar.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_SetConVar)
 }
 CNETMsg_SetConVar::CNETMsg_SetConVar(const CNETMsg_SetConVar& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_convars()) {
     convars_ = new ::CMsg_CVars(*from.convars_);
   } else {
-    convars_ = NULL;
+    convars_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:CNETMsg_SetConVar)
 }
 
 void CNETMsg_SetConVar::SharedCtor() {
-  convars_ = NULL;
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CNETMsg_SetConVar_networkbasetypes_2eproto.base);
+  convars_ = nullptr;
 }
 
 CNETMsg_SetConVar::~CNETMsg_SetConVar() {
@@ -4410,13 +5046,8 @@ void CNETMsg_SetConVar::SharedDtor() {
 void CNETMsg_SetConVar::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_SetConVar::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_SetConVar& CNETMsg_SetConVar::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SetConVar.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_SetConVar_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4429,16 +5060,62 @@ void CNETMsg_SetConVar::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(convars_ != NULL);
+    GOOGLE_DCHECK(convars_ != nullptr);
     convars_->Clear();
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_SetConVar::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_SetConVar*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .CMsg_CVars convars = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::CMsg_CVars::_InternalParse;
+        object = msg->mutable_convars();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_SetConVar::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_SetConVar)
   for (;;) {
@@ -4448,8 +5125,7 @@ bool CNETMsg_SetConVar::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .CMsg_CVars convars = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_convars()));
         } else {
@@ -4477,6 +5153,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_SetConVar::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4488,7 +5165,7 @@ void CNETMsg_SetConVar::SerializeWithCachedSizes(
   // optional .CMsg_CVars convars = 1;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_convars(), output);
+      1, HasBitSetters::convars(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4499,8 +5176,7 @@ void CNETMsg_SetConVar::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_SetConVar::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_SetConVar)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4510,7 +5186,7 @@ void CNETMsg_SetConVar::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_convars(), deterministic, target);
+        1, HasBitSetters::convars(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4530,8 +5206,13 @@ size_t CNETMsg_SetConVar::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional .CMsg_CVars convars = 1;
-  if (has_convars()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *convars_);
@@ -4546,9 +5227,9 @@ void CNETMsg_SetConVar::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_SetConVar)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_SetConVar* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_SetConVar>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_SetConVar>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_SetConVar)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4593,14 +5274,14 @@ void CNETMsg_SetConVar::Swap(CNETMsg_SetConVar* other) {
 }
 void CNETMsg_SetConVar::InternalSwap(CNETMsg_SetConVar* other) {
   using std::swap;
-  swap(convars_, other->convars_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(convars_, other->convars_);
 }
 
 ::google::protobuf::Metadata CNETMsg_SetConVar::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4608,6 +5289,25 @@ void CNETMsg_SetConVar::InternalSwap(CNETMsg_SetConVar* other) {
 
 void CNETMsg_SignonState::InitAsDefaultInstance() {
 }
+class CNETMsg_SignonState::HasBitSetters {
+ public:
+  static void set_has_signon_state(CNETMsg_SignonState* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_spawn_count(CNETMsg_SignonState* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_num_server_players(CNETMsg_SignonState* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_map_name(CNETMsg_SignonState* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_addons(CNETMsg_SignonState* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_SignonState::kSignonStateFieldNumber;
 const int CNETMsg_SignonState::kSpawnCountFieldNumber;
@@ -4618,15 +5318,13 @@ const int CNETMsg_SignonState::kAddonsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_SignonState::CNETMsg_SignonState()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SignonState.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_SignonState)
 }
 CNETMsg_SignonState::CNETMsg_SignonState(const CNETMsg_SignonState& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       players_networkids_(from.players_networkids_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -4645,6 +5343,8 @@ CNETMsg_SignonState::CNETMsg_SignonState(const CNETMsg_SignonState& from)
 }
 
 void CNETMsg_SignonState::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CNETMsg_SignonState_networkbasetypes_2eproto.base);
   map_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   addons_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&signon_state_, 0, static_cast<size_t>(
@@ -4665,13 +5365,8 @@ void CNETMsg_SignonState::SharedDtor() {
 void CNETMsg_SignonState::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_SignonState::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_SignonState& CNETMsg_SignonState::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SignonState.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_SignonState_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4684,7 +5379,7 @@ void CNETMsg_SignonState::Clear() {
 
   players_networkids_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       map_name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -4692,7 +5387,7 @@ void CNETMsg_SignonState::Clear() {
       addons_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 28u) {
+  if (cached_has_bits & 0x0000001cu) {
     ::memset(&signon_state_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&num_server_players_) -
         reinterpret_cast<char*>(&signon_state_)) + sizeof(num_server_players_));
@@ -4701,9 +5396,118 @@ void CNETMsg_SignonState::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_SignonState::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_SignonState*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 signon_state = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_signon_state(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 spawn_count = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_spawn_count(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 num_server_players = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_num_server_players(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated string players_networkids = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          ctx->extra_parse_data().SetFieldName("CNETMsg_SignonState.players_networkids");
+          object = msg->add_players_networkids();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+            goto string_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 34 && (ptr += 1));
+        break;
+      }
+      // optional string map_name = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CNETMsg_SignonState.map_name");
+        object = msg->mutable_map_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string addons = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CNETMsg_SignonState.addons");
+        object = msg->mutable_addons();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_SignonState::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_SignonState)
   for (;;) {
@@ -4713,9 +5517,8 @@ bool CNETMsg_SignonState::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 signon_state = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_signon_state();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_signon_state(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &signon_state_)));
@@ -4727,9 +5530,8 @@ bool CNETMsg_SignonState::MergePartialFromCodedStream(
 
       // optional uint32 spawn_count = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_spawn_count();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_spawn_count(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &spawn_count_)));
@@ -4741,9 +5543,8 @@ bool CNETMsg_SignonState::MergePartialFromCodedStream(
 
       // optional uint32 num_server_players = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_num_server_players();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_num_server_players(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &num_server_players_)));
@@ -4755,8 +5556,7 @@ bool CNETMsg_SignonState::MergePartialFromCodedStream(
 
       // repeated string players_networkids = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_players_networkids()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4772,8 +5572,7 @@ bool CNETMsg_SignonState::MergePartialFromCodedStream(
 
       // optional string map_name = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_map_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4788,8 +5587,7 @@ bool CNETMsg_SignonState::MergePartialFromCodedStream(
 
       // optional string addons = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_addons()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4821,6 +5619,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_SignonState::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4882,8 +5681,7 @@ void CNETMsg_SignonState::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_SignonState::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_SignonState)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4953,6 +5751,10 @@ size_t CNETMsg_SignonState::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated string players_networkids = 4;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->players_networkids_size());
@@ -4961,37 +5763,38 @@ size_t CNETMsg_SignonState::ByteSizeLong() const {
       this->players_networkids(i));
   }
 
-  if (_has_bits_[0 / 32] & 31u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000001fu) {
     // optional string map_name = 5;
-    if (has_map_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->map_name());
     }
 
     // optional string addons = 6;
-    if (has_addons()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->addons());
     }
 
     // optional uint32 signon_state = 1;
-    if (has_signon_state()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->signon_state());
     }
 
     // optional uint32 spawn_count = 2;
-    if (has_spawn_count()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->spawn_count());
     }
 
     // optional uint32 num_server_players = 3;
-    if (has_num_server_players()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->num_server_players());
@@ -5007,9 +5810,9 @@ void CNETMsg_SignonState::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_SignonState)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_SignonState* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_SignonState>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_SignonState>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_SignonState)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5027,13 +5830,13 @@ void CNETMsg_SignonState::MergeFrom(const CNETMsg_SignonState& from) {
 
   players_networkids_.MergeFrom(from.players_networkids_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_map_name();
+      _has_bits_[0] |= 0x00000001u;
       map_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.map_name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_addons();
+      _has_bits_[0] |= 0x00000002u;
       addons_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.addons_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -5073,6 +5876,8 @@ void CNETMsg_SignonState::Swap(CNETMsg_SignonState* other) {
 }
 void CNETMsg_SignonState::InternalSwap(CNETMsg_SignonState* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   players_networkids_.InternalSwap(CastToBase(&other->players_networkids_));
   map_name_.Swap(&other->map_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -5081,13 +5886,11 @@ void CNETMsg_SignonState::InternalSwap(CNETMsg_SignonState* other) {
   swap(signon_state_, other->signon_state_);
   swap(spawn_count_, other->spawn_count_);
   swap(num_server_players_, other->num_server_players_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CNETMsg_SignonState::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5095,6 +5898,34 @@ void CNETMsg_SignonState::InternalSwap(CNETMsg_SignonState* other) {
 
 void CSVCMsg_GameEvent_key_t::InitAsDefaultInstance() {
 }
+class CSVCMsg_GameEvent_key_t::HasBitSetters {
+ public:
+  static void set_has_type(CSVCMsg_GameEvent_key_t* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_val_string(CSVCMsg_GameEvent_key_t* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_val_float(CSVCMsg_GameEvent_key_t* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_val_long(CSVCMsg_GameEvent_key_t* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_val_short(CSVCMsg_GameEvent_key_t* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_val_byte(CSVCMsg_GameEvent_key_t* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_val_bool(CSVCMsg_GameEvent_key_t* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_val_uint64(CSVCMsg_GameEvent_key_t* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CSVCMsg_GameEvent_key_t::kTypeFieldNumber;
 const int CSVCMsg_GameEvent_key_t::kValStringFieldNumber;
@@ -5107,15 +5938,13 @@ const int CSVCMsg_GameEvent_key_t::kValUint64FieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CSVCMsg_GameEvent_key_t::CSVCMsg_GameEvent_key_t()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_GameEvent_key_t.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CSVCMsg_GameEvent.key_t)
 }
 CSVCMsg_GameEvent_key_t::CSVCMsg_GameEvent_key_t(const CSVCMsg_GameEvent_key_t& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   val_string_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5129,6 +5958,8 @@ CSVCMsg_GameEvent_key_t::CSVCMsg_GameEvent_key_t(const CSVCMsg_GameEvent_key_t& 
 }
 
 void CSVCMsg_GameEvent_key_t::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CSVCMsg_GameEvent_key_t_networkbasetypes_2eproto.base);
   val_string_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&type_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&val_uint64_) -
@@ -5147,13 +5978,8 @@ void CSVCMsg_GameEvent_key_t::SharedDtor() {
 void CSVCMsg_GameEvent_key_t::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CSVCMsg_GameEvent_key_t::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CSVCMsg_GameEvent_key_t& CSVCMsg_GameEvent_key_t::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_GameEvent_key_t.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CSVCMsg_GameEvent_key_t_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5168,7 +5994,7 @@ void CSVCMsg_GameEvent_key_t::Clear() {
   if (cached_has_bits & 0x00000001u) {
     val_string_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 254u) {
+  if (cached_has_bits & 0x000000feu) {
     ::memset(&type_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&val_uint64_) -
         reinterpret_cast<char*>(&type_)) + sizeof(val_uint64_));
@@ -5177,9 +6003,111 @@ void CSVCMsg_GameEvent_key_t::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CSVCMsg_GameEvent_key_t::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CSVCMsg_GameEvent_key_t*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional int32 type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string val_string = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CSVCMsg_GameEvent.key_t.val_string");
+        object = msg->mutable_val_string();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional float val_float = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 29) goto handle_unusual;
+        msg->set_val_float(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional int32 val_long = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_val_long(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 val_short = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_val_short(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 val_byte = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_val_byte(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool val_bool = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_val_bool(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 val_uint64 = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_val_uint64(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CSVCMsg_GameEvent_key_t::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CSVCMsg_GameEvent.key_t)
   for (;;) {
@@ -5189,9 +6117,8 @@ bool CSVCMsg_GameEvent_key_t::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &type_)));
@@ -5203,8 +6130,7 @@ bool CSVCMsg_GameEvent_key_t::MergePartialFromCodedStream(
 
       // optional string val_string = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_val_string()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5219,9 +6145,8 @@ bool CSVCMsg_GameEvent_key_t::MergePartialFromCodedStream(
 
       // optional float val_float = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
-          set_has_val_float();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (29 & 0xFF)) {
+          HasBitSetters::set_has_val_float(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &val_float_)));
@@ -5233,9 +6158,8 @@ bool CSVCMsg_GameEvent_key_t::MergePartialFromCodedStream(
 
       // optional int32 val_long = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_val_long();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_val_long(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &val_long_)));
@@ -5247,9 +6171,8 @@ bool CSVCMsg_GameEvent_key_t::MergePartialFromCodedStream(
 
       // optional int32 val_short = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_val_short();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_val_short(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &val_short_)));
@@ -5261,9 +6184,8 @@ bool CSVCMsg_GameEvent_key_t::MergePartialFromCodedStream(
 
       // optional int32 val_byte = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_val_byte();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_val_byte(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &val_byte_)));
@@ -5275,9 +6197,8 @@ bool CSVCMsg_GameEvent_key_t::MergePartialFromCodedStream(
 
       // optional bool val_bool = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_val_bool();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_val_bool(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &val_bool_)));
@@ -5289,9 +6210,8 @@ bool CSVCMsg_GameEvent_key_t::MergePartialFromCodedStream(
 
       // optional uint64 val_uint64 = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_val_uint64();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_val_uint64(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &val_uint64_)));
@@ -5320,6 +6240,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CSVCMsg_GameEvent_key_t::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5381,8 +6302,7 @@ void CSVCMsg_GameEvent_key_t::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CSVCMsg_GameEvent_key_t::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CSVCMsg_GameEvent.key_t)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5451,54 +6371,59 @@ size_t CSVCMsg_GameEvent_key_t::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional string val_string = 2;
-    if (has_val_string()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->val_string());
     }
 
     // optional int32 type = 1;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->type());
     }
 
     // optional float val_float = 3;
-    if (has_val_float()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 4;
     }
 
     // optional int32 val_long = 4;
-    if (has_val_long()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->val_long());
     }
 
     // optional int32 val_short = 5;
-    if (has_val_short()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->val_short());
     }
 
     // optional int32 val_byte = 6;
-    if (has_val_byte()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->val_byte());
     }
 
     // optional bool val_bool = 7;
-    if (has_val_bool()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 + 1;
     }
 
     // optional uint64 val_uint64 = 8;
-    if (has_val_uint64()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->val_uint64());
@@ -5514,9 +6439,9 @@ void CSVCMsg_GameEvent_key_t::MergeFrom(const ::google::protobuf::Message& from)
 // @@protoc_insertion_point(generalized_merge_from_start:CSVCMsg_GameEvent.key_t)
   GOOGLE_DCHECK_NE(&from, this);
   const CSVCMsg_GameEvent_key_t* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CSVCMsg_GameEvent_key_t>(
+      ::google::protobuf::DynamicCastToGenerated<CSVCMsg_GameEvent_key_t>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CSVCMsg_GameEvent.key_t)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5533,9 +6458,9 @@ void CSVCMsg_GameEvent_key_t::MergeFrom(const CSVCMsg_GameEvent_key_t& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_val_string();
+      _has_bits_[0] |= 0x00000001u;
       val_string_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.val_string_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -5587,6 +6512,8 @@ void CSVCMsg_GameEvent_key_t::Swap(CSVCMsg_GameEvent_key_t* other) {
 }
 void CSVCMsg_GameEvent_key_t::InternalSwap(CSVCMsg_GameEvent_key_t* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   val_string_.Swap(&other->val_string_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(type_, other->type_);
@@ -5596,13 +6523,11 @@ void CSVCMsg_GameEvent_key_t::InternalSwap(CSVCMsg_GameEvent_key_t* other) {
   swap(val_byte_, other->val_byte_);
   swap(val_bool_, other->val_bool_);
   swap(val_uint64_, other->val_uint64_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CSVCMsg_GameEvent_key_t::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5610,6 +6535,16 @@ void CSVCMsg_GameEvent_key_t::InternalSwap(CSVCMsg_GameEvent_key_t* other) {
 
 void CSVCMsg_GameEvent::InitAsDefaultInstance() {
 }
+class CSVCMsg_GameEvent::HasBitSetters {
+ public:
+  static void set_has_event_name(CSVCMsg_GameEvent* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_eventid(CSVCMsg_GameEvent* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CSVCMsg_GameEvent::kEventNameFieldNumber;
 const int CSVCMsg_GameEvent::kEventidFieldNumber;
@@ -5617,15 +6552,13 @@ const int CSVCMsg_GameEvent::kKeysFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CSVCMsg_GameEvent::CSVCMsg_GameEvent()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_GameEvent.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CSVCMsg_GameEvent)
 }
 CSVCMsg_GameEvent::CSVCMsg_GameEvent(const CSVCMsg_GameEvent& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       keys_(from.keys_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -5638,6 +6571,8 @@ CSVCMsg_GameEvent::CSVCMsg_GameEvent(const CSVCMsg_GameEvent& from)
 }
 
 void CSVCMsg_GameEvent::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CSVCMsg_GameEvent_networkbasetypes_2eproto.base);
   event_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   eventid_ = 0;
 }
@@ -5654,13 +6589,8 @@ void CSVCMsg_GameEvent::SharedDtor() {
 void CSVCMsg_GameEvent::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CSVCMsg_GameEvent::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CSVCMsg_GameEvent& CSVCMsg_GameEvent::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_GameEvent.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CSVCMsg_GameEvent_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5681,9 +6611,85 @@ void CSVCMsg_GameEvent::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CSVCMsg_GameEvent::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CSVCMsg_GameEvent*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string event_name = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CSVCMsg_GameEvent.event_name");
+        object = msg->mutable_event_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional int32 eventid = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_eventid(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .CSVCMsg_GameEvent.key_t keys = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CSVCMsg_GameEvent_key_t::_InternalParse;
+          object = msg->add_keys();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CSVCMsg_GameEvent::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CSVCMsg_GameEvent)
   for (;;) {
@@ -5693,8 +6699,7 @@ bool CSVCMsg_GameEvent::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string event_name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_event_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5709,9 +6714,8 @@ bool CSVCMsg_GameEvent::MergePartialFromCodedStream(
 
       // optional int32 eventid = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_eventid();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_eventid(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &eventid_)));
@@ -5723,8 +6727,7 @@ bool CSVCMsg_GameEvent::MergePartialFromCodedStream(
 
       // repeated .CSVCMsg_GameEvent.key_t keys = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_keys()));
         } else {
@@ -5752,6 +6755,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CSVCMsg_GameEvent::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5792,8 +6796,7 @@ void CSVCMsg_GameEvent::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CSVCMsg_GameEvent::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CSVCMsg_GameEvent)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5820,7 +6823,7 @@ void CSVCMsg_GameEvent::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->keys_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->keys(static_cast<int>(i)), deterministic, target);
+        3, this->keys(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5840,6 +6843,10 @@ size_t CSVCMsg_GameEvent::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CSVCMsg_GameEvent.key_t keys = 3;
   {
     unsigned int count = static_cast<unsigned int>(this->keys_size());
@@ -5851,16 +6858,17 @@ size_t CSVCMsg_GameEvent::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string event_name = 1;
-    if (has_event_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->event_name());
     }
 
     // optional int32 eventid = 2;
-    if (has_eventid()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->eventid());
@@ -5876,9 +6884,9 @@ void CSVCMsg_GameEvent::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CSVCMsg_GameEvent)
   GOOGLE_DCHECK_NE(&from, this);
   const CSVCMsg_GameEvent* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CSVCMsg_GameEvent>(
+      ::google::protobuf::DynamicCastToGenerated<CSVCMsg_GameEvent>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CSVCMsg_GameEvent)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5896,9 +6904,9 @@ void CSVCMsg_GameEvent::MergeFrom(const CSVCMsg_GameEvent& from) {
 
   keys_.MergeFrom(from.keys_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_event_name();
+      _has_bits_[0] |= 0x00000001u;
       event_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.event_name_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -5932,17 +6940,17 @@ void CSVCMsg_GameEvent::Swap(CSVCMsg_GameEvent* other) {
 }
 void CSVCMsg_GameEvent::InternalSwap(CSVCMsg_GameEvent* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&keys_)->InternalSwap(CastToBase(&other->keys_));
   event_name_.Swap(&other->event_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(eventid_, other->eventid_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CSVCMsg_GameEvent::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5952,33 +6960,48 @@ void CSVCMsgList_GameEvents_event_t::InitAsDefaultInstance() {
   ::_CSVCMsgList_GameEvents_event_t_default_instance_._instance.get_mutable()->event_ = const_cast< ::CSVCMsg_GameEvent*>(
       ::CSVCMsg_GameEvent::internal_default_instance());
 }
+class CSVCMsgList_GameEvents_event_t::HasBitSetters {
+ public:
+  static void set_has_tick(CSVCMsgList_GameEvents_event_t* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::CSVCMsg_GameEvent& event(const CSVCMsgList_GameEvents_event_t* msg);
+  static void set_has_event(CSVCMsgList_GameEvents_event_t* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::CSVCMsg_GameEvent&
+CSVCMsgList_GameEvents_event_t::HasBitSetters::event(const CSVCMsgList_GameEvents_event_t* msg) {
+  return *msg->event_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CSVCMsgList_GameEvents_event_t::kTickFieldNumber;
 const int CSVCMsgList_GameEvents_event_t::kEventFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CSVCMsgList_GameEvents_event_t::CSVCMsgList_GameEvents_event_t()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_GameEvents_event_t.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CSVCMsgList_GameEvents.event_t)
 }
 CSVCMsgList_GameEvents_event_t::CSVCMsgList_GameEvents_event_t(const CSVCMsgList_GameEvents_event_t& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_event()) {
     event_ = new ::CSVCMsg_GameEvent(*from.event_);
   } else {
-    event_ = NULL;
+    event_ = nullptr;
   }
   tick_ = from.tick_;
   // @@protoc_insertion_point(copy_constructor:CSVCMsgList_GameEvents.event_t)
 }
 
 void CSVCMsgList_GameEvents_event_t::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CSVCMsgList_GameEvents_event_t_networkbasetypes_2eproto.base);
   ::memset(&event_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&tick_) -
       reinterpret_cast<char*>(&event_)) + sizeof(tick_));
@@ -5996,13 +7019,8 @@ void CSVCMsgList_GameEvents_event_t::SharedDtor() {
 void CSVCMsgList_GameEvents_event_t::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CSVCMsgList_GameEvents_event_t::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CSVCMsgList_GameEvents_event_t& CSVCMsgList_GameEvents_event_t::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_GameEvents_event_t.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CSVCMsgList_GameEvents_event_t_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6015,7 +7033,7 @@ void CSVCMsgList_GameEvents_event_t::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(event_ != NULL);
+    GOOGLE_DCHECK(event_ != nullptr);
     event_->Clear();
   }
   tick_ = 0;
@@ -6023,9 +7041,62 @@ void CSVCMsgList_GameEvents_event_t::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CSVCMsgList_GameEvents_event_t::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CSVCMsgList_GameEvents_event_t*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional int32 tick = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_tick(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .CSVCMsg_GameEvent event = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::CSVCMsg_GameEvent::_InternalParse;
+        object = msg->mutable_event();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CSVCMsgList_GameEvents_event_t::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CSVCMsgList_GameEvents.event_t)
   for (;;) {
@@ -6035,9 +7106,8 @@ bool CSVCMsgList_GameEvents_event_t::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 tick = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_tick();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_tick(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &tick_)));
@@ -6049,8 +7119,7 @@ bool CSVCMsgList_GameEvents_event_t::MergePartialFromCodedStream(
 
       // optional .CSVCMsg_GameEvent event = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_event()));
         } else {
@@ -6078,6 +7147,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CSVCMsgList_GameEvents_event_t::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6094,7 +7164,7 @@ void CSVCMsgList_GameEvents_event_t::SerializeWithCachedSizes(
   // optional .CSVCMsg_GameEvent event = 2;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_event(), output);
+      2, HasBitSetters::event(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6105,8 +7175,7 @@ void CSVCMsgList_GameEvents_event_t::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CSVCMsgList_GameEvents_event_t::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CSVCMsgList_GameEvents.event_t)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6121,7 +7190,7 @@ void CSVCMsgList_GameEvents_event_t::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_event(), deterministic, target);
+        2, HasBitSetters::event(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6141,16 +7210,21 @@ size_t CSVCMsgList_GameEvents_event_t::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional .CSVCMsg_GameEvent event = 2;
-    if (has_event()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *event_);
     }
 
     // optional int32 tick = 1;
-    if (has_tick()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->tick());
@@ -6166,9 +7240,9 @@ void CSVCMsgList_GameEvents_event_t::MergeFrom(const ::google::protobuf::Message
 // @@protoc_insertion_point(generalized_merge_from_start:CSVCMsgList_GameEvents.event_t)
   GOOGLE_DCHECK_NE(&from, this);
   const CSVCMsgList_GameEvents_event_t* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CSVCMsgList_GameEvents_event_t>(
+      ::google::protobuf::DynamicCastToGenerated<CSVCMsgList_GameEvents_event_t>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CSVCMsgList_GameEvents.event_t)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6185,7 +7259,7 @@ void CSVCMsgList_GameEvents_event_t::MergeFrom(const CSVCMsgList_GameEvents_even
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_event()->::CSVCMsg_GameEvent::MergeFrom(from.event());
     }
@@ -6220,15 +7294,15 @@ void CSVCMsgList_GameEvents_event_t::Swap(CSVCMsgList_GameEvents_event_t* other)
 }
 void CSVCMsgList_GameEvents_event_t::InternalSwap(CSVCMsgList_GameEvents_event_t* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(event_, other->event_);
   swap(tick_, other->tick_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CSVCMsgList_GameEvents_event_t::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6236,20 +7310,22 @@ void CSVCMsgList_GameEvents_event_t::InternalSwap(CSVCMsgList_GameEvents_event_t
 
 void CSVCMsgList_GameEvents::InitAsDefaultInstance() {
 }
+class CSVCMsgList_GameEvents::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CSVCMsgList_GameEvents::kEventsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CSVCMsgList_GameEvents::CSVCMsgList_GameEvents()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_GameEvents.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CSVCMsgList_GameEvents)
 }
 CSVCMsgList_GameEvents::CSVCMsgList_GameEvents(const CSVCMsgList_GameEvents& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       events_(from.events_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -6257,6 +7333,8 @@ CSVCMsgList_GameEvents::CSVCMsgList_GameEvents(const CSVCMsgList_GameEvents& fro
 }
 
 void CSVCMsgList_GameEvents::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CSVCMsgList_GameEvents_networkbasetypes_2eproto.base);
 }
 
 CSVCMsgList_GameEvents::~CSVCMsgList_GameEvents() {
@@ -6270,13 +7348,8 @@ void CSVCMsgList_GameEvents::SharedDtor() {
 void CSVCMsgList_GameEvents::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CSVCMsgList_GameEvents::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CSVCMsgList_GameEvents& CSVCMsgList_GameEvents::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_GameEvents.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CSVCMsgList_GameEvents_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6292,9 +7365,58 @@ void CSVCMsgList_GameEvents::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CSVCMsgList_GameEvents::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CSVCMsgList_GameEvents*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .CSVCMsgList_GameEvents.event_t events = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CSVCMsgList_GameEvents_event_t::_InternalParse;
+          object = msg->add_events();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CSVCMsgList_GameEvents::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CSVCMsgList_GameEvents)
   for (;;) {
@@ -6304,8 +7426,7 @@ bool CSVCMsgList_GameEvents::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .CSVCMsgList_GameEvents.event_t events = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_events()));
         } else {
@@ -6333,6 +7454,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CSVCMsgList_GameEvents::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6357,8 +7479,7 @@ void CSVCMsgList_GameEvents::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CSVCMsgList_GameEvents::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CSVCMsgList_GameEvents)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6368,7 +7489,7 @@ void CSVCMsgList_GameEvents::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->events_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->events(static_cast<int>(i)), deterministic, target);
+        1, this->events(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6388,6 +7509,10 @@ size_t CSVCMsgList_GameEvents::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CSVCMsgList_GameEvents.event_t events = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->events_size());
@@ -6408,9 +7533,9 @@ void CSVCMsgList_GameEvents::MergeFrom(const ::google::protobuf::Message& from) 
 // @@protoc_insertion_point(generalized_merge_from_start:CSVCMsgList_GameEvents)
   GOOGLE_DCHECK_NE(&from, this);
   const CSVCMsgList_GameEvents* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CSVCMsgList_GameEvents>(
+      ::google::protobuf::DynamicCastToGenerated<CSVCMsgList_GameEvents>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CSVCMsgList_GameEvents)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6453,14 +7578,14 @@ void CSVCMsgList_GameEvents::Swap(CSVCMsgList_GameEvents* other) {
 }
 void CSVCMsgList_GameEvents::InternalSwap(CSVCMsgList_GameEvents* other) {
   using std::swap;
-  CastToBase(&events_)->InternalSwap(CastToBase(&other->events_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  CastToBase(&events_)->InternalSwap(CastToBase(&other->events_));
 }
 
 ::google::protobuf::Metadata CSVCMsgList_GameEvents::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6468,21 +7593,29 @@ void CSVCMsgList_GameEvents::InternalSwap(CSVCMsgList_GameEvents* other) {
 
 void CSVCMsg_UserMessage::InitAsDefaultInstance() {
 }
+class CSVCMsg_UserMessage::HasBitSetters {
+ public:
+  static void set_has_msg_type(CSVCMsg_UserMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_msg_data(CSVCMsg_UserMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CSVCMsg_UserMessage::kMsgTypeFieldNumber;
 const int CSVCMsg_UserMessage::kMsgDataFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CSVCMsg_UserMessage::CSVCMsg_UserMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_UserMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CSVCMsg_UserMessage)
 }
 CSVCMsg_UserMessage::CSVCMsg_UserMessage(const CSVCMsg_UserMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6494,6 +7627,8 @@ CSVCMsg_UserMessage::CSVCMsg_UserMessage(const CSVCMsg_UserMessage& from)
 }
 
 void CSVCMsg_UserMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CSVCMsg_UserMessage_networkbasetypes_2eproto.base);
   msg_data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   msg_type_ = 0;
 }
@@ -6510,13 +7645,8 @@ void CSVCMsg_UserMessage::SharedDtor() {
 void CSVCMsg_UserMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CSVCMsg_UserMessage::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CSVCMsg_UserMessage& CSVCMsg_UserMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_UserMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CSVCMsg_UserMessage_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6536,9 +7666,68 @@ void CSVCMsg_UserMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CSVCMsg_UserMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CSVCMsg_UserMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional int32 msg_type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_msg_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes msg_data = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_msg_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CSVCMsg_UserMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CSVCMsg_UserMessage)
   for (;;) {
@@ -6548,9 +7737,8 @@ bool CSVCMsg_UserMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 msg_type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_msg_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_msg_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &msg_type_)));
@@ -6562,8 +7750,7 @@ bool CSVCMsg_UserMessage::MergePartialFromCodedStream(
 
       // optional bytes msg_data = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_msg_data()));
         } else {
@@ -6591,6 +7778,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CSVCMsg_UserMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6618,8 +7806,7 @@ void CSVCMsg_UserMessage::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CSVCMsg_UserMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CSVCMsg_UserMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6654,16 +7841,21 @@ size_t CSVCMsg_UserMessage::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes msg_data = 2;
-    if (has_msg_data()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->msg_data());
     }
 
     // optional int32 msg_type = 1;
-    if (has_msg_type()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->msg_type());
@@ -6679,9 +7871,9 @@ void CSVCMsg_UserMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CSVCMsg_UserMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const CSVCMsg_UserMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CSVCMsg_UserMessage>(
+      ::google::protobuf::DynamicCastToGenerated<CSVCMsg_UserMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CSVCMsg_UserMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6698,9 +7890,9 @@ void CSVCMsg_UserMessage::MergeFrom(const CSVCMsg_UserMessage& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_msg_data();
+      _has_bits_[0] |= 0x00000001u;
       msg_data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.msg_data_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -6734,16 +7926,16 @@ void CSVCMsg_UserMessage::Swap(CSVCMsg_UserMessage* other) {
 }
 void CSVCMsg_UserMessage::InternalSwap(CSVCMsg_UserMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   msg_data_.Swap(&other->msg_data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(msg_type_, other->msg_type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CSVCMsg_UserMessage::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6753,33 +7945,48 @@ void CSVCMsgList_UserMessages_usermsg_t::InitAsDefaultInstance() {
   ::_CSVCMsgList_UserMessages_usermsg_t_default_instance_._instance.get_mutable()->msg_ = const_cast< ::CSVCMsg_UserMessage*>(
       ::CSVCMsg_UserMessage::internal_default_instance());
 }
+class CSVCMsgList_UserMessages_usermsg_t::HasBitSetters {
+ public:
+  static void set_has_tick(CSVCMsgList_UserMessages_usermsg_t* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::CSVCMsg_UserMessage& msg(const CSVCMsgList_UserMessages_usermsg_t* msg);
+  static void set_has_msg(CSVCMsgList_UserMessages_usermsg_t* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::CSVCMsg_UserMessage&
+CSVCMsgList_UserMessages_usermsg_t::HasBitSetters::msg(const CSVCMsgList_UserMessages_usermsg_t* msg) {
+  return *msg->msg_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CSVCMsgList_UserMessages_usermsg_t::kTickFieldNumber;
 const int CSVCMsgList_UserMessages_usermsg_t::kMsgFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CSVCMsgList_UserMessages_usermsg_t::CSVCMsgList_UserMessages_usermsg_t()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_UserMessages_usermsg_t.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CSVCMsgList_UserMessages.usermsg_t)
 }
 CSVCMsgList_UserMessages_usermsg_t::CSVCMsgList_UserMessages_usermsg_t(const CSVCMsgList_UserMessages_usermsg_t& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_msg()) {
     msg_ = new ::CSVCMsg_UserMessage(*from.msg_);
   } else {
-    msg_ = NULL;
+    msg_ = nullptr;
   }
   tick_ = from.tick_;
   // @@protoc_insertion_point(copy_constructor:CSVCMsgList_UserMessages.usermsg_t)
 }
 
 void CSVCMsgList_UserMessages_usermsg_t::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CSVCMsgList_UserMessages_usermsg_t_networkbasetypes_2eproto.base);
   ::memset(&msg_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&tick_) -
       reinterpret_cast<char*>(&msg_)) + sizeof(tick_));
@@ -6797,13 +8004,8 @@ void CSVCMsgList_UserMessages_usermsg_t::SharedDtor() {
 void CSVCMsgList_UserMessages_usermsg_t::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CSVCMsgList_UserMessages_usermsg_t::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CSVCMsgList_UserMessages_usermsg_t& CSVCMsgList_UserMessages_usermsg_t::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_UserMessages_usermsg_t.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CSVCMsgList_UserMessages_usermsg_t_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6816,7 +8018,7 @@ void CSVCMsgList_UserMessages_usermsg_t::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(msg_ != NULL);
+    GOOGLE_DCHECK(msg_ != nullptr);
     msg_->Clear();
   }
   tick_ = 0;
@@ -6824,9 +8026,62 @@ void CSVCMsgList_UserMessages_usermsg_t::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CSVCMsgList_UserMessages_usermsg_t::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CSVCMsgList_UserMessages_usermsg_t*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional int32 tick = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_tick(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .CSVCMsg_UserMessage msg = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::CSVCMsg_UserMessage::_InternalParse;
+        object = msg->mutable_msg();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CSVCMsgList_UserMessages_usermsg_t::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CSVCMsgList_UserMessages.usermsg_t)
   for (;;) {
@@ -6836,9 +8091,8 @@ bool CSVCMsgList_UserMessages_usermsg_t::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 tick = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_tick();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_tick(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &tick_)));
@@ -6850,8 +8104,7 @@ bool CSVCMsgList_UserMessages_usermsg_t::MergePartialFromCodedStream(
 
       // optional .CSVCMsg_UserMessage msg = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_msg()));
         } else {
@@ -6879,6 +8132,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CSVCMsgList_UserMessages_usermsg_t::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6895,7 +8149,7 @@ void CSVCMsgList_UserMessages_usermsg_t::SerializeWithCachedSizes(
   // optional .CSVCMsg_UserMessage msg = 2;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_msg(), output);
+      2, HasBitSetters::msg(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6906,8 +8160,7 @@ void CSVCMsgList_UserMessages_usermsg_t::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CSVCMsgList_UserMessages_usermsg_t::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CSVCMsgList_UserMessages.usermsg_t)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6922,7 +8175,7 @@ void CSVCMsgList_UserMessages_usermsg_t::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_msg(), deterministic, target);
+        2, HasBitSetters::msg(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6942,16 +8195,21 @@ size_t CSVCMsgList_UserMessages_usermsg_t::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional .CSVCMsg_UserMessage msg = 2;
-    if (has_msg()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *msg_);
     }
 
     // optional int32 tick = 1;
-    if (has_tick()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->tick());
@@ -6967,9 +8225,9 @@ void CSVCMsgList_UserMessages_usermsg_t::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:CSVCMsgList_UserMessages.usermsg_t)
   GOOGLE_DCHECK_NE(&from, this);
   const CSVCMsgList_UserMessages_usermsg_t* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CSVCMsgList_UserMessages_usermsg_t>(
+      ::google::protobuf::DynamicCastToGenerated<CSVCMsgList_UserMessages_usermsg_t>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CSVCMsgList_UserMessages.usermsg_t)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6986,7 +8244,7 @@ void CSVCMsgList_UserMessages_usermsg_t::MergeFrom(const CSVCMsgList_UserMessage
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_msg()->::CSVCMsg_UserMessage::MergeFrom(from.msg());
     }
@@ -7021,15 +8279,15 @@ void CSVCMsgList_UserMessages_usermsg_t::Swap(CSVCMsgList_UserMessages_usermsg_t
 }
 void CSVCMsgList_UserMessages_usermsg_t::InternalSwap(CSVCMsgList_UserMessages_usermsg_t* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(msg_, other->msg_);
   swap(tick_, other->tick_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CSVCMsgList_UserMessages_usermsg_t::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7037,20 +8295,22 @@ void CSVCMsgList_UserMessages_usermsg_t::InternalSwap(CSVCMsgList_UserMessages_u
 
 void CSVCMsgList_UserMessages::InitAsDefaultInstance() {
 }
+class CSVCMsgList_UserMessages::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CSVCMsgList_UserMessages::kUsermsgsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CSVCMsgList_UserMessages::CSVCMsgList_UserMessages()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_UserMessages.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CSVCMsgList_UserMessages)
 }
 CSVCMsgList_UserMessages::CSVCMsgList_UserMessages(const CSVCMsgList_UserMessages& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       usermsgs_(from.usermsgs_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -7058,6 +8318,8 @@ CSVCMsgList_UserMessages::CSVCMsgList_UserMessages(const CSVCMsgList_UserMessage
 }
 
 void CSVCMsgList_UserMessages::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CSVCMsgList_UserMessages_networkbasetypes_2eproto.base);
 }
 
 CSVCMsgList_UserMessages::~CSVCMsgList_UserMessages() {
@@ -7071,13 +8333,8 @@ void CSVCMsgList_UserMessages::SharedDtor() {
 void CSVCMsgList_UserMessages::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CSVCMsgList_UserMessages::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CSVCMsgList_UserMessages& CSVCMsgList_UserMessages::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CSVCMsgList_UserMessages.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CSVCMsgList_UserMessages_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7093,9 +8350,58 @@ void CSVCMsgList_UserMessages::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CSVCMsgList_UserMessages::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CSVCMsgList_UserMessages*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .CSVCMsgList_UserMessages.usermsg_t usermsgs = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CSVCMsgList_UserMessages_usermsg_t::_InternalParse;
+          object = msg->add_usermsgs();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CSVCMsgList_UserMessages::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CSVCMsgList_UserMessages)
   for (;;) {
@@ -7105,8 +8411,7 @@ bool CSVCMsgList_UserMessages::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .CSVCMsgList_UserMessages.usermsg_t usermsgs = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_usermsgs()));
         } else {
@@ -7134,6 +8439,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CSVCMsgList_UserMessages::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7158,8 +8464,7 @@ void CSVCMsgList_UserMessages::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CSVCMsgList_UserMessages::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CSVCMsgList_UserMessages)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7169,7 +8474,7 @@ void CSVCMsgList_UserMessages::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->usermsgs_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->usermsgs(static_cast<int>(i)), deterministic, target);
+        1, this->usermsgs(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -7189,6 +8494,10 @@ size_t CSVCMsgList_UserMessages::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CSVCMsgList_UserMessages.usermsg_t usermsgs = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->usermsgs_size());
@@ -7209,9 +8518,9 @@ void CSVCMsgList_UserMessages::MergeFrom(const ::google::protobuf::Message& from
 // @@protoc_insertion_point(generalized_merge_from_start:CSVCMsgList_UserMessages)
   GOOGLE_DCHECK_NE(&from, this);
   const CSVCMsgList_UserMessages* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CSVCMsgList_UserMessages>(
+      ::google::protobuf::DynamicCastToGenerated<CSVCMsgList_UserMessages>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CSVCMsgList_UserMessages)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7254,14 +8563,14 @@ void CSVCMsgList_UserMessages::Swap(CSVCMsgList_UserMessages* other) {
 }
 void CSVCMsgList_UserMessages::InternalSwap(CSVCMsgList_UserMessages* other) {
   using std::swap;
-  CastToBase(&usermsgs_)->InternalSwap(CastToBase(&other->usermsgs_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  CastToBase(&usermsgs_)->InternalSwap(CastToBase(&other->usermsgs_));
 }
 
 ::google::protobuf::Metadata CSVCMsgList_UserMessages::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7272,6 +8581,74 @@ void CNETMsg_SpawnGroup_Load::InitAsDefaultInstance() {
       ::CMsgVector::internal_default_instance());
   ::_CNETMsg_SpawnGroup_Load_default_instance_._instance.get_mutable()->world_offset_angle_ = const_cast< ::CMsgQAngle*>(
       ::CMsgQAngle::internal_default_instance());
+}
+class CNETMsg_SpawnGroup_Load::HasBitSetters {
+ public:
+  static void set_has_worldname(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_entitylumpname(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_entityfiltername(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_spawngrouphandle(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static void set_has_spawngroupownerhandle(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+  static const ::CMsgVector& world_offset_pos(const CNETMsg_SpawnGroup_Load* msg);
+  static void set_has_world_offset_pos(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static const ::CMsgQAngle& world_offset_angle(const CNETMsg_SpawnGroup_Load* msg);
+  static void set_has_world_offset_angle(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_spawngroupmanifest(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_flags(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000800u;
+  }
+  static void set_has_tickcount(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00001000u;
+  }
+  static void set_has_manifestincomplete(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00002000u;
+  }
+  static void set_has_localnamefixup(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_parentnamefixup(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_manifestloadpriority(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00004000u;
+  }
+  static void set_has_worldgroupid(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00008000u;
+  }
+  static void set_has_creationsequence(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00010000u;
+  }
+  static void set_has_savegamefilename(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_spawngroupparenthandle(CNETMsg_SpawnGroup_Load* msg) {
+    msg->_has_bits_[0] |= 0x00020000u;
+  }
+};
+
+const ::CMsgVector&
+CNETMsg_SpawnGroup_Load::HasBitSetters::world_offset_pos(const CNETMsg_SpawnGroup_Load* msg) {
+  return *msg->world_offset_pos_;
+}
+const ::CMsgQAngle&
+CNETMsg_SpawnGroup_Load::HasBitSetters::world_offset_angle(const CNETMsg_SpawnGroup_Load* msg) {
+  return *msg->world_offset_angle_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_SpawnGroup_Load::kWorldnameFieldNumber;
@@ -7295,15 +8672,13 @@ const int CNETMsg_SpawnGroup_Load::kSpawngroupparenthandleFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_SpawnGroup_Load::CNETMsg_SpawnGroup_Load()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_Load.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_SpawnGroup_Load)
 }
 CNETMsg_SpawnGroup_Load::CNETMsg_SpawnGroup_Load(const CNETMsg_SpawnGroup_Load& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   worldname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -7337,12 +8712,12 @@ CNETMsg_SpawnGroup_Load::CNETMsg_SpawnGroup_Load(const CNETMsg_SpawnGroup_Load& 
   if (from.has_world_offset_pos()) {
     world_offset_pos_ = new ::CMsgVector(*from.world_offset_pos_);
   } else {
-    world_offset_pos_ = NULL;
+    world_offset_pos_ = nullptr;
   }
   if (from.has_world_offset_angle()) {
     world_offset_angle_ = new ::CMsgQAngle(*from.world_offset_angle_);
   } else {
-    world_offset_angle_ = NULL;
+    world_offset_angle_ = nullptr;
   }
   ::memcpy(&spawngrouphandle_, &from.spawngrouphandle_,
     static_cast<size_t>(reinterpret_cast<char*>(&spawngroupparenthandle_) -
@@ -7351,6 +8726,8 @@ CNETMsg_SpawnGroup_Load::CNETMsg_SpawnGroup_Load(const CNETMsg_SpawnGroup_Load& 
 }
 
 void CNETMsg_SpawnGroup_Load::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CNETMsg_SpawnGroup_Load_networkbasetypes_2eproto.base);
   worldname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   entitylumpname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   entityfiltername_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -7383,13 +8760,8 @@ void CNETMsg_SpawnGroup_Load::SharedDtor() {
 void CNETMsg_SpawnGroup_Load::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_SpawnGroup_Load::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_SpawnGroup_Load& CNETMsg_SpawnGroup_Load::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_Load.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_SpawnGroup_Load_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7401,7 +8773,7 @@ void CNETMsg_SpawnGroup_Load::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       worldname_.ClearNonDefaultToEmptyNoArena();
     }
@@ -7424,20 +8796,20 @@ void CNETMsg_SpawnGroup_Load::Clear() {
       savegamefilename_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(world_offset_pos_ != NULL);
+      GOOGLE_DCHECK(world_offset_pos_ != nullptr);
       world_offset_pos_->Clear();
     }
   }
   if (cached_has_bits & 0x00000100u) {
-    GOOGLE_DCHECK(world_offset_angle_ != NULL);
+    GOOGLE_DCHECK(world_offset_angle_ != nullptr);
     world_offset_angle_->Clear();
   }
-  if (cached_has_bits & 65024u) {
+  if (cached_has_bits & 0x0000fe00u) {
     ::memset(&spawngrouphandle_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&worldgroupid_) -
         reinterpret_cast<char*>(&spawngrouphandle_)) + sizeof(worldgroupid_));
   }
-  if (cached_has_bits & 196608u) {
+  if (cached_has_bits & 0x00030000u) {
     ::memset(&creationsequence_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&spawngroupparenthandle_) -
         reinterpret_cast<char*>(&creationsequence_)) + sizeof(spawngroupparenthandle_));
@@ -7446,9 +8818,246 @@ void CNETMsg_SpawnGroup_Load::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_SpawnGroup_Load::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_SpawnGroup_Load*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string worldname = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CNETMsg_SpawnGroup_Load.worldname");
+        object = msg->mutable_worldname();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string entitylumpname = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CNETMsg_SpawnGroup_Load.entitylumpname");
+        object = msg->mutable_entitylumpname();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string entityfiltername = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CNETMsg_SpawnGroup_Load.entityfiltername");
+        object = msg->mutable_entityfiltername();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 spawngrouphandle = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_spawngrouphandle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 spawngroupownerhandle = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_spawngroupownerhandle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .CMsgVector world_offset_pos = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::CMsgVector::_InternalParse;
+        object = msg->mutable_world_offset_pos();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .CMsgQAngle world_offset_angle = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::CMsgQAngle::_InternalParse;
+        object = msg->mutable_world_offset_angle();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional bytes spawngroupmanifest = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_spawngroupmanifest();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 flags = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_flags(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 tickcount = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
+        msg->set_tickcount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool manifestincomplete = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 88) goto handle_unusual;
+        msg->set_manifestincomplete(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string localnamefixup = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 98) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CNETMsg_SpawnGroup_Load.localnamefixup");
+        object = msg->mutable_localnamefixup();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string parentnamefixup = 13;
+      case 13: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 106) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CNETMsg_SpawnGroup_Load.parentnamefixup");
+        object = msg->mutable_parentnamefixup();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional int32 manifestloadpriority = 14;
+      case 14: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 112) goto handle_unusual;
+        msg->set_manifestloadpriority(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 worldgroupid = 15;
+      case 15: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 120) goto handle_unusual;
+        msg->set_worldgroupid(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 creationsequence = 16;
+      case 16: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 128) goto handle_unusual;
+        msg->set_creationsequence(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string savegamefilename = 17;
+      case 17: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 138) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CNETMsg_SpawnGroup_Load.savegamefilename");
+        object = msg->mutable_savegamefilename();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 spawngroupparenthandle = 18;
+      case 18: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 144) goto handle_unusual;
+        msg->set_spawngroupparenthandle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_SpawnGroup_Load)
   for (;;) {
@@ -7458,8 +9067,7 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string worldname = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_worldname()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -7474,8 +9082,7 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional string entitylumpname = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_entitylumpname()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -7490,8 +9097,7 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional string entityfiltername = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_entityfiltername()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -7506,9 +9112,8 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional uint32 spawngrouphandle = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_spawngrouphandle();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_spawngrouphandle(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &spawngrouphandle_)));
@@ -7520,9 +9125,8 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional uint32 spawngroupownerhandle = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_spawngroupownerhandle();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_spawngroupownerhandle(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &spawngroupownerhandle_)));
@@ -7534,8 +9138,7 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional .CMsgVector world_offset_pos = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_world_offset_pos()));
         } else {
@@ -7546,8 +9149,7 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional .CMsgQAngle world_offset_angle = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_world_offset_angle()));
         } else {
@@ -7558,8 +9160,7 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional bytes spawngroupmanifest = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_spawngroupmanifest()));
         } else {
@@ -7570,9 +9171,8 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional uint32 flags = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_flags();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_flags(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &flags_)));
@@ -7584,9 +9184,8 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional int32 tickcount = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-          set_has_tickcount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (80 & 0xFF)) {
+          HasBitSetters::set_has_tickcount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &tickcount_)));
@@ -7598,9 +9197,8 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional bool manifestincomplete = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
-          set_has_manifestincomplete();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (88 & 0xFF)) {
+          HasBitSetters::set_has_manifestincomplete(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &manifestincomplete_)));
@@ -7612,8 +9210,7 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional string localnamefixup = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (98 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_localnamefixup()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -7628,8 +9225,7 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional string parentnamefixup = 13;
       case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(106u /* 106 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (106 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_parentnamefixup()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -7644,9 +9240,8 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional int32 manifestloadpriority = 14;
       case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(112u /* 112 & 0xFF */)) {
-          set_has_manifestloadpriority();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (112 & 0xFF)) {
+          HasBitSetters::set_has_manifestloadpriority(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &manifestloadpriority_)));
@@ -7658,9 +9253,8 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional uint32 worldgroupid = 15;
       case 15: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(120u /* 120 & 0xFF */)) {
-          set_has_worldgroupid();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (120 & 0xFF)) {
+          HasBitSetters::set_has_worldgroupid(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &worldgroupid_)));
@@ -7672,9 +9266,8 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional uint32 creationsequence = 16;
       case 16: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(128u /* 128 & 0xFF */)) {
-          set_has_creationsequence();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (128 & 0xFF)) {
+          HasBitSetters::set_has_creationsequence(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &creationsequence_)));
@@ -7686,8 +9279,7 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional string savegamefilename = 17;
       case 17: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(138u /* 138 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (138 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_savegamefilename()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -7702,9 +9294,8 @@ bool CNETMsg_SpawnGroup_Load::MergePartialFromCodedStream(
 
       // optional uint32 spawngroupparenthandle = 18;
       case 18: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(144u /* 144 & 0xFF */)) {
-          set_has_spawngroupparenthandle();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (144 & 0xFF)) {
+          HasBitSetters::set_has_spawngroupparenthandle(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &spawngroupparenthandle_)));
@@ -7733,6 +9324,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_SpawnGroup_Load::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7784,13 +9376,13 @@ void CNETMsg_SpawnGroup_Load::SerializeWithCachedSizes(
   // optional .CMsgVector world_offset_pos = 6;
   if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_world_offset_pos(), output);
+      6, HasBitSetters::world_offset_pos(this), output);
   }
 
   // optional .CMsgQAngle world_offset_angle = 7;
   if (cached_has_bits & 0x00000100u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_internal_world_offset_angle(), output);
+      7, HasBitSetters::world_offset_angle(this), output);
   }
 
   // optional bytes spawngroupmanifest = 8;
@@ -7872,8 +9464,7 @@ void CNETMsg_SpawnGroup_Load::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_SpawnGroup_Load::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_SpawnGroup_Load)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7926,14 +9517,14 @@ void CNETMsg_SpawnGroup_Load::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->_internal_world_offset_pos(), deterministic, target);
+        6, HasBitSetters::world_offset_pos(this), target);
   }
 
   // optional .CMsgQAngle world_offset_angle = 7;
   if (cached_has_bits & 0x00000100u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, this->_internal_world_offset_angle(), deterministic, target);
+        7, HasBitSetters::world_offset_angle(this), target);
   }
 
   // optional bytes spawngroupmanifest = 8;
@@ -8028,130 +9619,135 @@ size_t CNETMsg_SpawnGroup_Load::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional string worldname = 1;
-    if (has_worldname()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->worldname());
     }
 
     // optional string entitylumpname = 2;
-    if (has_entitylumpname()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->entitylumpname());
     }
 
     // optional string entityfiltername = 3;
-    if (has_entityfiltername()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->entityfiltername());
     }
 
     // optional bytes spawngroupmanifest = 8;
-    if (has_spawngroupmanifest()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->spawngroupmanifest());
     }
 
     // optional string localnamefixup = 12;
-    if (has_localnamefixup()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->localnamefixup());
     }
 
     // optional string parentnamefixup = 13;
-    if (has_parentnamefixup()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->parentnamefixup());
     }
 
     // optional string savegamefilename = 17;
-    if (has_savegamefilename()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->savegamefilename());
     }
 
     // optional .CMsgVector world_offset_pos = 6;
-    if (has_world_offset_pos()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *world_offset_pos_);
     }
 
   }
-  if (_has_bits_[8 / 32] & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     // optional .CMsgQAngle world_offset_angle = 7;
-    if (has_world_offset_angle()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *world_offset_angle_);
     }
 
     // optional uint32 spawngrouphandle = 4;
-    if (has_spawngrouphandle()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->spawngrouphandle());
     }
 
     // optional uint32 spawngroupownerhandle = 5;
-    if (has_spawngroupownerhandle()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->spawngroupownerhandle());
     }
 
     // optional uint32 flags = 9;
-    if (has_flags()) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->flags());
     }
 
     // optional int32 tickcount = 10;
-    if (has_tickcount()) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->tickcount());
     }
 
     // optional bool manifestincomplete = 11;
-    if (has_manifestincomplete()) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 1 + 1;
     }
 
     // optional int32 manifestloadpriority = 14;
-    if (has_manifestloadpriority()) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->manifestloadpriority());
     }
 
     // optional uint32 worldgroupid = 15;
-    if (has_worldgroupid()) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->worldgroupid());
     }
 
   }
-  if (_has_bits_[16 / 32] & 196608u) {
+  if (cached_has_bits & 0x00030000u) {
     // optional uint32 creationsequence = 16;
-    if (has_creationsequence()) {
+    if (cached_has_bits & 0x00010000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->creationsequence());
     }
 
     // optional uint32 spawngroupparenthandle = 18;
-    if (has_spawngroupparenthandle()) {
+    if (cached_has_bits & 0x00020000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->spawngroupparenthandle());
@@ -8167,9 +9763,9 @@ void CNETMsg_SpawnGroup_Load::MergeFrom(const ::google::protobuf::Message& from)
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_SpawnGroup_Load)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_SpawnGroup_Load* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_SpawnGroup_Load>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_SpawnGroup_Load>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_SpawnGroup_Load)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8186,40 +9782,40 @@ void CNETMsg_SpawnGroup_Load::MergeFrom(const CNETMsg_SpawnGroup_Load& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_worldname();
+      _has_bits_[0] |= 0x00000001u;
       worldname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.worldname_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_entitylumpname();
+      _has_bits_[0] |= 0x00000002u;
       entitylumpname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.entitylumpname_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_entityfiltername();
+      _has_bits_[0] |= 0x00000004u;
       entityfiltername_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.entityfiltername_);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_spawngroupmanifest();
+      _has_bits_[0] |= 0x00000008u;
       spawngroupmanifest_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.spawngroupmanifest_);
     }
     if (cached_has_bits & 0x00000010u) {
-      set_has_localnamefixup();
+      _has_bits_[0] |= 0x00000010u;
       localnamefixup_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.localnamefixup_);
     }
     if (cached_has_bits & 0x00000020u) {
-      set_has_parentnamefixup();
+      _has_bits_[0] |= 0x00000020u;
       parentnamefixup_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parentnamefixup_);
     }
     if (cached_has_bits & 0x00000040u) {
-      set_has_savegamefilename();
+      _has_bits_[0] |= 0x00000040u;
       savegamefilename_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.savegamefilename_);
     }
     if (cached_has_bits & 0x00000080u) {
       mutable_world_offset_pos()->::CMsgVector::MergeFrom(from.world_offset_pos());
     }
   }
-  if (cached_has_bits & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
       mutable_world_offset_angle()->::CMsgQAngle::MergeFrom(from.world_offset_angle());
     }
@@ -8246,7 +9842,7 @@ void CNETMsg_SpawnGroup_Load::MergeFrom(const CNETMsg_SpawnGroup_Load& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 196608u) {
+  if (cached_has_bits & 0x00030000u) {
     if (cached_has_bits & 0x00010000u) {
       creationsequence_ = from.creationsequence_;
     }
@@ -8281,6 +9877,8 @@ void CNETMsg_SpawnGroup_Load::Swap(CNETMsg_SpawnGroup_Load* other) {
 }
 void CNETMsg_SpawnGroup_Load::InternalSwap(CNETMsg_SpawnGroup_Load* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   worldname_.Swap(&other->worldname_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   entitylumpname_.Swap(&other->entitylumpname_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -8306,13 +9904,11 @@ void CNETMsg_SpawnGroup_Load::InternalSwap(CNETMsg_SpawnGroup_Load* other) {
   swap(worldgroupid_, other->worldgroupid_);
   swap(creationsequence_, other->creationsequence_);
   swap(spawngroupparenthandle_, other->spawngroupparenthandle_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CNETMsg_SpawnGroup_Load::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8320,6 +9916,19 @@ void CNETMsg_SpawnGroup_Load::InternalSwap(CNETMsg_SpawnGroup_Load* other) {
 
 void CNETMsg_SpawnGroup_ManifestUpdate::InitAsDefaultInstance() {
 }
+class CNETMsg_SpawnGroup_ManifestUpdate::HasBitSetters {
+ public:
+  static void set_has_spawngrouphandle(CNETMsg_SpawnGroup_ManifestUpdate* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_spawngroupmanifest(CNETMsg_SpawnGroup_ManifestUpdate* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_manifestincomplete(CNETMsg_SpawnGroup_ManifestUpdate* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_SpawnGroup_ManifestUpdate::kSpawngrouphandleFieldNumber;
 const int CNETMsg_SpawnGroup_ManifestUpdate::kSpawngroupmanifestFieldNumber;
@@ -8327,15 +9936,13 @@ const int CNETMsg_SpawnGroup_ManifestUpdate::kManifestincompleteFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_SpawnGroup_ManifestUpdate::CNETMsg_SpawnGroup_ManifestUpdate()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_ManifestUpdate.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_SpawnGroup_ManifestUpdate)
 }
 CNETMsg_SpawnGroup_ManifestUpdate::CNETMsg_SpawnGroup_ManifestUpdate(const CNETMsg_SpawnGroup_ManifestUpdate& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   spawngroupmanifest_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -8349,6 +9956,8 @@ CNETMsg_SpawnGroup_ManifestUpdate::CNETMsg_SpawnGroup_ManifestUpdate(const CNETM
 }
 
 void CNETMsg_SpawnGroup_ManifestUpdate::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CNETMsg_SpawnGroup_ManifestUpdate_networkbasetypes_2eproto.base);
   spawngroupmanifest_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&spawngrouphandle_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&manifestincomplete_) -
@@ -8367,13 +9976,8 @@ void CNETMsg_SpawnGroup_ManifestUpdate::SharedDtor() {
 void CNETMsg_SpawnGroup_ManifestUpdate::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_SpawnGroup_ManifestUpdate::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_SpawnGroup_ManifestUpdate& CNETMsg_SpawnGroup_ManifestUpdate::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_ManifestUpdate.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_SpawnGroup_ManifestUpdate_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -8388,7 +9992,7 @@ void CNETMsg_SpawnGroup_ManifestUpdate::Clear() {
   if (cached_has_bits & 0x00000001u) {
     spawngroupmanifest_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 6u) {
+  if (cached_has_bits & 0x00000006u) {
     ::memset(&spawngrouphandle_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&manifestincomplete_) -
         reinterpret_cast<char*>(&spawngrouphandle_)) + sizeof(manifestincomplete_));
@@ -8397,9 +10001,75 @@ void CNETMsg_SpawnGroup_ManifestUpdate::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_SpawnGroup_ManifestUpdate::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_SpawnGroup_ManifestUpdate*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 spawngrouphandle = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_spawngrouphandle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes spawngroupmanifest = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_spawngroupmanifest();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bool manifestincomplete = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_manifestincomplete(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_SpawnGroup_ManifestUpdate::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_SpawnGroup_ManifestUpdate)
   for (;;) {
@@ -8409,9 +10079,8 @@ bool CNETMsg_SpawnGroup_ManifestUpdate::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 spawngrouphandle = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_spawngrouphandle();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_spawngrouphandle(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &spawngrouphandle_)));
@@ -8423,8 +10092,7 @@ bool CNETMsg_SpawnGroup_ManifestUpdate::MergePartialFromCodedStream(
 
       // optional bytes spawngroupmanifest = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_spawngroupmanifest()));
         } else {
@@ -8435,9 +10103,8 @@ bool CNETMsg_SpawnGroup_ManifestUpdate::MergePartialFromCodedStream(
 
       // optional bool manifestincomplete = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_manifestincomplete();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_manifestincomplete(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &manifestincomplete_)));
@@ -8466,6 +10133,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_SpawnGroup_ManifestUpdate::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -8498,8 +10166,7 @@ void CNETMsg_SpawnGroup_ManifestUpdate::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_SpawnGroup_ManifestUpdate::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_SpawnGroup_ManifestUpdate)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8539,23 +10206,28 @@ size_t CNETMsg_SpawnGroup_ManifestUpdate::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes spawngroupmanifest = 2;
-    if (has_spawngroupmanifest()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->spawngroupmanifest());
     }
 
     // optional uint32 spawngrouphandle = 1;
-    if (has_spawngrouphandle()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->spawngrouphandle());
     }
 
     // optional bool manifestincomplete = 3;
-    if (has_manifestincomplete()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 1;
     }
 
@@ -8569,9 +10241,9 @@ void CNETMsg_SpawnGroup_ManifestUpdate::MergeFrom(const ::google::protobuf::Mess
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_SpawnGroup_ManifestUpdate)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_SpawnGroup_ManifestUpdate* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_SpawnGroup_ManifestUpdate>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_SpawnGroup_ManifestUpdate>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_SpawnGroup_ManifestUpdate)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8588,9 +10260,9 @@ void CNETMsg_SpawnGroup_ManifestUpdate::MergeFrom(const CNETMsg_SpawnGroup_Manif
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_spawngroupmanifest();
+      _has_bits_[0] |= 0x00000001u;
       spawngroupmanifest_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.spawngroupmanifest_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -8627,17 +10299,17 @@ void CNETMsg_SpawnGroup_ManifestUpdate::Swap(CNETMsg_SpawnGroup_ManifestUpdate* 
 }
 void CNETMsg_SpawnGroup_ManifestUpdate::InternalSwap(CNETMsg_SpawnGroup_ManifestUpdate* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   spawngroupmanifest_.Swap(&other->spawngroupmanifest_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(spawngrouphandle_, other->spawngrouphandle_);
   swap(manifestincomplete_, other->manifestincomplete_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CNETMsg_SpawnGroup_ManifestUpdate::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8645,6 +10317,19 @@ void CNETMsg_SpawnGroup_ManifestUpdate::InternalSwap(CNETMsg_SpawnGroup_Manifest
 
 void CNETMsg_SpawnGroup_SetCreationTick::InitAsDefaultInstance() {
 }
+class CNETMsg_SpawnGroup_SetCreationTick::HasBitSetters {
+ public:
+  static void set_has_spawngrouphandle(CNETMsg_SpawnGroup_SetCreationTick* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_tickcount(CNETMsg_SpawnGroup_SetCreationTick* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_creationsequence(CNETMsg_SpawnGroup_SetCreationTick* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_SpawnGroup_SetCreationTick::kSpawngrouphandleFieldNumber;
 const int CNETMsg_SpawnGroup_SetCreationTick::kTickcountFieldNumber;
@@ -8652,15 +10337,13 @@ const int CNETMsg_SpawnGroup_SetCreationTick::kCreationsequenceFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_SpawnGroup_SetCreationTick::CNETMsg_SpawnGroup_SetCreationTick()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_SetCreationTick.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_SpawnGroup_SetCreationTick)
 }
 CNETMsg_SpawnGroup_SetCreationTick::CNETMsg_SpawnGroup_SetCreationTick(const CNETMsg_SpawnGroup_SetCreationTick& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&spawngrouphandle_, &from.spawngrouphandle_,
@@ -8686,13 +10369,8 @@ void CNETMsg_SpawnGroup_SetCreationTick::SharedDtor() {
 void CNETMsg_SpawnGroup_SetCreationTick::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_SpawnGroup_SetCreationTick::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_SpawnGroup_SetCreationTick& CNETMsg_SpawnGroup_SetCreationTick::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_SetCreationTick.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_SpawnGroup_SetCreationTick_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -8704,7 +10382,7 @@ void CNETMsg_SpawnGroup_SetCreationTick::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&spawngrouphandle_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&creationsequence_) -
         reinterpret_cast<char*>(&spawngrouphandle_)) + sizeof(creationsequence_));
@@ -8713,9 +10391,60 @@ void CNETMsg_SpawnGroup_SetCreationTick::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_SpawnGroup_SetCreationTick::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_SpawnGroup_SetCreationTick*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 spawngrouphandle = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_spawngrouphandle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 tickcount = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_tickcount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 creationsequence = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_creationsequence(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_SpawnGroup_SetCreationTick::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_SpawnGroup_SetCreationTick)
   for (;;) {
@@ -8725,9 +10454,8 @@ bool CNETMsg_SpawnGroup_SetCreationTick::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 spawngrouphandle = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_spawngrouphandle();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_spawngrouphandle(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &spawngrouphandle_)));
@@ -8739,9 +10467,8 @@ bool CNETMsg_SpawnGroup_SetCreationTick::MergePartialFromCodedStream(
 
       // optional int32 tickcount = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_tickcount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_tickcount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &tickcount_)));
@@ -8753,9 +10480,8 @@ bool CNETMsg_SpawnGroup_SetCreationTick::MergePartialFromCodedStream(
 
       // optional uint32 creationsequence = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_creationsequence();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_creationsequence(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &creationsequence_)));
@@ -8784,6 +10510,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_SpawnGroup_SetCreationTick::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -8815,8 +10542,7 @@ void CNETMsg_SpawnGroup_SetCreationTick::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_SpawnGroup_SetCreationTick::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_SpawnGroup_SetCreationTick)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8854,23 +10580,28 @@ size_t CNETMsg_SpawnGroup_SetCreationTick::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional uint32 spawngrouphandle = 1;
-    if (has_spawngrouphandle()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->spawngrouphandle());
     }
 
     // optional int32 tickcount = 2;
-    if (has_tickcount()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->tickcount());
     }
 
     // optional uint32 creationsequence = 3;
-    if (has_creationsequence()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->creationsequence());
@@ -8886,9 +10617,9 @@ void CNETMsg_SpawnGroup_SetCreationTick::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_SpawnGroup_SetCreationTick)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_SpawnGroup_SetCreationTick* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_SpawnGroup_SetCreationTick>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_SpawnGroup_SetCreationTick>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_SpawnGroup_SetCreationTick)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8905,7 +10636,7 @@ void CNETMsg_SpawnGroup_SetCreationTick::MergeFrom(const CNETMsg_SpawnGroup_SetC
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       spawngrouphandle_ = from.spawngrouphandle_;
     }
@@ -8943,16 +10674,16 @@ void CNETMsg_SpawnGroup_SetCreationTick::Swap(CNETMsg_SpawnGroup_SetCreationTick
 }
 void CNETMsg_SpawnGroup_SetCreationTick::InternalSwap(CNETMsg_SpawnGroup_SetCreationTick* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(spawngrouphandle_, other->spawngrouphandle_);
   swap(tickcount_, other->tickcount_);
   swap(creationsequence_, other->creationsequence_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CNETMsg_SpawnGroup_SetCreationTick::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8960,6 +10691,19 @@ void CNETMsg_SpawnGroup_SetCreationTick::InternalSwap(CNETMsg_SpawnGroup_SetCrea
 
 void CNETMsg_SpawnGroup_Unload::InitAsDefaultInstance() {
 }
+class CNETMsg_SpawnGroup_Unload::HasBitSetters {
+ public:
+  static void set_has_spawngrouphandle(CNETMsg_SpawnGroup_Unload* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_flags(CNETMsg_SpawnGroup_Unload* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_tickcount(CNETMsg_SpawnGroup_Unload* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_SpawnGroup_Unload::kSpawngrouphandleFieldNumber;
 const int CNETMsg_SpawnGroup_Unload::kFlagsFieldNumber;
@@ -8967,15 +10711,13 @@ const int CNETMsg_SpawnGroup_Unload::kTickcountFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_SpawnGroup_Unload::CNETMsg_SpawnGroup_Unload()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_Unload.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_SpawnGroup_Unload)
 }
 CNETMsg_SpawnGroup_Unload::CNETMsg_SpawnGroup_Unload(const CNETMsg_SpawnGroup_Unload& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&spawngrouphandle_, &from.spawngrouphandle_,
@@ -9001,13 +10743,8 @@ void CNETMsg_SpawnGroup_Unload::SharedDtor() {
 void CNETMsg_SpawnGroup_Unload::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_SpawnGroup_Unload::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_SpawnGroup_Unload& CNETMsg_SpawnGroup_Unload::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_Unload.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_SpawnGroup_Unload_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -9019,7 +10756,7 @@ void CNETMsg_SpawnGroup_Unload::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&spawngrouphandle_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&tickcount_) -
         reinterpret_cast<char*>(&spawngrouphandle_)) + sizeof(tickcount_));
@@ -9028,9 +10765,60 @@ void CNETMsg_SpawnGroup_Unload::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_SpawnGroup_Unload::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_SpawnGroup_Unload*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 spawngrouphandle = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_spawngrouphandle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 flags = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_flags(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 tickcount = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_tickcount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_SpawnGroup_Unload::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_SpawnGroup_Unload)
   for (;;) {
@@ -9040,9 +10828,8 @@ bool CNETMsg_SpawnGroup_Unload::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 spawngrouphandle = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_spawngrouphandle();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_spawngrouphandle(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &spawngrouphandle_)));
@@ -9054,9 +10841,8 @@ bool CNETMsg_SpawnGroup_Unload::MergePartialFromCodedStream(
 
       // optional uint32 flags = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_flags();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_flags(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &flags_)));
@@ -9068,9 +10854,8 @@ bool CNETMsg_SpawnGroup_Unload::MergePartialFromCodedStream(
 
       // optional int32 tickcount = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_tickcount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_tickcount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &tickcount_)));
@@ -9099,6 +10884,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_SpawnGroup_Unload::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -9130,8 +10916,7 @@ void CNETMsg_SpawnGroup_Unload::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_SpawnGroup_Unload::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_SpawnGroup_Unload)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -9169,23 +10954,28 @@ size_t CNETMsg_SpawnGroup_Unload::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional uint32 spawngrouphandle = 1;
-    if (has_spawngrouphandle()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->spawngrouphandle());
     }
 
     // optional uint32 flags = 2;
-    if (has_flags()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->flags());
     }
 
     // optional int32 tickcount = 3;
-    if (has_tickcount()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->tickcount());
@@ -9201,9 +10991,9 @@ void CNETMsg_SpawnGroup_Unload::MergeFrom(const ::google::protobuf::Message& fro
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_SpawnGroup_Unload)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_SpawnGroup_Unload* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_SpawnGroup_Unload>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_SpawnGroup_Unload>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_SpawnGroup_Unload)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -9220,7 +11010,7 @@ void CNETMsg_SpawnGroup_Unload::MergeFrom(const CNETMsg_SpawnGroup_Unload& from)
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       spawngrouphandle_ = from.spawngrouphandle_;
     }
@@ -9258,16 +11048,16 @@ void CNETMsg_SpawnGroup_Unload::Swap(CNETMsg_SpawnGroup_Unload* other) {
 }
 void CNETMsg_SpawnGroup_Unload::InternalSwap(CNETMsg_SpawnGroup_Unload* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(spawngrouphandle_, other->spawngrouphandle_);
   swap(flags_, other->flags_);
   swap(tickcount_, other->tickcount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CNETMsg_SpawnGroup_Unload::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -9275,20 +11065,25 @@ void CNETMsg_SpawnGroup_Unload::InternalSwap(CNETMsg_SpawnGroup_Unload* other) {
 
 void CNETMsg_SpawnGroup_LoadCompleted::InitAsDefaultInstance() {
 }
+class CNETMsg_SpawnGroup_LoadCompleted::HasBitSetters {
+ public:
+  static void set_has_spawngrouphandle(CNETMsg_SpawnGroup_LoadCompleted* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CNETMsg_SpawnGroup_LoadCompleted::kSpawngrouphandleFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CNETMsg_SpawnGroup_LoadCompleted::CNETMsg_SpawnGroup_LoadCompleted()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_LoadCompleted.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CNETMsg_SpawnGroup_LoadCompleted)
 }
 CNETMsg_SpawnGroup_LoadCompleted::CNETMsg_SpawnGroup_LoadCompleted(const CNETMsg_SpawnGroup_LoadCompleted& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   spawngrouphandle_ = from.spawngrouphandle_;
@@ -9310,13 +11105,8 @@ void CNETMsg_SpawnGroup_LoadCompleted::SharedDtor() {
 void CNETMsg_SpawnGroup_LoadCompleted::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CNETMsg_SpawnGroup_LoadCompleted::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CNETMsg_SpawnGroup_LoadCompleted& CNETMsg_SpawnGroup_LoadCompleted::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CNETMsg_SpawnGroup_LoadCompleted.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CNETMsg_SpawnGroup_LoadCompleted_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -9332,9 +11122,46 @@ void CNETMsg_SpawnGroup_LoadCompleted::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CNETMsg_SpawnGroup_LoadCompleted::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CNETMsg_SpawnGroup_LoadCompleted*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 spawngrouphandle = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_spawngrouphandle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CNETMsg_SpawnGroup_LoadCompleted::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CNETMsg_SpawnGroup_LoadCompleted)
   for (;;) {
@@ -9344,9 +11171,8 @@ bool CNETMsg_SpawnGroup_LoadCompleted::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 spawngrouphandle = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_spawngrouphandle();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_spawngrouphandle(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &spawngrouphandle_)));
@@ -9375,6 +11201,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CNETMsg_SpawnGroup_LoadCompleted::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -9396,8 +11223,7 @@ void CNETMsg_SpawnGroup_LoadCompleted::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CNETMsg_SpawnGroup_LoadCompleted::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CNETMsg_SpawnGroup_LoadCompleted)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -9425,8 +11251,13 @@ size_t CNETMsg_SpawnGroup_LoadCompleted::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional uint32 spawngrouphandle = 1;
-  if (has_spawngrouphandle()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->spawngrouphandle());
@@ -9441,9 +11272,9 @@ void CNETMsg_SpawnGroup_LoadCompleted::MergeFrom(const ::google::protobuf::Messa
 // @@protoc_insertion_point(generalized_merge_from_start:CNETMsg_SpawnGroup_LoadCompleted)
   GOOGLE_DCHECK_NE(&from, this);
   const CNETMsg_SpawnGroup_LoadCompleted* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CNETMsg_SpawnGroup_LoadCompleted>(
+      ::google::protobuf::DynamicCastToGenerated<CNETMsg_SpawnGroup_LoadCompleted>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CNETMsg_SpawnGroup_LoadCompleted)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -9488,14 +11319,14 @@ void CNETMsg_SpawnGroup_LoadCompleted::Swap(CNETMsg_SpawnGroup_LoadCompleted* ot
 }
 void CNETMsg_SpawnGroup_LoadCompleted::InternalSwap(CNETMsg_SpawnGroup_LoadCompleted* other) {
   using std::swap;
-  swap(spawngrouphandle_, other->spawngrouphandle_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(spawngrouphandle_, other->spawngrouphandle_);
 }
 
 ::google::protobuf::Metadata CNETMsg_SpawnGroup_LoadCompleted::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
@@ -9503,6 +11334,64 @@ void CNETMsg_SpawnGroup_LoadCompleted::InternalSwap(CNETMsg_SpawnGroup_LoadCompl
 
 void CSVCMsg_GameSessionConfiguration::InitAsDefaultInstance() {
 }
+class CSVCMsg_GameSessionConfiguration::HasBitSetters {
+ public:
+  static void set_has_is_multiplayer(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_is_loadsavegame(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static void set_has_is_background_map(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+  static void set_has_is_headless(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000800u;
+  }
+  static void set_has_min_client_limit(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00001000u;
+  }
+  static void set_has_max_client_limit(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00002000u;
+  }
+  static void set_has_max_clients(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00004000u;
+  }
+  static void set_has_tick_interval(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00008000u;
+  }
+  static void set_has_hostname(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_savegamename(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_s1_mapname(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_gamemode(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_server_ip_address(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_data(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_is_localonly(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00010000u;
+  }
+  static void set_has_is_transition(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00020000u;
+  }
+  static void set_has_previouslevel(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_landmarkname(CSVCMsg_GameSessionConfiguration* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CSVCMsg_GameSessionConfiguration::kIsMultiplayerFieldNumber;
 const int CSVCMsg_GameSessionConfiguration::kIsLoadsavegameFieldNumber;
@@ -9525,15 +11414,13 @@ const int CSVCMsg_GameSessionConfiguration::kLandmarknameFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CSVCMsg_GameSessionConfiguration::CSVCMsg_GameSessionConfiguration()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_GameSessionConfiguration.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CSVCMsg_GameSessionConfiguration)
 }
 CSVCMsg_GameSessionConfiguration::CSVCMsg_GameSessionConfiguration(const CSVCMsg_GameSessionConfiguration& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   hostname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -9575,6 +11462,8 @@ CSVCMsg_GameSessionConfiguration::CSVCMsg_GameSessionConfiguration(const CSVCMsg
 }
 
 void CSVCMsg_GameSessionConfiguration::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CSVCMsg_GameSessionConfiguration_networkbasetypes_2eproto.base);
   hostname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   savegamename_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   s1_mapname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -9607,13 +11496,8 @@ void CSVCMsg_GameSessionConfiguration::SharedDtor() {
 void CSVCMsg_GameSessionConfiguration::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CSVCMsg_GameSessionConfiguration::descriptor() {
-  ::protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CSVCMsg_GameSessionConfiguration& CSVCMsg_GameSessionConfiguration::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_networkbasetypes_2eproto::scc_info_CSVCMsg_GameSessionConfiguration.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CSVCMsg_GameSessionConfiguration_networkbasetypes_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -9625,7 +11509,7 @@ void CSVCMsg_GameSessionConfiguration::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       hostname_.ClearNonDefaultToEmptyNoArena();
     }
@@ -9651,12 +11535,12 @@ void CSVCMsg_GameSessionConfiguration::Clear() {
       landmarkname_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     ::memset(&is_multiplayer_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&tick_interval_) -
         reinterpret_cast<char*>(&is_multiplayer_)) + sizeof(tick_interval_));
   }
-  if (cached_has_bits & 196608u) {
+  if (cached_has_bits & 0x00030000u) {
     ::memset(&is_localonly_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&is_transition_) -
         reinterpret_cast<char*>(&is_localonly_)) + sizeof(is_transition_));
@@ -9665,9 +11549,243 @@ void CSVCMsg_GameSessionConfiguration::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CSVCMsg_GameSessionConfiguration::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CSVCMsg_GameSessionConfiguration*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bool is_multiplayer = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_is_multiplayer(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_loadsavegame = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_is_loadsavegame(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_background_map = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_is_background_map(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_headless = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_is_headless(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 min_client_limit = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_min_client_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 max_client_limit = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_max_client_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 max_clients = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_max_clients(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional fixed32 tick_interval = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 69) goto handle_unusual;
+        msg->set_tick_interval(::google::protobuf::io::UnalignedLoad<::google::protobuf::uint32>(ptr));
+        ptr += sizeof(::google::protobuf::uint32);
+        break;
+      }
+      // optional string hostname = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 74) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CSVCMsg_GameSessionConfiguration.hostname");
+        object = msg->mutable_hostname();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string savegamename = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CSVCMsg_GameSessionConfiguration.savegamename");
+        object = msg->mutable_savegamename();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string s1_mapname = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 90) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CSVCMsg_GameSessionConfiguration.s1_mapname");
+        object = msg->mutable_s1_mapname();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string gamemode = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 98) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CSVCMsg_GameSessionConfiguration.gamemode");
+        object = msg->mutable_gamemode();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string server_ip_address = 13;
+      case 13: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 106) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CSVCMsg_GameSessionConfiguration.server_ip_address");
+        object = msg->mutable_server_ip_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes data = 14;
+      case 14: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 114) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bool is_localonly = 15;
+      case 15: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 120) goto handle_unusual;
+        msg->set_is_localonly(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_transition = 16;
+      case 16: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 128) goto handle_unusual;
+        msg->set_is_transition(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string previouslevel = 17;
+      case 17: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 138) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CSVCMsg_GameSessionConfiguration.previouslevel");
+        object = msg->mutable_previouslevel();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string landmarkname = 18;
+      case 18: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 146) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CSVCMsg_GameSessionConfiguration.landmarkname");
+        object = msg->mutable_landmarkname();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CSVCMsg_GameSessionConfiguration)
   for (;;) {
@@ -9677,9 +11795,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bool is_multiplayer = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_is_multiplayer();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_is_multiplayer(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_multiplayer_)));
@@ -9691,9 +11808,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional bool is_loadsavegame = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_is_loadsavegame();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_is_loadsavegame(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_loadsavegame_)));
@@ -9705,9 +11821,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional bool is_background_map = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_is_background_map();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_is_background_map(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_background_map_)));
@@ -9719,9 +11834,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional bool is_headless = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_is_headless();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_is_headless(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_headless_)));
@@ -9733,9 +11847,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional uint32 min_client_limit = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_min_client_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_min_client_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &min_client_limit_)));
@@ -9747,9 +11860,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional uint32 max_client_limit = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_max_client_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_max_client_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &max_client_limit_)));
@@ -9761,9 +11873,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional uint32 max_clients = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_max_clients();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_max_clients(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &max_clients_)));
@@ -9775,9 +11886,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional fixed32 tick_interval = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(69u /* 69 & 0xFF */)) {
-          set_has_tick_interval();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (69 & 0xFF)) {
+          HasBitSetters::set_has_tick_interval(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED32>(
                  input, &tick_interval_)));
@@ -9789,8 +11899,7 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional string hostname = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (74 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_hostname()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -9805,8 +11914,7 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional string savegamename = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_savegamename()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -9821,8 +11929,7 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional string s1_mapname = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (90 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_s1_mapname()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -9837,8 +11944,7 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional string gamemode = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (98 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_gamemode()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -9853,8 +11959,7 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional string server_ip_address = 13;
       case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(106u /* 106 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (106 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_server_ip_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -9869,8 +11974,7 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional bytes data = 14;
       case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(114u /* 114 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (114 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
@@ -9881,9 +11985,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional bool is_localonly = 15;
       case 15: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(120u /* 120 & 0xFF */)) {
-          set_has_is_localonly();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (120 & 0xFF)) {
+          HasBitSetters::set_has_is_localonly(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_localonly_)));
@@ -9895,9 +11998,8 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional bool is_transition = 16;
       case 16: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(128u /* 128 & 0xFF */)) {
-          set_has_is_transition();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (128 & 0xFF)) {
+          HasBitSetters::set_has_is_transition(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_transition_)));
@@ -9909,8 +12011,7 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional string previouslevel = 17;
       case 17: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(138u /* 138 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (138 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_previouslevel()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -9925,8 +12026,7 @@ bool CSVCMsg_GameSessionConfiguration::MergePartialFromCodedStream(
 
       // optional string landmarkname = 18;
       case 18: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(146u /* 146 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (146 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_landmarkname()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -9958,6 +12058,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CSVCMsg_GameSessionConfiguration::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -10100,8 +12201,7 @@ void CSVCMsg_GameSessionConfiguration::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CSVCMsg_GameSessionConfiguration::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CSVCMsg_GameSessionConfiguration)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -10258,120 +12358,125 @@ size_t CSVCMsg_GameSessionConfiguration::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional string hostname = 9;
-    if (has_hostname()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->hostname());
     }
 
     // optional string savegamename = 10;
-    if (has_savegamename()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->savegamename());
     }
 
     // optional string s1_mapname = 11;
-    if (has_s1_mapname()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->s1_mapname());
     }
 
     // optional string gamemode = 12;
-    if (has_gamemode()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->gamemode());
     }
 
     // optional string server_ip_address = 13;
-    if (has_server_ip_address()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->server_ip_address());
     }
 
     // optional bytes data = 14;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->data());
     }
 
     // optional string previouslevel = 17;
-    if (has_previouslevel()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->previouslevel());
     }
 
     // optional string landmarkname = 18;
-    if (has_landmarkname()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->landmarkname());
     }
 
   }
-  if (_has_bits_[8 / 32] & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     // optional bool is_multiplayer = 1;
-    if (has_is_multiplayer()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 + 1;
     }
 
     // optional bool is_loadsavegame = 2;
-    if (has_is_loadsavegame()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 + 1;
     }
 
     // optional bool is_background_map = 3;
-    if (has_is_background_map()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 + 1;
     }
 
     // optional bool is_headless = 4;
-    if (has_is_headless()) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 1 + 1;
     }
 
     // optional uint32 min_client_limit = 5;
-    if (has_min_client_limit()) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->min_client_limit());
     }
 
     // optional uint32 max_client_limit = 6;
-    if (has_max_client_limit()) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->max_client_limit());
     }
 
     // optional uint32 max_clients = 7;
-    if (has_max_clients()) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->max_clients());
     }
 
     // optional fixed32 tick_interval = 8;
-    if (has_tick_interval()) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += 1 + 4;
     }
 
   }
-  if (_has_bits_[16 / 32] & 196608u) {
+  if (cached_has_bits & 0x00030000u) {
     // optional bool is_localonly = 15;
-    if (has_is_localonly()) {
+    if (cached_has_bits & 0x00010000u) {
       total_size += 1 + 1;
     }
 
     // optional bool is_transition = 16;
-    if (has_is_transition()) {
+    if (cached_has_bits & 0x00020000u) {
       total_size += 2 + 1;
     }
 
@@ -10385,9 +12490,9 @@ void CSVCMsg_GameSessionConfiguration::MergeFrom(const ::google::protobuf::Messa
 // @@protoc_insertion_point(generalized_merge_from_start:CSVCMsg_GameSessionConfiguration)
   GOOGLE_DCHECK_NE(&from, this);
   const CSVCMsg_GameSessionConfiguration* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CSVCMsg_GameSessionConfiguration>(
+      ::google::protobuf::DynamicCastToGenerated<CSVCMsg_GameSessionConfiguration>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CSVCMsg_GameSessionConfiguration)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -10404,41 +12509,41 @@ void CSVCMsg_GameSessionConfiguration::MergeFrom(const CSVCMsg_GameSessionConfig
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_hostname();
+      _has_bits_[0] |= 0x00000001u;
       hostname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hostname_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_savegamename();
+      _has_bits_[0] |= 0x00000002u;
       savegamename_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.savegamename_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_s1_mapname();
+      _has_bits_[0] |= 0x00000004u;
       s1_mapname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.s1_mapname_);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_gamemode();
+      _has_bits_[0] |= 0x00000008u;
       gamemode_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.gamemode_);
     }
     if (cached_has_bits & 0x00000010u) {
-      set_has_server_ip_address();
+      _has_bits_[0] |= 0x00000010u;
       server_ip_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.server_ip_address_);
     }
     if (cached_has_bits & 0x00000020u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000020u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
     if (cached_has_bits & 0x00000040u) {
-      set_has_previouslevel();
+      _has_bits_[0] |= 0x00000040u;
       previouslevel_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.previouslevel_);
     }
     if (cached_has_bits & 0x00000080u) {
-      set_has_landmarkname();
+      _has_bits_[0] |= 0x00000080u;
       landmarkname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.landmarkname_);
     }
   }
-  if (cached_has_bits & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
       is_multiplayer_ = from.is_multiplayer_;
     }
@@ -10465,7 +12570,7 @@ void CSVCMsg_GameSessionConfiguration::MergeFrom(const CSVCMsg_GameSessionConfig
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 196608u) {
+  if (cached_has_bits & 0x00030000u) {
     if (cached_has_bits & 0x00010000u) {
       is_localonly_ = from.is_localonly_;
     }
@@ -10500,6 +12605,8 @@ void CSVCMsg_GameSessionConfiguration::Swap(CSVCMsg_GameSessionConfiguration* ot
 }
 void CSVCMsg_GameSessionConfiguration::InternalSwap(CSVCMsg_GameSessionConfiguration* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   hostname_.Swap(&other->hostname_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   savegamename_.Swap(&other->savegamename_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -10526,98 +12633,97 @@ void CSVCMsg_GameSessionConfiguration::InternalSwap(CSVCMsg_GameSessionConfigura
   swap(tick_interval_, other->tick_interval_);
   swap(is_localonly_, other->is_localonly_);
   swap(is_transition_, other->is_transition_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CSVCMsg_GameSessionConfiguration::GetMetadata() const {
-  protobuf_networkbasetypes_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_networkbasetypes_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_networkbasetypes_2eproto);
+  return ::file_level_metadata_networkbasetypes_2eproto[kIndexInFileMessages];
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CMsgVector* Arena::CreateMaybeMessage< ::CMsgVector >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CMsgVector* Arena::CreateMaybeMessage< ::CMsgVector >(Arena* arena) {
   return Arena::CreateInternal< ::CMsgVector >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CMsgVector2D* Arena::CreateMaybeMessage< ::CMsgVector2D >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CMsgVector2D* Arena::CreateMaybeMessage< ::CMsgVector2D >(Arena* arena) {
   return Arena::CreateInternal< ::CMsgVector2D >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CMsgQAngle* Arena::CreateMaybeMessage< ::CMsgQAngle >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CMsgQAngle* Arena::CreateMaybeMessage< ::CMsgQAngle >(Arena* arena) {
   return Arena::CreateInternal< ::CMsgQAngle >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CMsgPlayerInfo* Arena::CreateMaybeMessage< ::CMsgPlayerInfo >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CMsgPlayerInfo* Arena::CreateMaybeMessage< ::CMsgPlayerInfo >(Arena* arena) {
   return Arena::CreateInternal< ::CMsgPlayerInfo >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CMsg_CVars_CVar* Arena::CreateMaybeMessage< ::CMsg_CVars_CVar >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CMsg_CVars_CVar* Arena::CreateMaybeMessage< ::CMsg_CVars_CVar >(Arena* arena) {
   return Arena::CreateInternal< ::CMsg_CVars_CVar >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CMsg_CVars* Arena::CreateMaybeMessage< ::CMsg_CVars >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CMsg_CVars* Arena::CreateMaybeMessage< ::CMsg_CVars >(Arena* arena) {
   return Arena::CreateInternal< ::CMsg_CVars >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_NOP* Arena::CreateMaybeMessage< ::CNETMsg_NOP >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_NOP* Arena::CreateMaybeMessage< ::CNETMsg_NOP >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_NOP >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_SplitScreenUser* Arena::CreateMaybeMessage< ::CNETMsg_SplitScreenUser >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_SplitScreenUser* Arena::CreateMaybeMessage< ::CNETMsg_SplitScreenUser >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_SplitScreenUser >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_Disconnect* Arena::CreateMaybeMessage< ::CNETMsg_Disconnect >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_Disconnect* Arena::CreateMaybeMessage< ::CNETMsg_Disconnect >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_Disconnect >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_Tick* Arena::CreateMaybeMessage< ::CNETMsg_Tick >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_Tick* Arena::CreateMaybeMessage< ::CNETMsg_Tick >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_Tick >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_StringCmd* Arena::CreateMaybeMessage< ::CNETMsg_StringCmd >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_StringCmd* Arena::CreateMaybeMessage< ::CNETMsg_StringCmd >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_StringCmd >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_SetConVar* Arena::CreateMaybeMessage< ::CNETMsg_SetConVar >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_SetConVar* Arena::CreateMaybeMessage< ::CNETMsg_SetConVar >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_SetConVar >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_SignonState* Arena::CreateMaybeMessage< ::CNETMsg_SignonState >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_SignonState* Arena::CreateMaybeMessage< ::CNETMsg_SignonState >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_SignonState >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CSVCMsg_GameEvent_key_t* Arena::CreateMaybeMessage< ::CSVCMsg_GameEvent_key_t >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CSVCMsg_GameEvent_key_t* Arena::CreateMaybeMessage< ::CSVCMsg_GameEvent_key_t >(Arena* arena) {
   return Arena::CreateInternal< ::CSVCMsg_GameEvent_key_t >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CSVCMsg_GameEvent* Arena::CreateMaybeMessage< ::CSVCMsg_GameEvent >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CSVCMsg_GameEvent* Arena::CreateMaybeMessage< ::CSVCMsg_GameEvent >(Arena* arena) {
   return Arena::CreateInternal< ::CSVCMsg_GameEvent >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CSVCMsgList_GameEvents_event_t* Arena::CreateMaybeMessage< ::CSVCMsgList_GameEvents_event_t >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CSVCMsgList_GameEvents_event_t* Arena::CreateMaybeMessage< ::CSVCMsgList_GameEvents_event_t >(Arena* arena) {
   return Arena::CreateInternal< ::CSVCMsgList_GameEvents_event_t >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CSVCMsgList_GameEvents* Arena::CreateMaybeMessage< ::CSVCMsgList_GameEvents >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CSVCMsgList_GameEvents* Arena::CreateMaybeMessage< ::CSVCMsgList_GameEvents >(Arena* arena) {
   return Arena::CreateInternal< ::CSVCMsgList_GameEvents >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CSVCMsg_UserMessage* Arena::CreateMaybeMessage< ::CSVCMsg_UserMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CSVCMsg_UserMessage* Arena::CreateMaybeMessage< ::CSVCMsg_UserMessage >(Arena* arena) {
   return Arena::CreateInternal< ::CSVCMsg_UserMessage >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CSVCMsgList_UserMessages_usermsg_t* Arena::CreateMaybeMessage< ::CSVCMsgList_UserMessages_usermsg_t >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CSVCMsgList_UserMessages_usermsg_t* Arena::CreateMaybeMessage< ::CSVCMsgList_UserMessages_usermsg_t >(Arena* arena) {
   return Arena::CreateInternal< ::CSVCMsgList_UserMessages_usermsg_t >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CSVCMsgList_UserMessages* Arena::CreateMaybeMessage< ::CSVCMsgList_UserMessages >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CSVCMsgList_UserMessages* Arena::CreateMaybeMessage< ::CSVCMsgList_UserMessages >(Arena* arena) {
   return Arena::CreateInternal< ::CSVCMsgList_UserMessages >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_SpawnGroup_Load* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_Load >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_SpawnGroup_Load* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_Load >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_SpawnGroup_Load >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_SpawnGroup_ManifestUpdate* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_ManifestUpdate >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_SpawnGroup_ManifestUpdate* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_ManifestUpdate >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_SpawnGroup_ManifestUpdate >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_SpawnGroup_SetCreationTick* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_SetCreationTick >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_SpawnGroup_SetCreationTick* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_SetCreationTick >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_SpawnGroup_SetCreationTick >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_SpawnGroup_Unload* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_Unload >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_SpawnGroup_Unload* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_Unload >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_SpawnGroup_Unload >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CNETMsg_SpawnGroup_LoadCompleted* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_LoadCompleted >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CNETMsg_SpawnGroup_LoadCompleted* Arena::CreateMaybeMessage< ::CNETMsg_SpawnGroup_LoadCompleted >(Arena* arena) {
   return Arena::CreateInternal< ::CNETMsg_SpawnGroup_LoadCompleted >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CSVCMsg_GameSessionConfiguration* Arena::CreateMaybeMessage< ::CSVCMsg_GameSessionConfiguration >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CSVCMsg_GameSessionConfiguration* Arena::CreateMaybeMessage< ::CSVCMsg_GameSessionConfiguration >(Arena* arena) {
   return Arena::CreateInternal< ::CSVCMsg_GameSessionConfiguration >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

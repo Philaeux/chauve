@@ -6,56 +6,44 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_dota_5fshared_5fenums_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_dota_5fshared_5fenums_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDOTASaveGame_Player;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_dota_5fshared_5fenums_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDOTASaveGame_SaveInstance_PlayerPositions;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_dota_5fshared_5fenums_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CDOTASaveGame_SaveInstance;
-}  // namespace protobuf_dota_5fshared_5fenums_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_dota_5fshared_5fenums_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDOTASaveGame_Player_dota_5fshared_5fenums_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_dota_5fshared_5fenums_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CDOTASaveGame_SaveInstance_PlayerPositions_dota_5fshared_5fenums_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_dota_5fshared_5fenums_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CDOTASaveGame_SaveInstance_dota_5fshared_5fenums_2eproto;
 class CDOTAClientHardwareSpecsDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDOTAClientHardwareSpecs>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDOTAClientHardwareSpecs> _instance;
 } _CDOTAClientHardwareSpecs_default_instance_;
 class CDOTASaveGame_PlayerDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDOTASaveGame_Player>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDOTASaveGame_Player> _instance;
 } _CDOTASaveGame_Player_default_instance_;
 class CDOTASaveGame_SaveInstance_PlayerPositionsDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDOTASaveGame_SaveInstance_PlayerPositions>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDOTASaveGame_SaveInstance_PlayerPositions> _instance;
 } _CDOTASaveGame_SaveInstance_PlayerPositions_default_instance_;
 class CDOTASaveGame_SaveInstanceDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDOTASaveGame_SaveInstance>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDOTASaveGame_SaveInstance> _instance;
 } _CDOTASaveGame_SaveInstance_default_instance_;
 class CDOTASaveGameDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CDOTASaveGame>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CDOTASaveGame> _instance;
 } _CDOTASaveGame_default_instance_;
 class CMsgDOTACombatLogEntryDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CMsgDOTACombatLogEntry>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CMsgDOTACombatLogEntry> _instance;
 } _CMsgDOTACombatLogEntry_default_instance_;
-namespace protobuf_dota_5fshared_5fenums_2eproto {
-static void InitDefaultsCDOTAClientHardwareSpecs() {
+static void InitDefaultsCDOTAClientHardwareSpecs_dota_5fshared_5fenums_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -66,10 +54,10 @@ static void InitDefaultsCDOTAClientHardwareSpecs() {
   ::CDOTAClientHardwareSpecs::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDOTAClientHardwareSpecs =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDOTAClientHardwareSpecs}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDOTAClientHardwareSpecs_dota_5fshared_5fenums_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDOTAClientHardwareSpecs_dota_5fshared_5fenums_2eproto}, {}};
 
-static void InitDefaultsCDOTASaveGame_Player() {
+static void InitDefaultsCDOTASaveGame_Player_dota_5fshared_5fenums_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -80,10 +68,10 @@ static void InitDefaultsCDOTASaveGame_Player() {
   ::CDOTASaveGame_Player::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDOTASaveGame_Player =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDOTASaveGame_Player}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDOTASaveGame_Player_dota_5fshared_5fenums_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDOTASaveGame_Player_dota_5fshared_5fenums_2eproto}, {}};
 
-static void InitDefaultsCDOTASaveGame_SaveInstance_PlayerPositions() {
+static void InitDefaultsCDOTASaveGame_SaveInstance_PlayerPositions_dota_5fshared_5fenums_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -94,10 +82,10 @@ static void InitDefaultsCDOTASaveGame_SaveInstance_PlayerPositions() {
   ::CDOTASaveGame_SaveInstance_PlayerPositions::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CDOTASaveGame_SaveInstance_PlayerPositions =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDOTASaveGame_SaveInstance_PlayerPositions}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CDOTASaveGame_SaveInstance_PlayerPositions_dota_5fshared_5fenums_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCDOTASaveGame_SaveInstance_PlayerPositions_dota_5fshared_5fenums_2eproto}, {}};
 
-static void InitDefaultsCDOTASaveGame_SaveInstance() {
+static void InitDefaultsCDOTASaveGame_SaveInstance_dota_5fshared_5fenums_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -108,11 +96,11 @@ static void InitDefaultsCDOTASaveGame_SaveInstance() {
   ::CDOTASaveGame_SaveInstance::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CDOTASaveGame_SaveInstance =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDOTASaveGame_SaveInstance}, {
-      &protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame_SaveInstance_PlayerPositions.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CDOTASaveGame_SaveInstance_dota_5fshared_5fenums_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCDOTASaveGame_SaveInstance_dota_5fshared_5fenums_2eproto}, {
+      &scc_info_CDOTASaveGame_SaveInstance_PlayerPositions_dota_5fshared_5fenums_2eproto.base,}};
 
-static void InitDefaultsCDOTASaveGame() {
+static void InitDefaultsCDOTASaveGame_dota_5fshared_5fenums_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -123,12 +111,12 @@ static void InitDefaultsCDOTASaveGame() {
   ::CDOTASaveGame::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_CDOTASaveGame =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCDOTASaveGame}, {
-      &protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame_Player.base,
-      &protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame_SaveInstance.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_CDOTASaveGame_dota_5fshared_5fenums_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCDOTASaveGame_dota_5fshared_5fenums_2eproto}, {
+      &scc_info_CDOTASaveGame_Player_dota_5fshared_5fenums_2eproto.base,
+      &scc_info_CDOTASaveGame_SaveInstance_dota_5fshared_5fenums_2eproto.base,}};
 
-static void InitDefaultsCMsgDOTACombatLogEntry() {
+static void InitDefaultsCMsgDOTACombatLogEntry_dota_5fshared_5fenums_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -139,166 +127,167 @@ static void InitDefaultsCMsgDOTACombatLogEntry() {
   ::CMsgDOTACombatLogEntry::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CMsgDOTACombatLogEntry =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgDOTACombatLogEntry}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CMsgDOTACombatLogEntry_dota_5fshared_5fenums_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCMsgDOTACombatLogEntry_dota_5fshared_5fenums_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_CDOTAClientHardwareSpecs.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDOTASaveGame_Player.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDOTASaveGame_SaveInstance_PlayerPositions.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDOTASaveGame_SaveInstance.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CDOTASaveGame.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CMsgDOTACombatLogEntry.base);
+void InitDefaults_dota_5fshared_5fenums_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_CDOTAClientHardwareSpecs_dota_5fshared_5fenums_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDOTASaveGame_Player_dota_5fshared_5fenums_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDOTASaveGame_SaveInstance_PlayerPositions_dota_5fshared_5fenums_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDOTASaveGame_SaveInstance_dota_5fshared_5fenums_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CDOTASaveGame_dota_5fshared_5fenums_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CMsgDOTACombatLogEntry_dota_5fshared_5fenums_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[6];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[43];
+::google::protobuf::Metadata file_level_metadata_dota_5fshared_5fenums_2eproto[6];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[43];
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_dota_5fshared_5fenums_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTAClientHardwareSpecs, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTAClientHardwareSpecs, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_dota_5fshared_5fenums_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::CDOTAClientHardwareSpecs, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDOTAClientHardwareSpecs, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTAClientHardwareSpecs, logical_processors_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTAClientHardwareSpecs, cpu_cycles_per_second_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTAClientHardwareSpecs, total_physical_memory_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTAClientHardwareSpecs, is_64_bit_os_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTAClientHardwareSpecs, upload_measurement_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTAClientHardwareSpecs, prefer_not_host_),
+  PROTOBUF_FIELD_OFFSET(::CDOTAClientHardwareSpecs, logical_processors_),
+  PROTOBUF_FIELD_OFFSET(::CDOTAClientHardwareSpecs, cpu_cycles_per_second_),
+  PROTOBUF_FIELD_OFFSET(::CDOTAClientHardwareSpecs, total_physical_memory_),
+  PROTOBUF_FIELD_OFFSET(::CDOTAClientHardwareSpecs, is_64_bit_os_),
+  PROTOBUF_FIELD_OFFSET(::CDOTAClientHardwareSpecs, upload_measurement_),
+  PROTOBUF_FIELD_OFFSET(::CDOTAClientHardwareSpecs, prefer_not_host_),
   2,
   0,
   1,
   3,
   5,
   4,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_Player, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_Player, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_Player, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_Player, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_Player, team_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_Player, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_Player, hero_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_Player, team_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_Player, name_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_Player, hero_),
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance_PlayerPositions, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance_PlayerPositions, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance_PlayerPositions, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance_PlayerPositions, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance_PlayerPositions, x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance_PlayerPositions, y_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance_PlayerPositions, x_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance_PlayerPositions, y_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, game_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, team1_score_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, team2_score_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, player_positions_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, save_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, save_time_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, game_time_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, team1_score_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, team2_score_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, player_positions_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, save_id_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame_SaveInstance, save_time_),
   0,
   1,
   2,
   ~0u,
   3,
   4,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame, match_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame, save_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame, players_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CDOTASaveGame, save_instances_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame, match_id_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame, save_time_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame, players_),
+  PROTOBUF_FIELD_OFFSET(::CDOTASaveGame, save_instances_),
   0,
   1,
   ~0u,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_source_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, attacker_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, damage_source_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, inflictor_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_attacker_illusion_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_attacker_hero_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_target_illusion_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_target_hero_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_visible_radiant_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_visible_dire_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, value_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, health_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, timestamp_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, stun_duration_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, slow_duration_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_ability_toggle_on_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_ability_toggle_off_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, ability_level_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, location_x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, location_y_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, gold_reason_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, timestamp_raw_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_duration_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, xp_reason_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, last_hits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, attacker_team_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_team_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, obs_wards_placed_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_player0_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_player1_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_player2_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_player3_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, stack_count_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, hidden_modifier_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_target_building_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, neutral_camp_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, rune_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_players_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_heal_save_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_ultimate_ability_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, attacker_hero_level_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_hero_level_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, xpm_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, gpm_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, event_location_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_is_self_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, damage_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, invisibility_modifier_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, damage_category_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, networth_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, building_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_elapsed_duration_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, silence_modifier_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, heal_from_lifesteal_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_purged_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, spell_evaded_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, motion_controller_modifier_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, long_range_kill_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_purge_ability_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_purge_npc_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, root_modifier_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, total_unit_death_count_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, aura_modifier_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, armor_debuff_modifier_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, no_physical_damage_modifier_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_ability_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_hidden_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, inflictor_is_stolen_ability_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, kill_eater_event_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::CMsgDOTACombatLogEntry, unit_status_label_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_source_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, attacker_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, damage_source_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, inflictor_name_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_attacker_illusion_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_attacker_hero_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_target_illusion_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_target_hero_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_visible_radiant_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_visible_dire_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, value_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, health_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, stun_duration_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, slow_duration_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_ability_toggle_on_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_ability_toggle_off_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, ability_level_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, location_x_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, location_y_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, gold_reason_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, timestamp_raw_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_duration_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, xp_reason_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, last_hits_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, attacker_team_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_team_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, obs_wards_placed_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_player0_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_player1_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_player2_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_player3_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, stack_count_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, hidden_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_target_building_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, neutral_camp_type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, rune_type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, assist_players_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_heal_save_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, is_ultimate_ability_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, attacker_hero_level_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_hero_level_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, xpm_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, gpm_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, event_location_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, target_is_self_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, damage_type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, invisibility_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, damage_category_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, networth_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, building_type_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_elapsed_duration_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, silence_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, heal_from_lifesteal_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_purged_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, spell_evaded_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, motion_controller_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, long_range_kill_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_purge_ability_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_purge_npc_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, root_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, total_unit_death_count_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, aura_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, armor_debuff_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, no_physical_damage_modifier_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_ability_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, modifier_hidden_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, inflictor_is_stolen_ability_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, kill_eater_event_),
+  PROTOBUF_FIELD_OFFSET(::CMsgDOTACombatLogEntry, unit_status_label_),
   70,
   0,
   1,
@@ -372,7 +361,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   68,
   69,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 11, sizeof(::CDOTAClientHardwareSpecs)},
   { 17, 25, sizeof(::CDOTASaveGame_Player)},
   { 28, 35, sizeof(::CDOTASaveGame_SaveInstance_PlayerPositions)},
@@ -390,475 +379,459 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::_CMsgDOTACombatLogEntry_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "dota_shared_enums.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_dota_5fshared_5fenums_2eproto = {
+  {}, AddDescriptors_dota_5fshared_5fenums_2eproto, "dota_shared_enums.proto", schemas,
+  file_default_instances, TableStruct_dota_5fshared_5fenums_2eproto::offsets,
+  file_level_metadata_dota_5fshared_5fenums_2eproto, 6, file_level_enum_descriptors_dota_5fshared_5fenums_2eproto, file_level_service_descriptors_dota_5fshared_5fenums_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_dota_5fshared_5fenums_2eproto[] =
+  "\n\027dota_shared_enums.proto\"\277\001\n\030CDOTAClien"
+  "tHardwareSpecs\022\032\n\022logical_processors\030\001 \001"
+  "(\r\022\035\n\025cpu_cycles_per_second\030\002 \001(\006\022\035\n\025tot"
+  "al_physical_memory\030\003 \001(\006\022\024\n\014is_64_bit_os"
+  "\030\004 \001(\010\022\032\n\022upload_measurement\030\005 \001(\004\022\027\n\017pr"
+  "efer_not_host\030\006 \001(\010\"\316\003\n\rCDOTASaveGame\022\020\n"
+  "\010match_id\030\005 \001(\004\022\021\n\tsave_time\030\002 \001(\r\022&\n\007pl"
+  "ayers\030\003 \003(\0132\025.CDOTASaveGame.Player\0223\n\016sa"
+  "ve_instances\030\004 \003(\0132\033.CDOTASaveGame.SaveI"
+  "nstance\032Y\n\006Player\0223\n\004team\030\001 \001(\0162\r.DOTA_G"
+  "C_TEAM:\026DOTA_GC_TEAM_GOOD_GUYS\022\014\n\004name\030\002"
+  " \001(\t\022\014\n\004hero\030\003 \001(\t\032\337\001\n\014SaveInstance\022\021\n\tg"
+  "ame_time\030\002 \001(\r\022\023\n\013team1_score\030\003 \001(\r\022\023\n\013t"
+  "eam2_score\030\004 \001(\r\022E\n\020player_positions\030\005 \003"
+  "(\0132+.CDOTASaveGame.SaveInstance.PlayerPo"
+  "sitions\022\017\n\007save_id\030\006 \001(\r\022\021\n\tsave_time\030\007 "
+  "\001(\r\032\'\n\017PlayerPositions\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002"
+  " \001(\002\"\275\016\n\026CMsgDOTACombatLogEntry\022;\n\004type\030"
+  "\001 \001(\0162\025.DOTA_COMBATLOG_TYPES:\026DOTA_COMBA"
+  "TLOG_INVALID\022\023\n\013target_name\030\002 \001(\r\022\032\n\022tar"
+  "get_source_name\030\003 \001(\r\022\025\n\rattacker_name\030\004"
+  " \001(\r\022\032\n\022damage_source_name\030\005 \001(\r\022\026\n\016infl"
+  "ictor_name\030\006 \001(\r\022\034\n\024is_attacker_illusion"
+  "\030\007 \001(\010\022\030\n\020is_attacker_hero\030\010 \001(\010\022\032\n\022is_t"
+  "arget_illusion\030\t \001(\010\022\026\n\016is_target_hero\030\n"
+  " \001(\010\022\032\n\022is_visible_radiant\030\013 \001(\010\022\027\n\017is_v"
+  "isible_dire\030\014 \001(\010\022\r\n\005value\030\r \001(\r\022\016\n\006heal"
+  "th\030\016 \001(\005\022\021\n\ttimestamp\030\017 \001(\002\022\025\n\rstun_dura"
+  "tion\030\020 \001(\002\022\025\n\rslow_duration\030\021 \001(\002\022\034\n\024is_"
+  "ability_toggle_on\030\022 \001(\010\022\035\n\025is_ability_to"
+  "ggle_off\030\023 \001(\010\022\025\n\rability_level\030\024 \001(\r\022\022\n"
+  "\nlocation_x\030\025 \001(\002\022\022\n\nlocation_y\030\026 \001(\002\022\023\n"
+  "\013gold_reason\030\027 \001(\r\022\025\n\rtimestamp_raw\030\030 \001("
+  "\002\022\031\n\021modifier_duration\030\031 \001(\002\022\021\n\txp_reaso"
+  "n\030\032 \001(\r\022\021\n\tlast_hits\030\033 \001(\r\022\025\n\rattacker_t"
+  "eam\030\034 \001(\r\022\023\n\013target_team\030\035 \001(\r\022\030\n\020obs_wa"
+  "rds_placed\030\036 \001(\r\022\026\n\016assist_player0\030\037 \001(\r"
+  "\022\026\n\016assist_player1\030  \001(\r\022\026\n\016assist_playe"
+  "r2\030! \001(\r\022\026\n\016assist_player3\030\" \001(\r\022\023\n\013stac"
+  "k_count\030# \001(\r\022\027\n\017hidden_modifier\030$ \001(\010\022\032"
+  "\n\022is_target_building\030% \001(\010\022\031\n\021neutral_ca"
+  "mp_type\030& \001(\r\022\021\n\trune_type\030\' \001(\r\022\026\n\016assi"
+  "st_players\030( \003(\r\022\024\n\014is_heal_save\030) \001(\010\022\033"
+  "\n\023is_ultimate_ability\030* \001(\010\022\033\n\023attacker_"
+  "hero_level\030+ \001(\r\022\031\n\021target_hero_level\030, "
+  "\001(\r\022\013\n\003xpm\030- \001(\r\022\013\n\003gpm\030. \001(\r\022\026\n\016event_l"
+  "ocation\030/ \001(\r\022\026\n\016target_is_self\0300 \001(\010\022\023\n"
+  "\013damage_type\0301 \001(\r\022\035\n\025invisibility_modif"
+  "ier\0302 \001(\010\022\027\n\017damage_category\0303 \001(\r\022\020\n\010ne"
+  "tworth\0304 \001(\r\022\025\n\rbuilding_type\0305 \001(\r\022!\n\031m"
+  "odifier_elapsed_duration\0306 \001(\002\022\030\n\020silenc"
+  "e_modifier\0307 \001(\010\022\033\n\023heal_from_lifesteal\030"
+  "8 \001(\010\022\027\n\017modifier_purged\0309 \001(\010\022\024\n\014spell_"
+  "evaded\030: \001(\010\022\"\n\032motion_controller_modifi"
+  "er\030; \001(\010\022\027\n\017long_range_kill\030< \001(\010\022\036\n\026mod"
+  "ifier_purge_ability\030= \001(\r\022\032\n\022modifier_pu"
+  "rge_npc\030> \001(\r\022\025\n\rroot_modifier\030\? \001(\010\022\036\n\026"
+  "total_unit_death_count\030@ \001(\r\022\025\n\raura_mod"
+  "ifier\030A \001(\010\022\035\n\025armor_debuff_modifier\030B \001"
+  "(\010\022#\n\033no_physical_damage_modifier\030C \001(\010\022"
+  "\030\n\020modifier_ability\030D \001(\r\022\027\n\017modifier_hi"
+  "dden\030E \001(\010\022#\n\033inflictor_is_stolen_abilit"
+  "y\030F \001(\010\022\030\n\020kill_eater_event\030G \001(\r\022\031\n\021uni"
+  "t_status_label\030H \001(\r*\365\004\n\rDOTA_GameMode\022\026"
+  "\n\022DOTA_GAMEMODE_NONE\020\000\022\024\n\020DOTA_GAMEMODE_"
+  "AP\020\001\022\024\n\020DOTA_GAMEMODE_CM\020\002\022\024\n\020DOTA_GAMEM"
+  "ODE_RD\020\003\022\024\n\020DOTA_GAMEMODE_SD\020\004\022\024\n\020DOTA_G"
+  "AMEMODE_AR\020\005\022\027\n\023DOTA_GAMEMODE_INTRO\020\006\022\024\n"
+  "\020DOTA_GAMEMODE_HW\020\007\022\034\n\030DOTA_GAMEMODE_REV"
+  "ERSE_CM\020\010\022\026\n\022DOTA_GAMEMODE_XMAS\020\t\022\032\n\026DOT"
+  "A_GAMEMODE_TUTORIAL\020\n\022\024\n\020DOTA_GAMEMODE_M"
+  "O\020\013\022\024\n\020DOTA_GAMEMODE_LP\020\014\022\027\n\023DOTA_GAMEMO"
+  "DE_POOL1\020\r\022\024\n\020DOTA_GAMEMODE_FH\020\016\022\030\n\024DOTA"
+  "_GAMEMODE_CUSTOM\020\017\022\024\n\020DOTA_GAMEMODE_CD\020\020"
+  "\022\024\n\020DOTA_GAMEMODE_BD\020\021\022\037\n\033DOTA_GAMEMODE_"
+  "ABILITY_DRAFT\020\022\022\027\n\023DOTA_GAMEMODE_EVENT\020\023"
+  "\022\026\n\022DOTA_GAMEMODE_ARDM\020\024\022\030\n\024DOTA_GAMEMOD"
+  "E_1V1MID\020\025\022\033\n\027DOTA_GAMEMODE_ALL_DRAFT\020\026\022"
+  "\027\n\023DOTA_GAMEMODE_TURBO\020\027\022\032\n\026DOTA_GAMEMOD"
+  "E_MUTATION\020\030*\354\003\n\016DOTA_GameState\022\035\n\031DOTA_"
+  "GAMERULES_STATE_INIT\020\000\0221\n-DOTA_GAMERULES"
+  "_STATE_WAIT_FOR_PLAYERS_TO_LOAD\020\001\022\'\n#DOT"
+  "A_GAMERULES_STATE_HERO_SELECTION\020\002\022&\n\"DO"
+  "TA_GAMERULES_STATE_STRATEGY_TIME\020\003\022!\n\035DO"
+  "TA_GAMERULES_STATE_PRE_GAME\020\004\022)\n%DOTA_GA"
+  "MERULES_STATE_GAME_IN_PROGRESS\020\005\022\"\n\036DOTA"
+  "_GAMERULES_STATE_POST_GAME\020\006\022#\n\037DOTA_GAM"
+  "ERULES_STATE_DISCONNECT\020\007\022&\n\"DOTA_GAMERU"
+  "LES_STATE_TEAM_SHOWCASE\020\010\022*\n&DOTA_GAMERU"
+  "LES_STATE_CUSTOM_GAME_SETUP\020\t\022-\n)DOTA_GA"
+  "MERULES_STATE_WAIT_FOR_MAP_TO_LOAD\020\n\022\035\n\031"
+  "DOTA_GAMERULES_STATE_LAST\020\013*\266\001\n\014DOTA_GC_"
+  "TEAM\022\032\n\026DOTA_GC_TEAM_GOOD_GUYS\020\000\022\031\n\025DOTA"
+  "_GC_TEAM_BAD_GUYS\020\001\022\034\n\030DOTA_GC_TEAM_BROA"
+  "DCASTER\020\002\022\032\n\026DOTA_GC_TEAM_SPECTATOR\020\003\022\034\n"
+  "\030DOTA_GC_TEAM_PLAYER_POOL\020\004\022\027\n\023DOTA_GC_T"
+  "EAM_NOTEAM\020\005*\341\005\n\006EEvent\022\021\n\rEVENT_ID_NONE"
+  "\020\000\022\025\n\021EVENT_ID_DIRETIDE\020\001\022\034\n\030EVENT_ID_SP"
+  "RING_FESTIVAL\020\002\022\033\n\027EVENT_ID_FROSTIVUS_20"
+  "13\020\003\022\034\n\030EVENT_ID_COMPENDIUM_2014\020\004\022\032\n\026EV"
+  "ENT_ID_PWRD_DAC_2015\020\006\022\033\n\027EVENT_ID_NEW_B"
+  "LOOM_2015\020\007\022\037\n\033EVENT_ID_INTERNATIONAL_20"
+  "15\020\010\022\034\n\030EVENT_ID_FALL_MAJOR_2015\020\t\022\026\n\022EV"
+  "ENT_ID_ORACLE_PA\020\n\022$\n EVENT_ID_NEW_BLOOM"
+  "_2015_PREBEAST\020\013\022\026\n\022EVENT_ID_FROSTIVUS\020\014"
+  "\022\036\n\032EVENT_ID_WINTER_MAJOR_2016\020\r\022\037\n\033EVEN"
+  "T_ID_INTERNATIONAL_2016\020\016\022\034\n\030EVENT_ID_FA"
+  "LL_MAJOR_2016\020\017\022\036\n\032EVENT_ID_WINTER_MAJOR"
+  "_2017\020\020\022\033\n\027EVENT_ID_NEW_BLOOM_2017\020\021\022\037\n\033"
+  "EVENT_ID_INTERNATIONAL_2017\020\022\022\036\n\032EVENT_I"
+  "D_PLUS_SUBSCRIPTION\020\023\022\035\n\031EVENT_ID_SINGLE"
+  "S_DAY_2017\020\024\022\033\n\027EVENT_ID_FROSTIVUS_2017\020"
+  "\025\022\037\n\033EVENT_ID_INTERNATIONAL_2018\020\026\022\033\n\027EV"
+  "ENT_ID_FROSTIVUS_2018\020\027\022\033\n\027EVENT_ID_NEW_"
+  "BLOOM_2019\020\030\022\022\n\016EVENT_ID_COUNT\020\031*\250\002\n\022DOT"
+  "ALeaverStatus_t\022\024\n\020DOTA_LEAVER_NONE\020\000\022\034\n"
+  "\030DOTA_LEAVER_DISCONNECTED\020\001\022%\n!DOTA_LEAV"
+  "ER_DISCONNECTED_TOO_LONG\020\002\022\031\n\025DOTA_LEAVE"
+  "R_ABANDONED\020\003\022\023\n\017DOTA_LEAVER_AFK\020\004\022\037\n\033DO"
+  "TA_LEAVER_NEVER_CONNECTED\020\005\022(\n$DOTA_LEAV"
+  "ER_NEVER_CONNECTED_TOO_LONG\020\006\022\"\n\036DOTA_LE"
+  "AVER_FAILED_TO_READY_UP\020\007\022\030\n\024DOTA_LEAVER"
+  "_DECLINED\020\010*\236\002\n\025DOTAConnectionState_t\022!\n"
+  "\035DOTA_CONNECTION_STATE_UNKNOWN\020\000\022+\n\'DOTA"
+  "_CONNECTION_STATE_NOT_YET_CONNECTED\020\001\022#\n"
+  "\037DOTA_CONNECTION_STATE_CONNECTED\020\002\022&\n\"DO"
+  "TA_CONNECTION_STATE_DISCONNECTED\020\003\022#\n\037DO"
+  "TA_CONNECTION_STATE_ABANDONED\020\004\022!\n\035DOTA_"
+  "CONNECTION_STATE_LOADING\020\005\022 \n\034DOTA_CONNE"
+  "CTION_STATE_FAILED\020\006*\214\001\n\rFantasy_Roles\022\032"
+  "\n\026FANTASY_ROLE_UNDEFINED\020\000\022\025\n\021FANTASY_RO"
+  "LE_CORE\020\001\022\030\n\024FANTASY_ROLE_SUPPORT\020\002\022\030\n\024F"
+  "ANTASY_ROLE_OFFLANE\020\003\022\024\n\020FANTASY_ROLE_MI"
+  "D\020\004*\212\001\n\022Fantasy_Team_Slots\022\025\n\021FANTASY_SL"
+  "OT_NONE\020\000\022\025\n\021FANTASY_SLOT_CORE\020\001\022\030\n\024FANT"
+  "ASY_SLOT_SUPPORT\020\002\022\024\n\020FANTASY_SLOT_ANY\020\003"
+  "\022\026\n\022FANTASY_SLOT_BENCH\020\004*\335\002\n\026Fantasy_Sel"
+  "ection_Mode\022\035\n\031FANTASY_SELECTION_INVALID"
+  "\020\000\022\034\n\030FANTASY_SELECTION_LOCKED\020\001\022\035\n\031FANT"
+  "ASY_SELECTION_SHUFFLE\020\002\022\037\n\033FANTASY_SELEC"
+  "TION_FREE_PICK\020\003\022\033\n\027FANTASY_SELECTION_EN"
+  "DED\020\004\022 \n\034FANTASY_SELECTION_PRE_SEASON\020\005\022"
+  "\037\n\033FANTASY_SELECTION_PRE_DRAFT\020\006\022\036\n\032FANT"
+  "ASY_SELECTION_DRAFTING\020\007\022$\n FANTASY_SELE"
+  "CTION_REGULAR_SEASON\020\010\022 \n\034FANTASY_SELECT"
+  "ION_CARD_BASED\020\t*\234\005\n\025DOTAChatChannelType"
+  "_t\022\034\n\030DOTAChannelType_Regional\020\000\022\032\n\026DOTA"
+  "ChannelType_Custom\020\001\022\031\n\025DOTAChannelType_"
+  "Party\020\002\022\031\n\025DOTAChannelType_Lobby\020\003\022\030\n\024DO"
+  "TAChannelType_Team\020\004\022\031\n\025DOTAChannelType_"
+  "Guild\020\005\022\033\n\027DOTAChannelType_Fantasy\020\006\022\033\n\027"
+  "DOTAChannelType_Whisper\020\007\022\033\n\027DOTAChannel"
+  "Type_Console\020\010\022\027\n\023DOTAChannelType_Tab\020\t\022"
+  "\033\n\027DOTAChannelType_Invalid\020\n\022\033\n\027DOTAChan"
+  "nelType_GameAll\020\013\022\036\n\032DOTAChannelType_Gam"
+  "eAllies\020\014\022!\n\035DOTAChannelType_GameSpectat"
+  "or\020\r\022\030\n\024DOTAChannelType_Cafe\020\017\022\036\n\032DOTACh"
+  "annelType_CustomGame\020\020\022\033\n\027DOTAChannelTyp"
+  "e_Private\020\021\022\034\n\030DOTAChannelType_PostGame\020"
+  "\022\022\035\n\031DOTAChannelType_BattleCup\020\023\022!\n\035DOTA"
+  "ChannelType_HLTVSpectator\020\024\022\036\n\032DOTAChann"
+  "elType_GameEvents\020\025\022\032\n\026DOTAChannelType_T"
+  "rivia\020\026*\204\002\n\024EProfileCardSlotType\022 \n\034k_EP"
+  "rofileCardSlotType_Empty\020\000\022\037\n\033k_EProfile"
+  "CardSlotType_Stat\020\001\022!\n\035k_EProfileCardSlo"
+  "tType_Trophy\020\002\022\037\n\033k_EProfileCardSlotType"
+  "_Item\020\003\022\037\n\033k_EProfileCardSlotType_Hero\020\004"
+  "\022#\n\037k_EProfileCardSlotType_Emoticon\020\005\022\037\n"
+  "\033k_EProfileCardSlotType_Team\020\006*\225\001\n\027EMatc"
+  "hGroupServerStatus\022 \n\034k_EMatchGroupServe"
+  "rStatus_OK\020\000\0221\n-k_EMatchGroupServerStatu"
+  "s_LimitedAvailability\020\001\022%\n!k_EMatchGroup"
+  "ServerStatus_Offline\020\002*O\n\014DOTA_CM_PICK\022\022"
+  "\n\016DOTA_CM_RANDOM\020\000\022\025\n\021DOTA_CM_GOOD_GUYS\020"
+  "\001\022\024\n\020DOTA_CM_BAD_GUYS\020\002*\213\001\n\026DOTALowPrior"
+  "ityBanType\022!\n\035DOTA_LOW_PRIORITY_BAN_ABAN"
+  "DON\020\000\022!\n\035DOTA_LOW_PRIORITY_BAN_REPORTS\020\001"
+  "\022+\n\'DOTA_LOW_PRIORITY_BAN_SECONDARY_ABAN"
+  "DON\020\002*}\n\023DOTALobbyReadyState\022\"\n\036DOTALobb"
+  "yReadyState_UNDECLARED\020\000\022 \n\034DOTALobbyRea"
+  "dyState_ACCEPTED\020\001\022 \n\034DOTALobbyReadyStat"
+  "e_DECLINED\020\002*D\n\017DOTAGameVersion\022\030\n\024GAME_"
+  "VERSION_CURRENT\020\000\022\027\n\023GAME_VERSION_STABLE"
+  "\020\001*\375\003\n\023DOTAJoinLobbyResult\022\034\n\030DOTA_JOIN_"
+  "RESULT_SUCCESS\020\000\022$\n DOTA_JOIN_RESULT_ALR"
+  "EADY_IN_GAME\020\001\022\"\n\036DOTA_JOIN_RESULT_INVAL"
+  "ID_LOBBY\020\002\022\'\n#DOTA_JOIN_RESULT_INCORRECT"
+  "_PASSWORD\020\003\022\"\n\036DOTA_JOIN_RESULT_ACCESS_D"
+  "ENIED\020\004\022\"\n\036DOTA_JOIN_RESULT_GENERIC_ERRO"
+  "R\020\005\022&\n\"DOTA_JOIN_RESULT_INCORRECT_VERSIO"
+  "N\020\006\022\"\n\036DOTA_JOIN_RESULT_IN_TEAM_PARTY\020\007\022"
+  "#\n\037DOTA_JOIN_RESULT_NO_LOBBY_FOUND\020\010\022\037\n\033"
+  "DOTA_JOIN_RESULT_LOBBY_FULL\020\t\0222\n.DOTA_JO"
+  "IN_RESULT_CUSTOM_GAME_INCORRECT_VERSION\020"
+  "\n\022\034\n\030DOTA_JOIN_RESULT_TIMEOUT\020\013\022)\n%DOTA_"
+  "JOIN_RESULT_CUSTOM_GAME_COOLDOWN\020\014*q\n\032DO"
+  "TASelectionPriorityRules\022\'\n#k_DOTASelect"
+  "ionPriorityRules_Manual\020\000\022*\n&k_DOTASelec"
+  "tionPriorityRules_Automatic\020\001*\366\001\n\033DOTASe"
+  "lectionPriorityChoice\022)\n%k_DOTASelection"
+  "PriorityChoice_Invalid\020\000\022+\n\'k_DOTASelect"
+  "ionPriorityChoice_FirstPick\020\001\022,\n(k_DOTAS"
+  "electionPriorityChoice_SecondPick\020\002\022)\n%k"
+  "_DOTASelectionPriorityChoice_Radiant\020\003\022&"
+  "\n\"k_DOTASelectionPriorityChoice_Dire\020\004*b"
+  "\n\rDOTAMatchVote\022\031\n\025DOTAMatchVote_INVALID"
+  "\020\000\022\032\n\026DOTAMatchVote_POSITIVE\020\001\022\032\n\026DOTAMa"
+  "tchVote_NEGATIVE\020\002*\203\002\n\027DOTA_LobbyMemberX"
+  "PBonus\022#\n\037DOTA_LobbyMemberXPBonus_DEFAUL"
+  "T\020\000\022*\n&DOTA_LobbyMemberXPBonus_BATTLE_BO"
+  "OSTER\020\001\022\'\n#DOTA_LobbyMemberXPBonus_SHARE"
+  "_BONUS\020\002\022!\n\035DOTA_LobbyMemberXPBonus_PART"
+  "Y\020\003\022\'\n#DOTA_LobbyMemberXPBonus_RECRUITME"
+  "NT\020\004\022\"\n\036DOTA_LobbyMemberXPBonus_PCBANG\020\005"
+  "*x\n\023DOTALobbyVisibility\022\036\n\032DOTALobbyVisi"
+  "bility_Public\020\000\022\037\n\033DOTALobbyVisibility_F"
+  "riends\020\001\022 \n\034DOTALobbyVisibility_Unlisted"
+  "\020\002*\302\002\n\022EDOTAPlayerMMRType\022 \n\034k_EDOTAPlay"
+  "erMMRType_Invalid\020\000\022&\n\"k_EDOTAPlayerMMRT"
+  "ype_GeneralHidden\020\001\022+\n\'k_EDOTAPlayerMMRT"
+  "ype_GeneralCompetitive\020\003\022(\n$k_EDOTAPlaye"
+  "rMMRType_SoloCompetitive\020\004\022.\n*k_EDOTAPla"
+  "yerMMRType_1v1Competitive_UNUSED\020\005\022.\n*k_"
+  "EDOTAPlayerMMRType_GeneralSeasonalRanked"
+  "\020\006\022+\n\'k_EDOTAPlayerMMRType_SoloSeasonalR"
+  "anked\020\007*\336\002\n\tMatchType\022\025\n\021MATCH_TYPE_CASU"
+  "AL\020\000\022\030\n\024MATCH_TYPE_COOP_BOTS\020\001\022\032\n\026MATCH_"
+  "TYPE_TEAM_RANKED\020\002\022 \n\034MATCH_TYPE_LEGACY_"
+  "SOLO_QUEUE\020\003\022\032\n\026MATCH_TYPE_COMPETITIVE\020\004"
+  "\022\036\n\032MATCH_TYPE_WEEKEND_TOURNEY\020\005\022\031\n\025MATC"
+  "H_TYPE_CASUAL_1V1\020\006\022\024\n\020MATCH_TYPE_EVENT\020"
+  "\007\022\036\n\032MATCH_TYPE_SEASONAL_RANKED\020\010\022 \n\034MAT"
+  "CH_TYPE_LOWPRI_DEPRECATED\020\t\022\032\n\026MATCH_TYP"
+  "E_STEAM_GROUP\020\n\022\027\n\023MATCH_TYPE_MUTATION\020\013"
+  "*\204\002\n\021DOTABotDifficulty\022\032\n\026BOT_DIFFICULTY"
+  "_PASSIVE\020\000\022\027\n\023BOT_DIFFICULTY_EASY\020\001\022\031\n\025B"
+  "OT_DIFFICULTY_MEDIUM\020\002\022\027\n\023BOT_DIFFICULTY"
+  "_HARD\020\003\022\031\n\025BOT_DIFFICULTY_UNFAIR\020\004\022\032\n\026BO"
+  "T_DIFFICULTY_INVALID\020\005\022\031\n\025BOT_DIFFICULTY"
+  "_EXTRA1\020\006\022\031\n\025BOT_DIFFICULTY_EXTRA2\020\007\022\031\n\025"
+  "BOT_DIFFICULTY_EXTRA3\020\010*\223\006\n\rDOTA_BOT_MOD"
+  "E\022\026\n\022DOTA_BOT_MODE_NONE\020\000\022\030\n\024DOTA_BOT_MO"
+  "DE_LANING\020\001\022\030\n\024DOTA_BOT_MODE_ATTACK\020\002\022\026\n"
+  "\022DOTA_BOT_MODE_ROAM\020\003\022\031\n\025DOTA_BOT_MODE_R"
+  "ETREAT\020\004\022\035\n\031DOTA_BOT_MODE_SECRET_SHOP\020\005\022"
+  "\033\n\027DOTA_BOT_MODE_SIDE_SHOP\020\006\022\026\n\022DOTA_BOT"
+  "_MODE_RUNE\020\007\022 \n\034DOTA_BOT_MODE_PUSH_TOWER"
+  "_TOP\020\010\022 \n\034DOTA_BOT_MODE_PUSH_TOWER_MID\020\t"
+  "\022 \n\034DOTA_BOT_MODE_PUSH_TOWER_BOT\020\n\022\"\n\036DO"
+  "TA_BOT_MODE_DEFEND_TOWER_TOP\020\013\022\"\n\036DOTA_B"
+  "OT_MODE_DEFEND_TOWER_MID\020\014\022\"\n\036DOTA_BOT_M"
+  "ODE_DEFEND_TOWER_BOT\020\r\022\032\n\026DOTA_BOT_MODE_"
+  "ASSEMBLE\020\016\022&\n\"DOTA_BOT_MODE_ASSEMBLE_WIT"
+  "H_HUMANS\020\017\022\033\n\027DOTA_BOT_MODE_TEAM_ROAM\020\020\022"
+  "\026\n\022DOTA_BOT_MODE_FARM\020\021\022\035\n\031DOTA_BOT_MODE"
+  "_DEFEND_ALLY\020\022\022#\n\037DOTA_BOT_MODE_EVASIVE_"
+  "MANEUVERS\020\023\022\030\n\024DOTA_BOT_MODE_ROSHAN\020\024\022\026\n"
+  "\022DOTA_BOT_MODE_ITEM\020\025\022\026\n\022DOTA_BOT_MODE_W"
+  "ARD\020\026\022\033\n\027DOTA_BOT_MODE_COMPANION\020\027\022\037\n\033DO"
+  "TA_BOT_MODE_TUTORIAL_BOSS\020\030\022\030\n\024DOTA_BOT_"
+  "MODE_MINION\020\031*\363\001\n\016MatchLanguages\022\032\n\026MATC"
+  "H_LANGUAGE_INVALID\020\000\022\032\n\026MATCH_LANGUAGE_E"
+  "NGLISH\020\001\022\032\n\026MATCH_LANGUAGE_RUSSIAN\020\002\022\032\n\026"
+  "MATCH_LANGUAGE_CHINESE\020\003\022\031\n\025MATCH_LANGUA"
+  "GE_KOREAN\020\004\022\032\n\026MATCH_LANGUAGE_SPANISH\020\005\022"
+  "\035\n\031MATCH_LANGUAGE_PORTUGUESE\020\006\022\033\n\027MATCH_"
+  "LANGUAGE_ENGLISH2\020\007*\330\002\n\032ETourneyQueueDea"
+  "dlineState\022\'\n#k_ETourneyQueueDeadlineSta"
+  "te_Normal\020\000\022\'\n#k_ETourneyQueueDeadlineSt"
+  "ate_Missed\020\001\022*\n&k_ETourneyQueueDeadlineS"
+  "tate_ExpiredOK\020\002\022+\n\'k_ETourneyQueueDeadl"
+  "ineState_SeekingBye\020\003\0222\n.k_ETourneyQueue"
+  "DeadlineState_EligibleForRefund\020\004\022,\n\037k_E"
+  "TourneyQueueDeadlineState_NA\020\377\377\377\377\377\377\377\377\377\001\022"
+  "-\n)k_ETourneyQueueDeadlineState_Expiring"
+  "Soon\020e*\307\002\n\rEMatchOutcome\022\033\n\027k_EMatchOutc"
+  "ome_Unknown\020\000\022\036\n\032k_EMatchOutcome_RadVict"
+  "ory\020\002\022\037\n\033k_EMatchOutcome_DireVictory\020\003\0223"
+  "\n/k_EMatchOutcome_NotScored_PoorNetworkC"
+  "onditions\020@\022$\n k_EMatchOutcome_NotScored"
+  "_Leaver\020A\022)\n%k_EMatchOutcome_NotScored_S"
+  "erverCrash\020B\022*\n&k_EMatchOutcome_NotScore"
+  "d_NeverStarted\020C\022&\n\"k_EMatchOutcome_NotS"
+  "cored_Canceled\020D*\206\001\n\tELaneType\022\025\n\021LANE_T"
+  "YPE_UNKNOWN\020\000\022\022\n\016LANE_TYPE_SAFE\020\001\022\021\n\rLAN"
+  "E_TYPE_OFF\020\002\022\021\n\rLANE_TYPE_MID\020\003\022\024\n\020LANE_"
+  "TYPE_JUNGLE\020\004\022\022\n\016LANE_TYPE_ROAM\020\005*\300\001\n\nEB"
+  "adgeType\022\034\n\030k_EBadgeType_TI7_Midweek\020\001\022\033"
+  "\n\027k_EBadgeType_TI7_Finals\020\002\022\035\n\031k_EBadgeT"
+  "ype_TI7_AllEvent\020\003\022\034\n\030k_EBadgeType_TI8_M"
+  "idweek\020\004\022\033\n\027k_EBadgeType_TI8_Finals\020\005\022\035\n"
+  "\031k_EBadgeType_TI8_AllEvent\020\006*\324\001\n\rELeague"
+  "Status\022\027\n\023LEAGUE_STATUS_UNSET\020\000\022\035\n\031LEAGU"
+  "E_STATUS_UNSUBMITTED\020\001\022\033\n\027LEAGUE_STATUS_"
+  "SUBMITTED\020\002\022\032\n\026LEAGUE_STATUS_ACCEPTED\020\003\022"
+  "\032\n\026LEAGUE_STATUS_REJECTED\020\004\022\033\n\027LEAGUE_ST"
+  "ATUS_CONCLUDED\020\005\022\031\n\025LEAGUE_STATUS_DELETE"
+  "D\020\006*\265\001\n\rELeagueRegion\022\027\n\023LEAGUE_REGION_U"
+  "NSET\020\000\022\024\n\020LEAGUE_REGION_NA\020\001\022\024\n\020LEAGUE_R"
+  "EGION_SA\020\002\022\030\n\024LEAGUE_REGION_EUROPE\020\003\022\025\n\021"
+  "LEAGUE_REGION_CIS\020\004\022\027\n\023LEAGUE_REGION_CHI"
+  "NA\020\005\022\025\n\021LEAGUE_REGION_SEA\020\006*\250\001\n\013ELeagueT"
+  "ier\022\025\n\021LEAGUE_TIER_UNSET\020\000\022\027\n\023LEAGUE_TIE"
+  "R_AMATEUR\020\001\022\034\n\030LEAGUE_TIER_PROFESSIONAL\020"
+  "\002\022\025\n\021LEAGUE_TIER_MINOR\020\003\022\025\n\021LEAGUE_TIER_"
+  "MAJOR\020\004\022\035\n\031LEAGUE_TIER_INTERNATIONAL\020\005*|"
+  "\n\023ELeagueTierCategory\022 \n\034LEAGUE_TIER_CAT"
+  "EGORY_AMATEUR\020\001\022%\n!LEAGUE_TIER_CATEGORY_"
+  "PROFESSIONAL\020\002\022\034\n\030LEAGUE_TIER_CATEGORY_D"
+  "PC\020\003*\240\001\n\014ELeagueFlags\022\025\n\021LEAGUE_FLAGS_NO"
+  "NE\020\000\022\035\n\031LEAGUE_ACCEPTED_AGREEMENT\020\001\022\035\n\031L"
+  "EAGUE_PAYMENT_EMAIL_SENT\020\002\022\035\n\031LEAGUE_COM"
+  "PENDIUM_ALLOWED\020\004\022\034\n\030LEAGUE_COMPENDIUM_P"
+  "UBLIC\020\010*\253\001\n\030ELeagueBroadcastProvider\022\034\n\030"
+  "LEAGUE_BROADCAST_UNKNOWN\020\000\022\032\n\026LEAGUE_BRO"
+  "ADCAST_STEAM\020\001\022\033\n\027LEAGUE_BROADCAST_TWITC"
+  "H\020\002\022\034\n\030LEAGUE_BROADCAST_YOUTUBE\020\003\022\032\n\026LEA"
+  "GUE_BROADCAST_OTHER\020d*\206\001\n\014ELeaguePhase\022\026"
+  "\n\022LEAGUE_PHASE_UNSET\020\000\022#\n\037LEAGUE_PHASE_R"
+  "EGIONAL_QUALIFIER\020\001\022\034\n\030LEAGUE_PHASE_GROU"
+  "P_STAGE\020\002\022\033\n\027LEAGUE_PHASE_MAIN_EVENT\020\003*\307"
+  "\002\n\023ELeagueFantasyPhase\022\036\n\032LEAGUE_FANTASY"
+  "_PHASE_UNSET\020\000\022\035\n\031LEAGUE_FANTASY_PHASE_M"
+  "AIN\020\001\022%\n!LEAGUE_FANTASY_PHASE_QUALIFIER_"
+  "NA\020\002\022%\n!LEAGUE_FANTASY_PHASE_QUALIFIER_S"
+  "A\020\003\022)\n%LEAGUE_FANTASY_PHASE_QUALIFIER_EU"
+  "ROPE\020\004\022&\n\"LEAGUE_FANTASY_PHASE_QUALIFIER"
+  "_CIS\020\005\022(\n$LEAGUE_FANTASY_PHASE_QUALIFIER"
+  "_CHINA\020\006\022&\n\"LEAGUE_FANTASY_PHASE_QUALIFI"
+  "ER_SEA\020\007*\273\r\n\022ELeagueAuditAction\022\037\n\033LEAGU"
+  "E_AUDIT_ACTION_INVALID\020\000\022%\n!LEAGUE_AUDIT"
+  "_ACTION_LEAGUE_CREATE\020\001\022#\n\037LEAGUE_AUDIT_"
+  "ACTION_LEAGUE_EDIT\020\002\022%\n!LEAGUE_AUDIT_ACT"
+  "ION_LEAGUE_DELETE\020\003\022(\n$LEAGUE_AUDIT_ACTI"
+  "ON_LEAGUE_ADMIN_ADD\020\004\022+\n\'LEAGUE_AUDIT_AC"
+  "TION_LEAGUE_ADMIN_REVOKE\020\005\022,\n(LEAGUE_AUD"
+  "IT_ACTION_LEAGUE_ADMIN_PROMOTE\020\006\022)\n%LEAG"
+  "UE_AUDIT_ACTION_LEAGUE_STREAM_ADD\020\007\022,\n(L"
+  "EAGUE_AUDIT_ACTION_LEAGUE_STREAM_REMOVE\020"
+  "\010\022,\n(LEAGUE_AUDIT_ACTION_LEAGUE_IMAGE_UP"
+  "DATED\020\t\022,\n(LEAGUE_AUDIT_ACTION_LEAGUE_ME"
+  "SSAGE_ADDED\020\n\022(\n$LEAGUE_AUDIT_ACTION_LEA"
+  "GUE_SUBMITTED\020\013\022-\n)LEAGUE_AUDIT_ACTION_L"
+  "EAGUE_SET_PRIZE_POOL\020\014\0222\n.LEAGUE_AUDIT_A"
+  "CTION_LEAGUE_ADD_PRIZE_POOL_ITEM\020\r\0225\n1LE"
+  "AGUE_AUDIT_ACTION_LEAGUE_REMOVE_PRIZE_PO"
+  "OL_ITEM\020\016\022*\n&LEAGUE_AUDIT_ACTION_LEAGUE_"
+  "MATCH_START\020\017\022(\n$LEAGUE_AUDIT_ACTION_LEA"
+  "GUE_MATCH_END\020\020\022/\n+LEAGUE_AUDIT_ACTION_L"
+  "EAGUE_ADD_INVITED_TEAM\020\021\0222\n.LEAGUE_AUDIT"
+  "_ACTION_LEAGUE_REMOVE_INVITED_TEAM\020\022\022-\n)"
+  "LEAGUE_AUDIT_ACTION_LEAGUE_STATUS_CHANGE"
+  "D\020\023\022*\n&LEAGUE_AUDIT_ACTION_LEAGUE_STREAM"
+  "_EDIT\020\024\022(\n$LEAGUE_AUDIT_ACTION_NODEGROUP"
+  "_CREATE\020d\022)\n%LEAGUE_AUDIT_ACTION_NODEGRO"
+  "UP_DESTROY\020e\022*\n&LEAGUE_AUDIT_ACTION_NODE"
+  "GROUP_ADD_TEAM\020f\022-\n)LEAGUE_AUDIT_ACTION_"
+  "NODEGROUP_REMOVE_TEAM\020g\022/\n+LEAGUE_AUDIT_"
+  "ACTION_NODEGROUP_SET_ADVANCING\020h\022&\n\"LEAG"
+  "UE_AUDIT_ACTION_NODEGROUP_EDIT\020i\022*\n&LEAG"
+  "UE_AUDIT_ACTION_NODEGROUP_POPULATE\020j\022+\n\'"
+  "LEAGUE_AUDIT_ACTION_NODEGROUP_COMPLETED\020"
+  "k\022$\n\037LEAGUE_AUDIT_ACTION_NODE_CREATE\020\310\001\022"
+  "%\n LEAGUE_AUDIT_ACTION_NODE_DESTROY\020\311\001\022("
+  "\n#LEAGUE_AUDIT_ACTION_NODE_AUTOCREATE\020\312\001"
+  "\022&\n!LEAGUE_AUDIT_ACTION_NODE_SET_TEAM\020\313\001"
+  "\022+\n&LEAGUE_AUDIT_ACTION_NODE_SET_SERIES_"
+  "ID\020\314\001\022+\n&LEAGUE_AUDIT_ACTION_NODE_SET_AD"
+  "VANCING\020\315\001\022&\n!LEAGUE_AUDIT_ACTION_NODE_S"
+  "ET_TIME\020\316\001\022-\n(LEAGUE_AUDIT_ACTION_NODE_M"
+  "ATCH_COMPLETED\020\317\001\022\'\n\"LEAGUE_AUDIT_ACTION"
+  "_NODE_COMPLETED\020\320\001\022\"\n\035LEAGUE_AUDIT_ACTIO"
+  "N_NODE_EDIT\020\321\001*\277\013\n\024DOTA_COMBATLOG_TYPES\022"
+  "#\n\026DOTA_COMBATLOG_INVALID\020\377\377\377\377\377\377\377\377\377\001\022\031\n\025"
+  "DOTA_COMBATLOG_DAMAGE\020\000\022\027\n\023DOTA_COMBATLO"
+  "G_HEAL\020\001\022\037\n\033DOTA_COMBATLOG_MODIFIER_ADD\020"
+  "\002\022\"\n\036DOTA_COMBATLOG_MODIFIER_REMOVE\020\003\022\030\n"
+  "\024DOTA_COMBATLOG_DEATH\020\004\022\032\n\026DOTA_COMBATLO"
+  "G_ABILITY\020\005\022\027\n\023DOTA_COMBATLOG_ITEM\020\006\022\033\n\027"
+  "DOTA_COMBATLOG_LOCATION\020\007\022\027\n\023DOTA_COMBAT"
+  "LOG_GOLD\020\010\022\035\n\031DOTA_COMBATLOG_GAME_STATE\020"
+  "\t\022\025\n\021DOTA_COMBATLOG_XP\020\n\022\033\n\027DOTA_COMBATL"
+  "OG_PURCHASE\020\013\022\032\n\026DOTA_COMBATLOG_BUYBACK\020"
+  "\014\022\"\n\036DOTA_COMBATLOG_ABILITY_TRIGGER\020\r\022\036\n"
+  "\032DOTA_COMBATLOG_PLAYERSTATS\020\016\022\034\n\030DOTA_CO"
+  "MBATLOG_MULTIKILL\020\017\022\035\n\031DOTA_COMBATLOG_KI"
+  "LLSTREAK\020\020\022%\n!DOTA_COMBATLOG_TEAM_BUILDI"
+  "NG_KILL\020\021\022\036\n\032DOTA_COMBATLOG_FIRST_BLOOD\020"
+  "\022\022\'\n#DOTA_COMBATLOG_MODIFIER_STACK_EVENT"
+  "\020\023\022%\n!DOTA_COMBATLOG_NEUTRAL_CAMP_STACK\020"
+  "\024\022\036\n\032DOTA_COMBATLOG_PICKUP_RUNE\020\025\022%\n!DOT"
+  "A_COMBATLOG_REVEALED_INVISIBLE\020\026\022\035\n\031DOTA"
+  "_COMBATLOG_HERO_SAVED\020\027\022 \n\034DOTA_COMBATLO"
+  "G_MANA_RESTORED\020\030\022\037\n\033DOTA_COMBATLOG_HERO"
+  "_LEVELUP\020\031\022#\n\037DOTA_COMBATLOG_BOTTLE_HEAL"
+  "_ALLY\020\032\022 \n\034DOTA_COMBATLOG_ENDGAME_STATS\020"
+  "\033\022$\n DOTA_COMBATLOG_INTERRUPT_CHANNEL\020\034\022"
+  "\036\n\032DOTA_COMBATLOG_ALLIED_GOLD\020\035\022\036\n\032DOTA_"
+  "COMBATLOG_AEGIS_TAKEN\020\036\022\036\n\032DOTA_COMBATLO"
+  "G_MANA_DAMAGE\020\037\022,\n(DOTA_COMBATLOG_PHYSIC"
+  "AL_DAMAGE_PREVENTED\020 \022 \n\034DOTA_COMBATLOG_"
+  "UNIT_SUMMONED\020!\022\037\n\033DOTA_COMBATLOG_ATTACK"
+  "_EVADE\020\"\022\033\n\027DOTA_COMBATLOG_TREE_CUT\020#\022\"\n"
+  "\036DOTA_COMBATLOG_SUCCESSFUL_SCAN\020$\022!\n\035DOT"
+  "A_COMBATLOG_END_KILLSTREAK\020%\022$\n DOTA_COM"
+  "BATLOG_BLOODSTONE_CHARGE\020&\022\"\n\036DOTA_COMBA"
+  "TLOG_CRITICAL_DAMAGE\020\'\022\037\n\033DOTA_COMBATLOG"
+  "_SPELL_ABSORB\020(\022\"\n\036DOTA_COMBATLOG_UNIT_T"
+  "ELEPORTED\020)\022#\n\037DOTA_COMBATLOG_KILL_EATER"
+  "_EVENT\020**u\n\020EDPCFavoriteType\022\025\n\021FAVORITE"
+  "_TYPE_ALL\020\000\022\030\n\024FAVORITE_TYPE_PLAYER\020\001\022\026\n"
+  "\022FAVORITE_TYPE_TEAM\020\002\022\030\n\024FAVORITE_TYPE_L"
+  "EAGUE\020\003*\244\004\n\024EDPCPushNotification\022(\n$DPC_"
+  "PUSH_NOTIFICATION_MATCH_STARTING\020\001\022*\n&DP"
+  "C_PUSH_NOTIFICATION_PLAYER_LEFT_TEAM\020\n\022,"
+  "\n(DPC_PUSH_NOTIFICATION_PLAYER_JOINED_TE"
+  "AM\020\013\022,\n(DPC_PUSH_NOTIFICATION_TEAM_ROSTE"
+  "R_CHANGE\020\024\022%\n!DPC_PUSH_NOTIFICATION_TEAM"
+  "_RESULT\020\025\0226\n2DPC_PUSH_NOTIFICATION_PREDI"
+  "CTION_MATCHES_AVAILABLE\020\036\0224\n0DPC_PUSH_NO"
+  "TIFICATION_PREDICTION_MATCH_COMPLETED\020\037\022"
+  "1\n-DPC_PUSH_NOTIFICATION_FANTASY_ROSTER_"
+  "REMINDER\020(\0220\n,DPC_PUSH_NOTIFICATION_FANT"
+  "ASY_PLAYER_CLEARED\020)\022/\n+DPC_PUSH_NOTIFIC"
+  "ATION_FANTASY_DAILY_SUMMARY\020*\022/\n+DPC_PUS"
+  "H_NOTIFICATION_FANTASY_FINAL_RESULTS\020+B\005"
+  "H\001\200\001\000"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_dota_5fshared_5fenums_2eproto = {
+  false, InitDefaults_dota_5fshared_5fenums_2eproto, 
+  descriptor_table_protodef_dota_5fshared_5fenums_2eproto,
+  "dota_shared_enums.proto", &assign_descriptors_table_dota_5fshared_5fenums_2eproto, 17045,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\027dota_shared_enums.proto\"\277\001\n\030CDOTAClien"
-      "tHardwareSpecs\022\032\n\022logical_processors\030\001 \001"
-      "(\r\022\035\n\025cpu_cycles_per_second\030\002 \001(\006\022\035\n\025tot"
-      "al_physical_memory\030\003 \001(\006\022\024\n\014is_64_bit_os"
-      "\030\004 \001(\010\022\032\n\022upload_measurement\030\005 \001(\004\022\027\n\017pr"
-      "efer_not_host\030\006 \001(\010\"\316\003\n\rCDOTASaveGame\022\020\n"
-      "\010match_id\030\005 \001(\004\022\021\n\tsave_time\030\002 \001(\r\022&\n\007pl"
-      "ayers\030\003 \003(\0132\025.CDOTASaveGame.Player\0223\n\016sa"
-      "ve_instances\030\004 \003(\0132\033.CDOTASaveGame.SaveI"
-      "nstance\032Y\n\006Player\0223\n\004team\030\001 \001(\0162\r.DOTA_G"
-      "C_TEAM:\026DOTA_GC_TEAM_GOOD_GUYS\022\014\n\004name\030\002"
-      " \001(\t\022\014\n\004hero\030\003 \001(\t\032\337\001\n\014SaveInstance\022\021\n\tg"
-      "ame_time\030\002 \001(\r\022\023\n\013team1_score\030\003 \001(\r\022\023\n\013t"
-      "eam2_score\030\004 \001(\r\022E\n\020player_positions\030\005 \003"
-      "(\0132+.CDOTASaveGame.SaveInstance.PlayerPo"
-      "sitions\022\017\n\007save_id\030\006 \001(\r\022\021\n\tsave_time\030\007 "
-      "\001(\r\032\'\n\017PlayerPositions\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002"
-      " \001(\002\"\275\016\n\026CMsgDOTACombatLogEntry\022;\n\004type\030"
-      "\001 \001(\0162\025.DOTA_COMBATLOG_TYPES:\026DOTA_COMBA"
-      "TLOG_INVALID\022\023\n\013target_name\030\002 \001(\r\022\032\n\022tar"
-      "get_source_name\030\003 \001(\r\022\025\n\rattacker_name\030\004"
-      " \001(\r\022\032\n\022damage_source_name\030\005 \001(\r\022\026\n\016infl"
-      "ictor_name\030\006 \001(\r\022\034\n\024is_attacker_illusion"
-      "\030\007 \001(\010\022\030\n\020is_attacker_hero\030\010 \001(\010\022\032\n\022is_t"
-      "arget_illusion\030\t \001(\010\022\026\n\016is_target_hero\030\n"
-      " \001(\010\022\032\n\022is_visible_radiant\030\013 \001(\010\022\027\n\017is_v"
-      "isible_dire\030\014 \001(\010\022\r\n\005value\030\r \001(\r\022\016\n\006heal"
-      "th\030\016 \001(\005\022\021\n\ttimestamp\030\017 \001(\002\022\025\n\rstun_dura"
-      "tion\030\020 \001(\002\022\025\n\rslow_duration\030\021 \001(\002\022\034\n\024is_"
-      "ability_toggle_on\030\022 \001(\010\022\035\n\025is_ability_to"
-      "ggle_off\030\023 \001(\010\022\025\n\rability_level\030\024 \001(\r\022\022\n"
-      "\nlocation_x\030\025 \001(\002\022\022\n\nlocation_y\030\026 \001(\002\022\023\n"
-      "\013gold_reason\030\027 \001(\r\022\025\n\rtimestamp_raw\030\030 \001("
-      "\002\022\031\n\021modifier_duration\030\031 \001(\002\022\021\n\txp_reaso"
-      "n\030\032 \001(\r\022\021\n\tlast_hits\030\033 \001(\r\022\025\n\rattacker_t"
-      "eam\030\034 \001(\r\022\023\n\013target_team\030\035 \001(\r\022\030\n\020obs_wa"
-      "rds_placed\030\036 \001(\r\022\026\n\016assist_player0\030\037 \001(\r"
-      "\022\026\n\016assist_player1\030  \001(\r\022\026\n\016assist_playe"
-      "r2\030! \001(\r\022\026\n\016assist_player3\030\" \001(\r\022\023\n\013stac"
-      "k_count\030# \001(\r\022\027\n\017hidden_modifier\030$ \001(\010\022\032"
-      "\n\022is_target_building\030% \001(\010\022\031\n\021neutral_ca"
-      "mp_type\030& \001(\r\022\021\n\trune_type\030\' \001(\r\022\026\n\016assi"
-      "st_players\030( \003(\r\022\024\n\014is_heal_save\030) \001(\010\022\033"
-      "\n\023is_ultimate_ability\030* \001(\010\022\033\n\023attacker_"
-      "hero_level\030+ \001(\r\022\031\n\021target_hero_level\030, "
-      "\001(\r\022\013\n\003xpm\030- \001(\r\022\013\n\003gpm\030. \001(\r\022\026\n\016event_l"
-      "ocation\030/ \001(\r\022\026\n\016target_is_self\0300 \001(\010\022\023\n"
-      "\013damage_type\0301 \001(\r\022\035\n\025invisibility_modif"
-      "ier\0302 \001(\010\022\027\n\017damage_category\0303 \001(\r\022\020\n\010ne"
-      "tworth\0304 \001(\r\022\025\n\rbuilding_type\0305 \001(\r\022!\n\031m"
-      "odifier_elapsed_duration\0306 \001(\002\022\030\n\020silenc"
-      "e_modifier\0307 \001(\010\022\033\n\023heal_from_lifesteal\030"
-      "8 \001(\010\022\027\n\017modifier_purged\0309 \001(\010\022\024\n\014spell_"
-      "evaded\030: \001(\010\022\"\n\032motion_controller_modifi"
-      "er\030; \001(\010\022\027\n\017long_range_kill\030< \001(\010\022\036\n\026mod"
-      "ifier_purge_ability\030= \001(\r\022\032\n\022modifier_pu"
-      "rge_npc\030> \001(\r\022\025\n\rroot_modifier\030\? \001(\010\022\036\n\026"
-      "total_unit_death_count\030@ \001(\r\022\025\n\raura_mod"
-      "ifier\030A \001(\010\022\035\n\025armor_debuff_modifier\030B \001"
-      "(\010\022#\n\033no_physical_damage_modifier\030C \001(\010\022"
-      "\030\n\020modifier_ability\030D \001(\r\022\027\n\017modifier_hi"
-      "dden\030E \001(\010\022#\n\033inflictor_is_stolen_abilit"
-      "y\030F \001(\010\022\030\n\020kill_eater_event\030G \001(\r\022\031\n\021uni"
-      "t_status_label\030H \001(\r*\365\004\n\rDOTA_GameMode\022\026"
-      "\n\022DOTA_GAMEMODE_NONE\020\000\022\024\n\020DOTA_GAMEMODE_"
-      "AP\020\001\022\024\n\020DOTA_GAMEMODE_CM\020\002\022\024\n\020DOTA_GAMEM"
-      "ODE_RD\020\003\022\024\n\020DOTA_GAMEMODE_SD\020\004\022\024\n\020DOTA_G"
-      "AMEMODE_AR\020\005\022\027\n\023DOTA_GAMEMODE_INTRO\020\006\022\024\n"
-      "\020DOTA_GAMEMODE_HW\020\007\022\034\n\030DOTA_GAMEMODE_REV"
-      "ERSE_CM\020\010\022\026\n\022DOTA_GAMEMODE_XMAS\020\t\022\032\n\026DOT"
-      "A_GAMEMODE_TUTORIAL\020\n\022\024\n\020DOTA_GAMEMODE_M"
-      "O\020\013\022\024\n\020DOTA_GAMEMODE_LP\020\014\022\027\n\023DOTA_GAMEMO"
-      "DE_POOL1\020\r\022\024\n\020DOTA_GAMEMODE_FH\020\016\022\030\n\024DOTA"
-      "_GAMEMODE_CUSTOM\020\017\022\024\n\020DOTA_GAMEMODE_CD\020\020"
-      "\022\024\n\020DOTA_GAMEMODE_BD\020\021\022\037\n\033DOTA_GAMEMODE_"
-      "ABILITY_DRAFT\020\022\022\027\n\023DOTA_GAMEMODE_EVENT\020\023"
-      "\022\026\n\022DOTA_GAMEMODE_ARDM\020\024\022\030\n\024DOTA_GAMEMOD"
-      "E_1V1MID\020\025\022\033\n\027DOTA_GAMEMODE_ALL_DRAFT\020\026\022"
-      "\027\n\023DOTA_GAMEMODE_TURBO\020\027\022\032\n\026DOTA_GAMEMOD"
-      "E_MUTATION\020\030*\354\003\n\016DOTA_GameState\022\035\n\031DOTA_"
-      "GAMERULES_STATE_INIT\020\000\0221\n-DOTA_GAMERULES"
-      "_STATE_WAIT_FOR_PLAYERS_TO_LOAD\020\001\022\'\n#DOT"
-      "A_GAMERULES_STATE_HERO_SELECTION\020\002\022&\n\"DO"
-      "TA_GAMERULES_STATE_STRATEGY_TIME\020\003\022!\n\035DO"
-      "TA_GAMERULES_STATE_PRE_GAME\020\004\022)\n%DOTA_GA"
-      "MERULES_STATE_GAME_IN_PROGRESS\020\005\022\"\n\036DOTA"
-      "_GAMERULES_STATE_POST_GAME\020\006\022#\n\037DOTA_GAM"
-      "ERULES_STATE_DISCONNECT\020\007\022&\n\"DOTA_GAMERU"
-      "LES_STATE_TEAM_SHOWCASE\020\010\022*\n&DOTA_GAMERU"
-      "LES_STATE_CUSTOM_GAME_SETUP\020\t\022-\n)DOTA_GA"
-      "MERULES_STATE_WAIT_FOR_MAP_TO_LOAD\020\n\022\035\n\031"
-      "DOTA_GAMERULES_STATE_LAST\020\013*\266\001\n\014DOTA_GC_"
-      "TEAM\022\032\n\026DOTA_GC_TEAM_GOOD_GUYS\020\000\022\031\n\025DOTA"
-      "_GC_TEAM_BAD_GUYS\020\001\022\034\n\030DOTA_GC_TEAM_BROA"
-      "DCASTER\020\002\022\032\n\026DOTA_GC_TEAM_SPECTATOR\020\003\022\034\n"
-      "\030DOTA_GC_TEAM_PLAYER_POOL\020\004\022\027\n\023DOTA_GC_T"
-      "EAM_NOTEAM\020\005*\341\005\n\006EEvent\022\021\n\rEVENT_ID_NONE"
-      "\020\000\022\025\n\021EVENT_ID_DIRETIDE\020\001\022\034\n\030EVENT_ID_SP"
-      "RING_FESTIVAL\020\002\022\033\n\027EVENT_ID_FROSTIVUS_20"
-      "13\020\003\022\034\n\030EVENT_ID_COMPENDIUM_2014\020\004\022\032\n\026EV"
-      "ENT_ID_PWRD_DAC_2015\020\006\022\033\n\027EVENT_ID_NEW_B"
-      "LOOM_2015\020\007\022\037\n\033EVENT_ID_INTERNATIONAL_20"
-      "15\020\010\022\034\n\030EVENT_ID_FALL_MAJOR_2015\020\t\022\026\n\022EV"
-      "ENT_ID_ORACLE_PA\020\n\022$\n EVENT_ID_NEW_BLOOM"
-      "_2015_PREBEAST\020\013\022\026\n\022EVENT_ID_FROSTIVUS\020\014"
-      "\022\036\n\032EVENT_ID_WINTER_MAJOR_2016\020\r\022\037\n\033EVEN"
-      "T_ID_INTERNATIONAL_2016\020\016\022\034\n\030EVENT_ID_FA"
-      "LL_MAJOR_2016\020\017\022\036\n\032EVENT_ID_WINTER_MAJOR"
-      "_2017\020\020\022\033\n\027EVENT_ID_NEW_BLOOM_2017\020\021\022\037\n\033"
-      "EVENT_ID_INTERNATIONAL_2017\020\022\022\036\n\032EVENT_I"
-      "D_PLUS_SUBSCRIPTION\020\023\022\035\n\031EVENT_ID_SINGLE"
-      "S_DAY_2017\020\024\022\033\n\027EVENT_ID_FROSTIVUS_2017\020"
-      "\025\022\037\n\033EVENT_ID_INTERNATIONAL_2018\020\026\022\033\n\027EV"
-      "ENT_ID_FROSTIVUS_2018\020\027\022\033\n\027EVENT_ID_NEW_"
-      "BLOOM_2019\020\030\022\022\n\016EVENT_ID_COUNT\020\031*\250\002\n\022DOT"
-      "ALeaverStatus_t\022\024\n\020DOTA_LEAVER_NONE\020\000\022\034\n"
-      "\030DOTA_LEAVER_DISCONNECTED\020\001\022%\n!DOTA_LEAV"
-      "ER_DISCONNECTED_TOO_LONG\020\002\022\031\n\025DOTA_LEAVE"
-      "R_ABANDONED\020\003\022\023\n\017DOTA_LEAVER_AFK\020\004\022\037\n\033DO"
-      "TA_LEAVER_NEVER_CONNECTED\020\005\022(\n$DOTA_LEAV"
-      "ER_NEVER_CONNECTED_TOO_LONG\020\006\022\"\n\036DOTA_LE"
-      "AVER_FAILED_TO_READY_UP\020\007\022\030\n\024DOTA_LEAVER"
-      "_DECLINED\020\010*\236\002\n\025DOTAConnectionState_t\022!\n"
-      "\035DOTA_CONNECTION_STATE_UNKNOWN\020\000\022+\n\'DOTA"
-      "_CONNECTION_STATE_NOT_YET_CONNECTED\020\001\022#\n"
-      "\037DOTA_CONNECTION_STATE_CONNECTED\020\002\022&\n\"DO"
-      "TA_CONNECTION_STATE_DISCONNECTED\020\003\022#\n\037DO"
-      "TA_CONNECTION_STATE_ABANDONED\020\004\022!\n\035DOTA_"
-      "CONNECTION_STATE_LOADING\020\005\022 \n\034DOTA_CONNE"
-      "CTION_STATE_FAILED\020\006*\214\001\n\rFantasy_Roles\022\032"
-      "\n\026FANTASY_ROLE_UNDEFINED\020\000\022\025\n\021FANTASY_RO"
-      "LE_CORE\020\001\022\030\n\024FANTASY_ROLE_SUPPORT\020\002\022\030\n\024F"
-      "ANTASY_ROLE_OFFLANE\020\003\022\024\n\020FANTASY_ROLE_MI"
-      "D\020\004*\212\001\n\022Fantasy_Team_Slots\022\025\n\021FANTASY_SL"
-      "OT_NONE\020\000\022\025\n\021FANTASY_SLOT_CORE\020\001\022\030\n\024FANT"
-      "ASY_SLOT_SUPPORT\020\002\022\024\n\020FANTASY_SLOT_ANY\020\003"
-      "\022\026\n\022FANTASY_SLOT_BENCH\020\004*\335\002\n\026Fantasy_Sel"
-      "ection_Mode\022\035\n\031FANTASY_SELECTION_INVALID"
-      "\020\000\022\034\n\030FANTASY_SELECTION_LOCKED\020\001\022\035\n\031FANT"
-      "ASY_SELECTION_SHUFFLE\020\002\022\037\n\033FANTASY_SELEC"
-      "TION_FREE_PICK\020\003\022\033\n\027FANTASY_SELECTION_EN"
-      "DED\020\004\022 \n\034FANTASY_SELECTION_PRE_SEASON\020\005\022"
-      "\037\n\033FANTASY_SELECTION_PRE_DRAFT\020\006\022\036\n\032FANT"
-      "ASY_SELECTION_DRAFTING\020\007\022$\n FANTASY_SELE"
-      "CTION_REGULAR_SEASON\020\010\022 \n\034FANTASY_SELECT"
-      "ION_CARD_BASED\020\t*\234\005\n\025DOTAChatChannelType"
-      "_t\022\034\n\030DOTAChannelType_Regional\020\000\022\032\n\026DOTA"
-      "ChannelType_Custom\020\001\022\031\n\025DOTAChannelType_"
-      "Party\020\002\022\031\n\025DOTAChannelType_Lobby\020\003\022\030\n\024DO"
-      "TAChannelType_Team\020\004\022\031\n\025DOTAChannelType_"
-      "Guild\020\005\022\033\n\027DOTAChannelType_Fantasy\020\006\022\033\n\027"
-      "DOTAChannelType_Whisper\020\007\022\033\n\027DOTAChannel"
-      "Type_Console\020\010\022\027\n\023DOTAChannelType_Tab\020\t\022"
-      "\033\n\027DOTAChannelType_Invalid\020\n\022\033\n\027DOTAChan"
-      "nelType_GameAll\020\013\022\036\n\032DOTAChannelType_Gam"
-      "eAllies\020\014\022!\n\035DOTAChannelType_GameSpectat"
-      "or\020\r\022\030\n\024DOTAChannelType_Cafe\020\017\022\036\n\032DOTACh"
-      "annelType_CustomGame\020\020\022\033\n\027DOTAChannelTyp"
-      "e_Private\020\021\022\034\n\030DOTAChannelType_PostGame\020"
-      "\022\022\035\n\031DOTAChannelType_BattleCup\020\023\022!\n\035DOTA"
-      "ChannelType_HLTVSpectator\020\024\022\036\n\032DOTAChann"
-      "elType_GameEvents\020\025\022\032\n\026DOTAChannelType_T"
-      "rivia\020\026*\204\002\n\024EProfileCardSlotType\022 \n\034k_EP"
-      "rofileCardSlotType_Empty\020\000\022\037\n\033k_EProfile"
-      "CardSlotType_Stat\020\001\022!\n\035k_EProfileCardSlo"
-      "tType_Trophy\020\002\022\037\n\033k_EProfileCardSlotType"
-      "_Item\020\003\022\037\n\033k_EProfileCardSlotType_Hero\020\004"
-      "\022#\n\037k_EProfileCardSlotType_Emoticon\020\005\022\037\n"
-      "\033k_EProfileCardSlotType_Team\020\006*\225\001\n\027EMatc"
-      "hGroupServerStatus\022 \n\034k_EMatchGroupServe"
-      "rStatus_OK\020\000\0221\n-k_EMatchGroupServerStatu"
-      "s_LimitedAvailability\020\001\022%\n!k_EMatchGroup"
-      "ServerStatus_Offline\020\002*O\n\014DOTA_CM_PICK\022\022"
-      "\n\016DOTA_CM_RANDOM\020\000\022\025\n\021DOTA_CM_GOOD_GUYS\020"
-      "\001\022\024\n\020DOTA_CM_BAD_GUYS\020\002*\213\001\n\026DOTALowPrior"
-      "ityBanType\022!\n\035DOTA_LOW_PRIORITY_BAN_ABAN"
-      "DON\020\000\022!\n\035DOTA_LOW_PRIORITY_BAN_REPORTS\020\001"
-      "\022+\n\'DOTA_LOW_PRIORITY_BAN_SECONDARY_ABAN"
-      "DON\020\002*}\n\023DOTALobbyReadyState\022\"\n\036DOTALobb"
-      "yReadyState_UNDECLARED\020\000\022 \n\034DOTALobbyRea"
-      "dyState_ACCEPTED\020\001\022 \n\034DOTALobbyReadyStat"
-      "e_DECLINED\020\002*D\n\017DOTAGameVersion\022\030\n\024GAME_"
-      "VERSION_CURRENT\020\000\022\027\n\023GAME_VERSION_STABLE"
-      "\020\001*\375\003\n\023DOTAJoinLobbyResult\022\034\n\030DOTA_JOIN_"
-      "RESULT_SUCCESS\020\000\022$\n DOTA_JOIN_RESULT_ALR"
-      "EADY_IN_GAME\020\001\022\"\n\036DOTA_JOIN_RESULT_INVAL"
-      "ID_LOBBY\020\002\022\'\n#DOTA_JOIN_RESULT_INCORRECT"
-      "_PASSWORD\020\003\022\"\n\036DOTA_JOIN_RESULT_ACCESS_D"
-      "ENIED\020\004\022\"\n\036DOTA_JOIN_RESULT_GENERIC_ERRO"
-      "R\020\005\022&\n\"DOTA_JOIN_RESULT_INCORRECT_VERSIO"
-      "N\020\006\022\"\n\036DOTA_JOIN_RESULT_IN_TEAM_PARTY\020\007\022"
-      "#\n\037DOTA_JOIN_RESULT_NO_LOBBY_FOUND\020\010\022\037\n\033"
-      "DOTA_JOIN_RESULT_LOBBY_FULL\020\t\0222\n.DOTA_JO"
-      "IN_RESULT_CUSTOM_GAME_INCORRECT_VERSION\020"
-      "\n\022\034\n\030DOTA_JOIN_RESULT_TIMEOUT\020\013\022)\n%DOTA_"
-      "JOIN_RESULT_CUSTOM_GAME_COOLDOWN\020\014*q\n\032DO"
-      "TASelectionPriorityRules\022\'\n#k_DOTASelect"
-      "ionPriorityRules_Manual\020\000\022*\n&k_DOTASelec"
-      "tionPriorityRules_Automatic\020\001*\366\001\n\033DOTASe"
-      "lectionPriorityChoice\022)\n%k_DOTASelection"
-      "PriorityChoice_Invalid\020\000\022+\n\'k_DOTASelect"
-      "ionPriorityChoice_FirstPick\020\001\022,\n(k_DOTAS"
-      "electionPriorityChoice_SecondPick\020\002\022)\n%k"
-      "_DOTASelectionPriorityChoice_Radiant\020\003\022&"
-      "\n\"k_DOTASelectionPriorityChoice_Dire\020\004*b"
-      "\n\rDOTAMatchVote\022\031\n\025DOTAMatchVote_INVALID"
-      "\020\000\022\032\n\026DOTAMatchVote_POSITIVE\020\001\022\032\n\026DOTAMa"
-      "tchVote_NEGATIVE\020\002*\203\002\n\027DOTA_LobbyMemberX"
-      "PBonus\022#\n\037DOTA_LobbyMemberXPBonus_DEFAUL"
-      "T\020\000\022*\n&DOTA_LobbyMemberXPBonus_BATTLE_BO"
-      "OSTER\020\001\022\'\n#DOTA_LobbyMemberXPBonus_SHARE"
-      "_BONUS\020\002\022!\n\035DOTA_LobbyMemberXPBonus_PART"
-      "Y\020\003\022\'\n#DOTA_LobbyMemberXPBonus_RECRUITME"
-      "NT\020\004\022\"\n\036DOTA_LobbyMemberXPBonus_PCBANG\020\005"
-      "*x\n\023DOTALobbyVisibility\022\036\n\032DOTALobbyVisi"
-      "bility_Public\020\000\022\037\n\033DOTALobbyVisibility_F"
-      "riends\020\001\022 \n\034DOTALobbyVisibility_Unlisted"
-      "\020\002*\302\002\n\022EDOTAPlayerMMRType\022 \n\034k_EDOTAPlay"
-      "erMMRType_Invalid\020\000\022&\n\"k_EDOTAPlayerMMRT"
-      "ype_GeneralHidden\020\001\022+\n\'k_EDOTAPlayerMMRT"
-      "ype_GeneralCompetitive\020\003\022(\n$k_EDOTAPlaye"
-      "rMMRType_SoloCompetitive\020\004\022.\n*k_EDOTAPla"
-      "yerMMRType_1v1Competitive_UNUSED\020\005\022.\n*k_"
-      "EDOTAPlayerMMRType_GeneralSeasonalRanked"
-      "\020\006\022+\n\'k_EDOTAPlayerMMRType_SoloSeasonalR"
-      "anked\020\007*\336\002\n\tMatchType\022\025\n\021MATCH_TYPE_CASU"
-      "AL\020\000\022\030\n\024MATCH_TYPE_COOP_BOTS\020\001\022\032\n\026MATCH_"
-      "TYPE_TEAM_RANKED\020\002\022 \n\034MATCH_TYPE_LEGACY_"
-      "SOLO_QUEUE\020\003\022\032\n\026MATCH_TYPE_COMPETITIVE\020\004"
-      "\022\036\n\032MATCH_TYPE_WEEKEND_TOURNEY\020\005\022\031\n\025MATC"
-      "H_TYPE_CASUAL_1V1\020\006\022\024\n\020MATCH_TYPE_EVENT\020"
-      "\007\022\036\n\032MATCH_TYPE_SEASONAL_RANKED\020\010\022 \n\034MAT"
-      "CH_TYPE_LOWPRI_DEPRECATED\020\t\022\032\n\026MATCH_TYP"
-      "E_STEAM_GROUP\020\n\022\027\n\023MATCH_TYPE_MUTATION\020\013"
-      "*\204\002\n\021DOTABotDifficulty\022\032\n\026BOT_DIFFICULTY"
-      "_PASSIVE\020\000\022\027\n\023BOT_DIFFICULTY_EASY\020\001\022\031\n\025B"
-      "OT_DIFFICULTY_MEDIUM\020\002\022\027\n\023BOT_DIFFICULTY"
-      "_HARD\020\003\022\031\n\025BOT_DIFFICULTY_UNFAIR\020\004\022\032\n\026BO"
-      "T_DIFFICULTY_INVALID\020\005\022\031\n\025BOT_DIFFICULTY"
-      "_EXTRA1\020\006\022\031\n\025BOT_DIFFICULTY_EXTRA2\020\007\022\031\n\025"
-      "BOT_DIFFICULTY_EXTRA3\020\010*\223\006\n\rDOTA_BOT_MOD"
-      "E\022\026\n\022DOTA_BOT_MODE_NONE\020\000\022\030\n\024DOTA_BOT_MO"
-      "DE_LANING\020\001\022\030\n\024DOTA_BOT_MODE_ATTACK\020\002\022\026\n"
-      "\022DOTA_BOT_MODE_ROAM\020\003\022\031\n\025DOTA_BOT_MODE_R"
-      "ETREAT\020\004\022\035\n\031DOTA_BOT_MODE_SECRET_SHOP\020\005\022"
-      "\033\n\027DOTA_BOT_MODE_SIDE_SHOP\020\006\022\026\n\022DOTA_BOT"
-      "_MODE_RUNE\020\007\022 \n\034DOTA_BOT_MODE_PUSH_TOWER"
-      "_TOP\020\010\022 \n\034DOTA_BOT_MODE_PUSH_TOWER_MID\020\t"
-      "\022 \n\034DOTA_BOT_MODE_PUSH_TOWER_BOT\020\n\022\"\n\036DO"
-      "TA_BOT_MODE_DEFEND_TOWER_TOP\020\013\022\"\n\036DOTA_B"
-      "OT_MODE_DEFEND_TOWER_MID\020\014\022\"\n\036DOTA_BOT_M"
-      "ODE_DEFEND_TOWER_BOT\020\r\022\032\n\026DOTA_BOT_MODE_"
-      "ASSEMBLE\020\016\022&\n\"DOTA_BOT_MODE_ASSEMBLE_WIT"
-      "H_HUMANS\020\017\022\033\n\027DOTA_BOT_MODE_TEAM_ROAM\020\020\022"
-      "\026\n\022DOTA_BOT_MODE_FARM\020\021\022\035\n\031DOTA_BOT_MODE"
-      "_DEFEND_ALLY\020\022\022#\n\037DOTA_BOT_MODE_EVASIVE_"
-      "MANEUVERS\020\023\022\030\n\024DOTA_BOT_MODE_ROSHAN\020\024\022\026\n"
-      "\022DOTA_BOT_MODE_ITEM\020\025\022\026\n\022DOTA_BOT_MODE_W"
-      "ARD\020\026\022\033\n\027DOTA_BOT_MODE_COMPANION\020\027\022\037\n\033DO"
-      "TA_BOT_MODE_TUTORIAL_BOSS\020\030\022\030\n\024DOTA_BOT_"
-      "MODE_MINION\020\031*\363\001\n\016MatchLanguages\022\032\n\026MATC"
-      "H_LANGUAGE_INVALID\020\000\022\032\n\026MATCH_LANGUAGE_E"
-      "NGLISH\020\001\022\032\n\026MATCH_LANGUAGE_RUSSIAN\020\002\022\032\n\026"
-      "MATCH_LANGUAGE_CHINESE\020\003\022\031\n\025MATCH_LANGUA"
-      "GE_KOREAN\020\004\022\032\n\026MATCH_LANGUAGE_SPANISH\020\005\022"
-      "\035\n\031MATCH_LANGUAGE_PORTUGUESE\020\006\022\033\n\027MATCH_"
-      "LANGUAGE_ENGLISH2\020\007*\330\002\n\032ETourneyQueueDea"
-      "dlineState\022\'\n#k_ETourneyQueueDeadlineSta"
-      "te_Normal\020\000\022\'\n#k_ETourneyQueueDeadlineSt"
-      "ate_Missed\020\001\022*\n&k_ETourneyQueueDeadlineS"
-      "tate_ExpiredOK\020\002\022+\n\'k_ETourneyQueueDeadl"
-      "ineState_SeekingBye\020\003\0222\n.k_ETourneyQueue"
-      "DeadlineState_EligibleForRefund\020\004\022,\n\037k_E"
-      "TourneyQueueDeadlineState_NA\020\377\377\377\377\377\377\377\377\377\001\022"
-      "-\n)k_ETourneyQueueDeadlineState_Expiring"
-      "Soon\020e*\307\002\n\rEMatchOutcome\022\033\n\027k_EMatchOutc"
-      "ome_Unknown\020\000\022\036\n\032k_EMatchOutcome_RadVict"
-      "ory\020\002\022\037\n\033k_EMatchOutcome_DireVictory\020\003\0223"
-      "\n/k_EMatchOutcome_NotScored_PoorNetworkC"
-      "onditions\020@\022$\n k_EMatchOutcome_NotScored"
-      "_Leaver\020A\022)\n%k_EMatchOutcome_NotScored_S"
-      "erverCrash\020B\022*\n&k_EMatchOutcome_NotScore"
-      "d_NeverStarted\020C\022&\n\"k_EMatchOutcome_NotS"
-      "cored_Canceled\020D*\206\001\n\tELaneType\022\025\n\021LANE_T"
-      "YPE_UNKNOWN\020\000\022\022\n\016LANE_TYPE_SAFE\020\001\022\021\n\rLAN"
-      "E_TYPE_OFF\020\002\022\021\n\rLANE_TYPE_MID\020\003\022\024\n\020LANE_"
-      "TYPE_JUNGLE\020\004\022\022\n\016LANE_TYPE_ROAM\020\005*\300\001\n\nEB"
-      "adgeType\022\034\n\030k_EBadgeType_TI7_Midweek\020\001\022\033"
-      "\n\027k_EBadgeType_TI7_Finals\020\002\022\035\n\031k_EBadgeT"
-      "ype_TI7_AllEvent\020\003\022\034\n\030k_EBadgeType_TI8_M"
-      "idweek\020\004\022\033\n\027k_EBadgeType_TI8_Finals\020\005\022\035\n"
-      "\031k_EBadgeType_TI8_AllEvent\020\006*\324\001\n\rELeague"
-      "Status\022\027\n\023LEAGUE_STATUS_UNSET\020\000\022\035\n\031LEAGU"
-      "E_STATUS_UNSUBMITTED\020\001\022\033\n\027LEAGUE_STATUS_"
-      "SUBMITTED\020\002\022\032\n\026LEAGUE_STATUS_ACCEPTED\020\003\022"
-      "\032\n\026LEAGUE_STATUS_REJECTED\020\004\022\033\n\027LEAGUE_ST"
-      "ATUS_CONCLUDED\020\005\022\031\n\025LEAGUE_STATUS_DELETE"
-      "D\020\006*\265\001\n\rELeagueRegion\022\027\n\023LEAGUE_REGION_U"
-      "NSET\020\000\022\024\n\020LEAGUE_REGION_NA\020\001\022\024\n\020LEAGUE_R"
-      "EGION_SA\020\002\022\030\n\024LEAGUE_REGION_EUROPE\020\003\022\025\n\021"
-      "LEAGUE_REGION_CIS\020\004\022\027\n\023LEAGUE_REGION_CHI"
-      "NA\020\005\022\025\n\021LEAGUE_REGION_SEA\020\006*\250\001\n\013ELeagueT"
-      "ier\022\025\n\021LEAGUE_TIER_UNSET\020\000\022\027\n\023LEAGUE_TIE"
-      "R_AMATEUR\020\001\022\034\n\030LEAGUE_TIER_PROFESSIONAL\020"
-      "\002\022\025\n\021LEAGUE_TIER_MINOR\020\003\022\025\n\021LEAGUE_TIER_"
-      "MAJOR\020\004\022\035\n\031LEAGUE_TIER_INTERNATIONAL\020\005*|"
-      "\n\023ELeagueTierCategory\022 \n\034LEAGUE_TIER_CAT"
-      "EGORY_AMATEUR\020\001\022%\n!LEAGUE_TIER_CATEGORY_"
-      "PROFESSIONAL\020\002\022\034\n\030LEAGUE_TIER_CATEGORY_D"
-      "PC\020\003*\240\001\n\014ELeagueFlags\022\025\n\021LEAGUE_FLAGS_NO"
-      "NE\020\000\022\035\n\031LEAGUE_ACCEPTED_AGREEMENT\020\001\022\035\n\031L"
-      "EAGUE_PAYMENT_EMAIL_SENT\020\002\022\035\n\031LEAGUE_COM"
-      "PENDIUM_ALLOWED\020\004\022\034\n\030LEAGUE_COMPENDIUM_P"
-      "UBLIC\020\010*\253\001\n\030ELeagueBroadcastProvider\022\034\n\030"
-      "LEAGUE_BROADCAST_UNKNOWN\020\000\022\032\n\026LEAGUE_BRO"
-      "ADCAST_STEAM\020\001\022\033\n\027LEAGUE_BROADCAST_TWITC"
-      "H\020\002\022\034\n\030LEAGUE_BROADCAST_YOUTUBE\020\003\022\032\n\026LEA"
-      "GUE_BROADCAST_OTHER\020d*\206\001\n\014ELeaguePhase\022\026"
-      "\n\022LEAGUE_PHASE_UNSET\020\000\022#\n\037LEAGUE_PHASE_R"
-      "EGIONAL_QUALIFIER\020\001\022\034\n\030LEAGUE_PHASE_GROU"
-      "P_STAGE\020\002\022\033\n\027LEAGUE_PHASE_MAIN_EVENT\020\003*\307"
-      "\002\n\023ELeagueFantasyPhase\022\036\n\032LEAGUE_FANTASY"
-      "_PHASE_UNSET\020\000\022\035\n\031LEAGUE_FANTASY_PHASE_M"
-      "AIN\020\001\022%\n!LEAGUE_FANTASY_PHASE_QUALIFIER_"
-      "NA\020\002\022%\n!LEAGUE_FANTASY_PHASE_QUALIFIER_S"
-      "A\020\003\022)\n%LEAGUE_FANTASY_PHASE_QUALIFIER_EU"
-      "ROPE\020\004\022&\n\"LEAGUE_FANTASY_PHASE_QUALIFIER"
-      "_CIS\020\005\022(\n$LEAGUE_FANTASY_PHASE_QUALIFIER"
-      "_CHINA\020\006\022&\n\"LEAGUE_FANTASY_PHASE_QUALIFI"
-      "ER_SEA\020\007*\273\r\n\022ELeagueAuditAction\022\037\n\033LEAGU"
-      "E_AUDIT_ACTION_INVALID\020\000\022%\n!LEAGUE_AUDIT"
-      "_ACTION_LEAGUE_CREATE\020\001\022#\n\037LEAGUE_AUDIT_"
-      "ACTION_LEAGUE_EDIT\020\002\022%\n!LEAGUE_AUDIT_ACT"
-      "ION_LEAGUE_DELETE\020\003\022(\n$LEAGUE_AUDIT_ACTI"
-      "ON_LEAGUE_ADMIN_ADD\020\004\022+\n\'LEAGUE_AUDIT_AC"
-      "TION_LEAGUE_ADMIN_REVOKE\020\005\022,\n(LEAGUE_AUD"
-      "IT_ACTION_LEAGUE_ADMIN_PROMOTE\020\006\022)\n%LEAG"
-      "UE_AUDIT_ACTION_LEAGUE_STREAM_ADD\020\007\022,\n(L"
-      "EAGUE_AUDIT_ACTION_LEAGUE_STREAM_REMOVE\020"
-      "\010\022,\n(LEAGUE_AUDIT_ACTION_LEAGUE_IMAGE_UP"
-      "DATED\020\t\022,\n(LEAGUE_AUDIT_ACTION_LEAGUE_ME"
-      "SSAGE_ADDED\020\n\022(\n$LEAGUE_AUDIT_ACTION_LEA"
-      "GUE_SUBMITTED\020\013\022-\n)LEAGUE_AUDIT_ACTION_L"
-      "EAGUE_SET_PRIZE_POOL\020\014\0222\n.LEAGUE_AUDIT_A"
-      "CTION_LEAGUE_ADD_PRIZE_POOL_ITEM\020\r\0225\n1LE"
-      "AGUE_AUDIT_ACTION_LEAGUE_REMOVE_PRIZE_PO"
-      "OL_ITEM\020\016\022*\n&LEAGUE_AUDIT_ACTION_LEAGUE_"
-      "MATCH_START\020\017\022(\n$LEAGUE_AUDIT_ACTION_LEA"
-      "GUE_MATCH_END\020\020\022/\n+LEAGUE_AUDIT_ACTION_L"
-      "EAGUE_ADD_INVITED_TEAM\020\021\0222\n.LEAGUE_AUDIT"
-      "_ACTION_LEAGUE_REMOVE_INVITED_TEAM\020\022\022-\n)"
-      "LEAGUE_AUDIT_ACTION_LEAGUE_STATUS_CHANGE"
-      "D\020\023\022*\n&LEAGUE_AUDIT_ACTION_LEAGUE_STREAM"
-      "_EDIT\020\024\022(\n$LEAGUE_AUDIT_ACTION_NODEGROUP"
-      "_CREATE\020d\022)\n%LEAGUE_AUDIT_ACTION_NODEGRO"
-      "UP_DESTROY\020e\022*\n&LEAGUE_AUDIT_ACTION_NODE"
-      "GROUP_ADD_TEAM\020f\022-\n)LEAGUE_AUDIT_ACTION_"
-      "NODEGROUP_REMOVE_TEAM\020g\022/\n+LEAGUE_AUDIT_"
-      "ACTION_NODEGROUP_SET_ADVANCING\020h\022&\n\"LEAG"
-      "UE_AUDIT_ACTION_NODEGROUP_EDIT\020i\022*\n&LEAG"
-      "UE_AUDIT_ACTION_NODEGROUP_POPULATE\020j\022+\n\'"
-      "LEAGUE_AUDIT_ACTION_NODEGROUP_COMPLETED\020"
-      "k\022$\n\037LEAGUE_AUDIT_ACTION_NODE_CREATE\020\310\001\022"
-      "%\n LEAGUE_AUDIT_ACTION_NODE_DESTROY\020\311\001\022("
-      "\n#LEAGUE_AUDIT_ACTION_NODE_AUTOCREATE\020\312\001"
-      "\022&\n!LEAGUE_AUDIT_ACTION_NODE_SET_TEAM\020\313\001"
-      "\022+\n&LEAGUE_AUDIT_ACTION_NODE_SET_SERIES_"
-      "ID\020\314\001\022+\n&LEAGUE_AUDIT_ACTION_NODE_SET_AD"
-      "VANCING\020\315\001\022&\n!LEAGUE_AUDIT_ACTION_NODE_S"
-      "ET_TIME\020\316\001\022-\n(LEAGUE_AUDIT_ACTION_NODE_M"
-      "ATCH_COMPLETED\020\317\001\022\'\n\"LEAGUE_AUDIT_ACTION"
-      "_NODE_COMPLETED\020\320\001\022\"\n\035LEAGUE_AUDIT_ACTIO"
-      "N_NODE_EDIT\020\321\001*\277\013\n\024DOTA_COMBATLOG_TYPES\022"
-      "#\n\026DOTA_COMBATLOG_INVALID\020\377\377\377\377\377\377\377\377\377\001\022\031\n\025"
-      "DOTA_COMBATLOG_DAMAGE\020\000\022\027\n\023DOTA_COMBATLO"
-      "G_HEAL\020\001\022\037\n\033DOTA_COMBATLOG_MODIFIER_ADD\020"
-      "\002\022\"\n\036DOTA_COMBATLOG_MODIFIER_REMOVE\020\003\022\030\n"
-      "\024DOTA_COMBATLOG_DEATH\020\004\022\032\n\026DOTA_COMBATLO"
-      "G_ABILITY\020\005\022\027\n\023DOTA_COMBATLOG_ITEM\020\006\022\033\n\027"
-      "DOTA_COMBATLOG_LOCATION\020\007\022\027\n\023DOTA_COMBAT"
-      "LOG_GOLD\020\010\022\035\n\031DOTA_COMBATLOG_GAME_STATE\020"
-      "\t\022\025\n\021DOTA_COMBATLOG_XP\020\n\022\033\n\027DOTA_COMBATL"
-      "OG_PURCHASE\020\013\022\032\n\026DOTA_COMBATLOG_BUYBACK\020"
-      "\014\022\"\n\036DOTA_COMBATLOG_ABILITY_TRIGGER\020\r\022\036\n"
-      "\032DOTA_COMBATLOG_PLAYERSTATS\020\016\022\034\n\030DOTA_CO"
-      "MBATLOG_MULTIKILL\020\017\022\035\n\031DOTA_COMBATLOG_KI"
-      "LLSTREAK\020\020\022%\n!DOTA_COMBATLOG_TEAM_BUILDI"
-      "NG_KILL\020\021\022\036\n\032DOTA_COMBATLOG_FIRST_BLOOD\020"
-      "\022\022\'\n#DOTA_COMBATLOG_MODIFIER_STACK_EVENT"
-      "\020\023\022%\n!DOTA_COMBATLOG_NEUTRAL_CAMP_STACK\020"
-      "\024\022\036\n\032DOTA_COMBATLOG_PICKUP_RUNE\020\025\022%\n!DOT"
-      "A_COMBATLOG_REVEALED_INVISIBLE\020\026\022\035\n\031DOTA"
-      "_COMBATLOG_HERO_SAVED\020\027\022 \n\034DOTA_COMBATLO"
-      "G_MANA_RESTORED\020\030\022\037\n\033DOTA_COMBATLOG_HERO"
-      "_LEVELUP\020\031\022#\n\037DOTA_COMBATLOG_BOTTLE_HEAL"
-      "_ALLY\020\032\022 \n\034DOTA_COMBATLOG_ENDGAME_STATS\020"
-      "\033\022$\n DOTA_COMBATLOG_INTERRUPT_CHANNEL\020\034\022"
-      "\036\n\032DOTA_COMBATLOG_ALLIED_GOLD\020\035\022\036\n\032DOTA_"
-      "COMBATLOG_AEGIS_TAKEN\020\036\022\036\n\032DOTA_COMBATLO"
-      "G_MANA_DAMAGE\020\037\022,\n(DOTA_COMBATLOG_PHYSIC"
-      "AL_DAMAGE_PREVENTED\020 \022 \n\034DOTA_COMBATLOG_"
-      "UNIT_SUMMONED\020!\022\037\n\033DOTA_COMBATLOG_ATTACK"
-      "_EVADE\020\"\022\033\n\027DOTA_COMBATLOG_TREE_CUT\020#\022\"\n"
-      "\036DOTA_COMBATLOG_SUCCESSFUL_SCAN\020$\022!\n\035DOT"
-      "A_COMBATLOG_END_KILLSTREAK\020%\022$\n DOTA_COM"
-      "BATLOG_BLOODSTONE_CHARGE\020&\022\"\n\036DOTA_COMBA"
-      "TLOG_CRITICAL_DAMAGE\020\'\022\037\n\033DOTA_COMBATLOG"
-      "_SPELL_ABSORB\020(\022\"\n\036DOTA_COMBATLOG_UNIT_T"
-      "ELEPORTED\020)\022#\n\037DOTA_COMBATLOG_KILL_EATER"
-      "_EVENT\020**u\n\020EDPCFavoriteType\022\025\n\021FAVORITE"
-      "_TYPE_ALL\020\000\022\030\n\024FAVORITE_TYPE_PLAYER\020\001\022\026\n"
-      "\022FAVORITE_TYPE_TEAM\020\002\022\030\n\024FAVORITE_TYPE_L"
-      "EAGUE\020\003*\244\004\n\024EDPCPushNotification\022(\n$DPC_"
-      "PUSH_NOTIFICATION_MATCH_STARTING\020\001\022*\n&DP"
-      "C_PUSH_NOTIFICATION_PLAYER_LEFT_TEAM\020\n\022,"
-      "\n(DPC_PUSH_NOTIFICATION_PLAYER_JOINED_TE"
-      "AM\020\013\022,\n(DPC_PUSH_NOTIFICATION_TEAM_ROSTE"
-      "R_CHANGE\020\024\022%\n!DPC_PUSH_NOTIFICATION_TEAM"
-      "_RESULT\020\025\0226\n2DPC_PUSH_NOTIFICATION_PREDI"
-      "CTION_MATCHES_AVAILABLE\020\036\0224\n0DPC_PUSH_NO"
-      "TIFICATION_PREDICTION_MATCH_COMPLETED\020\037\022"
-      "1\n-DPC_PUSH_NOTIFICATION_FANTASY_ROSTER_"
-      "REMINDER\020(\0220\n,DPC_PUSH_NOTIFICATION_FANT"
-      "ASY_PLAYER_CLEARED\020)\022/\n+DPC_PUSH_NOTIFIC"
-      "ATION_FANTASY_DAILY_SUMMARY\020*\022/\n+DPC_PUS"
-      "H_NOTIFICATION_FANTASY_FINAL_RESULTS\020+B\005"
-      "H\001\200\001\000"
+void AddDescriptors_dota_5fshared_5fenums_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 17045);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "dota_shared_enums.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_dota_5fshared_5fenums_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_dota_5fshared_5fenums_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_dota_5fshared_5fenums_2eproto = []() { AddDescriptors_dota_5fshared_5fenums_2eproto(); return true; }();
 const ::google::protobuf::EnumDescriptor* DOTA_GameMode_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[0];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[0];
 }
 bool DOTA_GameMode_IsValid(int value) {
   switch (value) {
@@ -894,8 +867,8 @@ bool DOTA_GameMode_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTA_GameState_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[1];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[1];
 }
 bool DOTA_GameState_IsValid(int value) {
   switch (value) {
@@ -918,8 +891,8 @@ bool DOTA_GameState_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTA_GC_TEAM_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[2];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[2];
 }
 bool DOTA_GC_TEAM_IsValid(int value) {
   switch (value) {
@@ -936,8 +909,8 @@ bool DOTA_GC_TEAM_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* EEvent_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[3];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[3];
 }
 bool EEvent_IsValid(int value) {
   switch (value) {
@@ -973,8 +946,8 @@ bool EEvent_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTALeaverStatus_t_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[4];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[4];
 }
 bool DOTALeaverStatus_t_IsValid(int value) {
   switch (value) {
@@ -994,8 +967,8 @@ bool DOTALeaverStatus_t_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTAConnectionState_t_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[5];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[5];
 }
 bool DOTAConnectionState_t_IsValid(int value) {
   switch (value) {
@@ -1013,8 +986,8 @@ bool DOTAConnectionState_t_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* Fantasy_Roles_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[6];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[6];
 }
 bool Fantasy_Roles_IsValid(int value) {
   switch (value) {
@@ -1030,8 +1003,8 @@ bool Fantasy_Roles_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* Fantasy_Team_Slots_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[7];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[7];
 }
 bool Fantasy_Team_Slots_IsValid(int value) {
   switch (value) {
@@ -1047,8 +1020,8 @@ bool Fantasy_Team_Slots_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* Fantasy_Selection_Mode_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[8];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[8];
 }
 bool Fantasy_Selection_Mode_IsValid(int value) {
   switch (value) {
@@ -1069,8 +1042,8 @@ bool Fantasy_Selection_Mode_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTAChatChannelType_t_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[9];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[9];
 }
 bool DOTAChatChannelType_t_IsValid(int value) {
   switch (value) {
@@ -1103,8 +1076,8 @@ bool DOTAChatChannelType_t_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* EProfileCardSlotType_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[10];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[10];
 }
 bool EProfileCardSlotType_IsValid(int value) {
   switch (value) {
@@ -1122,8 +1095,8 @@ bool EProfileCardSlotType_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* EMatchGroupServerStatus_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[11];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[11];
 }
 bool EMatchGroupServerStatus_IsValid(int value) {
   switch (value) {
@@ -1137,8 +1110,8 @@ bool EMatchGroupServerStatus_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTA_CM_PICK_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[12];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[12];
 }
 bool DOTA_CM_PICK_IsValid(int value) {
   switch (value) {
@@ -1152,8 +1125,8 @@ bool DOTA_CM_PICK_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTALowPriorityBanType_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[13];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[13];
 }
 bool DOTALowPriorityBanType_IsValid(int value) {
   switch (value) {
@@ -1167,8 +1140,8 @@ bool DOTALowPriorityBanType_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTALobbyReadyState_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[14];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[14];
 }
 bool DOTALobbyReadyState_IsValid(int value) {
   switch (value) {
@@ -1182,8 +1155,8 @@ bool DOTALobbyReadyState_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTAGameVersion_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[15];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[15];
 }
 bool DOTAGameVersion_IsValid(int value) {
   switch (value) {
@@ -1196,8 +1169,8 @@ bool DOTAGameVersion_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTAJoinLobbyResult_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[16];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[16];
 }
 bool DOTAJoinLobbyResult_IsValid(int value) {
   switch (value) {
@@ -1221,8 +1194,8 @@ bool DOTAJoinLobbyResult_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTASelectionPriorityRules_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[17];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[17];
 }
 bool DOTASelectionPriorityRules_IsValid(int value) {
   switch (value) {
@@ -1235,8 +1208,8 @@ bool DOTASelectionPriorityRules_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTASelectionPriorityChoice_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[18];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[18];
 }
 bool DOTASelectionPriorityChoice_IsValid(int value) {
   switch (value) {
@@ -1252,8 +1225,8 @@ bool DOTASelectionPriorityChoice_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTAMatchVote_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[19];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[19];
 }
 bool DOTAMatchVote_IsValid(int value) {
   switch (value) {
@@ -1267,8 +1240,8 @@ bool DOTAMatchVote_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTA_LobbyMemberXPBonus_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[20];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[20];
 }
 bool DOTA_LobbyMemberXPBonus_IsValid(int value) {
   switch (value) {
@@ -1285,8 +1258,8 @@ bool DOTA_LobbyMemberXPBonus_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTALobbyVisibility_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[21];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[21];
 }
 bool DOTALobbyVisibility_IsValid(int value) {
   switch (value) {
@@ -1300,8 +1273,8 @@ bool DOTALobbyVisibility_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* EDOTAPlayerMMRType_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[22];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[22];
 }
 bool EDOTAPlayerMMRType_IsValid(int value) {
   switch (value) {
@@ -1319,8 +1292,8 @@ bool EDOTAPlayerMMRType_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* MatchType_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[23];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[23];
 }
 bool MatchType_IsValid(int value) {
   switch (value) {
@@ -1343,8 +1316,8 @@ bool MatchType_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTABotDifficulty_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[24];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[24];
 }
 bool DOTABotDifficulty_IsValid(int value) {
   switch (value) {
@@ -1364,8 +1337,8 @@ bool DOTABotDifficulty_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTA_BOT_MODE_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[25];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[25];
 }
 bool DOTA_BOT_MODE_IsValid(int value) {
   switch (value) {
@@ -1402,8 +1375,8 @@ bool DOTA_BOT_MODE_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* MatchLanguages_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[26];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[26];
 }
 bool MatchLanguages_IsValid(int value) {
   switch (value) {
@@ -1422,8 +1395,8 @@ bool MatchLanguages_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ETourneyQueueDeadlineState_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[27];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[27];
 }
 bool ETourneyQueueDeadlineState_IsValid(int value) {
   switch (value) {
@@ -1441,8 +1414,8 @@ bool ETourneyQueueDeadlineState_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* EMatchOutcome_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[28];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[28];
 }
 bool EMatchOutcome_IsValid(int value) {
   switch (value) {
@@ -1461,8 +1434,8 @@ bool EMatchOutcome_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELaneType_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[29];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[29];
 }
 bool ELaneType_IsValid(int value) {
   switch (value) {
@@ -1479,8 +1452,8 @@ bool ELaneType_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* EBadgeType_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[30];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[30];
 }
 bool EBadgeType_IsValid(int value) {
   switch (value) {
@@ -1497,8 +1470,8 @@ bool EBadgeType_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELeagueStatus_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[31];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[31];
 }
 bool ELeagueStatus_IsValid(int value) {
   switch (value) {
@@ -1516,8 +1489,8 @@ bool ELeagueStatus_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELeagueRegion_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[32];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[32];
 }
 bool ELeagueRegion_IsValid(int value) {
   switch (value) {
@@ -1535,8 +1508,8 @@ bool ELeagueRegion_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELeagueTier_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[33];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[33];
 }
 bool ELeagueTier_IsValid(int value) {
   switch (value) {
@@ -1553,8 +1526,8 @@ bool ELeagueTier_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELeagueTierCategory_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[34];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[34];
 }
 bool ELeagueTierCategory_IsValid(int value) {
   switch (value) {
@@ -1568,8 +1541,8 @@ bool ELeagueTierCategory_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELeagueFlags_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[35];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[35];
 }
 bool ELeagueFlags_IsValid(int value) {
   switch (value) {
@@ -1585,8 +1558,8 @@ bool ELeagueFlags_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELeagueBroadcastProvider_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[36];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[36];
 }
 bool ELeagueBroadcastProvider_IsValid(int value) {
   switch (value) {
@@ -1602,8 +1575,8 @@ bool ELeagueBroadcastProvider_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELeaguePhase_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[37];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[37];
 }
 bool ELeaguePhase_IsValid(int value) {
   switch (value) {
@@ -1618,8 +1591,8 @@ bool ELeaguePhase_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELeagueFantasyPhase_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[38];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[38];
 }
 bool ELeagueFantasyPhase_IsValid(int value) {
   switch (value) {
@@ -1638,8 +1611,8 @@ bool ELeagueFantasyPhase_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ELeagueAuditAction_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[39];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[39];
 }
 bool ELeagueAuditAction_IsValid(int value) {
   switch (value) {
@@ -1689,8 +1662,8 @@ bool ELeagueAuditAction_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* DOTA_COMBATLOG_TYPES_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[40];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[40];
 }
 bool DOTA_COMBATLOG_TYPES_IsValid(int value) {
   switch (value) {
@@ -1745,8 +1718,8 @@ bool DOTA_COMBATLOG_TYPES_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* EDPCFavoriteType_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[41];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[41];
 }
 bool EDPCFavoriteType_IsValid(int value) {
   switch (value) {
@@ -1761,8 +1734,8 @@ bool EDPCFavoriteType_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* EDPCPushNotification_descriptor() {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_dota_5fshared_5fenums_2eproto::file_level_enum_descriptors[42];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return file_level_enum_descriptors_dota_5fshared_5fenums_2eproto[42];
 }
 bool EDPCPushNotification_IsValid(int value) {
   switch (value) {
@@ -1788,6 +1761,28 @@ bool EDPCPushNotification_IsValid(int value) {
 
 void CDOTAClientHardwareSpecs::InitAsDefaultInstance() {
 }
+class CDOTAClientHardwareSpecs::HasBitSetters {
+ public:
+  static void set_has_logical_processors(CDOTAClientHardwareSpecs* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_cpu_cycles_per_second(CDOTAClientHardwareSpecs* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_total_physical_memory(CDOTAClientHardwareSpecs* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_is_64_bit_os(CDOTAClientHardwareSpecs* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_upload_measurement(CDOTAClientHardwareSpecs* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_prefer_not_host(CDOTAClientHardwareSpecs* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDOTAClientHardwareSpecs::kLogicalProcessorsFieldNumber;
 const int CDOTAClientHardwareSpecs::kCpuCyclesPerSecondFieldNumber;
@@ -1798,15 +1793,13 @@ const int CDOTAClientHardwareSpecs::kPreferNotHostFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDOTAClientHardwareSpecs::CDOTAClientHardwareSpecs()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTAClientHardwareSpecs.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDOTAClientHardwareSpecs)
 }
 CDOTAClientHardwareSpecs::CDOTAClientHardwareSpecs(const CDOTAClientHardwareSpecs& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&cpu_cycles_per_second_, &from.cpu_cycles_per_second_,
@@ -1832,13 +1825,8 @@ void CDOTAClientHardwareSpecs::SharedDtor() {
 void CDOTAClientHardwareSpecs::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDOTAClientHardwareSpecs::descriptor() {
-  ::protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDOTAClientHardwareSpecs& CDOTAClientHardwareSpecs::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTAClientHardwareSpecs.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDOTAClientHardwareSpecs_dota_5fshared_5fenums_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1850,7 +1838,7 @@ void CDOTAClientHardwareSpecs::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     ::memset(&cpu_cycles_per_second_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&upload_measurement_) -
         reinterpret_cast<char*>(&cpu_cycles_per_second_)) + sizeof(upload_measurement_));
@@ -1859,9 +1847,81 @@ void CDOTAClientHardwareSpecs::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDOTAClientHardwareSpecs::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDOTAClientHardwareSpecs*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 logical_processors = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_logical_processors(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional fixed64 cpu_cycles_per_second = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 17) goto handle_unusual;
+        msg->set_cpu_cycles_per_second(::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr));
+        ptr += sizeof(::google::protobuf::uint64);
+        break;
+      }
+      // optional fixed64 total_physical_memory = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 25) goto handle_unusual;
+        msg->set_total_physical_memory(::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr));
+        ptr += sizeof(::google::protobuf::uint64);
+        break;
+      }
+      // optional bool is_64_bit_os = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_is_64_bit_os(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 upload_measurement = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_upload_measurement(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool prefer_not_host = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_prefer_not_host(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDOTAClientHardwareSpecs::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDOTAClientHardwareSpecs)
   for (;;) {
@@ -1871,9 +1931,8 @@ bool CDOTAClientHardwareSpecs::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 logical_processors = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_logical_processors();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_logical_processors(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &logical_processors_)));
@@ -1885,9 +1944,8 @@ bool CDOTAClientHardwareSpecs::MergePartialFromCodedStream(
 
       // optional fixed64 cpu_cycles_per_second = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-          set_has_cpu_cycles_per_second();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (17 & 0xFF)) {
+          HasBitSetters::set_has_cpu_cycles_per_second(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &cpu_cycles_per_second_)));
@@ -1899,9 +1957,8 @@ bool CDOTAClientHardwareSpecs::MergePartialFromCodedStream(
 
       // optional fixed64 total_physical_memory = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(25u /* 25 & 0xFF */)) {
-          set_has_total_physical_memory();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (25 & 0xFF)) {
+          HasBitSetters::set_has_total_physical_memory(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &total_physical_memory_)));
@@ -1913,9 +1970,8 @@ bool CDOTAClientHardwareSpecs::MergePartialFromCodedStream(
 
       // optional bool is_64_bit_os = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_is_64_bit_os();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_is_64_bit_os(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_64_bit_os_)));
@@ -1927,9 +1983,8 @@ bool CDOTAClientHardwareSpecs::MergePartialFromCodedStream(
 
       // optional uint64 upload_measurement = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_upload_measurement();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_upload_measurement(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &upload_measurement_)));
@@ -1941,9 +1996,8 @@ bool CDOTAClientHardwareSpecs::MergePartialFromCodedStream(
 
       // optional bool prefer_not_host = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_prefer_not_host();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_prefer_not_host(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &prefer_not_host_)));
@@ -1972,6 +2026,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDOTAClientHardwareSpecs::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2018,8 +2073,7 @@ void CDOTAClientHardwareSpecs::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDOTAClientHardwareSpecs::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDOTAClientHardwareSpecs)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2072,36 +2126,41 @@ size_t CDOTAClientHardwareSpecs::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 63u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000003fu) {
     // optional fixed64 cpu_cycles_per_second = 2;
-    if (has_cpu_cycles_per_second()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 8;
     }
 
     // optional fixed64 total_physical_memory = 3;
-    if (has_total_physical_memory()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 8;
     }
 
     // optional uint32 logical_processors = 1;
-    if (has_logical_processors()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->logical_processors());
     }
 
     // optional bool is_64_bit_os = 4;
-    if (has_is_64_bit_os()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 1;
     }
 
     // optional bool prefer_not_host = 6;
-    if (has_prefer_not_host()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 + 1;
     }
 
     // optional uint64 upload_measurement = 5;
-    if (has_upload_measurement()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->upload_measurement());
@@ -2117,9 +2176,9 @@ void CDOTAClientHardwareSpecs::MergeFrom(const ::google::protobuf::Message& from
 // @@protoc_insertion_point(generalized_merge_from_start:CDOTAClientHardwareSpecs)
   GOOGLE_DCHECK_NE(&from, this);
   const CDOTAClientHardwareSpecs* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDOTAClientHardwareSpecs>(
+      ::google::protobuf::DynamicCastToGenerated<CDOTAClientHardwareSpecs>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDOTAClientHardwareSpecs)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2136,7 +2195,7 @@ void CDOTAClientHardwareSpecs::MergeFrom(const CDOTAClientHardwareSpecs& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
       cpu_cycles_per_second_ = from.cpu_cycles_per_second_;
     }
@@ -2183,19 +2242,19 @@ void CDOTAClientHardwareSpecs::Swap(CDOTAClientHardwareSpecs* other) {
 }
 void CDOTAClientHardwareSpecs::InternalSwap(CDOTAClientHardwareSpecs* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(cpu_cycles_per_second_, other->cpu_cycles_per_second_);
   swap(total_physical_memory_, other->total_physical_memory_);
   swap(logical_processors_, other->logical_processors_);
   swap(is_64_bit_os_, other->is_64_bit_os_);
   swap(prefer_not_host_, other->prefer_not_host_);
   swap(upload_measurement_, other->upload_measurement_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDOTAClientHardwareSpecs::GetMetadata() const {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return ::file_level_metadata_dota_5fshared_5fenums_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2203,6 +2262,19 @@ void CDOTAClientHardwareSpecs::InternalSwap(CDOTAClientHardwareSpecs* other) {
 
 void CDOTASaveGame_Player::InitAsDefaultInstance() {
 }
+class CDOTASaveGame_Player::HasBitSetters {
+ public:
+  static void set_has_team(CDOTASaveGame_Player* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_name(CDOTASaveGame_Player* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_hero(CDOTASaveGame_Player* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDOTASaveGame_Player::kTeamFieldNumber;
 const int CDOTASaveGame_Player::kNameFieldNumber;
@@ -2210,15 +2282,13 @@ const int CDOTASaveGame_Player::kHeroFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDOTASaveGame_Player::CDOTASaveGame_Player()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame_Player.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDOTASaveGame.Player)
 }
 CDOTASaveGame_Player::CDOTASaveGame_Player(const CDOTASaveGame_Player& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2234,6 +2304,8 @@ CDOTASaveGame_Player::CDOTASaveGame_Player(const CDOTASaveGame_Player& from)
 }
 
 void CDOTASaveGame_Player::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDOTASaveGame_Player_dota_5fshared_5fenums_2eproto.base);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   hero_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   team_ = 0;
@@ -2252,13 +2324,8 @@ void CDOTASaveGame_Player::SharedDtor() {
 void CDOTASaveGame_Player::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDOTASaveGame_Player::descriptor() {
-  ::protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDOTASaveGame_Player& CDOTASaveGame_Player::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame_Player.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDOTASaveGame_Player_dota_5fshared_5fenums_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2270,7 +2337,7 @@ void CDOTASaveGame_Player::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2283,9 +2350,90 @@ void CDOTASaveGame_Player::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDOTASaveGame_Player::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDOTASaveGame_Player*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .DOTA_GC_TEAM team = 1 [default = DOTA_GC_TEAM_GOOD_GUYS];
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::DOTA_GC_TEAM_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_team(static_cast<::DOTA_GC_TEAM>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDOTASaveGame.Player.name");
+        object = msg->mutable_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string hero = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("CDOTASaveGame.Player.hero");
+        object = msg->mutable_hero();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDOTASaveGame_Player::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDOTASaveGame.Player)
   for (;;) {
@@ -2295,9 +2443,8 @@ bool CDOTASaveGame_Player::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .DOTA_GC_TEAM team = 1 [default = DOTA_GC_TEAM_GOOD_GUYS];
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -2305,7 +2452,7 @@ bool CDOTASaveGame_Player::MergePartialFromCodedStream(
             set_team(static_cast< ::DOTA_GC_TEAM >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -2315,8 +2462,7 @@ bool CDOTASaveGame_Player::MergePartialFromCodedStream(
 
       // optional string name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2331,8 +2477,7 @@ bool CDOTASaveGame_Player::MergePartialFromCodedStream(
 
       // optional string hero = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_hero()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2364,6 +2509,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDOTASaveGame_Player::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2406,8 +2552,7 @@ void CDOTASaveGame_Player::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDOTASaveGame_Player::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDOTASaveGame.Player)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2458,23 +2603,28 @@ size_t CDOTASaveGame_Player::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string name = 2;
-    if (has_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->name());
     }
 
     // optional string hero = 3;
-    if (has_hero()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->hero());
     }
 
     // optional .DOTA_GC_TEAM team = 1 [default = DOTA_GC_TEAM_GOOD_GUYS];
-    if (has_team()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->team());
     }
@@ -2489,9 +2639,9 @@ void CDOTASaveGame_Player::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDOTASaveGame.Player)
   GOOGLE_DCHECK_NE(&from, this);
   const CDOTASaveGame_Player* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDOTASaveGame_Player>(
+      ::google::protobuf::DynamicCastToGenerated<CDOTASaveGame_Player>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDOTASaveGame.Player)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2508,13 +2658,13 @@ void CDOTASaveGame_Player::MergeFrom(const CDOTASaveGame_Player& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_name();
+      _has_bits_[0] |= 0x00000001u;
       name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_hero();
+      _has_bits_[0] |= 0x00000002u;
       hero_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hero_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -2548,18 +2698,18 @@ void CDOTASaveGame_Player::Swap(CDOTASaveGame_Player* other) {
 }
 void CDOTASaveGame_Player::InternalSwap(CDOTASaveGame_Player* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   hero_.Swap(&other->hero_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(team_, other->team_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDOTASaveGame_Player::GetMetadata() const {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return ::file_level_metadata_dota_5fshared_5fenums_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2567,21 +2717,29 @@ void CDOTASaveGame_Player::InternalSwap(CDOTASaveGame_Player* other) {
 
 void CDOTASaveGame_SaveInstance_PlayerPositions::InitAsDefaultInstance() {
 }
+class CDOTASaveGame_SaveInstance_PlayerPositions::HasBitSetters {
+ public:
+  static void set_has_x(CDOTASaveGame_SaveInstance_PlayerPositions* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_y(CDOTASaveGame_SaveInstance_PlayerPositions* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDOTASaveGame_SaveInstance_PlayerPositions::kXFieldNumber;
 const int CDOTASaveGame_SaveInstance_PlayerPositions::kYFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDOTASaveGame_SaveInstance_PlayerPositions::CDOTASaveGame_SaveInstance_PlayerPositions()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame_SaveInstance_PlayerPositions.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDOTASaveGame.SaveInstance.PlayerPositions)
 }
 CDOTASaveGame_SaveInstance_PlayerPositions::CDOTASaveGame_SaveInstance_PlayerPositions(const CDOTASaveGame_SaveInstance_PlayerPositions& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
@@ -2607,13 +2765,8 @@ void CDOTASaveGame_SaveInstance_PlayerPositions::SharedDtor() {
 void CDOTASaveGame_SaveInstance_PlayerPositions::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDOTASaveGame_SaveInstance_PlayerPositions::descriptor() {
-  ::protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDOTASaveGame_SaveInstance_PlayerPositions& CDOTASaveGame_SaveInstance_PlayerPositions::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame_SaveInstance_PlayerPositions.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDOTASaveGame_SaveInstance_PlayerPositions_dota_5fshared_5fenums_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2625,7 +2778,7 @@ void CDOTASaveGame_SaveInstance_PlayerPositions::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&x_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&y_) -
         reinterpret_cast<char*>(&x_)) + sizeof(y_));
@@ -2634,9 +2787,53 @@ void CDOTASaveGame_SaveInstance_PlayerPositions::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDOTASaveGame_SaveInstance_PlayerPositions::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDOTASaveGame_SaveInstance_PlayerPositions*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional float x = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 13) goto handle_unusual;
+        msg->set_x(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float y = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 21) goto handle_unusual;
+        msg->set_y(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDOTASaveGame_SaveInstance_PlayerPositions::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDOTASaveGame.SaveInstance.PlayerPositions)
   for (;;) {
@@ -2646,9 +2843,8 @@ bool CDOTASaveGame_SaveInstance_PlayerPositions::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional float x = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
-          set_has_x();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (13 & 0xFF)) {
+          HasBitSetters::set_has_x(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &x_)));
@@ -2660,9 +2856,8 @@ bool CDOTASaveGame_SaveInstance_PlayerPositions::MergePartialFromCodedStream(
 
       // optional float y = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(21u /* 21 & 0xFF */)) {
-          set_has_y();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (21 & 0xFF)) {
+          HasBitSetters::set_has_y(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &y_)));
@@ -2691,6 +2886,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDOTASaveGame_SaveInstance_PlayerPositions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2717,8 +2913,7 @@ void CDOTASaveGame_SaveInstance_PlayerPositions::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDOTASaveGame_SaveInstance_PlayerPositions::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDOTASaveGame.SaveInstance.PlayerPositions)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2751,14 +2946,19 @@ size_t CDOTASaveGame_SaveInstance_PlayerPositions::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional float x = 1;
-    if (has_x()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 4;
     }
 
     // optional float y = 2;
-    if (has_y()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 4;
     }
 
@@ -2772,9 +2972,9 @@ void CDOTASaveGame_SaveInstance_PlayerPositions::MergeFrom(const ::google::proto
 // @@protoc_insertion_point(generalized_merge_from_start:CDOTASaveGame.SaveInstance.PlayerPositions)
   GOOGLE_DCHECK_NE(&from, this);
   const CDOTASaveGame_SaveInstance_PlayerPositions* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDOTASaveGame_SaveInstance_PlayerPositions>(
+      ::google::protobuf::DynamicCastToGenerated<CDOTASaveGame_SaveInstance_PlayerPositions>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDOTASaveGame.SaveInstance.PlayerPositions)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2791,7 +2991,7 @@ void CDOTASaveGame_SaveInstance_PlayerPositions::MergeFrom(const CDOTASaveGame_S
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       x_ = from.x_;
     }
@@ -2826,15 +3026,15 @@ void CDOTASaveGame_SaveInstance_PlayerPositions::Swap(CDOTASaveGame_SaveInstance
 }
 void CDOTASaveGame_SaveInstance_PlayerPositions::InternalSwap(CDOTASaveGame_SaveInstance_PlayerPositions* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(x_, other->x_);
   swap(y_, other->y_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDOTASaveGame_SaveInstance_PlayerPositions::GetMetadata() const {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return ::file_level_metadata_dota_5fshared_5fenums_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2842,6 +3042,25 @@ void CDOTASaveGame_SaveInstance_PlayerPositions::InternalSwap(CDOTASaveGame_Save
 
 void CDOTASaveGame_SaveInstance::InitAsDefaultInstance() {
 }
+class CDOTASaveGame_SaveInstance::HasBitSetters {
+ public:
+  static void set_has_game_time(CDOTASaveGame_SaveInstance* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_team1_score(CDOTASaveGame_SaveInstance* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_team2_score(CDOTASaveGame_SaveInstance* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_save_id(CDOTASaveGame_SaveInstance* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_save_time(CDOTASaveGame_SaveInstance* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDOTASaveGame_SaveInstance::kGameTimeFieldNumber;
 const int CDOTASaveGame_SaveInstance::kTeam1ScoreFieldNumber;
@@ -2852,15 +3071,13 @@ const int CDOTASaveGame_SaveInstance::kSaveTimeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDOTASaveGame_SaveInstance::CDOTASaveGame_SaveInstance()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame_SaveInstance.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDOTASaveGame.SaveInstance)
 }
 CDOTASaveGame_SaveInstance::CDOTASaveGame_SaveInstance(const CDOTASaveGame_SaveInstance& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       player_positions_(from.player_positions_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2871,6 +3088,8 @@ CDOTASaveGame_SaveInstance::CDOTASaveGame_SaveInstance(const CDOTASaveGame_SaveI
 }
 
 void CDOTASaveGame_SaveInstance::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDOTASaveGame_SaveInstance_dota_5fshared_5fenums_2eproto.base);
   ::memset(&game_time_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&save_time_) -
       reinterpret_cast<char*>(&game_time_)) + sizeof(save_time_));
@@ -2887,13 +3106,8 @@ void CDOTASaveGame_SaveInstance::SharedDtor() {
 void CDOTASaveGame_SaveInstance::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDOTASaveGame_SaveInstance::descriptor() {
-  ::protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDOTASaveGame_SaveInstance& CDOTASaveGame_SaveInstance::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame_SaveInstance.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDOTASaveGame_SaveInstance_dota_5fshared_5fenums_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2906,7 +3120,7 @@ void CDOTASaveGame_SaveInstance::Clear() {
 
   player_positions_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     ::memset(&game_time_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&save_time_) -
         reinterpret_cast<char*>(&game_time_)) + sizeof(save_time_));
@@ -2915,9 +3129,93 @@ void CDOTASaveGame_SaveInstance::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDOTASaveGame_SaveInstance::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDOTASaveGame_SaveInstance*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 game_time = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_game_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 team1_score = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_team1_score(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 team2_score = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_team2_score(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .CDOTASaveGame.SaveInstance.PlayerPositions player_positions = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CDOTASaveGame_SaveInstance_PlayerPositions::_InternalParse;
+          object = msg->add_player_positions();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 42 && (ptr += 1));
+        break;
+      }
+      // optional uint32 save_id = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_save_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 save_time = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_save_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDOTASaveGame_SaveInstance::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDOTASaveGame.SaveInstance)
   for (;;) {
@@ -2927,9 +3225,8 @@ bool CDOTASaveGame_SaveInstance::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 game_time = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_game_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_game_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &game_time_)));
@@ -2941,9 +3238,8 @@ bool CDOTASaveGame_SaveInstance::MergePartialFromCodedStream(
 
       // optional uint32 team1_score = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_team1_score();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_team1_score(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &team1_score_)));
@@ -2955,9 +3251,8 @@ bool CDOTASaveGame_SaveInstance::MergePartialFromCodedStream(
 
       // optional uint32 team2_score = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_team2_score();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_team2_score(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &team2_score_)));
@@ -2969,8 +3264,7 @@ bool CDOTASaveGame_SaveInstance::MergePartialFromCodedStream(
 
       // repeated .CDOTASaveGame.SaveInstance.PlayerPositions player_positions = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_player_positions()));
         } else {
@@ -2981,9 +3275,8 @@ bool CDOTASaveGame_SaveInstance::MergePartialFromCodedStream(
 
       // optional uint32 save_id = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_save_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_save_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &save_id_)));
@@ -2995,9 +3288,8 @@ bool CDOTASaveGame_SaveInstance::MergePartialFromCodedStream(
 
       // optional uint32 save_time = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_save_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_save_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &save_time_)));
@@ -3026,6 +3318,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDOTASaveGame_SaveInstance::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3076,8 +3369,7 @@ void CDOTASaveGame_SaveInstance::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDOTASaveGame_SaveInstance::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDOTASaveGame.SaveInstance)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3103,7 +3395,7 @@ void CDOTASaveGame_SaveInstance::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->player_positions_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->player_positions(static_cast<int>(i)), deterministic, target);
+        5, this->player_positions(static_cast<int>(i)), target);
   }
 
   // optional uint32 save_id = 6;
@@ -3133,6 +3425,10 @@ size_t CDOTASaveGame_SaveInstance::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CDOTASaveGame.SaveInstance.PlayerPositions player_positions = 5;
   {
     unsigned int count = static_cast<unsigned int>(this->player_positions_size());
@@ -3144,37 +3440,38 @@ size_t CDOTASaveGame_SaveInstance::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 31u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000001fu) {
     // optional uint32 game_time = 2;
-    if (has_game_time()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->game_time());
     }
 
     // optional uint32 team1_score = 3;
-    if (has_team1_score()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->team1_score());
     }
 
     // optional uint32 team2_score = 4;
-    if (has_team2_score()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->team2_score());
     }
 
     // optional uint32 save_id = 6;
-    if (has_save_id()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->save_id());
     }
 
     // optional uint32 save_time = 7;
-    if (has_save_time()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->save_time());
@@ -3190,9 +3487,9 @@ void CDOTASaveGame_SaveInstance::MergeFrom(const ::google::protobuf::Message& fr
 // @@protoc_insertion_point(generalized_merge_from_start:CDOTASaveGame.SaveInstance)
   GOOGLE_DCHECK_NE(&from, this);
   const CDOTASaveGame_SaveInstance* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDOTASaveGame_SaveInstance>(
+      ::google::protobuf::DynamicCastToGenerated<CDOTASaveGame_SaveInstance>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDOTASaveGame.SaveInstance)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3210,7 +3507,7 @@ void CDOTASaveGame_SaveInstance::MergeFrom(const CDOTASaveGame_SaveInstance& fro
 
   player_positions_.MergeFrom(from.player_positions_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
       game_time_ = from.game_time_;
     }
@@ -3254,19 +3551,19 @@ void CDOTASaveGame_SaveInstance::Swap(CDOTASaveGame_SaveInstance* other) {
 }
 void CDOTASaveGame_SaveInstance::InternalSwap(CDOTASaveGame_SaveInstance* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&player_positions_)->InternalSwap(CastToBase(&other->player_positions_));
   swap(game_time_, other->game_time_);
   swap(team1_score_, other->team1_score_);
   swap(team2_score_, other->team2_score_);
   swap(save_id_, other->save_id_);
   swap(save_time_, other->save_time_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDOTASaveGame_SaveInstance::GetMetadata() const {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return ::file_level_metadata_dota_5fshared_5fenums_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3274,6 +3571,16 @@ void CDOTASaveGame_SaveInstance::InternalSwap(CDOTASaveGame_SaveInstance* other)
 
 void CDOTASaveGame::InitAsDefaultInstance() {
 }
+class CDOTASaveGame::HasBitSetters {
+ public:
+  static void set_has_match_id(CDOTASaveGame* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_save_time(CDOTASaveGame* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CDOTASaveGame::kMatchIdFieldNumber;
 const int CDOTASaveGame::kSaveTimeFieldNumber;
@@ -3282,15 +3589,13 @@ const int CDOTASaveGame::kSaveInstancesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CDOTASaveGame::CDOTASaveGame()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CDOTASaveGame)
 }
 CDOTASaveGame::CDOTASaveGame(const CDOTASaveGame& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       players_(from.players_),
       save_instances_(from.save_instances_) {
@@ -3302,6 +3607,8 @@ CDOTASaveGame::CDOTASaveGame(const CDOTASaveGame& from)
 }
 
 void CDOTASaveGame::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CDOTASaveGame_dota_5fshared_5fenums_2eproto.base);
   ::memset(&match_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&save_time_) -
       reinterpret_cast<char*>(&match_id_)) + sizeof(save_time_));
@@ -3318,13 +3625,8 @@ void CDOTASaveGame::SharedDtor() {
 void CDOTASaveGame::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CDOTASaveGame::descriptor() {
-  ::protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CDOTASaveGame& CDOTASaveGame::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_dota_5fshared_5fenums_2eproto::scc_info_CDOTASaveGame.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CDOTASaveGame_dota_5fshared_5fenums_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3338,7 +3640,7 @@ void CDOTASaveGame::Clear() {
   players_.Clear();
   save_instances_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&match_id_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&save_time_) -
         reinterpret_cast<char*>(&match_id_)) + sizeof(save_time_));
@@ -3347,9 +3649,88 @@ void CDOTASaveGame::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CDOTASaveGame::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CDOTASaveGame*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 save_time = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_save_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .CDOTASaveGame.Player players = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CDOTASaveGame_Player::_InternalParse;
+          object = msg->add_players();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      // repeated .CDOTASaveGame.SaveInstance save_instances = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::CDOTASaveGame_SaveInstance::_InternalParse;
+          object = msg->add_save_instances();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 34 && (ptr += 1));
+        break;
+      }
+      // optional uint64 match_id = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_match_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CDOTASaveGame::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CDOTASaveGame)
   for (;;) {
@@ -3359,9 +3740,8 @@ bool CDOTASaveGame::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 save_time = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_save_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_save_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &save_time_)));
@@ -3373,8 +3753,7 @@ bool CDOTASaveGame::MergePartialFromCodedStream(
 
       // repeated .CDOTASaveGame.Player players = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_players()));
         } else {
@@ -3385,8 +3764,7 @@ bool CDOTASaveGame::MergePartialFromCodedStream(
 
       // repeated .CDOTASaveGame.SaveInstance save_instances = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_save_instances()));
         } else {
@@ -3397,9 +3775,8 @@ bool CDOTASaveGame::MergePartialFromCodedStream(
 
       // optional uint64 match_id = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_match_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_match_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &match_id_)));
@@ -3428,6 +3805,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CDOTASaveGame::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3472,8 +3850,7 @@ void CDOTASaveGame::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CDOTASaveGame::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CDOTASaveGame)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3489,7 +3866,7 @@ void CDOTASaveGame::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->players_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->players(static_cast<int>(i)), deterministic, target);
+        3, this->players(static_cast<int>(i)), target);
   }
 
   // repeated .CDOTASaveGame.SaveInstance save_instances = 4;
@@ -3497,7 +3874,7 @@ void CDOTASaveGame::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->save_instances_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->save_instances(static_cast<int>(i)), deterministic, target);
+        4, this->save_instances(static_cast<int>(i)), target);
   }
 
   // optional uint64 match_id = 5;
@@ -3522,6 +3899,10 @@ size_t CDOTASaveGame::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .CDOTASaveGame.Player players = 3;
   {
     unsigned int count = static_cast<unsigned int>(this->players_size());
@@ -3544,16 +3925,17 @@ size_t CDOTASaveGame::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 match_id = 5;
-    if (has_match_id()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->match_id());
     }
 
     // optional uint32 save_time = 2;
-    if (has_save_time()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->save_time());
@@ -3569,9 +3951,9 @@ void CDOTASaveGame::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:CDOTASaveGame)
   GOOGLE_DCHECK_NE(&from, this);
   const CDOTASaveGame* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CDOTASaveGame>(
+      ::google::protobuf::DynamicCastToGenerated<CDOTASaveGame>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CDOTASaveGame)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3590,7 +3972,7 @@ void CDOTASaveGame::MergeFrom(const CDOTASaveGame& from) {
   players_.MergeFrom(from.players_);
   save_instances_.MergeFrom(from.save_instances_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       match_id_ = from.match_id_;
     }
@@ -3625,17 +4007,17 @@ void CDOTASaveGame::Swap(CDOTASaveGame* other) {
 }
 void CDOTASaveGame::InternalSwap(CDOTASaveGame* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&players_)->InternalSwap(CastToBase(&other->players_));
   CastToBase(&save_instances_)->InternalSwap(CastToBase(&other->save_instances_));
   swap(match_id_, other->match_id_);
   swap(save_time_, other->save_time_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CDOTASaveGame::GetMetadata() const {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return ::file_level_metadata_dota_5fshared_5fenums_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3643,6 +4025,223 @@ void CDOTASaveGame::InternalSwap(CDOTASaveGame* other) {
 
 void CMsgDOTACombatLogEntry::InitAsDefaultInstance() {
 }
+class CMsgDOTACombatLogEntry::HasBitSetters {
+ public:
+  static void set_has_type(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[2] |= 0x00000040u;
+  }
+  static void set_has_target_name(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_target_source_name(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_attacker_name(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_damage_source_name(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_inflictor_name(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_is_attacker_illusion(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_is_attacker_hero(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_is_target_illusion(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_is_target_hero(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_is_visible_radiant(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00001000u;
+  }
+  static void set_has_is_visible_dire(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00002000u;
+  }
+  static void set_has_value(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static void set_has_health(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+  static void set_has_timestamp(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00000800u;
+  }
+  static void set_has_stun_duration(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00010000u;
+  }
+  static void set_has_slow_duration(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00020000u;
+  }
+  static void set_has_is_ability_toggle_on(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00004000u;
+  }
+  static void set_has_is_ability_toggle_off(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00008000u;
+  }
+  static void set_has_ability_level(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00040000u;
+  }
+  static void set_has_location_x(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00080000u;
+  }
+  static void set_has_location_y(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00100000u;
+  }
+  static void set_has_gold_reason(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00200000u;
+  }
+  static void set_has_timestamp_raw(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00400000u;
+  }
+  static void set_has_modifier_duration(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x00800000u;
+  }
+  static void set_has_xp_reason(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x01000000u;
+  }
+  static void set_has_last_hits(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x02000000u;
+  }
+  static void set_has_attacker_team(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x04000000u;
+  }
+  static void set_has_target_team(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x08000000u;
+  }
+  static void set_has_obs_wards_placed(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x10000000u;
+  }
+  static void set_has_assist_player0(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x20000000u;
+  }
+  static void set_has_assist_player1(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x40000000u;
+  }
+  static void set_has_assist_player2(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[0] |= 0x80000000u;
+  }
+  static void set_has_assist_player3(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000001u;
+  }
+  static void set_has_stack_count(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000002u;
+  }
+  static void set_has_hidden_modifier(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000010u;
+  }
+  static void set_has_is_target_building(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000020u;
+  }
+  static void set_has_neutral_camp_type(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000004u;
+  }
+  static void set_has_rune_type(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000008u;
+  }
+  static void set_has_is_heal_save(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000040u;
+  }
+  static void set_has_is_ultimate_ability(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000080u;
+  }
+  static void set_has_attacker_hero_level(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000100u;
+  }
+  static void set_has_target_hero_level(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000200u;
+  }
+  static void set_has_xpm(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000400u;
+  }
+  static void set_has_gpm(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00000800u;
+  }
+  static void set_has_event_location(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00001000u;
+  }
+  static void set_has_target_is_self(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00010000u;
+  }
+  static void set_has_damage_type(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00002000u;
+  }
+  static void set_has_invisibility_modifier(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00020000u;
+  }
+  static void set_has_damage_category(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00004000u;
+  }
+  static void set_has_networth(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00008000u;
+  }
+  static void set_has_building_type(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00100000u;
+  }
+  static void set_has_modifier_elapsed_duration(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00200000u;
+  }
+  static void set_has_silence_modifier(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00040000u;
+  }
+  static void set_has_heal_from_lifesteal(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00080000u;
+  }
+  static void set_has_modifier_purged(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00400000u;
+  }
+  static void set_has_spell_evaded(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x00800000u;
+  }
+  static void set_has_motion_controller_modifier(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x01000000u;
+  }
+  static void set_has_long_range_kill(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x02000000u;
+  }
+  static void set_has_modifier_purge_ability(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x04000000u;
+  }
+  static void set_has_modifier_purge_npc(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x08000000u;
+  }
+  static void set_has_root_modifier(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x20000000u;
+  }
+  static void set_has_total_unit_death_count(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x10000000u;
+  }
+  static void set_has_aura_modifier(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x40000000u;
+  }
+  static void set_has_armor_debuff_modifier(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[1] |= 0x80000000u;
+  }
+  static void set_has_no_physical_damage_modifier(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[2] |= 0x00000001u;
+  }
+  static void set_has_modifier_ability(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[2] |= 0x00000002u;
+  }
+  static void set_has_modifier_hidden(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[2] |= 0x00000004u;
+  }
+  static void set_has_inflictor_is_stolen_ability(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[2] |= 0x00000008u;
+  }
+  static void set_has_kill_eater_event(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[2] |= 0x00000010u;
+  }
+  static void set_has_unit_status_label(CMsgDOTACombatLogEntry* msg) {
+    msg->_has_bits_[2] |= 0x00000020u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CMsgDOTACombatLogEntry::kTypeFieldNumber;
 const int CMsgDOTACombatLogEntry::kTargetNameFieldNumber;
@@ -3719,15 +4318,13 @@ const int CMsgDOTACombatLogEntry::kUnitStatusLabelFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CMsgDOTACombatLogEntry::CMsgDOTACombatLogEntry()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_dota_5fshared_5fenums_2eproto::scc_info_CMsgDOTACombatLogEntry.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:CMsgDOTACombatLogEntry)
 }
 CMsgDOTACombatLogEntry::CMsgDOTACombatLogEntry(const CMsgDOTACombatLogEntry& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       assist_players_(from.assist_players_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -3755,13 +4352,8 @@ void CMsgDOTACombatLogEntry::SharedDtor() {
 void CMsgDOTACombatLogEntry::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CMsgDOTACombatLogEntry::descriptor() {
-  ::protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CMsgDOTACombatLogEntry& CMsgDOTACombatLogEntry::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_dota_5fshared_5fenums_2eproto::scc_info_CMsgDOTACombatLogEntry.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CMsgDOTACombatLogEntry_dota_5fshared_5fenums_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3774,49 +4366,49 @@ void CMsgDOTACombatLogEntry::Clear() {
 
   assist_players_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     ::memset(&target_name_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&is_target_illusion_) -
         reinterpret_cast<char*>(&target_name_)) + sizeof(is_target_illusion_));
   }
-  if (cached_has_bits & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     ::memset(&is_target_hero_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&is_ability_toggle_off_) -
         reinterpret_cast<char*>(&is_target_hero_)) + sizeof(is_ability_toggle_off_));
   }
-  if (cached_has_bits & 16711680u) {
+  if (cached_has_bits & 0x00ff0000u) {
     ::memset(&stun_duration_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&modifier_duration_) -
         reinterpret_cast<char*>(&stun_duration_)) + sizeof(modifier_duration_));
   }
-  if (cached_has_bits & 4278190080u) {
+  if (cached_has_bits & 0xff000000u) {
     ::memset(&xp_reason_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&assist_player2_) -
         reinterpret_cast<char*>(&xp_reason_)) + sizeof(assist_player2_));
   }
   cached_has_bits = _has_bits_[1];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     ::memset(&assist_player3_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&is_ultimate_ability_) -
         reinterpret_cast<char*>(&assist_player3_)) + sizeof(is_ultimate_ability_));
   }
-  if (cached_has_bits & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     ::memset(&attacker_hero_level_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&networth_) -
         reinterpret_cast<char*>(&attacker_hero_level_)) + sizeof(networth_));
   }
-  if (cached_has_bits & 16711680u) {
+  if (cached_has_bits & 0x00ff0000u) {
     ::memset(&target_is_self_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&spell_evaded_) -
         reinterpret_cast<char*>(&target_is_self_)) + sizeof(spell_evaded_));
   }
-  if (cached_has_bits & 4278190080u) {
+  if (cached_has_bits & 0xff000000u) {
     ::memset(&motion_controller_modifier_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&armor_debuff_modifier_) -
         reinterpret_cast<char*>(&motion_controller_modifier_)) + sizeof(armor_debuff_modifier_));
   }
   cached_has_bits = _has_bits_[2];
-  if (cached_has_bits & 127u) {
+  if (cached_has_bits & 0x0000007fu) {
     ::memset(&no_physical_damage_modifier_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&unit_status_label_) -
         reinterpret_cast<char*>(&no_physical_damage_modifier_)) + sizeof(unit_status_label_));
@@ -3826,9 +4418,564 @@ void CMsgDOTACombatLogEntry::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CMsgDOTACombatLogEntry::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CMsgDOTACombatLogEntry*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .DOTA_COMBATLOG_TYPES type = 1 [default = DOTA_COMBATLOG_INVALID];
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::DOTA_COMBATLOG_TYPES_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_type(static_cast<::DOTA_COMBATLOG_TYPES>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 target_name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_target_name(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 target_source_name = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_target_source_name(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 attacker_name = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_attacker_name(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 damage_source_name = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_damage_source_name(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 inflictor_name = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_inflictor_name(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_attacker_illusion = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_is_attacker_illusion(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_attacker_hero = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_is_attacker_hero(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_target_illusion = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_is_target_illusion(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_target_hero = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
+        msg->set_is_target_hero(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_visible_radiant = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 88) goto handle_unusual;
+        msg->set_is_visible_radiant(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_visible_dire = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 96) goto handle_unusual;
+        msg->set_is_visible_dire(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 value = 13;
+      case 13: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 104) goto handle_unusual;
+        msg->set_value(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional int32 health = 14;
+      case 14: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 112) goto handle_unusual;
+        msg->set_health(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional float timestamp = 15;
+      case 15: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 125) goto handle_unusual;
+        msg->set_timestamp(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float stun_duration = 16;
+      case 16: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 133) goto handle_unusual;
+        msg->set_stun_duration(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float slow_duration = 17;
+      case 17: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 141) goto handle_unusual;
+        msg->set_slow_duration(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional bool is_ability_toggle_on = 18;
+      case 18: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 144) goto handle_unusual;
+        msg->set_is_ability_toggle_on(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_ability_toggle_off = 19;
+      case 19: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 152) goto handle_unusual;
+        msg->set_is_ability_toggle_off(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 ability_level = 20;
+      case 20: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 160) goto handle_unusual;
+        msg->set_ability_level(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional float location_x = 21;
+      case 21: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 173) goto handle_unusual;
+        msg->set_location_x(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float location_y = 22;
+      case 22: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 181) goto handle_unusual;
+        msg->set_location_y(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional uint32 gold_reason = 23;
+      case 23: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 184) goto handle_unusual;
+        msg->set_gold_reason(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional float timestamp_raw = 24;
+      case 24: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 197) goto handle_unusual;
+        msg->set_timestamp_raw(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional float modifier_duration = 25;
+      case 25: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 205) goto handle_unusual;
+        msg->set_modifier_duration(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional uint32 xp_reason = 26;
+      case 26: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 208) goto handle_unusual;
+        msg->set_xp_reason(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 last_hits = 27;
+      case 27: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 216) goto handle_unusual;
+        msg->set_last_hits(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 attacker_team = 28;
+      case 28: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 224) goto handle_unusual;
+        msg->set_attacker_team(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 target_team = 29;
+      case 29: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 232) goto handle_unusual;
+        msg->set_target_team(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 obs_wards_placed = 30;
+      case 30: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 240) goto handle_unusual;
+        msg->set_obs_wards_placed(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 assist_player0 = 31;
+      case 31: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 248) goto handle_unusual;
+        msg->set_assist_player0(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 assist_player1 = 32;
+      case 32: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 0) goto handle_unusual;
+        msg->set_assist_player1(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 assist_player2 = 33;
+      case 33: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_assist_player2(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 assist_player3 = 34;
+      case 34: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_assist_player3(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 stack_count = 35;
+      case 35: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_stack_count(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool hidden_modifier = 36;
+      case 36: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_hidden_modifier(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_target_building = 37;
+      case 37: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_is_target_building(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 neutral_camp_type = 38;
+      case 38: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_neutral_camp_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 rune_type = 39;
+      case 39: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_rune_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated uint32 assist_players = 40;
+      case 40: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 64) {
+          do {
+            msg->add_assist_players(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 65535) == 704 && (ptr += 2));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_assist_players();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool is_heal_save = 41;
+      case 41: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_is_heal_save(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_ultimate_ability = 42;
+      case 42: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
+        msg->set_is_ultimate_ability(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 attacker_hero_level = 43;
+      case 43: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 88) goto handle_unusual;
+        msg->set_attacker_hero_level(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 target_hero_level = 44;
+      case 44: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 96) goto handle_unusual;
+        msg->set_target_hero_level(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 xpm = 45;
+      case 45: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 104) goto handle_unusual;
+        msg->set_xpm(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 gpm = 46;
+      case 46: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 112) goto handle_unusual;
+        msg->set_gpm(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 event_location = 47;
+      case 47: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 120) goto handle_unusual;
+        msg->set_event_location(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool target_is_self = 48;
+      case 48: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 128) goto handle_unusual;
+        msg->set_target_is_self(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 damage_type = 49;
+      case 49: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 136) goto handle_unusual;
+        msg->set_damage_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool invisibility_modifier = 50;
+      case 50: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 144) goto handle_unusual;
+        msg->set_invisibility_modifier(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 damage_category = 51;
+      case 51: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 152) goto handle_unusual;
+        msg->set_damage_category(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 networth = 52;
+      case 52: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 160) goto handle_unusual;
+        msg->set_networth(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 building_type = 53;
+      case 53: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 168) goto handle_unusual;
+        msg->set_building_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional float modifier_elapsed_duration = 54;
+      case 54: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 181) goto handle_unusual;
+        msg->set_modifier_elapsed_duration(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // optional bool silence_modifier = 55;
+      case 55: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 184) goto handle_unusual;
+        msg->set_silence_modifier(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool heal_from_lifesteal = 56;
+      case 56: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 192) goto handle_unusual;
+        msg->set_heal_from_lifesteal(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool modifier_purged = 57;
+      case 57: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 200) goto handle_unusual;
+        msg->set_modifier_purged(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool spell_evaded = 58;
+      case 58: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 208) goto handle_unusual;
+        msg->set_spell_evaded(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool motion_controller_modifier = 59;
+      case 59: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 216) goto handle_unusual;
+        msg->set_motion_controller_modifier(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool long_range_kill = 60;
+      case 60: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 224) goto handle_unusual;
+        msg->set_long_range_kill(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 modifier_purge_ability = 61;
+      case 61: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 232) goto handle_unusual;
+        msg->set_modifier_purge_ability(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 modifier_purge_npc = 62;
+      case 62: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 240) goto handle_unusual;
+        msg->set_modifier_purge_npc(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool root_modifier = 63;
+      case 63: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 248) goto handle_unusual;
+        msg->set_root_modifier(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 total_unit_death_count = 64;
+      case 64: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 0) goto handle_unusual;
+        msg->set_total_unit_death_count(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool aura_modifier = 65;
+      case 65: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_aura_modifier(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool armor_debuff_modifier = 66;
+      case 66: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_armor_debuff_modifier(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool no_physical_damage_modifier = 67;
+      case 67: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_no_physical_damage_modifier(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 modifier_ability = 68;
+      case 68: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_modifier_ability(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool modifier_hidden = 69;
+      case 69: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_modifier_hidden(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool inflictor_is_stolen_ability = 70;
+      case 70: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_inflictor_is_stolen_ability(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 kill_eater_event = 71;
+      case 71: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_kill_eater_event(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 unit_status_label = 72;
+      case 72: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_unit_status_label(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:CMsgDOTACombatLogEntry)
   for (;;) {
@@ -3838,9 +4985,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .DOTA_COMBATLOG_TYPES type = 1 [default = DOTA_COMBATLOG_INVALID];
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -3848,7 +4994,7 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
             set_type(static_cast< ::DOTA_COMBATLOG_TYPES >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -3858,9 +5004,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 target_name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_target_name();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_target_name(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &target_name_)));
@@ -3872,9 +5017,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 target_source_name = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_target_source_name();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_target_source_name(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &target_source_name_)));
@@ -3886,9 +5030,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 attacker_name = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_attacker_name();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_attacker_name(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &attacker_name_)));
@@ -3900,9 +5043,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 damage_source_name = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_damage_source_name();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_damage_source_name(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &damage_source_name_)));
@@ -3914,9 +5056,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 inflictor_name = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_inflictor_name();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_inflictor_name(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &inflictor_name_)));
@@ -3928,9 +5069,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_attacker_illusion = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_is_attacker_illusion();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_is_attacker_illusion(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_attacker_illusion_)));
@@ -3942,9 +5082,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_attacker_hero = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_is_attacker_hero();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_is_attacker_hero(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_attacker_hero_)));
@@ -3956,9 +5095,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_target_illusion = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_is_target_illusion();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_is_target_illusion(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_target_illusion_)));
@@ -3970,9 +5108,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_target_hero = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-          set_has_is_target_hero();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (80 & 0xFF)) {
+          HasBitSetters::set_has_is_target_hero(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_target_hero_)));
@@ -3984,9 +5121,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_visible_radiant = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
-          set_has_is_visible_radiant();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (88 & 0xFF)) {
+          HasBitSetters::set_has_is_visible_radiant(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_visible_radiant_)));
@@ -3998,9 +5134,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_visible_dire = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(96u /* 96 & 0xFF */)) {
-          set_has_is_visible_dire();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (96 & 0xFF)) {
+          HasBitSetters::set_has_is_visible_dire(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_visible_dire_)));
@@ -4012,9 +5147,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 value = 13;
       case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(104u /* 104 & 0xFF */)) {
-          set_has_value();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (104 & 0xFF)) {
+          HasBitSetters::set_has_value(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &value_)));
@@ -4026,9 +5160,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional int32 health = 14;
       case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(112u /* 112 & 0xFF */)) {
-          set_has_health();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (112 & 0xFF)) {
+          HasBitSetters::set_has_health(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &health_)));
@@ -4040,9 +5173,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional float timestamp = 15;
       case 15: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(125u /* 125 & 0xFF */)) {
-          set_has_timestamp();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (125 & 0xFF)) {
+          HasBitSetters::set_has_timestamp(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &timestamp_)));
@@ -4054,9 +5186,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional float stun_duration = 16;
       case 16: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(133u /* 133 & 0xFF */)) {
-          set_has_stun_duration();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (133 & 0xFF)) {
+          HasBitSetters::set_has_stun_duration(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &stun_duration_)));
@@ -4068,9 +5199,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional float slow_duration = 17;
       case 17: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(141u /* 141 & 0xFF */)) {
-          set_has_slow_duration();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (141 & 0xFF)) {
+          HasBitSetters::set_has_slow_duration(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &slow_duration_)));
@@ -4082,9 +5212,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_ability_toggle_on = 18;
       case 18: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(144u /* 144 & 0xFF */)) {
-          set_has_is_ability_toggle_on();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (144 & 0xFF)) {
+          HasBitSetters::set_has_is_ability_toggle_on(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_ability_toggle_on_)));
@@ -4096,9 +5225,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_ability_toggle_off = 19;
       case 19: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(152u /* 152 & 0xFF */)) {
-          set_has_is_ability_toggle_off();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (152 & 0xFF)) {
+          HasBitSetters::set_has_is_ability_toggle_off(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_ability_toggle_off_)));
@@ -4110,9 +5238,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 ability_level = 20;
       case 20: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(160u /* 160 & 0xFF */)) {
-          set_has_ability_level();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (160 & 0xFF)) {
+          HasBitSetters::set_has_ability_level(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &ability_level_)));
@@ -4124,9 +5251,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional float location_x = 21;
       case 21: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(173u /* 173 & 0xFF */)) {
-          set_has_location_x();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (173 & 0xFF)) {
+          HasBitSetters::set_has_location_x(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &location_x_)));
@@ -4138,9 +5264,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional float location_y = 22;
       case 22: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(181u /* 181 & 0xFF */)) {
-          set_has_location_y();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (181 & 0xFF)) {
+          HasBitSetters::set_has_location_y(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &location_y_)));
@@ -4152,9 +5277,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 gold_reason = 23;
       case 23: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(184u /* 184 & 0xFF */)) {
-          set_has_gold_reason();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (184 & 0xFF)) {
+          HasBitSetters::set_has_gold_reason(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &gold_reason_)));
@@ -4166,9 +5290,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional float timestamp_raw = 24;
       case 24: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(197u /* 197 & 0xFF */)) {
-          set_has_timestamp_raw();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (197 & 0xFF)) {
+          HasBitSetters::set_has_timestamp_raw(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &timestamp_raw_)));
@@ -4180,9 +5303,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional float modifier_duration = 25;
       case 25: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(205u /* 205 & 0xFF */)) {
-          set_has_modifier_duration();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (205 & 0xFF)) {
+          HasBitSetters::set_has_modifier_duration(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &modifier_duration_)));
@@ -4194,9 +5316,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 xp_reason = 26;
       case 26: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(208u /* 208 & 0xFF */)) {
-          set_has_xp_reason();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (208 & 0xFF)) {
+          HasBitSetters::set_has_xp_reason(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &xp_reason_)));
@@ -4208,9 +5329,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 last_hits = 27;
       case 27: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(216u /* 216 & 0xFF */)) {
-          set_has_last_hits();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (216 & 0xFF)) {
+          HasBitSetters::set_has_last_hits(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &last_hits_)));
@@ -4222,9 +5342,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 attacker_team = 28;
       case 28: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(224u /* 224 & 0xFF */)) {
-          set_has_attacker_team();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (224 & 0xFF)) {
+          HasBitSetters::set_has_attacker_team(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &attacker_team_)));
@@ -4236,9 +5355,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 target_team = 29;
       case 29: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(232u /* 232 & 0xFF */)) {
-          set_has_target_team();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (232 & 0xFF)) {
+          HasBitSetters::set_has_target_team(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &target_team_)));
@@ -4250,9 +5368,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 obs_wards_placed = 30;
       case 30: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(240u /* 240 & 0xFF */)) {
-          set_has_obs_wards_placed();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (240 & 0xFF)) {
+          HasBitSetters::set_has_obs_wards_placed(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &obs_wards_placed_)));
@@ -4264,9 +5381,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 assist_player0 = 31;
       case 31: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(248u /* 248 & 0xFF */)) {
-          set_has_assist_player0();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (248 & 0xFF)) {
+          HasBitSetters::set_has_assist_player0(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &assist_player0_)));
@@ -4278,9 +5394,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 assist_player1 = 32;
       case 32: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(0u /* 256 & 0xFF */)) {
-          set_has_assist_player1();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (256 & 0xFF)) {
+          HasBitSetters::set_has_assist_player1(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &assist_player1_)));
@@ -4292,9 +5407,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 assist_player2 = 33;
       case 33: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 264 & 0xFF */)) {
-          set_has_assist_player2();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (264 & 0xFF)) {
+          HasBitSetters::set_has_assist_player2(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &assist_player2_)));
@@ -4306,9 +5420,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 assist_player3 = 34;
       case 34: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 272 & 0xFF */)) {
-          set_has_assist_player3();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (272 & 0xFF)) {
+          HasBitSetters::set_has_assist_player3(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &assist_player3_)));
@@ -4320,9 +5433,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 stack_count = 35;
       case 35: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 280 & 0xFF */)) {
-          set_has_stack_count();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (280 & 0xFF)) {
+          HasBitSetters::set_has_stack_count(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &stack_count_)));
@@ -4334,9 +5446,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool hidden_modifier = 36;
       case 36: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 288 & 0xFF */)) {
-          set_has_hidden_modifier();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (288 & 0xFF)) {
+          HasBitSetters::set_has_hidden_modifier(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &hidden_modifier_)));
@@ -4348,9 +5459,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_target_building = 37;
       case 37: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 296 & 0xFF */)) {
-          set_has_is_target_building();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (296 & 0xFF)) {
+          HasBitSetters::set_has_is_target_building(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_target_building_)));
@@ -4362,9 +5472,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 neutral_camp_type = 38;
       case 38: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 304 & 0xFF */)) {
-          set_has_neutral_camp_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (304 & 0xFF)) {
+          HasBitSetters::set_has_neutral_camp_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &neutral_camp_type_)));
@@ -4376,9 +5485,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 rune_type = 39;
       case 39: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 312 & 0xFF */)) {
-          set_has_rune_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (312 & 0xFF)) {
+          HasBitSetters::set_has_rune_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &rune_type_)));
@@ -4390,14 +5498,11 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // repeated uint32 assist_players = 40;
       case 40: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 320 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (320 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  2, 320u, input, this->mutable_assist_players())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 322 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (322 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_assist_players())));
@@ -4409,9 +5514,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_heal_save = 41;
       case 41: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 328 & 0xFF */)) {
-          set_has_is_heal_save();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (328 & 0xFF)) {
+          HasBitSetters::set_has_is_heal_save(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_heal_save_)));
@@ -4423,9 +5527,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool is_ultimate_ability = 42;
       case 42: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 336 & 0xFF */)) {
-          set_has_is_ultimate_ability();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (336 & 0xFF)) {
+          HasBitSetters::set_has_is_ultimate_ability(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_ultimate_ability_)));
@@ -4437,9 +5540,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 attacker_hero_level = 43;
       case 43: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(88u /* 344 & 0xFF */)) {
-          set_has_attacker_hero_level();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (344 & 0xFF)) {
+          HasBitSetters::set_has_attacker_hero_level(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &attacker_hero_level_)));
@@ -4451,9 +5553,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 target_hero_level = 44;
       case 44: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(96u /* 352 & 0xFF */)) {
-          set_has_target_hero_level();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (352 & 0xFF)) {
+          HasBitSetters::set_has_target_hero_level(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &target_hero_level_)));
@@ -4465,9 +5566,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 xpm = 45;
       case 45: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(104u /* 360 & 0xFF */)) {
-          set_has_xpm();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (360 & 0xFF)) {
+          HasBitSetters::set_has_xpm(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &xpm_)));
@@ -4479,9 +5579,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 gpm = 46;
       case 46: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(112u /* 368 & 0xFF */)) {
-          set_has_gpm();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (368 & 0xFF)) {
+          HasBitSetters::set_has_gpm(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &gpm_)));
@@ -4493,9 +5592,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 event_location = 47;
       case 47: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(120u /* 376 & 0xFF */)) {
-          set_has_event_location();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (376 & 0xFF)) {
+          HasBitSetters::set_has_event_location(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &event_location_)));
@@ -4507,9 +5605,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool target_is_self = 48;
       case 48: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(128u /* 384 & 0xFF */)) {
-          set_has_target_is_self();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (384 & 0xFF)) {
+          HasBitSetters::set_has_target_is_self(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &target_is_self_)));
@@ -4521,9 +5618,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 damage_type = 49;
       case 49: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(136u /* 392 & 0xFF */)) {
-          set_has_damage_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (392 & 0xFF)) {
+          HasBitSetters::set_has_damage_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &damage_type_)));
@@ -4535,9 +5631,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool invisibility_modifier = 50;
       case 50: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(144u /* 400 & 0xFF */)) {
-          set_has_invisibility_modifier();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (400 & 0xFF)) {
+          HasBitSetters::set_has_invisibility_modifier(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &invisibility_modifier_)));
@@ -4549,9 +5644,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 damage_category = 51;
       case 51: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(152u /* 408 & 0xFF */)) {
-          set_has_damage_category();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (408 & 0xFF)) {
+          HasBitSetters::set_has_damage_category(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &damage_category_)));
@@ -4563,9 +5657,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 networth = 52;
       case 52: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(160u /* 416 & 0xFF */)) {
-          set_has_networth();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (416 & 0xFF)) {
+          HasBitSetters::set_has_networth(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &networth_)));
@@ -4577,9 +5670,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 building_type = 53;
       case 53: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(168u /* 424 & 0xFF */)) {
-          set_has_building_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (424 & 0xFF)) {
+          HasBitSetters::set_has_building_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &building_type_)));
@@ -4591,9 +5683,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional float modifier_elapsed_duration = 54;
       case 54: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(181u /* 437 & 0xFF */)) {
-          set_has_modifier_elapsed_duration();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (437 & 0xFF)) {
+          HasBitSetters::set_has_modifier_elapsed_duration(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &modifier_elapsed_duration_)));
@@ -4605,9 +5696,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool silence_modifier = 55;
       case 55: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(184u /* 440 & 0xFF */)) {
-          set_has_silence_modifier();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (440 & 0xFF)) {
+          HasBitSetters::set_has_silence_modifier(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &silence_modifier_)));
@@ -4619,9 +5709,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool heal_from_lifesteal = 56;
       case 56: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(192u /* 448 & 0xFF */)) {
-          set_has_heal_from_lifesteal();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (448 & 0xFF)) {
+          HasBitSetters::set_has_heal_from_lifesteal(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &heal_from_lifesteal_)));
@@ -4633,9 +5722,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool modifier_purged = 57;
       case 57: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(200u /* 456 & 0xFF */)) {
-          set_has_modifier_purged();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (456 & 0xFF)) {
+          HasBitSetters::set_has_modifier_purged(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &modifier_purged_)));
@@ -4647,9 +5735,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool spell_evaded = 58;
       case 58: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(208u /* 464 & 0xFF */)) {
-          set_has_spell_evaded();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (464 & 0xFF)) {
+          HasBitSetters::set_has_spell_evaded(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &spell_evaded_)));
@@ -4661,9 +5748,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool motion_controller_modifier = 59;
       case 59: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(216u /* 472 & 0xFF */)) {
-          set_has_motion_controller_modifier();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (472 & 0xFF)) {
+          HasBitSetters::set_has_motion_controller_modifier(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &motion_controller_modifier_)));
@@ -4675,9 +5761,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool long_range_kill = 60;
       case 60: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(224u /* 480 & 0xFF */)) {
-          set_has_long_range_kill();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (480 & 0xFF)) {
+          HasBitSetters::set_has_long_range_kill(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &long_range_kill_)));
@@ -4689,9 +5774,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 modifier_purge_ability = 61;
       case 61: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(232u /* 488 & 0xFF */)) {
-          set_has_modifier_purge_ability();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (488 & 0xFF)) {
+          HasBitSetters::set_has_modifier_purge_ability(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &modifier_purge_ability_)));
@@ -4703,9 +5787,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 modifier_purge_npc = 62;
       case 62: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(240u /* 496 & 0xFF */)) {
-          set_has_modifier_purge_npc();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (496 & 0xFF)) {
+          HasBitSetters::set_has_modifier_purge_npc(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &modifier_purge_npc_)));
@@ -4717,9 +5800,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool root_modifier = 63;
       case 63: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(248u /* 504 & 0xFF */)) {
-          set_has_root_modifier();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (504 & 0xFF)) {
+          HasBitSetters::set_has_root_modifier(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &root_modifier_)));
@@ -4731,9 +5813,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 total_unit_death_count = 64;
       case 64: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(0u /* 512 & 0xFF */)) {
-          set_has_total_unit_death_count();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (512 & 0xFF)) {
+          HasBitSetters::set_has_total_unit_death_count(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &total_unit_death_count_)));
@@ -4745,9 +5826,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool aura_modifier = 65;
       case 65: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 520 & 0xFF */)) {
-          set_has_aura_modifier();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (520 & 0xFF)) {
+          HasBitSetters::set_has_aura_modifier(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &aura_modifier_)));
@@ -4759,9 +5839,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool armor_debuff_modifier = 66;
       case 66: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 528 & 0xFF */)) {
-          set_has_armor_debuff_modifier();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (528 & 0xFF)) {
+          HasBitSetters::set_has_armor_debuff_modifier(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &armor_debuff_modifier_)));
@@ -4773,9 +5852,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool no_physical_damage_modifier = 67;
       case 67: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 536 & 0xFF */)) {
-          set_has_no_physical_damage_modifier();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (536 & 0xFF)) {
+          HasBitSetters::set_has_no_physical_damage_modifier(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &no_physical_damage_modifier_)));
@@ -4787,9 +5865,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 modifier_ability = 68;
       case 68: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 544 & 0xFF */)) {
-          set_has_modifier_ability();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (544 & 0xFF)) {
+          HasBitSetters::set_has_modifier_ability(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &modifier_ability_)));
@@ -4801,9 +5878,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool modifier_hidden = 69;
       case 69: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 552 & 0xFF */)) {
-          set_has_modifier_hidden();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (552 & 0xFF)) {
+          HasBitSetters::set_has_modifier_hidden(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &modifier_hidden_)));
@@ -4815,9 +5891,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional bool inflictor_is_stolen_ability = 70;
       case 70: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 560 & 0xFF */)) {
-          set_has_inflictor_is_stolen_ability();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (560 & 0xFF)) {
+          HasBitSetters::set_has_inflictor_is_stolen_ability(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &inflictor_is_stolen_ability_)));
@@ -4829,9 +5904,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 kill_eater_event = 71;
       case 71: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 568 & 0xFF */)) {
-          set_has_kill_eater_event();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (568 & 0xFF)) {
+          HasBitSetters::set_has_kill_eater_event(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &kill_eater_event_)));
@@ -4843,9 +5917,8 @@ bool CMsgDOTACombatLogEntry::MergePartialFromCodedStream(
 
       // optional uint32 unit_status_label = 72;
       case 72: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 576 & 0xFF */)) {
-          set_has_unit_status_label();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (576 & 0xFF)) {
+          HasBitSetters::set_has_unit_status_label(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &unit_status_label_)));
@@ -4874,6 +5947,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CMsgDOTACombatLogEntry::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5255,8 +6329,7 @@ void CMsgDOTACombatLogEntry::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CMsgDOTACombatLogEntry::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:CMsgDOTACombatLogEntry)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5642,6 +6715,10 @@ size_t CMsgDOTACombatLogEntry::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 assist_players = 40;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -5651,447 +6728,450 @@ size_t CMsgDOTACombatLogEntry::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 255u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional uint32 target_name = 2;
-    if (has_target_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->target_name());
     }
 
     // optional uint32 target_source_name = 3;
-    if (has_target_source_name()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->target_source_name());
     }
 
     // optional uint32 attacker_name = 4;
-    if (has_attacker_name()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->attacker_name());
     }
 
     // optional uint32 damage_source_name = 5;
-    if (has_damage_source_name()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->damage_source_name());
     }
 
     // optional uint32 inflictor_name = 6;
-    if (has_inflictor_name()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->inflictor_name());
     }
 
     // optional bool is_attacker_illusion = 7;
-    if (has_is_attacker_illusion()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 1;
     }
 
     // optional bool is_attacker_hero = 8;
-    if (has_is_attacker_hero()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 + 1;
     }
 
     // optional bool is_target_illusion = 9;
-    if (has_is_target_illusion()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 + 1;
     }
 
   }
-  if (_has_bits_[8 / 32] & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     // optional bool is_target_hero = 10;
-    if (has_is_target_hero()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 + 1;
     }
 
     // optional uint32 value = 13;
-    if (has_value()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->value());
     }
 
     // optional int32 health = 14;
-    if (has_health()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->health());
     }
 
     // optional float timestamp = 15;
-    if (has_timestamp()) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 1 + 4;
     }
 
     // optional bool is_visible_radiant = 11;
-    if (has_is_visible_radiant()) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 1 + 1;
     }
 
     // optional bool is_visible_dire = 12;
-    if (has_is_visible_dire()) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 1 + 1;
     }
 
     // optional bool is_ability_toggle_on = 18;
-    if (has_is_ability_toggle_on()) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 2 + 1;
     }
 
     // optional bool is_ability_toggle_off = 19;
-    if (has_is_ability_toggle_off()) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += 2 + 1;
     }
 
   }
-  if (_has_bits_[16 / 32] & 16711680u) {
+  if (cached_has_bits & 0x00ff0000u) {
     // optional float stun_duration = 16;
-    if (has_stun_duration()) {
+    if (cached_has_bits & 0x00010000u) {
       total_size += 2 + 4;
     }
 
     // optional float slow_duration = 17;
-    if (has_slow_duration()) {
+    if (cached_has_bits & 0x00020000u) {
       total_size += 2 + 4;
     }
 
     // optional uint32 ability_level = 20;
-    if (has_ability_level()) {
+    if (cached_has_bits & 0x00040000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->ability_level());
     }
 
     // optional float location_x = 21;
-    if (has_location_x()) {
+    if (cached_has_bits & 0x00080000u) {
       total_size += 2 + 4;
     }
 
     // optional float location_y = 22;
-    if (has_location_y()) {
+    if (cached_has_bits & 0x00100000u) {
       total_size += 2 + 4;
     }
 
     // optional uint32 gold_reason = 23;
-    if (has_gold_reason()) {
+    if (cached_has_bits & 0x00200000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->gold_reason());
     }
 
     // optional float timestamp_raw = 24;
-    if (has_timestamp_raw()) {
+    if (cached_has_bits & 0x00400000u) {
       total_size += 2 + 4;
     }
 
     // optional float modifier_duration = 25;
-    if (has_modifier_duration()) {
+    if (cached_has_bits & 0x00800000u) {
       total_size += 2 + 4;
     }
 
   }
-  if (_has_bits_[24 / 32] & 4278190080u) {
+  if (cached_has_bits & 0xff000000u) {
     // optional uint32 xp_reason = 26;
-    if (has_xp_reason()) {
+    if (cached_has_bits & 0x01000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->xp_reason());
     }
 
     // optional uint32 last_hits = 27;
-    if (has_last_hits()) {
+    if (cached_has_bits & 0x02000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->last_hits());
     }
 
     // optional uint32 attacker_team = 28;
-    if (has_attacker_team()) {
+    if (cached_has_bits & 0x04000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->attacker_team());
     }
 
     // optional uint32 target_team = 29;
-    if (has_target_team()) {
+    if (cached_has_bits & 0x08000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->target_team());
     }
 
     // optional uint32 obs_wards_placed = 30;
-    if (has_obs_wards_placed()) {
+    if (cached_has_bits & 0x10000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->obs_wards_placed());
     }
 
     // optional uint32 assist_player0 = 31;
-    if (has_assist_player0()) {
+    if (cached_has_bits & 0x20000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->assist_player0());
     }
 
     // optional uint32 assist_player1 = 32;
-    if (has_assist_player1()) {
+    if (cached_has_bits & 0x40000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->assist_player1());
     }
 
     // optional uint32 assist_player2 = 33;
-    if (has_assist_player2()) {
+    if (cached_has_bits & 0x80000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->assist_player2());
     }
 
   }
-  if (_has_bits_[32 / 32] & 255u) {
+  cached_has_bits = _has_bits_[1];
+  if (cached_has_bits & 0x000000ffu) {
     // optional uint32 assist_player3 = 34;
-    if (has_assist_player3()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->assist_player3());
     }
 
     // optional uint32 stack_count = 35;
-    if (has_stack_count()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->stack_count());
     }
 
     // optional uint32 neutral_camp_type = 38;
-    if (has_neutral_camp_type()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->neutral_camp_type());
     }
 
     // optional uint32 rune_type = 39;
-    if (has_rune_type()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->rune_type());
     }
 
     // optional bool hidden_modifier = 36;
-    if (has_hidden_modifier()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 2 + 1;
     }
 
     // optional bool is_target_building = 37;
-    if (has_is_target_building()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 2 + 1;
     }
 
     // optional bool is_heal_save = 41;
-    if (has_is_heal_save()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 2 + 1;
     }
 
     // optional bool is_ultimate_ability = 42;
-    if (has_is_ultimate_ability()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 2 + 1;
     }
 
   }
-  if (_has_bits_[40 / 32] & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     // optional uint32 attacker_hero_level = 43;
-    if (has_attacker_hero_level()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->attacker_hero_level());
     }
 
     // optional uint32 target_hero_level = 44;
-    if (has_target_hero_level()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->target_hero_level());
     }
 
     // optional uint32 xpm = 45;
-    if (has_xpm()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->xpm());
     }
 
     // optional uint32 gpm = 46;
-    if (has_gpm()) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->gpm());
     }
 
     // optional uint32 event_location = 47;
-    if (has_event_location()) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->event_location());
     }
 
     // optional uint32 damage_type = 49;
-    if (has_damage_type()) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->damage_type());
     }
 
     // optional uint32 damage_category = 51;
-    if (has_damage_category()) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->damage_category());
     }
 
     // optional uint32 networth = 52;
-    if (has_networth()) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->networth());
     }
 
   }
-  if (_has_bits_[48 / 32] & 16711680u) {
+  if (cached_has_bits & 0x00ff0000u) {
     // optional bool target_is_self = 48;
-    if (has_target_is_self()) {
+    if (cached_has_bits & 0x00010000u) {
       total_size += 2 + 1;
     }
 
     // optional bool invisibility_modifier = 50;
-    if (has_invisibility_modifier()) {
+    if (cached_has_bits & 0x00020000u) {
       total_size += 2 + 1;
     }
 
     // optional bool silence_modifier = 55;
-    if (has_silence_modifier()) {
+    if (cached_has_bits & 0x00040000u) {
       total_size += 2 + 1;
     }
 
     // optional bool heal_from_lifesteal = 56;
-    if (has_heal_from_lifesteal()) {
+    if (cached_has_bits & 0x00080000u) {
       total_size += 2 + 1;
     }
 
     // optional uint32 building_type = 53;
-    if (has_building_type()) {
+    if (cached_has_bits & 0x00100000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->building_type());
     }
 
     // optional float modifier_elapsed_duration = 54;
-    if (has_modifier_elapsed_duration()) {
+    if (cached_has_bits & 0x00200000u) {
       total_size += 2 + 4;
     }
 
     // optional bool modifier_purged = 57;
-    if (has_modifier_purged()) {
+    if (cached_has_bits & 0x00400000u) {
       total_size += 2 + 1;
     }
 
     // optional bool spell_evaded = 58;
-    if (has_spell_evaded()) {
+    if (cached_has_bits & 0x00800000u) {
       total_size += 2 + 1;
     }
 
   }
-  if (_has_bits_[56 / 32] & 4278190080u) {
+  if (cached_has_bits & 0xff000000u) {
     // optional bool motion_controller_modifier = 59;
-    if (has_motion_controller_modifier()) {
+    if (cached_has_bits & 0x01000000u) {
       total_size += 2 + 1;
     }
 
     // optional bool long_range_kill = 60;
-    if (has_long_range_kill()) {
+    if (cached_has_bits & 0x02000000u) {
       total_size += 2 + 1;
     }
 
     // optional uint32 modifier_purge_ability = 61;
-    if (has_modifier_purge_ability()) {
+    if (cached_has_bits & 0x04000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->modifier_purge_ability());
     }
 
     // optional uint32 modifier_purge_npc = 62;
-    if (has_modifier_purge_npc()) {
+    if (cached_has_bits & 0x08000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->modifier_purge_npc());
     }
 
     // optional uint32 total_unit_death_count = 64;
-    if (has_total_unit_death_count()) {
+    if (cached_has_bits & 0x10000000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->total_unit_death_count());
     }
 
     // optional bool root_modifier = 63;
-    if (has_root_modifier()) {
+    if (cached_has_bits & 0x20000000u) {
       total_size += 2 + 1;
     }
 
     // optional bool aura_modifier = 65;
-    if (has_aura_modifier()) {
+    if (cached_has_bits & 0x40000000u) {
       total_size += 2 + 1;
     }
 
     // optional bool armor_debuff_modifier = 66;
-    if (has_armor_debuff_modifier()) {
+    if (cached_has_bits & 0x80000000u) {
       total_size += 2 + 1;
     }
 
   }
-  if (_has_bits_[64 / 32] & 127u) {
+  cached_has_bits = _has_bits_[2];
+  if (cached_has_bits & 0x0000007fu) {
     // optional bool no_physical_damage_modifier = 67;
-    if (has_no_physical_damage_modifier()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 2 + 1;
     }
 
     // optional uint32 modifier_ability = 68;
-    if (has_modifier_ability()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->modifier_ability());
     }
 
     // optional bool modifier_hidden = 69;
-    if (has_modifier_hidden()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 2 + 1;
     }
 
     // optional bool inflictor_is_stolen_ability = 70;
-    if (has_inflictor_is_stolen_ability()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 2 + 1;
     }
 
     // optional uint32 kill_eater_event = 71;
-    if (has_kill_eater_event()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->kill_eater_event());
     }
 
     // optional uint32 unit_status_label = 72;
-    if (has_unit_status_label()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->unit_status_label());
     }
 
     // optional .DOTA_COMBATLOG_TYPES type = 1 [default = DOTA_COMBATLOG_INVALID];
-    if (has_type()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
     }
@@ -6106,9 +7186,9 @@ void CMsgDOTACombatLogEntry::MergeFrom(const ::google::protobuf::Message& from) 
 // @@protoc_insertion_point(generalized_merge_from_start:CMsgDOTACombatLogEntry)
   GOOGLE_DCHECK_NE(&from, this);
   const CMsgDOTACombatLogEntry* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CMsgDOTACombatLogEntry>(
+      ::google::protobuf::DynamicCastToGenerated<CMsgDOTACombatLogEntry>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMsgDOTACombatLogEntry)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6126,7 +7206,7 @@ void CMsgDOTACombatLogEntry::MergeFrom(const CMsgDOTACombatLogEntry& from) {
 
   assist_players_.MergeFrom(from.assist_players_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       target_name_ = from.target_name_;
     }
@@ -6153,7 +7233,7 @@ void CMsgDOTACombatLogEntry::MergeFrom(const CMsgDOTACombatLogEntry& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
       is_target_hero_ = from.is_target_hero_;
     }
@@ -6180,7 +7260,7 @@ void CMsgDOTACombatLogEntry::MergeFrom(const CMsgDOTACombatLogEntry& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 16711680u) {
+  if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
       stun_duration_ = from.stun_duration_;
     }
@@ -6207,7 +7287,7 @@ void CMsgDOTACombatLogEntry::MergeFrom(const CMsgDOTACombatLogEntry& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 4278190080u) {
+  if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
       xp_reason_ = from.xp_reason_;
     }
@@ -6235,7 +7315,7 @@ void CMsgDOTACombatLogEntry::MergeFrom(const CMsgDOTACombatLogEntry& from) {
     _has_bits_[0] |= cached_has_bits;
   }
   cached_has_bits = from._has_bits_[1];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       assist_player3_ = from.assist_player3_;
     }
@@ -6262,7 +7342,7 @@ void CMsgDOTACombatLogEntry::MergeFrom(const CMsgDOTACombatLogEntry& from) {
     }
     _has_bits_[1] |= cached_has_bits;
   }
-  if (cached_has_bits & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
       attacker_hero_level_ = from.attacker_hero_level_;
     }
@@ -6289,7 +7369,7 @@ void CMsgDOTACombatLogEntry::MergeFrom(const CMsgDOTACombatLogEntry& from) {
     }
     _has_bits_[1] |= cached_has_bits;
   }
-  if (cached_has_bits & 16711680u) {
+  if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
       target_is_self_ = from.target_is_self_;
     }
@@ -6316,7 +7396,7 @@ void CMsgDOTACombatLogEntry::MergeFrom(const CMsgDOTACombatLogEntry& from) {
     }
     _has_bits_[1] |= cached_has_bits;
   }
-  if (cached_has_bits & 4278190080u) {
+  if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
       motion_controller_modifier_ = from.motion_controller_modifier_;
     }
@@ -6344,7 +7424,7 @@ void CMsgDOTACombatLogEntry::MergeFrom(const CMsgDOTACombatLogEntry& from) {
     _has_bits_[1] |= cached_has_bits;
   }
   cached_has_bits = from._has_bits_[2];
-  if (cached_has_bits & 127u) {
+  if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
       no_physical_damage_modifier_ = from.no_physical_damage_modifier_;
     }
@@ -6394,6 +7474,10 @@ void CMsgDOTACombatLogEntry::Swap(CMsgDOTACombatLogEntry* other) {
 }
 void CMsgDOTACombatLogEntry::InternalSwap(CMsgDOTACombatLogEntry* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_has_bits_[1], other->_has_bits_[1]);
+  swap(_has_bits_[2], other->_has_bits_[2]);
   assist_players_.InternalSwap(&other->assist_players_);
   swap(target_name_, other->target_name_);
   swap(target_source_name_, other->target_source_name_);
@@ -6466,40 +7550,37 @@ void CMsgDOTACombatLogEntry::InternalSwap(CMsgDOTACombatLogEntry* other) {
   swap(kill_eater_event_, other->kill_eater_event_);
   swap(unit_status_label_, other->unit_status_label_);
   swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(_has_bits_[1], other->_has_bits_[1]);
-  swap(_has_bits_[2], other->_has_bits_[2]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CMsgDOTACombatLogEntry::GetMetadata() const {
-  protobuf_dota_5fshared_5fenums_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_dota_5fshared_5fenums_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_dota_5fshared_5fenums_2eproto);
+  return ::file_level_metadata_dota_5fshared_5fenums_2eproto[kIndexInFileMessages];
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDOTAClientHardwareSpecs* Arena::CreateMaybeMessage< ::CDOTAClientHardwareSpecs >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDOTAClientHardwareSpecs* Arena::CreateMaybeMessage< ::CDOTAClientHardwareSpecs >(Arena* arena) {
   return Arena::CreateInternal< ::CDOTAClientHardwareSpecs >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDOTASaveGame_Player* Arena::CreateMaybeMessage< ::CDOTASaveGame_Player >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDOTASaveGame_Player* Arena::CreateMaybeMessage< ::CDOTASaveGame_Player >(Arena* arena) {
   return Arena::CreateInternal< ::CDOTASaveGame_Player >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDOTASaveGame_SaveInstance_PlayerPositions* Arena::CreateMaybeMessage< ::CDOTASaveGame_SaveInstance_PlayerPositions >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDOTASaveGame_SaveInstance_PlayerPositions* Arena::CreateMaybeMessage< ::CDOTASaveGame_SaveInstance_PlayerPositions >(Arena* arena) {
   return Arena::CreateInternal< ::CDOTASaveGame_SaveInstance_PlayerPositions >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDOTASaveGame_SaveInstance* Arena::CreateMaybeMessage< ::CDOTASaveGame_SaveInstance >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDOTASaveGame_SaveInstance* Arena::CreateMaybeMessage< ::CDOTASaveGame_SaveInstance >(Arena* arena) {
   return Arena::CreateInternal< ::CDOTASaveGame_SaveInstance >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CDOTASaveGame* Arena::CreateMaybeMessage< ::CDOTASaveGame >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CDOTASaveGame* Arena::CreateMaybeMessage< ::CDOTASaveGame >(Arena* arena) {
   return Arena::CreateInternal< ::CDOTASaveGame >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::CMsgDOTACombatLogEntry* Arena::CreateMaybeMessage< ::CMsgDOTACombatLogEntry >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::CMsgDOTACombatLogEntry* Arena::CreateMaybeMessage< ::CMsgDOTACombatLogEntry >(Arena* arena) {
   return Arena::CreateInternal< ::CMsgDOTACombatLogEntry >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>
