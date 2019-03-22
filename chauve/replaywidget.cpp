@@ -34,20 +34,18 @@ void ReplayWidget::ScanReplayFolder(){
 }
 
 void ReplayWidget::ChangeSelectedReplay(QListWidgetItem *selected_replay) {
-    if (selected_replay == nullptr) {
+    if (selected_replay == nullptr)
         return;
 
     Replay* replay = ReplayManager::Instance().GetReplay(selected_replay->text());
     if (replay == nullptr) {
         replay = new Replay(selected_replay->text(),
                             SettingsManager::Instance().GetSteamReplayPath()
-                                                       .append("/" + selected_replay->text() + ".dem"),
-                            false);
+                                                       .append("/" + selected_replay->text() + ".dem"));
         ReplayManager::Instance().AddReplay(replay);
     }
     if (!replay->IsReplayParsed()) {
         replay->Parse();
     }
     qDebug() << replay->GetDemPath();
-
 }

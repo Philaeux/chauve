@@ -22,13 +22,14 @@ ReplayManager& ReplayManager::Instance()
 }
 
 Replay* ReplayManager::GetReplay(QString game_id) {
-    if (replays_.count(game_id) > 0) {
-        return replays_[game_id];
+    QMap<QString, Replay*>::const_iterator i = replays_.find(game_id);
+    if (i != replays_.end()) {
+        return i.value();
     } else {
         return nullptr;
     }
 }
 
 void ReplayManager::AddReplay(Replay *replay) {
-    replays_[replay->GetGameId()] = replay;
+    replays_.insert(replay->GetGameId(), replay);
 }

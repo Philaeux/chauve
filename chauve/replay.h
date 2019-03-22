@@ -8,10 +8,10 @@ class Replay
     // Class containing all the replay informations
     // - game_id_ Valve game id
     // - dem_path_ Full path to the dem file if it exists on disk, 0 otherwise
-    // - replay_parsed_ info if the replay has been parsed or not
+    // - parse_state_ info if the replay has been parsed or not
 
 public:
-    Replay(QString game_id, QString dem_path, bool replay_parsed);
+    Replay(QString game_id, QString dem_path);
     bool HasReplayOnDisk();
     void Parse();
     QString GetGameId();
@@ -21,7 +21,7 @@ public:
 private:
     QString game_id_;
     QString dem_path_;
-    bool replay_parsed_;
+    QString parse_state_;
 
     // Parsed info
     QString radiant_team_name_;

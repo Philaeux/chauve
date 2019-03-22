@@ -2,7 +2,7 @@
 #define REPLAYMANAGER_H
 
 #include <QtCore>
-#include <map>
+#include <QMap>
 
 #include "replay.h"
 
@@ -27,7 +27,7 @@ private:
     static ReplayManager instance_;
 
     // Storing all replay informations
-    std::map<QString, Replay*> replays_;
+    QMap<QString, Replay*> replays_;
 
 };
 

@@ -34,7 +34,22 @@ SOURCES += \
     settingsdialog.cpp \
     settingsmanager.cpp \
     replaymanager.cpp \
-    replay.cpp
+    replay.cpp \
+    protobuf/demo.pb.cc \
+    protobuf/dota_commonmessages.pb.cc \
+    protobuf/dota_shared_enums.pb.cc \
+    protobuf/dota_usermessages.pb.cc \
+    protobuf/netmessages.pb.cc \
+    protobuf/network_connection.pb.cc \
+    protobuf/networkbasetypes.pb.cc \
+    protobuf/usermessages.pb.cc \
+    main.cpp \
+    mainwindow.cpp \
+    replay.cpp \
+    replaymanager.cpp \
+    replaywidget.cpp \
+    settingsdialog.cpp \
+    settingsmanager.cpp
 
 HEADERS += \
     mainwindow.h \
@@ -42,7 +57,21 @@ HEADERS += \
     settingsdialog.h \
     settingsmanager.h \
     replaymanager.h \
-    replay.h
+    replay.h \
+    protobuf/demo.pb.h \
+    protobuf/dota_commonmessages.pb.h \
+    protobuf/dota_shared_enums.pb.h \
+    protobuf/dota_usermessages.pb.h \
+    protobuf/netmessages.pb.h \
+    protobuf/network_connection.pb.h \
+    protobuf/networkbasetypes.pb.h \
+    protobuf/usermessages.pb.h \
+    mainwindow.h \
+    replay.h \
+    replaymanager.h \
+    replaywidget.h \
+    settingsdialog.h \
+    settingsmanager.h
 
 FORMS += \
     mainwindow.ui \
@@ -53,3 +82,13 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    protobuf/demo.proto \
+    protobuf/dota_commonmessages.proto \
+    protobuf/dota_shared_enums.proto \
+    protobuf/dota_usermessages.proto \
+    protobuf/netmessages.proto \
+    protobuf/network_connection.proto \
+    protobuf/networkbasetypes.proto \
+    protobuf/usermessages.proto
