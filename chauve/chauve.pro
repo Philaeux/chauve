@@ -24,8 +24,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++17
 
-INCLUDEPATH += $$PWD/../lib/protobuf-3.7.0/src
-
 RESOURCES += \
     application.qrc
 
@@ -73,14 +71,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    protobuf/demo.proto \
-    protobuf/dota_commonmessages.proto \
-    protobuf/dota_shared_enums.proto \
-    protobuf/dota_usermessages.proto \
-    protobuf/netmessages.proto \
-    protobuf/network_connection.proto \
-    protobuf/networkbasetypes.proto \
-    protobuf/usermessages.proto \
     protobuf/demo.proto \
     protobuf/dota_commonmessages.proto \
     protobuf/dota_shared_enums.proto \
