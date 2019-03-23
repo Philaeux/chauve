@@ -24,7 +24,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++17
 
-INCLUDEPATH += lib
+INCLUDEPATH += $$PWD/../lib/protobuf-3.7.0/src
 
 RESOURCES += \
     application.qrc
