@@ -28,14 +28,6 @@ RESOURCES += \
     application.qrc
 
 SOURCES += \
-    protobuf/demo.pb.cc \
-    protobuf/dota_commonmessages.pb.cc \
-    protobuf/dota_shared_enums.pb.cc \
-    protobuf/dota_usermessages.pb.cc \
-    protobuf/netmessages.pb.cc \
-    protobuf/network_connection.pb.cc \
-    protobuf/networkbasetypes.pb.cc \
-    protobuf/usermessages.pb.cc \
     main.cpp \
     mainwindow.cpp \
     replay.cpp \
@@ -45,14 +37,6 @@ SOURCES += \
     settingsmanager.cpp
 
 HEADERS += \
-    protobuf/demo.pb.h \
-    protobuf/dota_commonmessages.pb.h \
-    protobuf/dota_shared_enums.pb.h \
-    protobuf/dota_usermessages.pb.h \
-    protobuf/netmessages.pb.h \
-    protobuf/network_connection.pb.h \
-    protobuf/networkbasetypes.pb.h \
-    protobuf/usermessages.pb.h \
     mainwindow.h \
     replay.h \
     replaymanager.h \

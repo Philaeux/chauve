@@ -14,7 +14,7 @@ ReplayManager::~ReplayManager()
 }
 
 // Singleton instance
-ReplayManager ReplayManager::instance_=ReplayManager();
+ReplayManager ReplayManager::instance_;
 
 ReplayManager& ReplayManager::Instance()
 {

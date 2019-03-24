@@ -20,8 +20,6 @@ public:
 
 private:
     // Singleton definition
-    SettingsManager& operator= (const SettingsManager&){}
-    SettingsManager (const SettingsManager&){}
     SettingsManager();
     ~SettingsManager();
     static SettingsManager instance_;

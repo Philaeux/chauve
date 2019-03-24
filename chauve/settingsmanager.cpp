@@ -14,7 +14,7 @@ SettingsManager::~SettingsManager()
 }
 
 // Singleton instance
-SettingsManager SettingsManager::instance_=SettingsManager();
+SettingsManager SettingsManager::instance_;
 
 SettingsManager& SettingsManager::Instance()
 {

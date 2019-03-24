@@ -12,6 +12,11 @@ ReplayWidget::ReplayWidget(QWidget *parent) :
 {
     setupUi(this);
 
+    radiantWinIcon->hide();
+    radiantTeam->setText("");
+    direWinIcon->hide();
+    direTeam->setText("");
+
     connect(refreshButton, SIGNAL(clicked()),
             this, SLOT(ScanReplayFolder()));
     connect(&SettingsManager::Instance(), SIGNAL(SteamReplayPathUpdated(const QString &)),
@@ -47,5 +52,4 @@ void ReplayWidget::ChangeSelectedReplay(QListWidgetItem *selected_replay) {
     if (!replay->IsReplayParsed()) {
         replay->Parse();
     }
-    qDebug() << replay->GetDemPath();
 }

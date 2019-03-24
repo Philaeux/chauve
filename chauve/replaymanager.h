@@ -20,8 +20,6 @@ public:
 
 private:
     // Singleton definition
-    ReplayManager& operator= (const ReplayManager&){}
-    ReplayManager (const ReplayManager&){}
     ReplayManager();
     ~ReplayManager();
     static ReplayManager instance_;
