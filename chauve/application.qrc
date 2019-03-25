@@ -120,5 +120,6 @@
         <file>images/dota/heroes/npc_dota_hero_witch_doctor.png</file>
         <file>images/dota/heroes/npc_dota_hero_zuus.png</file>
         <file>images/application/crown.png</file>
+        <file>images/application/refresh64.png</file>
     </qresource>
 </RCC>

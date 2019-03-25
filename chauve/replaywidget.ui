@@ -6,156 +6,51 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1021</width>
-    <height>820</height>
+    <width>1073</width>
+    <height>857</height>
    </rect>
+  </property>
+  <property name="toolTip">
+   <string>Refresh replays dem files from steam folder.</string>
   </property>
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>11</x>
-     <y>11</y>
-     <width>991</width>
-     <height>801</height>
+     <x>10</x>
+     <y>10</y>
+     <width>1051</width>
+     <height>850</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
-       <widget class="QPushButton" name="refreshButton">
-        <property name="maximumSize">
+       <widget class="QToolButton" name="refreshButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="application.qrc">
+          <normaloff>:/images/application/refresh64.png</normaloff>:/images/application/refresh64.png</iconset>
+        </property>
+        <property name="iconSize">
          <size>
-          <width>75</width>
-          <height>16777215</height>
+          <width>24</width>
+          <height>24</height>
          </size>
         </property>
-        <property name="text">
-         <string>Refresh</string>
-        </property>
        </widget>
       </item>
       <item>
-       <widget class="QListWidget" name="replayList">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <widget class="QLabel" name="radiantTitle">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>100</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>24</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Radiant</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::AutoText</enum>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <spacer name="horizontalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QLabel" name="radiantWinIcon">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>50</width>
-            <height>50</height>
-           </size>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="application.qrc">:/images/application/crown.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_4">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="radiantTeam">
-        <property name="font">
-         <font>
-          <pointsize>14</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>radiantTeam</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::AutoText</enum>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignHCenter|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="verticalSpacer">
+       <spacer name="horizontalSpacer">
         <property name="orientation">
-         <enum>Qt::Vertical</enum>
+         <enum>Qt::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>20</width>
-          <height>40</height>
+          <width>948</width>
+          <height>20</height>
          </size>
         </property>
        </spacer>
@@ -163,1141 +58,130 @@
      </layout>
     </item>
     <item>
-     <widget class="QStackedWidget" name="draftStackedWidget">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>225</width>
-        <height>799</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>225</width>
-        <height>799</height>
-       </size>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <property name="midLineWidth">
-       <number>1</number>
-      </property>
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <widget class="QWidget" name="draftEmptyWidget">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>223</width>
-         <height>797</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>223</width>
-         <height>797</height>
-        </size>
-       </property>
-      </widget>
-      <widget class="QWidget" name="draftCMRadiantWidget">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>223</width>
-         <height>797</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>223</width>
-         <height>797</height>
-        </size>
-       </property>
-       <property name="layoutDirection">
-        <enum>Qt::LeftToRight</enum>
-       </property>
-       <widget class="QLabel" name="draftCMRadiantPB21">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>734</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB19">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>654</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB13">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>440</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB14">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>494</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB1">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>36</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB12">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>414</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB0">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB4">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>118</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB8">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>278</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB7">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>224</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB6">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>198</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB5">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>144</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB3">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>90</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB11">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>386</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB9">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>306</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB16">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>548</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB10">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>360</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB2">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>64</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB15">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>520</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB18">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>628</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB17">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>574</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMRadiantPB20">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>708</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="draftCMDireWidget">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>223</width>
-         <height>797</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>223</width>
-         <height>797</height>
-        </size>
-       </property>
-       <widget class="QLabel" name="draftCMDirePB11">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>386</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB5">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>144</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB13">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>440</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB7">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>224</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB4">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>118</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB1">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>36</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB20">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>708</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB15">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>520</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB6">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>198</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB0">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>10</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB19">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>654</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB17">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>574</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB16">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>548</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB10">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>360</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB9">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>306</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB12">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>414</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB8">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>278</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB18">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>628</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB3">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>90</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB14">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>494</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB2">
-        <property name="geometry">
-         <rect>
-          <x>112</x>
-          <y>64</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="draftCMDirePB21">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>734</y>
-          <width>100</width>
-          <height>52</height>
-         </rect>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
-        </property>
-       </widget>
-      </widget>
-     </widget>
-    </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QLabel" name="direTitle">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>100</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>24</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Dire</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QListWidget" name="replayList">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <spacer name="horizontalSpacer_5">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QLabel" name="direWinIcon">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
+         <widget class="QLabel" name="radiantTitle">
           <property name="maximumSize">
            <size>
-            <width>50</width>
-            <height>50</height>
+            <width>16777215</width>
+            <height>100</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <pointsize>24</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
           <property name="text">
-           <string/>
+           <string>Radiant</string>
           </property>
-          <property name="pixmap">
-           <pixmap resource="application.qrc">:/images/application/crown.png</pixmap>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
           </property>
-          <property name="scaledContents">
-           <bool>true</bool>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
         </item>
         <item>
-         <spacer name="horizontalSpacer_6">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="radiantWinIcon">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="application.qrc">:/images/application/crown.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="radiantTeam">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>radiantTeam</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignHCenter|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
           <property name="orientation">
-           <enum>Qt::Horizontal</enum>
+           <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
-            <width>40</width>
-            <height>20</height>
+            <width>20</width>
+            <height>40</height>
            </size>
           </property>
          </spacer>
@@ -1305,37 +189,1181 @@
        </layout>
       </item>
       <item>
-       <widget class="QLabel" name="direTeam">
-        <property name="font">
-         <font>
-          <pointsize>14</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
+       <widget class="QStackedWidget" name="draftStackedWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
-        <property name="text">
-         <string>direTeam</string>
+        <property name="minimumSize">
+         <size>
+          <width>225</width>
+          <height>799</height>
+         </size>
         </property>
-        <property name="textFormat">
-         <enum>Qt::AutoText</enum>
+        <property name="maximumSize">
+         <size>
+          <width>225</width>
+          <height>799</height>
+         </size>
         </property>
-        <property name="alignment">
-         <set>Qt::AlignHCenter|Qt::AlignTop</set>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
         </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="draftEmptyWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>223</width>
+           <height>797</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>223</width>
+           <height>797</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QWidget" name="draftCMRadiantWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>223</width>
+           <height>797</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>223</width>
+           <height>797</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <widget class="QLabel" name="draftCMRadiantPB21">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>734</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB19">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>654</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB13">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>440</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB14">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>494</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB1">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>36</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB12">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>414</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB0">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>118</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB8">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>278</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB7">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>224</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>198</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB5">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>144</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB3">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>90</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB11">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>386</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>306</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB16">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>548</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>360</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>64</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB15">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>520</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB18">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>628</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB17">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>574</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMRadiantPB20">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>708</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="draftCMDireWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>223</width>
+           <height>797</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>223</width>
+           <height>797</height>
+          </size>
+         </property>
+         <widget class="QLabel" name="draftCMDirePB11">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>386</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>144</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB13">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>440</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>224</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB4">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>118</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>36</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB20">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>708</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB15">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>520</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB6">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>198</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB0">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>10</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB19">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>654</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB17">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>574</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB16">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>548</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB10">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>360</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB9">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>306</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB12">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>414</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>278</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB18">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>628</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB14">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>494</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB2">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>64</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="draftCMDirePB21">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>734</y>
+            <width>100</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="application.qrc">:/images/dota/heroes/empty.png</pixmap>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </item>
       <item>
-       <spacer name="verticalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="direTitle">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>24</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Dire</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="direWinIcon">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="application.qrc">:/images/application/crown.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="direTeam">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>direTeam</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignHCenter|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
       </item>
      </layout>
     </item>

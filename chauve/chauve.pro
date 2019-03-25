@@ -45,7 +45,6 @@ HEADERS += \
     settingsmanager.h
 
 FORMS += \
-    mainwindow.ui \
     replaywidget.ui \
     settingsdialog.ui
 
