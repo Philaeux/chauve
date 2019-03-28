@@ -62,3 +62,16 @@ DISTFILES += \
     protobuf/network_connection.proto \
     protobuf/networkbasetypes.proto \
     protobuf/usermessages.proto
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../lib/protobuf-3.7.1/win_x86/ -llibprotobuf
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../lib/protobuf-3.7.1/win_x86/ -llibprotobufd
+else:unix: LIBS += -L$$PWD/../lib/protobuf-3.7.1/win_x86/ -llibprotobuf
+
+INCLUDEPATH += $$PWD/../lib/protobuf-3.7.1/win_x86
+DEPENDPATH += $$PWD/../lib/protobuf-3.7.1/win_x86
+
+win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../lib/protobuf-3.7.1/win_x86/liblibprotobuf.a
+else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../lib/protobuf-3.7.1/win_x86/liblibprotobufd.a
+else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../lib/protobuf-3.7.1/win_x86/libprotobuf.lib
+else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../lib/protobuf-3.7.1/win_x86/libprotobufd.lib
+else:unix: PRE_TARGETDEPS += $$PWD/../lib/protobuf-3.7.1/win_x86/liblibprotobuf.a

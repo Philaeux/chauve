@@ -4,6 +4,7 @@
 #include <fstream>
 
 #include "replay.h"
+#include "protobuf/demo.pb.h"
 
 using namespace std;
 
