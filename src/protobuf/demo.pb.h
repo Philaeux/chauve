@@ -4,6 +4,8 @@
 #ifndef PROTOBUF_INCLUDED_demo_2eproto
 #define PROTOBUF_INCLUDED_demo_2eproto
 
+#define PROTOBUF_USE_DLLS
+
 #include <limits>
 #include <string>
 

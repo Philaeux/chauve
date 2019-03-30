@@ -15,6 +15,7 @@ if (WIN32)
 	foreach(QTDLL Core Gui Widgets)
 		file(COPY ${Qt5_DIR}/../../../bin/Qt5${QTDLL}.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 	endforeach(QTDLL)
+	file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobuf.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 endif()
 
 # Repository files and generation
@@ -31,6 +32,7 @@ qt5_add_resources(${RESOURCES})
 add_executable(chauve ${RESOURCES} ${SOURCES} ${HEADERS} ${UIS})
 
 # Link libraries
+set(PROTOBUF_USE_DLLS TRUE)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/include/)
 target_link_libraries(chauve Qt5::Core Qt5::Gui Qt5::Widgets ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobuf.lib)
 
