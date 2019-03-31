@@ -4,6 +4,10 @@
 #ifndef PROTOBUF_INCLUDED_dota_5fcommonmessages_2eproto
 #define PROTOBUF_INCLUDED_dota_5fcommonmessages_2eproto
 
+#ifndef PROTOBUF_USE_DLLS
+#define PROTOBUF_USE_DLLS
+#endif
+
 #include <limits>
 #include <string>
 
