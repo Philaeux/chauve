@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     splash->showMessage(QObject::tr("Loading database..."),
                         topRight, Qt::white);
     //TODO import database information into the window/modules
-    
+
     window.show();
     splash->finish(&window);
     delete splash;

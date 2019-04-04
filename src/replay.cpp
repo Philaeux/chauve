@@ -4,6 +4,7 @@
 #include <fstream>
 
 #include "replay.h"
+#include "protobuf/demo.pb.h"
 
 using namespace std;
 
@@ -76,11 +77,10 @@ void Replay::Parse() {
         if (tick == 4294967295) tick = 0;
 
         bool compressed = false;
-        //if ( command & DEM_COMPRESSED) {
-        //  compressed = true
-        //  command = command & ^DEM_COMPRESSED
-        //}
-
+        if ( command & DEM_IsCompressed) {
+          compressed = true;
+          command = command ^ DEM_IsCompressed;
+        }
 
         qDebug() << "command = '" << command << "'";
         qDebug() << "tick = '" << tick << "'";
