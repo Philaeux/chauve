@@ -4,6 +4,7 @@
 #include <QWidget>
 
 #include "ui_replaywidget.h"
+#include "replay.h"
 
 class ReplayWidget : public QWidget, public Ui::ReplayWidget
 {
@@ -19,6 +20,9 @@ public slots:
     void ScanReplayFolder();
     void ChangeSelectedReplay(QListWidgetItem *selected_replay);
 
+private:
+	void HideReplayInfoSection();
+	void ReplayWidget::DisplayReplayInfoSection(Replay *replay);
 };
 
 #endif // REPLAYWIDGET_H

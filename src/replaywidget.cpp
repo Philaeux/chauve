@@ -5,6 +5,7 @@
 #include "settingsmanager.h"
 #include "replaymanager.h"
 #include "replay.h"
+#include "protobuf/dota_shared_enums.pb.h"
 
 // Initialize the tool
 ReplayWidget::ReplayWidget(QWidget *parent) :
@@ -12,10 +13,7 @@ ReplayWidget::ReplayWidget(QWidget *parent) :
 {
     setupUi(this);
 
-    radiantWinIcon->hide();
-    radiantTeam->setText("");
-    direWinIcon->hide();
-    direTeam->setText("");
+	HideReplayInfoSection();
 
     connect(refreshButton, SIGNAL(clicked()),
             this, SLOT(ScanReplayFolder()));
@@ -32,9 +30,11 @@ void ReplayWidget::ScanReplayFolder(){
     QStringList files = replay_dir.entryList(QStringList(QString("*.dem")),
                                              QDir::NoDotAndDotDot | QDir::Files,
                                              QDir::Name);
+	files.sort();
     for(int i = 0; i < files.count(); i++) {
         files[i].resize(files[i].length()-4);
     }
+	std::reverse(files.begin(), files.end());
     replayList->addItems(files);
 }
 
@@ -52,4 +52,46 @@ void ReplayWidget::ChangeSelectedReplay(QListWidgetItem *selected_replay) {
     if (!replay->IsReplayParsed()) {
         replay->Parse();
     }
+
+	HideReplayInfoSection();
+	DisplayReplayInfoSection(replay);
+}
+
+void ReplayWidget::HideReplayInfoSection() {
+	radiantWinIcon->hide();
+	radiantTeam->setText("");
+	direWinIcon->hide();
+	direTeam->setText("");
+	gameDate->setText("");
+	gameMode->setText("");
+}
+
+
+void ReplayWidget::DisplayReplayInfoSection(Replay *replay) {
+	// Display Teams
+	radiantTeam->setText(QString::fromStdString(replay->GetRadiantTeam().tag));
+	direTeam->setText(QString::fromStdString(replay->GetDireTeam().tag));
+	if (replay->GetGameInfo().winner == 2) {
+		radiantWinIcon->show();
+	}
+	else {
+		direWinIcon->show();
+	}
+
+	// Display Players
+	// TODO
+
+	// Display game mode and time
+	switch (replay->GetGameInfo().mode) {
+	case DOTA_GAMEMODE_CM: gameMode->setText(QString("CM")); break;
+	case DOTA_GAMEMODE_AR: gameMode->setText(QString("AR")); break;
+	case DOTA_GAMEMODE_SD: gameMode->setText(QString("SD")); break;
+	case DOTA_GAMEMODE_CD: gameMode->setText(QString("CD")); break;
+	case DOTA_GAMEMODE_RD: gameMode->setText(QString("RD")); break;
+	case DOTA_GAMEMODE_ALL_DRAFT: gameMode->setText(QString("Matchmaking Draft")); break;
+	default: gameMode->setText(QString("??")); break;
+	}
+
+	// Display Draft
+	// TODO
 }

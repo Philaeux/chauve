@@ -3,6 +3,19 @@
 
 #include <QString>
 
+struct team {
+	uint32_t id;
+	std::string tag;
+};
+
+struct game_info {
+	uint64_t id;
+	uint32_t league;
+	int32_t mode;
+	int32_t winner;
+	uint32_t end_time;
+};
+
 class Replay
 {
     // Class containing all the replay informations
@@ -18,20 +31,19 @@ public:
     QString GetDemPath();
     bool IsReplayParsed();
 
+	team GetRadiantTeam();
+	team GetDireTeam();
+	game_info GetGameInfo();
+
 private:
     QString game_id_;
     QString dem_path_;
     QString parse_state_;
 
     // Parsed info
-    QString radiant_team_name_;
-    QString dire_team_name_;
-    int radiant_team_id_;
-    int dire_team_id_;
-    QString game_mode_;
-    int winner_;
-    int end_;
-    int duration_;
+	team radiant_team_;
+	team dire_team_;
+	game_info game_info_;
 };
 
 #endif // REPLAY_H

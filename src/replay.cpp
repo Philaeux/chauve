@@ -3,6 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <iostream>
+#include <ctime>
 
 #include "replay.h"
 #include "snappy.h"
@@ -32,6 +33,18 @@ QString Replay::GetDemPath() {
 
 bool Replay::IsReplayParsed() {
     return parse_state_ != QString("NOT_PARSED");
+}
+
+team Replay::GetRadiantTeam() {
+	return radiant_team_;
+}
+
+team Replay::GetDireTeam() {
+	return dire_team_;
+}
+
+game_info Replay::GetGameInfo() {
+	return game_info_;
 }
 
 struct dem_header {
@@ -142,14 +155,25 @@ void Replay::Parse() {
 
 	CDemoFileInfo info;
 	info.ParseFromArray(packet.data, packet.size); // Here info has all
-	cout << info.game_info().dota().match_id() << endl;
+	auto game_info = info.game_info().dota();
+	if (game_info.has_radiant_team_id()) radiant_team_.id = game_info.radiant_team_id();
+	if (game_info.has_radiant_team_tag()) radiant_team_.tag = game_info.radiant_team_tag();
+	if (game_info.has_dire_team_id()) dire_team_.id = game_info.dire_team_id();
+	if (game_info.has_dire_team_tag()) dire_team_.tag = game_info.dire_team_tag();
+	if (game_info.has_match_id()) game_info_.id = game_info.match_id();
+	if (game_info.has_game_mode()) game_info_.mode = game_info.game_mode();
+	if (game_info.has_game_winner()) game_info_.winner = game_info.game_winner();
+	if (game_info.has_leagueid()) game_info_.league = game_info.leagueid();
+	if (game_info.has_end_time()) game_info_.end_time = game_info.end_time();
+
+	cout << game_info_.winner << endl;
+	cout << game_info_.mode << endl;
 
 	// Clean data used
 	delete[] snappyBuffer;
 	delete[] dem_data;
 
     parse_state_ = QString("PARSED");
-
 }
 
 // Replay info getters
