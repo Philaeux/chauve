@@ -1,5 +1,8 @@
 #include <QDebug>
 #include <QDir>
+#include <iomanip>
+#include <ctime>
+#include <sstream>
 
 #include "replaywidget.h"
 #include "settingsmanager.h"
@@ -62,8 +65,9 @@ void ReplayWidget::HideReplayInfoSection() {
 	radiantTeam->setText("");
 	direWinIcon->hide();
 	direTeam->setText("");
-	gameDate->setText("");
+	gameEndDate->setText("");
 	gameMode->setText("");
+	gameEndDate->setText("");
 }
 
 
@@ -91,6 +95,11 @@ void ReplayWidget::DisplayReplayInfoSection(Replay *replay) {
 	case DOTA_GAMEMODE_ALL_DRAFT: gameMode->setText(QString("Matchmaking Draft")); break;
 	default: gameMode->setText(QString("??")); break;
 	}
+	
+	std::time_t endTime = (std::time_t) replay->GetGameInfo().end_time;
+	std::stringstream ss;
+	ss << std::put_time(std::gmtime(&endTime), "%e/%m %H:%M GMT");
+	gameEndDate->setText(QString::fromStdString(ss.str()));
 
 	// Display Draft
 	// TODO

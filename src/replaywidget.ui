@@ -187,7 +187,7 @@
          </spacer>
         </item>
         <item>
-         <widget class="QLabel" name="gameDate">
+         <widget class="QLabel" name="gameEndDate">
           <property name="font">
            <font>
             <pointsize>14</pointsize>
