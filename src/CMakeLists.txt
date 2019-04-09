@@ -41,7 +41,7 @@ qt5_add_resources(${RESOURCES})
 add_executable(chauve ${RESOURCES} ${SOURCES} ${HEADERS} ${UIS})
 if (WIN32)
 	if(CMAKE_BUILD_TYPE STREQUAL "Release")
-		# set_property(TARGET chauve PROPERTY WIN32_EXECUTABLE true)
+		set_property(TARGET chauve PROPERTY WIN32_EXECUTABLE true)
 	endif()
 endif()
 

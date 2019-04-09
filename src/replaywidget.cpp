@@ -1,5 +1,8 @@
 #include <QDebug>
 #include <QDir>
+#include <QString>
+#include <QLabel>
+#include <QPixmap>
 #include <iomanip>
 #include <ctime>
 #include <sstream>
@@ -93,11 +96,25 @@ void ReplayWidget::DisplayReplayInfoSection(Replay *replay) {
 	case DOTA_GAMEMODE_CM: 
 		gameMode->setText(QString("CM"));
 		if (replay->GetDraft().size() == 22) {
+			QString prefix;
 			if (replay->GetDraft()[0].team == 2) {
 				draftStackedWidget->setCurrentIndex(1);
+				prefix = QString("draftCMRadiantPB");
 			}
 			else if (replay->GetDraft()[0].team == 3) {
 				draftStackedWidget->setCurrentIndex(2);
+				prefix = QString("draftCMDirePB");
+			}
+			for (std::size_t i = 0; i < replay->GetDraft().size(); i++) {
+				Hero hero = Hero::FindHeroById(replay->GetDraft()[i].hero_id);
+				QLabel *heroImage = draftStackedWidget->findChild<QLabel *>(prefix + QString::number(i));
+				QImage image = QImage(QString::fromStdString(":/images/dota/heroes/" + hero.GetName() + ".png"));
+				if (!replay->GetDraft()[i].is_pick) {
+					image = image.convertToFormat(QImage::Format_Grayscale8);
+				}
+				QPixmap pixmap = QPixmap::fromImage(image);
+				pixmap = pixmap.scaledToWidth(100);
+				heroImage->setPixmap(pixmap);
 			}
 		}
 		break;
@@ -113,11 +130,4 @@ void ReplayWidget::DisplayReplayInfoSection(Replay *replay) {
 	std::stringstream ss;
 	ss << std::put_time(std::gmtime(&endTime), "%e/%m %H:%M GMT");
 	gameEndDate->setText(QString::fromStdString(ss.str()));
-
-	// Display Draft
-	if (replay->GetDraft().size() != 0) {
-		std::cout << "NEW REPLAY DISPLAY: " << std::endl;
-		Hero h = Hero::FindHeroById(replay->GetDraft()[0].hero_id);
-		std::cout << h.GetName() << std::endl;
-	}
 }
