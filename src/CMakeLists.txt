@@ -18,22 +18,21 @@ if (WIN32)
 		endforeach(QTDLL)
 		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobuf.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../snappy-1.1.7/win_x64/snappy.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-				
 	else(CMAKE_BUILD_TYPE STREQUAL "Debug")	
 		foreach(QTDLL Core Gui Widgets)
 			file(COPY ${Qt5_DIR}/../../../bin/Qt5${QTDLL}d.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 		endforeach(QTDLL)
-		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobuf.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
-		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../snappy-1.1.7/win_x64/snappy.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobufd.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../snappy-1.1.7/win_x64/snappyd.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 	endif()
 endif()
 
 # Repository files and generation
 set(SOURCES main.cpp 
-	mainwindow.cpp replay.cpp replaymanager.cpp replaywidget.cpp settingsdialog.cpp settingsmanager.cpp 
+	mainwindow.cpp replay.cpp hero.cpp replaymanager.cpp replaywidget.cpp settingsdialog.cpp settingsmanager.cpp 
 	protobuf/demo.pb.cc protobuf/dota_commonmessages.pb.cc protobuf/dota_shared_enums.pb.cc protobuf/dota_usermessages.pb.cc protobuf/netmessages.pb.cc protobuf/network_connection.pb.cc protobuf/networkbasetypes.pb.cc protobuf/usermessages.pb.cc) 
 set(HEADERS 
-	mainwindow.h replay.h replaymanager.h replaywidget.h settingsdialog.h settingsmanager.h 
+	mainwindow.h replay.h hero.h replaymanager.h replaywidget.h settingsdialog.h settingsmanager.h 
 	protobuf/demo.pb.h protobuf/dota_commonmessages.pb.h protobuf/dota_shared_enums.pb.h protobuf/dota_usermessages.pb.h protobuf/netmessages.pb.h protobuf/network_connection.pb.h protobuf/networkbasetypes.pb.h protobuf/usermessages.pb.h)
 set(UIS replaywidget.ui settingsdialog.ui)
 set(RESOURCES application.qrc)
@@ -53,10 +52,10 @@ target_link_libraries(chauve Qt5::Core Qt5::Gui Qt5::Widgets)
 if (WIN32)
 	if(CMAKE_BUILD_TYPE STREQUAL "Release")
 		target_link_libraries(chauve ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobuf.lib)
-		target_link_libraries(chauve ${CMAKE_CURRENT_SOURCE_DIR}/../snappy-1.1.7/win_x64/snappy.lib)		
+		target_link_libraries(chauve ${CMAKE_CURRENT_SOURCE_DIR}/../snappy-1.1.7/win_x64/snappy.lib)	
 	else(CMAKE_BUILD_TYPE STREQUAL "Debug")	
-		target_link_libraries(chauve ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobuf.lib)
-		target_link_libraries(chauve ${CMAKE_CURRENT_SOURCE_DIR}/../snappy-1.1.7/win_x64/snappyd.lib)
+		target_link_libraries(chauve ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobufd.lib)
+		target_link_libraries(chauve ${CMAKE_CURRENT_SOURCE_DIR}/../snappy-1.1.7/win_x64/snappyd.lib)	
 	endif()
 else()
 	find_package(Protobuf REQUIRED)

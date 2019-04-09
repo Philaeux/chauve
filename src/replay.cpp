@@ -47,6 +47,11 @@ game_info Replay::GetGameInfo() {
 	return game_info_;
 }
 
+
+std::vector<draft_select> const Replay::GetDraft() {
+	return draft_;
+}
+
 struct dem_header {
 	/** Used for verification purposes, needs to equal DOTA_HEADERID */
 	char headerid[8];
@@ -137,7 +142,7 @@ void Replay::Parse() {
 
 	// Start parsing
 	char* head = dem_data;
-	char* snappyBuffer = new char[409600];
+	char snappyBuffer[409600];
 	dem_header* header = (dem_header*)head;
 
 	if (string(header->headerid) != string("PBDEMS2")) {
@@ -166,11 +171,11 @@ void Replay::Parse() {
 	if (game_info.has_leagueid()) game_info_.league = game_info.leagueid();
 	if (game_info.has_end_time()) game_info_.end_time = game_info.end_time();
 
-	cout << game_info_.winner << endl;
-	cout << game_info_.mode << endl;
+	for (auto &select_event : *game_info.mutable_picks_bans()) {
+		draft_.push_back(draft_select{ select_event.is_pick(), select_event.team(), select_event.hero_id() });
+	}
 
 	// Clean data used
-	delete[] snappyBuffer;
 	delete[] dem_data;
 
     parse_state_ = QString("PARSED");

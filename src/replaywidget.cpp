@@ -3,11 +3,13 @@
 #include <iomanip>
 #include <ctime>
 #include <sstream>
+#include <iostream>
 
 #include "replaywidget.h"
 #include "settingsmanager.h"
 #include "replaymanager.h"
 #include "replay.h"
+#include "hero.h"
 #include "protobuf/dota_shared_enums.pb.h"
 
 // Initialize the tool
@@ -68,6 +70,7 @@ void ReplayWidget::HideReplayInfoSection() {
 	gameEndDate->setText("");
 	gameMode->setText("");
 	gameEndDate->setText("");
+	draftStackedWidget->setCurrentIndex(0);
 }
 
 
@@ -85,9 +88,19 @@ void ReplayWidget::DisplayReplayInfoSection(Replay *replay) {
 	// Display Players
 	// TODO
 
-	// Display game mode and time
+	// Display game mode and draft
 	switch (replay->GetGameInfo().mode) {
-	case DOTA_GAMEMODE_CM: gameMode->setText(QString("CM")); break;
+	case DOTA_GAMEMODE_CM: 
+		gameMode->setText(QString("CM"));
+		if (replay->GetDraft().size() == 22) {
+			if (replay->GetDraft()[0].team == 2) {
+				draftStackedWidget->setCurrentIndex(1);
+			}
+			else if (replay->GetDraft()[0].team == 3) {
+				draftStackedWidget->setCurrentIndex(2);
+			}
+		}
+		break;
 	case DOTA_GAMEMODE_AR: gameMode->setText(QString("AR")); break;
 	case DOTA_GAMEMODE_SD: gameMode->setText(QString("SD")); break;
 	case DOTA_GAMEMODE_CD: gameMode->setText(QString("CD")); break;
@@ -102,5 +115,9 @@ void ReplayWidget::DisplayReplayInfoSection(Replay *replay) {
 	gameEndDate->setText(QString::fromStdString(ss.str()));
 
 	// Display Draft
-	// TODO
+	if (replay->GetDraft().size() != 0) {
+		std::cout << "NEW REPLAY DISPLAY: " << std::endl;
+		Hero h = Hero::FindHeroById(replay->GetDraft()[0].hero_id);
+		std::cout << h.GetName() << std::endl;
+	}
 }

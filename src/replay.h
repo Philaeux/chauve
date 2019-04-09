@@ -16,6 +16,12 @@ struct game_info {
 	uint32_t end_time;
 };
 
+struct draft_select {
+	bool is_pick;
+	uint32_t team;
+	uint32_t hero_id;
+};
+
 class Replay
 {
     // Class containing all the replay informations
@@ -34,6 +40,7 @@ public:
 	team GetRadiantTeam();
 	team GetDireTeam();
 	game_info GetGameInfo();
+	std::vector<draft_select> const GetDraft();
 
 private:
     QString game_id_;
@@ -44,6 +51,7 @@ private:
 	team radiant_team_;
 	team dire_team_;
 	game_info game_info_;
+	std::vector<draft_select> draft_;
 };
 
 #endif // REPLAY_H
