@@ -16,6 +16,11 @@ ReplayWidget::ReplayWidget(QWidget *parent) :
     QWidget(parent)
 {
     setupUi(this);
+	gamesTable->setColumnWidth(0, 85);
+	gamesTable->setColumnWidth(1, 60);
+	gamesTable->setColumnWidth(2, 85);
+	gamesTable->setColumnWidth(3, 85);
+	gamesTable->setColumnWidth(4, 85);
 
 	ClearReplayInfoSection();
 
@@ -56,8 +61,17 @@ void ReplayWidget::UpdateGameList() {
 		item = FactoryTableItem(QString::number(rit->first));
 		gamesTable->setItem(index, 0, item);
 
+		item = FactoryTableItem(QString::fromStdString(rit->second->GetMode()));
+		gamesTable->setItem(index, 1, item);
+
 		item = FactoryTableItem(QString::fromStdString(rit->second->GetEndDate()));
 		gamesTable->setItem(index, 2, item);
+
+		item = FactoryTableItem(QString::fromStdString(rit->second->GetRadiantTeam().tag));
+		gamesTable->setItem(index, 3, item);
+
+		item = FactoryTableItem(QString::fromStdString(rit->second->GetDireTeam().tag));
+		gamesTable->setItem(index, 4, item);
 		
 		index++;
 	}
@@ -83,8 +97,17 @@ void ReplayWidget::UpdateRowAt(int row) {
 	auto game_id = std::stoull(gamesTable->item(row, 0)->text().toStdString());
 	Replay* replay = ReplayManager::Instance().GetReplay(game_id);
 
-	QTableWidgetItem *item = FactoryTableItem(QString::fromStdString(replay->GetEndDate()));
+	QTableWidgetItem *item = FactoryTableItem(QString::fromStdString(replay->GetMode()));
+	gamesTable->setItem(row, 1, item);
+
+	item = FactoryTableItem(QString::fromStdString(replay->GetEndDate()));
 	gamesTable->setItem(row, 2, item);
+
+	item = FactoryTableItem(QString::fromStdString(replay->GetRadiantTeam().tag));
+	gamesTable->setItem(row, 3, item);
+
+	item = FactoryTableItem(QString::fromStdString(replay->GetDireTeam().tag));
+	gamesTable->setItem(row, 4, item);
 }
 
 QTableWidgetItem* ReplayWidget::FactoryTableItem(const QString& text) {
@@ -100,7 +123,6 @@ void ReplayWidget::ClearReplayInfoSection() {
 	radiantTeam->setText("");
 	direWinIcon->hide();
 	direTeam->setText("");
-	gameMode->setText("");
 	draftStackedWidget->setCurrentIndex(0);
 }
 
@@ -119,10 +141,9 @@ void ReplayWidget::PopulateReplayInfoSection(Replay *replay) {
 	// Display Players
 	// TODO
 
-	// Display game mode and draft
+	// Display draft
 	switch (replay->GetGameInfo().mode) {
 	case DOTA_GAMEMODE_CM: 
-		gameMode->setText(QString("CM"));
 		if (replay->GetDraft().size() == 22) {
 			QString prefix;
 			if (replay->GetDraft()[0].team == 2) {
@@ -146,11 +167,7 @@ void ReplayWidget::PopulateReplayInfoSection(Replay *replay) {
 			}
 		}
 		break;
-	case DOTA_GAMEMODE_AR: gameMode->setText(QString("AR")); break;
-	case DOTA_GAMEMODE_SD: gameMode->setText(QString("SD")); break;
-	case DOTA_GAMEMODE_CD: gameMode->setText(QString("CD")); break;
-	case DOTA_GAMEMODE_RD: gameMode->setText(QString("RD")); break;
-	case DOTA_GAMEMODE_ALL_DRAFT: gameMode->setText(QString("Matchmaking Draft")); break;
-	default: gameMode->setText(QString("??")); break;
+	default: 
+		break;
 	}
 }

@@ -11,6 +11,7 @@
 #include "replay.h"
 #include "snappy.h"
 #include "protobuf/demo.pb.h"
+#include "protobuf/dota_shared_enums.pb.h"
 
 using namespace std;
 
@@ -58,6 +59,28 @@ std::string Replay::GetEndDate() {
 	std::stringstream ss;
 	ss << std::put_time(std::gmtime(&endTime), "%d/%m %H:%M");
 	return ss.str();
+}
+
+std::string Replay::GetMode() {
+	if (!IsReplayParsed())
+		return "";
+
+	switch (game_info_.mode) {
+	case DOTA_GAMEMODE_CM:
+		return "CM";
+	case DOTA_GAMEMODE_AR: 
+		return "AR";
+	case DOTA_GAMEMODE_SD: 
+		return "SD";
+	case DOTA_GAMEMODE_CD:
+		return "CD";
+	case DOTA_GAMEMODE_RD:
+		return "RD";
+	case DOTA_GAMEMODE_ALL_DRAFT:
+		return "MM-AP";
+	default:
+		return std::to_string(game_info_.mode);
+	}
 }
 
 std::vector<draft_select> const Replay::GetDraft() {

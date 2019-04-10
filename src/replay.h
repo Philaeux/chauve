@@ -37,6 +37,7 @@ public:
     QString GetDemPath();
     bool IsReplayParsed();
 	std::string GetEndDate();
+	std::string GetMode();
 
 	team GetRadiantTeam();
 	team GetDireTeam();
