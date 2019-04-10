@@ -4,6 +4,9 @@
 #include <fstream>
 #include <iostream>
 #include <ctime>
+#include <iostream>
+#include <iomanip>
+#include <sstream>
 
 #include "replay.h"
 #include "snappy.h"
@@ -12,7 +15,7 @@
 using namespace std;
 
 // Replay file stuff
-Replay::Replay(QString game_id, QString dem_path = nullptr)
+Replay::Replay(uint64_t game_id, QString dem_path = nullptr)
 {
     game_id_ = game_id;
     dem_path_ = dem_path;
@@ -23,7 +26,7 @@ bool Replay::HasReplayOnDisk() {
     return dem_path_ != nullptr;
 }
 
-QString Replay::GetGameId() {
+uint64_t Replay::GetGameId() {
     return game_id_;
 }
 
@@ -32,7 +35,7 @@ QString Replay::GetDemPath() {
 }
 
 bool Replay::IsReplayParsed() {
-    return parse_state_ != QString("NOT_PARSED");
+    return parse_state_ == QString("PARSED");
 }
 
 team Replay::GetRadiantTeam() {
@@ -47,6 +50,15 @@ game_info Replay::GetGameInfo() {
 	return game_info_;
 }
 
+std::string Replay::GetEndDate() {
+	if (!IsReplayParsed())
+		return "";
+
+	std::time_t endTime = (std::time_t) game_info_.end_time;
+	std::stringstream ss;
+	ss << std::put_time(std::gmtime(&endTime), "%d/%m %H:%M");
+	return ss.str();
+}
 
 std::vector<draft_select> const Replay::GetDraft() {
 	return draft_;

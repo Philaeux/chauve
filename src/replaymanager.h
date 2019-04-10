@@ -2,7 +2,7 @@
 #define REPLAYMANAGER_H
 
 #include <QtCore>
-#include <QMap>
+#include <map>
 
 #include "replay.h"
 
@@ -15,18 +15,18 @@ class ReplayManager: public QObject
 public:
     // Singleton instance
     static ReplayManager& Instance();
-    Replay* GetReplay(QString game_id);
+    Replay* GetReplay(uint64_t game_id);
     void AddReplay(Replay *replay);
+
+
+	// Storing all replay informations
+	std::map<uint64_t, Replay*> replays_;
 
 private:
     // Singleton definition
     ReplayManager();
     ~ReplayManager();
     static ReplayManager instance_;
-
-    // Storing all replay informations
-    QMap<QString, Replay*> replays_;
-
 };
 
 #endif // REPLAYMANAGER_H

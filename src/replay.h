@@ -30,12 +30,13 @@ class Replay
     // - parse_state_ info if the replay has been parsed or not
 
 public:
-    Replay(QString game_id, QString dem_path);
+    Replay(uint64_t game_id, QString dem_path);
     bool HasReplayOnDisk();
     void Parse();
-    QString GetGameId();
+	uint64_t GetGameId();
     QString GetDemPath();
     bool IsReplayParsed();
+	std::string GetEndDate();
 
 	team GetRadiantTeam();
 	team GetDireTeam();
@@ -43,7 +44,7 @@ public:
 	std::vector<draft_select> const GetDraft();
 
 private:
-    QString game_id_;
+	uint64_t game_id_;
     QString dem_path_;
     QString parse_state_;
 

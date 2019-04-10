@@ -3,10 +3,6 @@
 #include <QString>
 #include <QLabel>
 #include <QPixmap>
-#include <iomanip>
-#include <ctime>
-#include <sstream>
-#include <iostream>
 
 #include "replaywidget.h"
 #include "settingsmanager.h"
@@ -21,63 +17,95 @@ ReplayWidget::ReplayWidget(QWidget *parent) :
 {
     setupUi(this);
 
-	HideReplayInfoSection();
+	ClearReplayInfoSection();
 
     connect(refreshButton, SIGNAL(clicked()),
             this, SLOT(ScanReplayFolder()));
     connect(&SettingsManager::Instance(), SIGNAL(SteamReplayPathUpdated(const QString &)),
             this, SLOT(ScanReplayFolder()));
-    connect(replayList, SIGNAL(currentItemChanged(QListWidgetItem *, QListWidgetItem *)),
-            this, SLOT(ChangeSelectedReplay(QListWidgetItem *)));
+	connect(gamesTable, SIGNAL(currentCellChanged(int, int, int, int)),
+			this, SLOT(ReplayCellChanged(int, int, int, int)));
 }
 
 // Scan *.dem files contained in the replay folder
 void ReplayWidget::ScanReplayFolder(){
     QDir replay_dir = QDir(SettingsManager::Instance().GetSteamReplayPath());
-    replayList->clear();
     QStringList files = replay_dir.entryList(QStringList(QString("*.dem")),
                                              QDir::NoDotAndDotDot | QDir::Files,
                                              QDir::Name);
-	files.sort();
     for(int i = 0; i < files.count(); i++) {
-        files[i].resize(files[i].length()-4);
+		files[i].resize(files[i].length() - 4);
+		auto game_id = std::stoull(files[i].toStdString());
+		Replay* replay = ReplayManager::Instance().GetReplay(game_id);
+		if (replay == nullptr) {
+			replay = new Replay(game_id, SettingsManager::Instance().GetSteamReplayPath().append("/" + files[i] + ".dem"));
+			ReplayManager::Instance().AddReplay(replay);
+		}
     }
-	std::reverse(files.begin(), files.end());
-    replayList->addItems(files);
+	
+	UpdateGameList();
 }
 
-void ReplayWidget::ChangeSelectedReplay(QListWidgetItem *selected_replay) {
-    if (selected_replay == nullptr)
-        return;
+void ReplayWidget::UpdateGameList() {
+	gamesTable->clearContents();
+	gamesTable->setRowCount(ReplayManager::Instance().replays_.size());
+	int32_t index = 0;
+	for (auto rit = ReplayManager::Instance().replays_.rbegin(); rit != ReplayManager::Instance().replays_.rend(); rit++) {
+		QTableWidgetItem *item;
 
-    Replay* replay = ReplayManager::Instance().GetReplay(selected_replay->text());
-    if (replay == nullptr) {
-        replay = new Replay(selected_replay->text(),
-                            SettingsManager::Instance().GetSteamReplayPath()
-                                                       .append("/" + selected_replay->text() + ".dem"));
-        ReplayManager::Instance().AddReplay(replay);
-    }
-    if (!replay->IsReplayParsed()) {
-        replay->Parse();
-    }
+		item = FactoryTableItem(QString::number(rit->first));
+		gamesTable->setItem(index, 0, item);
 
-	HideReplayInfoSection();
-	DisplayReplayInfoSection(replay);
+		item = FactoryTableItem(QString::fromStdString(rit->second->GetEndDate()));
+		gamesTable->setItem(index, 2, item);
+		
+		index++;
+	}
+
 }
 
-void ReplayWidget::HideReplayInfoSection() {
+void ReplayWidget::ReplayCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn) {
+	if (currentRow == -1)
+		return;
+
+	auto game_id = std::stoull(gamesTable->item(currentRow, 0)->text().toStdString());
+	Replay* replay = ReplayManager::Instance().GetReplay(game_id);
+	if (!replay->IsReplayParsed()) {
+		replay->Parse();
+		UpdateRowAt(currentRow);
+	}
+
+	ClearReplayInfoSection();
+	PopulateReplayInfoSection(replay);
+};
+
+void ReplayWidget::UpdateRowAt(int row) {
+	auto game_id = std::stoull(gamesTable->item(row, 0)->text().toStdString());
+	Replay* replay = ReplayManager::Instance().GetReplay(game_id);
+
+	QTableWidgetItem *item = FactoryTableItem(QString::fromStdString(replay->GetEndDate()));
+	gamesTable->setItem(row, 2, item);
+}
+
+QTableWidgetItem* ReplayWidget::FactoryTableItem(const QString& text) {
+	QTableWidgetItem* item = new QTableWidgetItem(text);
+	item->setFlags(item->flags() & ~Qt::ItemIsEditable);
+	item->setTextAlignment(Qt::AlignCenter);
+	return item;
+}
+
+
+void ReplayWidget::ClearReplayInfoSection() {
 	radiantWinIcon->hide();
 	radiantTeam->setText("");
 	direWinIcon->hide();
 	direTeam->setText("");
-	gameEndDate->setText("");
 	gameMode->setText("");
-	gameEndDate->setText("");
 	draftStackedWidget->setCurrentIndex(0);
 }
 
 
-void ReplayWidget::DisplayReplayInfoSection(Replay *replay) {
+void ReplayWidget::PopulateReplayInfoSection(Replay *replay) {
 	// Display Teams
 	radiantTeam->setText(QString::fromStdString(replay->GetRadiantTeam().tag));
 	direTeam->setText(QString::fromStdString(replay->GetDireTeam().tag));
@@ -125,9 +153,4 @@ void ReplayWidget::DisplayReplayInfoSection(Replay *replay) {
 	case DOTA_GAMEMODE_ALL_DRAFT: gameMode->setText(QString("Matchmaking Draft")); break;
 	default: gameMode->setText(QString("??")); break;
 	}
-	
-	std::time_t endTime = (std::time_t) replay->GetGameInfo().end_time;
-	std::stringstream ss;
-	ss << std::put_time(std::gmtime(&endTime), "%e/%m %H:%M GMT");
-	gameEndDate->setText(QString::fromStdString(ss.str()));
 }

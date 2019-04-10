@@ -21,15 +21,15 @@ ReplayManager& ReplayManager::Instance()
     return instance_;
 }
 
-Replay* ReplayManager::GetReplay(QString game_id) {
-    QMap<QString, Replay*>::const_iterator i = replays_.find(game_id);
-    if (i != replays_.end()) {
-        return i.value();
+Replay* ReplayManager::GetReplay(uint64_t game_id) {
+	auto it = replays_.find(game_id);
+    if (it != replays_.end()) {
+        return it->second;
     } else {
         return nullptr;
     }
 }
 
 void ReplayManager::AddReplay(Replay *replay) {
-    replays_.insert(replay->GetGameId(), replay);
+    replays_.insert(std::pair<uint64_t, Replay*>(replay->GetGameId(), replay));
 }

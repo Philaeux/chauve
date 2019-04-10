@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0 FATAL_ERROR)
 set(CMAKE_CONFIGURATION_TYPES Debug;Release)
 
-project(Chauve VERSION 0.0.2)
+project(Chauve VERSION 0.0.3)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -63,3 +63,4 @@ else()
 	find_package(Snappy REQUIRED)
 	target_link_libraries(chauve Snappy)
 endif()
+ 

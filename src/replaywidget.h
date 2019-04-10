@@ -18,11 +18,14 @@ public:
 
 public slots:
     void ScanReplayFolder();
-    void ChangeSelectedReplay(QListWidgetItem *selected_replay);
+	void UpdateGameList();
+	void ReplayCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn);
+	void UpdateRowAt(int row);
 
 private:
-	void HideReplayInfoSection();
-	void ReplayWidget::DisplayReplayInfoSection(Replay *replay);
+	QTableWidgetItem* FactoryTableItem(const QString& text);
+	void ClearReplayInfoSection();
+	void PopulateReplayInfoSection(Replay *replay);
 };
 
 #endif // REPLAYWIDGET_H
