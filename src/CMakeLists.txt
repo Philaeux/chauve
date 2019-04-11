@@ -28,14 +28,48 @@ if (WIN32)
 endif()
 
 # Repository files and generation
-set(SOURCES main.cpp 
-	mainwindow.cpp replay.cpp hero.cpp replaymanager.cpp replaywidget.cpp settingsdialog.cpp settingsmanager.cpp 
-	protobuf/demo.pb.cc protobuf/dota_commonmessages.pb.cc protobuf/dota_shared_enums.pb.cc protobuf/dota_usermessages.pb.cc protobuf/netmessages.pb.cc protobuf/network_connection.pb.cc protobuf/networkbasetypes.pb.cc protobuf/usermessages.pb.cc) 
+set(SOURCES 
+	protobuf/demo.pb.cc 
+	protobuf/dota_commonmessages.pb.cc 
+	protobuf/dota_shared_enums.pb.cc 
+	protobuf/dota_usermessages.pb.cc 
+	protobuf/netmessages.pb.cc 
+	protobuf/network_connection.pb.cc 
+	protobuf/networkbasetypes.pb.cc 
+	protobuf/usermessages.pb.cc
+	hero.cpp 
+	main.cpp 
+	mainwindow.cpp 
+	replay.cpp 
+	replaymanager.cpp 
+	replaywidget.cpp 
+	settingsdialog.cpp 
+	settingsmanager.cpp 
+) 
 set(HEADERS 
-	mainwindow.h replay.h hero.h replaymanager.h replaywidget.h settingsdialog.h settingsmanager.h 
-	protobuf/demo.pb.h protobuf/dota_commonmessages.pb.h protobuf/dota_shared_enums.pb.h protobuf/dota_usermessages.pb.h protobuf/netmessages.pb.h protobuf/network_connection.pb.h protobuf/networkbasetypes.pb.h protobuf/usermessages.pb.h)
-set(UIS replaywidget.ui settingsdialog.ui)
-set(RESOURCES application.qrc)
+	protobuf/demo.pb.h 
+	protobuf/dota_commonmessages.pb.h 
+	protobuf/dota_shared_enums.pb.h 
+	protobuf/dota_usermessages.pb.h 
+	protobuf/netmessages.pb.h 
+	protobuf/network_connection.pb.h 
+	protobuf/networkbasetypes.pb.h 
+	protobuf/usermessages.pb.h
+	hero.h
+	mainwindow.h
+	replay.h
+	replaymanager.h
+	replaywidget.h
+	settingsdialog.h
+	settingsmanager.h 
+)
+set(UIS 
+	replaywidget.ui 
+	settingsdialog.ui
+)
+set(RESOURCES 
+	application.qrc
+)
 qt5_add_resources(${RESOURCES})
 
 add_executable(chauve ${RESOURCES} ${SOURCES} ${HEADERS} ${UIS})
