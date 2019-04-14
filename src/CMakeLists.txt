@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.0.0 FATAL_ERROR)
 set(CMAKE_CONFIGURATION_TYPES Debug;Release)
 
-project(Chauve VERSION 0.0.3)
+project(Chauve VERSION 0.0.4)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
@@ -29,36 +29,40 @@ endif()
 
 # Repository files and generation
 set(SOURCES 
-	protobuf/demo.pb.cc 
-	protobuf/dota_commonmessages.pb.cc 
-	protobuf/dota_shared_enums.pb.cc 
-	protobuf/dota_usermessages.pb.cc 
-	protobuf/netmessages.pb.cc 
-	protobuf/network_connection.pb.cc 
-	protobuf/networkbasetypes.pb.cc 
-	protobuf/usermessages.pb.cc
-	hero.cpp 
+	parser/protobuf/demo.pb.cc 
+	parser/protobuf/dota_commonmessages.pb.cc 
+	parser/protobuf/dota_shared_enums.pb.cc 
+	parser/protobuf/dota_usermessages.pb.cc 
+	parser/protobuf/netmessages.pb.cc 
+	parser/protobuf/network_connection.pb.cc 
+	parser/protobuf/networkbasetypes.pb.cc 
+	parser/protobuf/usermessages.pb.cc
+	parser/hero.cpp 
+	parser/parser.cpp
+	parser/parse_result.cpp
+	game.cpp 
+	games_manager.cpp 
 	main.cpp 
 	mainwindow.cpp 
-	replay.cpp 
-	replaymanager.cpp 
 	replaywidget.cpp 
 	settingsdialog.cpp 
 	settingsmanager.cpp 
 ) 
 set(HEADERS 
-	protobuf/demo.pb.h 
-	protobuf/dota_commonmessages.pb.h 
-	protobuf/dota_shared_enums.pb.h 
-	protobuf/dota_usermessages.pb.h 
-	protobuf/netmessages.pb.h 
-	protobuf/network_connection.pb.h 
-	protobuf/networkbasetypes.pb.h 
-	protobuf/usermessages.pb.h
-	hero.h
+	parser/protobuf/demo.pb.h 
+	parser/protobuf/dota_commonmessages.pb.h 
+	parser/protobuf/dota_shared_enums.pb.h 
+	parser/protobuf/dota_usermessages.pb.h 
+	parser/protobuf/netmessages.pb.h 
+	parser/protobuf/network_connection.pb.h 
+	parser/protobuf/networkbasetypes.pb.h 
+	parser/protobuf/usermessages.pb.h
+	parser/hero.h
+	parser/parser.h
+	parser/parse_result.h
+	game.h
+	games_manager.h
 	mainwindow.h
-	replay.h
-	replaymanager.h
 	replaywidget.h
 	settingsdialog.h
 	settingsmanager.h 

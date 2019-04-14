@@ -2,9 +2,9 @@
 #include <QSplashScreen>
 #include <QPixmap>
 
+#include "games_manager.h"
 #include "mainwindow.h"
 #include "settingsmanager.h"
-#include "replaymanager.h"
 
 
 int main(int argc, char *argv[])
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     splash->showMessage(QObject::tr("Loading additional modules..."),
                         topRight, Qt::white);
     SettingsManager::Instance();
-    ReplayManager::Instance();
+    GamesManager::Instance();
 
     splash->showMessage(QObject::tr("Loading database..."),
                         topRight, Qt::white);

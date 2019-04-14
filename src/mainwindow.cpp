@@ -21,7 +21,7 @@ MainWindow::MainWindow()
 
     ReadSettings();
     setWindowIcon(QIcon(":/images/application/icon.png"));
-    setWindowTitle(tr("Chauve v0.0.3 - Dota Coaching Tools"));
+    setWindowTitle(tr("Chauve v0.0.4 - Dota Coaching Tools"));
 }
 
 void MainWindow::closeEvent(QCloseEvent *event)
@@ -62,7 +62,6 @@ void MainWindow::CreateMenus()
 
 void MainWindow::CreateStatusBar()
 {
-
 }
 
 // Settings
