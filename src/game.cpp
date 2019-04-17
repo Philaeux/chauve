@@ -2,16 +2,25 @@
 
 #include <ctime>
 #include <iomanip>
+#include <iostream>
 #include <sstream>
 
 #include "parser/parser.h"
 #include "parser/parse_result.h"
 
-// Game file stuff
-Game::Game(uint64_t game_id, std::string dem_path = "") :
+Game::Game(uint64_t game_id) :
+  game_id_{ game_id },
+  dem_path_{ "" },
+  parse_state_{ NOT_STARTED },
+  parse_result_{ game_id, 0, 0, NONE, { 0, ""}, { 0, ""}, NO_TEAM, {} }
+{
+}
+
+Game::Game(uint64_t game_id, std::string dem_path) :
   game_id_{ game_id },
   dem_path_{ dem_path },
-  parse_state_{ NOT_STARTED }
+  parse_state_{ NOT_STARTED },
+  parse_result_{ game_id, 0, 0, NONE, { 0, ""}, { 0, ""}, NO_TEAM, {} }
 {
 }
 
@@ -59,9 +68,4 @@ void Game::Parse() {
   auto [parse_state, parse_result] = parser.Parse(dem_path_);
   parse_state_ = parse_state;
   parse_result_ = parse_result;
-}
-
-// Merge the data contained in the game object into this object
-void Game::MergeWith(std::shared_ptr<Game> game) {
-  dem_path_ = game->GetDemPath();
 }

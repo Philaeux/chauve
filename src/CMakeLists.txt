@@ -10,16 +10,16 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 # This will find the Qt5 files. You will need a Qt5_DIR env variable
-find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
+find_package(Qt5 COMPONENTS Core Gui Widgets Sql REQUIRED)
 if (WIN32)
 	if(CMAKE_BUILD_TYPE STREQUAL "Release")
-		foreach(QTDLL Core Gui Widgets)
+		foreach(QTDLL Core Gui Widgets Sql)
 			file(COPY ${Qt5_DIR}/../../../bin/Qt5${QTDLL}.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 		endforeach(QTDLL)
 		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobuf.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../snappy-1.1.7/win_x64/snappy.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 	else(CMAKE_BUILD_TYPE STREQUAL "Debug")	
-		foreach(QTDLL Core Gui Widgets)
+		foreach(QTDLL Core Gui Widgets Sql)
 			file(COPY ${Qt5_DIR}/../../../bin/Qt5${QTDLL}d.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 		endforeach(QTDLL)
 		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobufd.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
@@ -40,6 +40,7 @@ set(SOURCES
 	parser/hero.cpp 
 	parser/parser.cpp
 	parser/parse_result.cpp
+	database_manager.cpp
 	game.cpp 
 	games_manager.cpp 
 	main.cpp 
@@ -60,6 +61,7 @@ set(HEADERS
 	parser/hero.h
 	parser/parser.h
 	parser/parse_result.h
+	database_manager.h
 	game.h
 	games_manager.h
 	mainwindow.h
@@ -75,6 +77,7 @@ set(RESOURCES
 	application.qrc
 )
 qt5_add_resources(${RESOURCES})
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/chauve.db DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 add_executable(chauve ${RESOURCES} ${SOURCES} ${HEADERS} ${UIS})
 if (WIN32)
@@ -86,7 +89,7 @@ endif()
 # Link libraries
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/include/)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../snappy-1.1.7/include/)
-target_link_libraries(chauve Qt5::Core Qt5::Gui Qt5::Widgets)
+target_link_libraries(chauve Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Sql)
 if (WIN32)
 	if(CMAKE_BUILD_TYPE STREQUAL "Release")
 		target_link_libraries(chauve ${CMAKE_CURRENT_SOURCE_DIR}/../protobuf-3.7.1/win_x64/libprotobuf.lib)

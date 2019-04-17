@@ -14,7 +14,6 @@ public:
   // Return the information about one game or nullptr
   std::shared_ptr<Game> GetGame(uint64_t game_id);
   // Insert the game inside the container
-  // Merge information if already present
   void InsertGame(std::shared_ptr<Game> game);
 
   // Singleton instance

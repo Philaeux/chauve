@@ -26,13 +26,6 @@ std::shared_ptr<Game> GamesManager::GetGame(uint64_t game_id) {
 }
 
 // Insert the game inside the container
-// Merge information if already present
 void GamesManager::InsertGame(std::shared_ptr<Game> game) {
-  auto it = games_.find(game->GetGameId());
-  if (it == games_.end()) {
-    games_.insert({ game->GetGameId(), game });
-  }
-  else {
-    it->second->MergeWith(game);
-  }
+  games_.insert({ game->GetGameId(), game });
 }

@@ -14,16 +14,16 @@ class ReplayWidget : public QWidget, public Ui::ReplayWidget
 
 public:
   ReplayWidget(QWidget *parent = nullptr);
-  void ScanReplay(const QString &game);
 
 public slots:
   void ScanReplayFolder();
   void UpdateGameList();
-  void ReplayCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn);
+  void SelectedCellChanged(int currentRow, int currentColumn, int previousRow, int previousColumn);
+  void CellDataChanged(int row, int column);
   void UpdateRowAt(int row);
 
 private:
-  QTableWidgetItem* FactoryTableItem(const QString& text);
+  QTableWidgetItem* FactoryTableItem(const QString& text, QColor text_color, bool editable = false);
   void ClearGameInfoSection();
   void PopulateGameInfoSection(std::shared_ptr<Game> game);
 };
