@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0 FATAL_ERROR)
 set(CMAKE_CONFIGURATION_TYPES Debug;Release)
 
-project(Chauve VERSION 0.0.4)
+project(Chauve VERSION 0.0.5)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
