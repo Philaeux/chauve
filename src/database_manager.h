@@ -23,6 +23,8 @@ public:
   void LoadDatabase();
   // Save dirty data to database
   void SaveToDatabase();
+  // Remove a Game from database
+  void RemoveFromDatabase(Game& game);
 
 private:
   DatabaseManager();

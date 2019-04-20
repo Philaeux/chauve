@@ -15,6 +15,8 @@ public:
   std::shared_ptr<Game> GetGame(uint64_t game_id);
   // Insert the game inside the container
   void InsertGame(std::shared_ptr<Game> game);
+  // Remove a game from the manager
+  void RemoveGame(uint64_t game_id);
 
   // Singleton instance
   static GamesManager& Instance() { return instance_; };

@@ -43,6 +43,8 @@ private:
   QAction *replay_action_;
   QAction *scan_replay_folder_;
   QAction *save_game_action_;
+  QAction *delete_action_;
+  QAction *soft_delete_action_;
 
   // Widgets and Dialogs
   SettingsDialog *settings_dialog_;

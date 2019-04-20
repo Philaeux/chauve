@@ -2,9 +2,11 @@
 #include <QColor>
 #include <QDebug>
 #include <QDir>
+#include <QFile>
 #include <QString>
 #include <QLabel>
 #include <QPixmap>
+#include <set>
 
 #include "replaywidget.h"
 #include "settingsmanager.h"
@@ -195,4 +197,40 @@ void ReplayWidget::PopulateGameInfoSection(std::shared_ptr<Game> game) {
   default:
     break;
   }
+}
+
+std::set<uint64_t> ReplayWidget::GetSelectedGameId() {
+  std::set<uint64_t> selected{ };
+  for (auto& selectionRange : gamesTable->selectedRanges()) {
+    for (int i = selectionRange.topRow(); i < (selectionRange.topRow() + selectionRange.rowCount()); ++i) {
+      auto game_id = std::stoull(gamesTable->item(i, 0)->text().toStdString());
+      selected.insert(game_id);
+    }
+  }
+  return selected;
+}
+
+void ReplayWidget::DeleteSelection() {
+  auto selection = GetSelectedGameId();
+  for (uint64_t id : selection) {
+    auto game = GamesManager::Instance().GetGame(id);
+    if (game->HasReplayOnDisk()) {
+      QFile::remove(QString::fromStdString(game->GetDemPath()));
+      game->SetDemPath("");
+    }
+  }
+  SoftDeleteSelection();
+}
+
+void ReplayWidget::SoftDeleteSelection() {
+  auto selection = GetSelectedGameId();
+  for (uint64_t id : selection) {
+    auto game = GamesManager::Instance().GetGame(id);
+    game->SetNote("");
+    DatabaseManager::Instance().RemoveFromDatabase(*game);
+    if (!game->HasReplayOnDisk()) {
+      GamesManager::Instance().RemoveGame(id);
+    }
+  }
+  UpdateGameList();
 }

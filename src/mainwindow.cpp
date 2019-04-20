@@ -63,6 +63,18 @@ void MainWindow::CreateActions()
   save_game_action_->setShortcut(tr("F1"));
   save_game_action_->setToolTip(tr("F1 - Save the games into the database"));
   connect(save_game_action_, SIGNAL(triggered()), this, SLOT(Save()));
+
+  const QIcon delete_icon = QIcon(":/images/application/delete.png");
+  delete_action_ = new QAction(delete_icon, tr("Delete"), this);
+  delete_action_->setShortcut(tr("Ctrl+Del"));
+  delete_action_->setToolTip(tr("Ctrl+Del - Hard delete the DEM file and database information"));
+  connect(delete_action_, SIGNAL(triggered()), replay_widget_, SLOT(DeleteSelection()));
+
+  const QIcon soft_delete_icon = QIcon(":/images/application/soft_delete.png");
+  soft_delete_action_ = new QAction(soft_delete_icon, tr("Soft Delete"), this);
+  soft_delete_action_->setShortcut(tr("Del"));
+  soft_delete_action_->setToolTip(tr("Del - Only delete database information about this replay"));
+  connect(soft_delete_action_, SIGNAL(triggered()), replay_widget_, SLOT(SoftDeleteSelection()));
 }
 
 void MainWindow::CreateMenus()
@@ -85,6 +97,9 @@ void MainWindow::CreateToolsBar()
   replay_toolbar_ = addToolBar(tr("Replays"));
   replay_toolbar_->addAction(save_game_action_);
   replay_toolbar_->addAction(scan_replay_folder_);
+  replay_toolbar_->addSeparator();
+  replay_toolbar_->addAction(soft_delete_action_);
+  replay_toolbar_->addAction(delete_action_);
 }
 
 // Settings

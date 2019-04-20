@@ -29,3 +29,9 @@ std::shared_ptr<Game> GamesManager::GetGame(uint64_t game_id) {
 void GamesManager::InsertGame(std::shared_ptr<Game> game) {
   games_.insert({ game->GetGameId(), game });
 }
+
+
+// Remove a game from the manager
+void GamesManager::RemoveGame(uint64_t game_id) {
+  games_.erase(game_id);
+}

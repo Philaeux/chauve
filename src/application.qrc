@@ -123,5 +123,7 @@
         <file>images/application/crown.png</file>
         <file>images/application/refresh.png</file>
         <file>images/application/save.png</file>
+        <file>images/application/delete.png</file>
+        <file>images/application/soft_delete.png</file>
     </qresource>
 </RCC>

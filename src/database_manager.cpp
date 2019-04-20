@@ -66,3 +66,10 @@ void DatabaseManager::SaveToDatabase() {
     query.exec();
   }
 }
+
+void DatabaseManager::RemoveFromDatabase(Game& game) {
+  QSqlQuery query;
+  query.prepare("DELETE FROM games WHERE id = (:id)");
+  query.bindValue(":id", game.GetGameId());
+  query.exec();
+}
