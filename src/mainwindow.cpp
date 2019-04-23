@@ -26,7 +26,7 @@ MainWindow::MainWindow()
 
   ReadSettings();
   setWindowIcon(QIcon(":/images/application/icon.png"));
-  setWindowTitle(tr("Chauve v0.0.5 - Dota Coaching Tools"));
+  setWindowTitle(tr("Chauve v0.0.6 - Dota Coaching Tools"));
 }
 
 void MainWindow::closeEvent(QCloseEvent *event)
