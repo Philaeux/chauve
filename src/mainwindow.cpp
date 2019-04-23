@@ -9,7 +9,7 @@
 #include <QToolbar>
 
 #include "database_manager.h"
-#include "settingsmanager.h"
+#include "settings_manager.h"
 #include "settingsdialog.h"
 
 MainWindow::MainWindow()
@@ -67,7 +67,7 @@ void MainWindow::CreateActions()
   const QIcon delete_icon = QIcon(":/images/application/delete.png");
   delete_action_ = new QAction(delete_icon, tr("Delete"), this);
   delete_action_->setShortcut(tr("Ctrl+Del"));
-  delete_action_->setToolTip(tr("Ctrl+Del - Hard delete the DEM file and database information"));
+  delete_action_->setToolTip(tr("Ctrl+Del - Delete the replay file and database information"));
   connect(delete_action_, SIGNAL(triggered()), replay_widget_, SLOT(DeleteSelection()));
 
   const QIcon soft_delete_icon = QIcon(":/images/application/soft_delete.png");
@@ -123,7 +123,8 @@ void MainWindow::WriteSettings()
 }
 
 // Slots
-void MainWindow::Settings() {
+void MainWindow::Settings() 
+{
   if (settings_dialog_ == nullptr) {
     settings_dialog_ = new SettingsDialog(this);
     connect(settings_dialog_->selectFolderButton, SIGNAL(clicked()),
@@ -136,16 +137,18 @@ void MainWindow::Settings() {
   }
 }
 
-void MainWindow::SettingsFolderSelect() {
+void MainWindow::SettingsFolderSelect() 
+{
   QString dir = QFileDialog::getExistingDirectory(settings_dialog_, tr("Open Directory"), "",
     QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
   settings_dialog_->lineEdit->setText(dir);
 }
 
-void MainWindow::Replay() {
-
+void MainWindow::Replay() 
+{
 }
 
-void MainWindow::Save() {
+void MainWindow::Save()
+{
   DatabaseManager::Instance().SaveToDatabase();
 }

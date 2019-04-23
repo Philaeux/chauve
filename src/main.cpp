@@ -2,10 +2,10 @@
 #include <QSplashScreen>
 #include <QPixmap>
 
-#include "games_manager.h"
 #include "database_manager.h"
+#include "games_manager.h"
 #include "mainwindow.h"
-#include "settingsmanager.h"
+#include "settings_manager.h"
 
 
 int main(int argc, char *argv[])

@@ -8,13 +8,13 @@
 #include <QPixmap>
 #include <set>
 
-#include "replaywidget.h"
-#include "settingsmanager.h"
 #include "parser/protobuf/dota_shared_enums.pb.h"
 #include "parser/hero.h"
 #include "database_manager.h"
 #include "game.h"
 #include "games_manager.h"
+#include "replaywidget.h"
+#include "settings_manager.h"
 
 // Initialize the tool
 ReplayWidget::ReplayWidget(QWidget *parent) :

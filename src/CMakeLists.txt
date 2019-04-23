@@ -47,7 +47,7 @@ set(SOURCES
 	mainwindow.cpp 
 	replaywidget.cpp 
 	settingsdialog.cpp 
-	settingsmanager.cpp 
+	settings_manager.cpp 
 ) 
 set(HEADERS 
 	parser/protobuf/demo.pb.h 
@@ -67,7 +67,7 @@ set(HEADERS
 	mainwindow.h
 	replaywidget.h
 	settingsdialog.h
-	settingsmanager.h 
+	settings_manager.h 
 )
 set(UIS 
 	replaywidget.ui 
