@@ -6,15 +6,20 @@ Dota coaching tools.
 ##### General logic
 
 Add any number of tags into the filter list and the software will show only the games respecting all the tags. 
+
 You can do a reverse tag using `!` in front of a tag. For example, `!morph-pick` will show all games where morph is not picked.
 
-##### Teams and leagues
+##### Leagues
 
-If a league is detected, the `league` tag is set and also `league-<leagueid>` where leagueid is the Valve Id for the league.
-Then, `!league` will return all games not in a league (scrims).
+* `league` -> set if a league id is detected.
+* `league-<leagueid>` will also be set where leagueid is the Valve Id for the league.
+* Using reverse tags, `!league` will return all games not in a league (scrims).
 
-Using the Team name in lowercase will give you a filter per team.
-Examples: `og`, `secret`, `eg`, `liquid`... Respect the team name appearing in Radiant and Dire columns.
+##### Teams
+
+Using the Team name in lowercase will give you a filter per team (`og`, `secret`, `eg`, `liquid`...). 
+Respect the team name appearing in Radiant and Dire columns. 
+
 Also, the `<t_tag>-dire`, `<t_tag>-dire` are set after parse.
 
 ##### Hero Tags
@@ -114,7 +119,7 @@ Also, the `<t_tag>-dire`, `<t_tag>-dire` are set after parse.
 | Nyx Assassin | nyx |
 | Naga Siren | naga |
 | Keeper of the Light | kotl |
-| Io","io |
+| Io | io |
 | Visage | visage |
 | Slark | slark |
 | Medusa | medusa |
@@ -142,4 +147,3 @@ Also, the `<t_tag>-dire`, `<t_tag>-dire` are set after parse.
 | Pangolier | pango |
 | Grimstroke | grim |
 | Mars | mars |
-
