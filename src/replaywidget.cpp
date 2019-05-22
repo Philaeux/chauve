@@ -35,6 +35,14 @@ ReplayWidget::ReplayWidget(QWidget *parent) :
     this, SLOT(SelectedCellChanged(int, int, int, int)));
   connect(gamesTable, SIGNAL(cellChanged(int, int)),
     this, SLOT(CellDataChanged(int, int)));
+  connect(filterInput, SIGNAL(returnPressed()),
+    this, SLOT(AddTagFilter()));
+  connect(filterAddButton, SIGNAL(clicked()),
+    this, SLOT(AddTagFilter()));
+  connect(filterClearButton, SIGNAL(clicked()),
+    this, SLOT(ClearTagFilters()));
+  connect(filterList, SIGNAL(itemDoubleClicked(QListWidgetItem *)),
+    this, SLOT(RemoveTagFilter(QListWidgetItem *)));
 }
 
 // Scan *.dem files contained in the replay folder
@@ -61,9 +69,9 @@ void ReplayWidget::ScanReplayFolder() {
 
 void ReplayWidget::UpdateGameList() {
   gamesTable->clearContents();
-  gamesTable->setRowCount(static_cast<int>(GamesManager::Instance().GetGames().size()));
+  gamesTable->setRowCount(static_cast<int>(GamesManager::Instance().GetFilteredGames().size()));
   int32_t index = 0;
-  for (auto rit = GamesManager::Instance().GetGames().rbegin(); rit != GamesManager::Instance().GetGames().rend(); rit++) {
+  for (auto rit = GamesManager::Instance().GetFilteredGames().rbegin(); rit != GamesManager::Instance().GetFilteredGames().rend(); rit++) {
     QTableWidgetItem *item;
 
     QColor id_color;
@@ -156,6 +164,7 @@ void ReplayWidget::ClearGameInfoSection() {
   direWinIcon->hide();
   direTeam->setText("");
   draftStackedWidget->setCurrentIndex(0);
+  generatedTagList->clear();
 }
 
 void ReplayWidget::PopulateGameInfoSection(std::shared_ptr<Game> game) {
@@ -197,6 +206,11 @@ void ReplayWidget::PopulateGameInfoSection(std::shared_ptr<Game> game) {
   default:
     break;
   }
+
+  // Display tags
+  for (auto tag : game->GetParseResult().generated_tags) {
+    generatedTagList->addItem(QString::fromStdString(tag));
+  }
 }
 
 std::set<uint64_t> ReplayWidget::GetSelectedGameId() {
@@ -233,4 +247,40 @@ void ReplayWidget::SoftDeleteSelection() {
     }
   }
   UpdateGameList();
+}
+
+void ReplayWidget::AddTagFilter() {
+  if (filterInput->text().size() == 0)
+    return;
+
+  auto changed = GamesManager::Instance().AddFilterTag(filterInput->text().toStdString());
+  filterInput->clear();
+  if (changed) {
+    RefreshFilterList();
+    UpdateGameList();
+  }
+}
+
+void ReplayWidget::RefreshFilterList() {
+  filterList->clear();
+  for (auto tag : GamesManager::Instance().GetFilterTags()) {
+    filterList->addItem(QString::fromStdString(tag));
+  }
+}
+
+void ReplayWidget::ClearTagFilters() {
+  auto changed = GamesManager::Instance().ClearFilters();
+  if (changed) {
+    RefreshFilterList();
+    UpdateGameList();
+  }
+}
+
+void ReplayWidget::RemoveTagFilter(QListWidgetItem* item) {
+  auto tag = item->data(0).toString().toStdString();
+  auto changed = GamesManager::Instance().RemoveFilterTag(tag);
+  if (changed) {
+    RefreshFilterList();
+    UpdateGameList();
+  }
 }

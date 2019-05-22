@@ -20,7 +20,7 @@ Parser::Parser(uint32_t snappy_buffer_size)
 
 // Parse a dem file
 std::pair<ParseState, ParseResult> Parser::Parse(std::string dem_path) {
-  ParseResult parse_result{ 0, 0, 0, NONE, { 0, ""}, { 0, ""}, NO_TEAM, {} };
+  ParseResult parse_result{ 0, { }, 0, 0, NONE, { 0, ""}, { 0, ""}, NO_TEAM, {} };
 
   // Read dem file into memory
   std::fstream is(dem_path, std::ios::in | std::ios::binary);
@@ -82,7 +82,31 @@ std::pair<ParseState, ParseResult> Parser::Parse(std::string dem_path) {
     if (select_event.is_pick()) pb_choice = PICK; else pb_choice = BAN;
     Side pb_side;    
     if (select_event.team() == 2) pb_side = RADIANT; else pb_side = DIRE;
-    parse_result.draft.draft_sequence.push_back({ pb_side, pb_choice, { select_event.hero_id() } });
+    
+    Hero pb_hero { select_event.hero_id() };
+    parse_result.generated_tags.insert(pb_hero.GetTagName());
+    if(pb_choice == PICK) parse_result.generated_tags.insert(pb_hero.GetTagName() + "-pick");
+    else parse_result.generated_tags.insert(pb_hero.GetTagName() + "-ban");
+
+    parse_result.draft.draft_sequence.push_back({ pb_side, pb_choice, pb_hero });
+  }
+
+  // Tags
+  if (parse_result.radiant.tag != "") {
+    auto lower = parse_result.radiant.tag;
+    std::transform(lower.begin(), lower.end(), lower.begin(), ::tolower);
+    parse_result.generated_tags.insert(lower);
+    parse_result.generated_tags.insert(lower + "-radiant");
+  }
+  if (parse_result.dire.tag != "") {
+    auto lower = parse_result.dire.tag;
+    std::transform(lower.begin(), lower.end(), lower.begin(), ::tolower);
+    parse_result.generated_tags.insert(lower);
+    parse_result.generated_tags.insert(lower + "-dire");
+  }
+  if (parse_result.league_id != 0) {
+    parse_result.generated_tags.insert("league");
+    parse_result.generated_tags.insert("league-" + std::to_string(parse_result.league_id));
   }
 
   // Get back to first packet

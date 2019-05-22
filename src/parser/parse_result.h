@@ -3,7 +3,7 @@
 
 #include <cstdint>
 #include <string>
-
+#include <set>
 #include "parser/hero.h"
 
 // A Dota team
@@ -90,6 +90,7 @@ enum ParseState {
 // Possible data to extract during the parsing process
 struct ParseResult {
   uint64_t game_id;
+  std::set<std::string> generated_tags;
   uint32_t league_id;
   uint32_t end_datetime_tick;
   GameMode mode;

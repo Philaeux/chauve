@@ -24,6 +24,10 @@ public slots:
   void UpdateRowAt(int row);
   void DeleteSelection();
   void SoftDeleteSelection();
+  void AddTagFilter();
+  void RefreshFilterList();
+  void ClearTagFilters();
+  void RemoveTagFilter(QListWidgetItem* item);
 
 private:
   QTableWidgetItem* FactoryTableItem(const QString& text, QColor text_color, bool editable = false);
